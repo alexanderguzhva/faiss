@@ -7,6 +7,9 @@
 
 #pragma once
 
+#include <cstddef>
+#include <cstdint>
+
 #include <faiss/impl/platform_macros.h>
 
 namespace faiss {
