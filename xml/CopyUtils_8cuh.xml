@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="CopyUtils_8cuh" kind="file" language="C++">
     <compoundname>CopyUtils.cuh</compoundname>
     <briefdescription>
@@ -30,7 +30,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>dstDevice,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>src,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cudaStream_t<sp/>stream,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::initializer_list&lt;int&gt;<sp/>sizes)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::initializer_list&lt;idx_t&gt;<sp/>sizes)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>dev<sp/>=<sp/>getDeviceForAddress(src);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceTensor&lt;T,<sp/>Dim,<sp/>true&gt;<sp/>oldT(src,<sp/>sizes);</highlight></codeline>
 <codeline></codeline>
@@ -55,7 +55,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>dstDevice,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>src,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cudaStream_t<sp/>stream,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::initializer_list&lt;int&gt;<sp/>sizes)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::initializer_list&lt;idx_t&gt;<sp/>sizes)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>dev<sp/>=<sp/>getDeviceForAddress(src);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceTensor&lt;T,<sp/>Dim,<sp/>true&gt;<sp/>oldT(src,<sp/>sizes);</highlight></codeline>
 <codeline></codeline>
@@ -83,12 +83,10 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Uses<sp/>the<sp/>current<sp/>device<sp/>if<sp/>device<sp/>==<sp/>-1</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceScope<sp/>scope(device);</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>FAISS_ASSERT(src.size()<sp/>&lt;<sp/>(size_t)std::numeric_limits&lt;int&gt;::max());</highlight></codeline>
-<codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>DeviceTensor&lt;T,<sp/>1,<sp/>true&gt;<sp/>out(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resources,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeTempAlloc(AllocType::Other,<sp/>stream),</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{(int)src.size()});</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{(idx_t)src.size()});</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>out.copyFrom(src,<sp/>stream);</highlight></codeline>
 <codeline></codeline>
@@ -100,7 +98,7 @@
 <codeline><highlight class="normal">HostTensor&lt;T,<sp/>Dim,<sp/>true&gt;<sp/>toHost(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>src,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cudaStream_t<sp/>stream,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::initializer_list&lt;int&gt;<sp/>sizes)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::initializer_list&lt;idx_t&gt;<sp/>sizes)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>dev<sp/>=<sp/>getDeviceForAddress(src);</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(dev<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
@@ -130,6 +128,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(dev<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CUDA_VERIFY(cudaMemcpyAsync(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst,<sp/>src,<sp/>num<sp/>*<sp/>sizeof(T),<sp/>cudaMemcpyDeviceToHost,<sp/>stream));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cudaStreamSynchronize(stream);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CUDA_VERIFY(cudaMemcpyAsync(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst,<sp/>src,<sp/>num<sp/>*<sp/>sizeof(T),<sp/>cudaMemcpyDeviceToDevice,<sp/>stream));</highlight></codeline>

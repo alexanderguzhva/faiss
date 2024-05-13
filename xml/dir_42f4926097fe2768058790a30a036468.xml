@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_42f4926097fe2768058790a30a036468" kind="dir">
     <compoundname>faiss/gpu/utils</compoundname>
     <innerdir refid="dir_e0bc4e8ba6e534e3fbf335254ee8d911">faiss/gpu/utils/blockselect</innerdir>
@@ -27,6 +27,7 @@
     <innerfile refid="NoTypeTensor_8cuh">NoTypeTensor.cuh</innerfile>
     <innerfile refid="Pair_8cuh">Pair.cuh</innerfile>
     <innerfile refid="PtxUtils_8cuh">PtxUtils.cuh</innerfile>
+    <innerfile refid="RaftUtils_8h">RaftUtils.h</innerfile>
     <innerfile refid="ReductionOperators_8cuh">ReductionOperators.cuh</innerfile>
     <innerfile refid="Reductions_8cuh">Reductions.cuh</innerfile>
     <innerfile refid="Select_8cuh">Select.cuh</innerfile>
@@ -34,7 +35,7 @@
     <innerfile refid="StaticUtils_8h">StaticUtils.h</innerfile>
     <innerfile refid="Tensor-inl_8cuh">Tensor-inl.cuh</innerfile>
     <innerfile refid="Tensor_8cuh">Tensor.cuh</innerfile>
-    <innerfile refid="ThrustAllocator_8cuh">ThrustAllocator.cuh</innerfile>
+    <innerfile refid="ThrustUtils_8cuh">ThrustUtils.cuh</innerfile>
     <innerfile refid="Timer_8h">Timer.h</innerfile>
     <innerfile refid="Transpose_8cuh">Transpose.cuh</innerfile>
     <innerfile refid="WarpPackedBits_8cuh">WarpPackedBits.cuh</innerfile>

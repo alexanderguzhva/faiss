@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structfaiss_1_1HNSWStats" kind="struct" language="C++" prot="public">
+    <compoundname>faiss::HNSWStats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1HNSWStats_1a28e67551d5cf31ab374fc8df2bab7cee" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::HNSWStats::n1</definition>
+        <argsstring></argsstring>
+        <name>n1</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/HNSW.h" line="233" column="12" bodyfile="faiss/impl/HNSW.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HNSWStats_1aeb504ee9fcf7debd52737c92c3e0594d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::HNSWStats::n2</definition>
+        <argsstring></argsstring>
+        <name>n2</name>
+        <initializer>=
+            0</initializer>
+        <briefdescription>
+<para>numbner of vectors searched </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/HNSW.h" line="234" column="12" bodyfile="faiss/impl/HNSW.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HNSWStats_1a420fdb8c251beb429829fa69a39d78e7" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::HNSWStats::ndis</definition>
+        <argsstring></argsstring>
+        <name>ndis</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>number of queries for which the candidate list is exhasted </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/HNSW.h" line="236" column="12" bodyfile="faiss/impl/HNSW.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfaiss_1_1HNSWStats_1ae97f2a47914b051f63843d4bceb4b951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::HNSWStats::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>number of distances computed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/HNSW.h" line="238" column="10" bodyfile="faiss/impl/HNSW.h" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HNSWStats_1adafef04e7a01e5688c2ced24019d65a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::HNSWStats::combine</definition>
+        <argsstring>(const HNSWStats &amp;other)</argsstring>
+        <name>combine</name>
+        <param>
+          <type>const <ref refid="structfaiss_1_1HNSWStats" kindref="compound">HNSWStats</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/HNSW.h" line="243" column="10" bodyfile="faiss/impl/HNSW.h" bodystart="243" bodyend="247"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/impl/HNSW.h" line="232" column="1" bodyfile="faiss/impl/HNSW.h" bodystart="232" bodyend="248"/>
+    <listofallmembers>
+      <member refid="structfaiss_1_1HNSWStats_1adafef04e7a01e5688c2ced24019d65a7" prot="public" virt="non-virtual"><scope>faiss::HNSWStats</scope><name>combine</name></member>
+      <member refid="structfaiss_1_1HNSWStats_1a28e67551d5cf31ab374fc8df2bab7cee" prot="public" virt="non-virtual"><scope>faiss::HNSWStats</scope><name>n1</name></member>
+      <member refid="structfaiss_1_1HNSWStats_1aeb504ee9fcf7debd52737c92c3e0594d" prot="public" virt="non-virtual"><scope>faiss::HNSWStats</scope><name>n2</name></member>
+      <member refid="structfaiss_1_1HNSWStats_1a420fdb8c251beb429829fa69a39d78e7" prot="public" virt="non-virtual"><scope>faiss::HNSWStats</scope><name>ndis</name></member>
+      <member refid="structfaiss_1_1HNSWStats_1ae97f2a47914b051f63843d4bceb4b951" prot="public" virt="non-virtual"><scope>faiss::HNSWStats</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

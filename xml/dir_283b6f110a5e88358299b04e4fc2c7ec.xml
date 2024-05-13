@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_283b6f110a5e88358299b04e4fc2c7ec" kind="dir">
     <compoundname>faiss</compoundname>
+    <innerdir refid="dir_a72cdb8482385b533c81985f0af53313">faiss/cppcontrib</innerdir>
     <innerdir refid="dir_8904d4d25cfd37481067280c4d4c9f97">faiss/gpu</innerdir>
+    <innerdir refid="dir_dd54f55b8e87373dfa8f730dca1dd7f8">faiss/impl</innerdir>
     <innerdir refid="dir_71a5f2b83da87e7fb52bb1a9a3fef9ad">faiss/invlists</innerdir>
     <innerdir refid="dir_17d03c0b48df2002720ab53d8fded289">faiss/python</innerdir>
     <innerdir refid="dir_8ad259f5ae9600a74caf331497f5b251">faiss/utils</innerdir>
@@ -25,11 +27,13 @@
     <innerfile refid="IndexFlat_8h">IndexFlat.h</innerfile>
     <innerfile refid="IndexFlatCodes_8h">IndexFlatCodes.h</innerfile>
     <innerfile refid="IndexHNSW_8h">IndexHNSW.h</innerfile>
+    <innerfile refid="IndexIDMap_8h">IndexIDMap.h</innerfile>
     <innerfile refid="IndexIVF_8h">IndexIVF.h</innerfile>
     <innerfile refid="IndexIVFAdditiveQuantizer_8h">IndexIVFAdditiveQuantizer.h</innerfile>
     <innerfile refid="IndexIVFAdditiveQuantizerFastScan_8h">IndexIVFAdditiveQuantizerFastScan.h</innerfile>
     <innerfile refid="IndexIVFFastScan_8h">IndexIVFFastScan.h</innerfile>
     <innerfile refid="IndexIVFFlat_8h">IndexIVFFlat.h</innerfile>
+    <innerfile refid="IndexIVFIndependentQuantizer_8h">IndexIVFIndependentQuantizer.h</innerfile>
     <innerfile refid="IndexIVFPQ_8h">IndexIVFPQ.h</innerfile>
     <innerfile refid="IndexIVFPQFastScan_8h">IndexIVFPQFastScan.h</innerfile>
     <innerfile refid="IndexIVFPQR_8h">IndexIVFPQR.h</innerfile>
@@ -43,8 +47,10 @@
     <innerfile refid="IndexPreTransform_8h">IndexPreTransform.h</innerfile>
     <innerfile refid="IndexRefine_8h">IndexRefine.h</innerfile>
     <innerfile refid="IndexReplicas_8h">IndexReplicas.h</innerfile>
+    <innerfile refid="IndexRowwiseMinMax_8h">IndexRowwiseMinMax.h</innerfile>
     <innerfile refid="IndexScalarQuantizer_8h">IndexScalarQuantizer.h</innerfile>
     <innerfile refid="IndexShards_8h">IndexShards.h</innerfile>
+    <innerfile refid="IndexShardsIVF_8h">IndexShardsIVF.h</innerfile>
     <innerfile refid="IVFlib_8h">IVFlib.h</innerfile>
     <innerfile refid="MatrixStats_8h">MatrixStats.h</innerfile>
     <innerfile refid="MetaIndexes_8h">MetaIndexes.h</innerfile>
