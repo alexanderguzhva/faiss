@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Faiss Documentation &mdash; Faiss  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+
+  
     <link rel="canonical" href="https://faiss.ai/index.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -28,11 +32,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> Faiss
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Faiss
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -64,8 +72,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>Welcome to Faiss Documentation</li>
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to Faiss Documentation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -75,8 +83,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="welcome-to-faiss-documentation">
-<h1>Welcome to Faiss Documentation<a class="headerlink" href="#welcome-to-faiss-documentation" title="Permalink to this headline"></a></h1>
+  <section id="welcome-to-faiss-documentation">
+<h1>Welcome to Faiss Documentation<a class="headerlink" href="#welcome-to-faiss-documentation" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -89,13 +97,13 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="faiss">
-<h1>Faiss<a class="headerlink" href="#faiss" title="Permalink to this headline"></a></h1>
+</section>
+<section id="faiss">
+<h1>Faiss<a class="headerlink" href="#faiss" title="Permalink to this heading"></a></h1>
 <p>Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning.</p>
 <p>Faiss is written in C++ with complete wrappers for Python. Some of the most useful algorithms are implemented on the GPU. It is developed by <a class="reference external" href="https://research.fb.com/category/facebook-ai-research-fair/">Facebook AI Research</a>.</p>
-<div class="section" id="what-is-similarity-search">
-<h2>What is similarity search?<a class="headerlink" href="#what-is-similarity-search" title="Permalink to this headline"></a></h2>
+<section id="what-is-similarity-search">
+<h2>What is similarity search?<a class="headerlink" href="#what-is-similarity-search" title="Permalink to this heading"></a></h2>
 <p>Given a set of vectors <span class="math notranslate nohighlight">\(x_i\)</span> in dimension <span class="math notranslate nohighlight">\(d\)</span>, Faiss build a data structure in RAM from it.
 After the structure is constructed, when given a new vector <span class="math notranslate nohighlight">\(x\)</span> in dimension <span class="math notranslate nohighlight">\(d\)</span> it performs efficiently the operation:</p>
 <div class="math notranslate nohighlight">
@@ -113,21 +121,21 @@ Note that the <span class="math notranslate nohighlight">\(x_i\)</span>’s are 
 <li><p>return all elements that are within a given radius of the query point (range search)</p></li>
 <li><p>store the index on disk rather than in RAM.</p></li>
 </ul>
-</div>
-<div class="section" id="install">
-<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline"></a></h2>
+</section>
+<section id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this heading"></a></h2>
 <p>The recommended way to install Faiss is through <a class="reference external" href="https://conda.io">Conda</a>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install -c pytorch faiss-cpu
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>pytorch<span class="w"> </span>faiss-cpu
 </pre></div>
 </div>
 <p>The <code class="code docutils literal notranslate"><span class="pre">faiss-gpu</span></code> package provides CUDA-enabled indices:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install -c pytorch faiss-gpu
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>pytorch<span class="w"> </span>faiss-gpu
 </pre></div>
 </div>
 <p>Note that either package should be installed, but not both, as the latter is a superset of the former.</p>
-</div>
-<div class="section" id="research-foundations-of-faiss">
-<h2>Research foundations of Faiss<a class="headerlink" href="#research-foundations-of-faiss" title="Permalink to this headline"></a></h2>
+</section>
+<section id="research-foundations-of-faiss">
+<h2>Research foundations of Faiss<a class="headerlink" href="#research-foundations-of-faiss" title="Permalink to this heading"></a></h2>
 <p>Faiss is based on years of research. Most notably it implements:</p>
 <ul class="simple">
 <li><p>The inverted file from <a class="reference external" href="http://ieeexplore.ieee.org/abstract/document/1238663/">“Video google: A text retrieval approach to object matching in videos.”</a>, Sivic &amp; Zisserman, ICCV 2003. This is the key to non-exhaustive search in large datasets. Otherwise all searches would need to scan all elements in the index, which is prohibitive even if the operation to apply for each element is fast</p></li>
@@ -200,8 +208,8 @@ Zhang+, “Sparse Composite Quantization”, CVPR 15.
 Zhang+, “Collaborative Quantization for Crossmodal Similarity Search”, CVPR 16
 Zhang+, “Efficient Large-scale Approximate Nearest Neighbor Search on OpenCL FPGA”, CVPR 18
 </pre>
-</details></div>
-</div>
+</details></section>
+</section>
 
 
            </div>
