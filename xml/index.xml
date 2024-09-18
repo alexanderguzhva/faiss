@@ -9094,10 +9094,16 @@
     <member refid="namespacefaiss_1a7912d9fa6a0a7ab8356eef44ecab64c4" kind="function"><name>distance_four_codes</name></member>
     <member refid="namespacefaiss_1a542cf4d499962a3d7a0db924424d8870" kind="function"><name>handleExceptions</name></member>
     <member refid="namespacefaiss_1a0dbf4403e68d46d45d8432b99657ffd0" kind="function"><name>demangle_cpp_symbol</name></member>
+    <member refid="namespacefaiss_1a6f2f483b00cb60d4860f1d3ff7107b8a" kind="function"><name>search_from_candidates</name></member>
+    <member refid="namespacefaiss_1ad5378e0f1958868c1170b8552b44fc31" kind="function"><name>greedy_update_nearest</name></member>
+    <member refid="namespacefaiss_1ab54b6b6ec63e400ffd053609ab833ed9" kind="function"><name>search_from_candidate_unbounded</name></member>
     <member refid="namespacefaiss_1a33f83fe5af91626556b1ccde1f3cafcb" kind="function"><name>read_index_header</name></member>
     <member refid="namespacefaiss_1a97af3c36835c195254ba0312b0f78140" kind="function"><name>read_direct_map</name></member>
     <member refid="namespacefaiss_1ae931529308da688bc1470f04e9b34bf2" kind="function"><name>read_ivf_header</name></member>
     <member refid="namespacefaiss_1acf993db387d508bb9e1d517d612138d0" kind="function"><name>read_InvertedLists</name></member>
+    <member refid="namespacefaiss_1aa12092ef91253e1539c474b4697f287f" kind="function"><name>set_array_invlist</name></member>
+    <member refid="namespacefaiss_1a4eae12c70887bff34241a726efb9ff02" kind="function"><name>read_ProductQuantizer</name></member>
+    <member refid="namespacefaiss_1a39ebc7cee79b9534f7a5d6d622ed0250" kind="function"><name>read_ScalarQuantizer</name></member>
     <member refid="namespacefaiss_1abf86b394ccff3a1d3d5e4b848740059c" kind="function"><name>fourcc</name></member>
     <member refid="namespacefaiss_1aa4aee5942eb92dbce17469f4bdd2e0a5" kind="function"><name>fourcc</name></member>
     <member refid="namespacefaiss_1aa2a1c19599e8fc0b8a3025d3386637b8" kind="function"><name>fourcc_inv</name></member>
@@ -9561,9 +9567,9 @@
     <member refid="residual__quantizer__encode__steps_8h_1a0799cc440d949c45026006770194c0f2" kind="function"><name>compute_codes_add_centroids_mp_lut1</name></member>
   </compound>
   <compound refid="namespacefaiss_1_1simd__result__handlers" kind="namespace"><name>faiss::simd_result_handlers</name>
-    <member refid="simd__result__handlers_8h_1a12ddbf9763642cb7d761eefbd3556d93" kind="function"><name>dispatch_SIMDResultHanlder_fixedCW</name></member>
-    <member refid="simd__result__handlers_8h_1a95dd220216f9e9a830228c0401b8a601" kind="function"><name>dispatch_SIMDResultHanlder_fixedC</name></member>
-    <member refid="simd__result__handlers_8h_1aa1b29889d26ab11c454ec846250896d1" kind="function"><name>dispatch_SIMDResultHanlder</name></member>
+    <member refid="simd__result__handlers_8h_1a98508fd1e82d686aac870ca844cc2502" kind="function"><name>dispatch_SIMDResultHandler_fixedCW</name></member>
+    <member refid="simd__result__handlers_8h_1a739b6efe174b418b92664439772a6d25" kind="function"><name>dispatch_SIMDResultHandler_fixedC</name></member>
+    <member refid="simd__result__handlers_8h_1a116179974dd04a41323438390f8277c0" kind="function"><name>dispatch_SIMDResultHandler</name></member>
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
