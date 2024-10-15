@@ -439,93 +439,6 @@
 </dd></dl>
 
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterionE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterionE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterionE"></span><span id="faiss::OneRecallAtRCriterion"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OneRecallAtRCriterion</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss17AutoTuneCriterionE" title="faiss::AutoTuneCriterion"><span class="n"><span class="pre">AutoTuneCriterion</span></span></a><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterionE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t"></span><span id="faiss::OneRecallAtRCriterion::OneRecallAtRCriterion__idx_t.idx_t"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1a96f1529ebce808a196972e017fb17950"></span><span class="sig-name descname"><span class="n"><span class="pre">OneRecallAtRCriterion</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">nq</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">R</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t">
-<span id="_CPPv3NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t"></span><span id="_CPPv2NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t"></span><span id="faiss::OneRecallAtRCriterion::evaluate__floatCP.idx_tCPC"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1afe472c2ae38534c293b02feebf87988d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evaluate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">D</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">I</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Evaluate the criterion.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>D</strong> – size nq * nnn </p></li>
-<li><p><strong>I</strong> – size nq * nnn </p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>the criterion, between 0 and 1. Larger is better. </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterionD0Ev">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterionD0Ev"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterionD0Ev"></span><span id="faiss::OneRecallAtRCriterion::~OneRecallAtRCriterion"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1a79b1af707034d3984debd15a6aa34255"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~OneRecallAtRCriterion</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterionD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t"></span><span id="faiss::OneRecallAtRCriterion::set_groundtruth__i.floatCP.idx_tCP"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a174f0de8e6fd01905f5fa2170f5039d8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_groundtruth</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gt_nnn</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">gt_D_in</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">gt_I_in</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Intitializes the gt_D and gt_I vectors. Must be called before evaluating</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>gt_D_in</strong> – size nq * gt_nnn </p></li>
-<li><p><strong>gt_I_in</strong> – size nq * gt_nnn </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion1RE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion1RE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion1RE"></span><span id="faiss::OneRecallAtRCriterion::R__idx_t"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1ab25af5442746a34451a7ceeebd40f380"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">R</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion1RE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion2nqE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion2nqE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion2nqE"></span><span id="faiss::OneRecallAtRCriterion::nq__idx_t"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1adcfaafb3f1b3449e2cfd553f0f603a5b"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nq</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion2nqE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>nb of queries this criterion is evaluated on </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion3nnnE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion3nnnE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion3nnnE"></span><span id="faiss::OneRecallAtRCriterion::nnn__idx_t"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a3bb11e873707a812999f8391869aafab"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nnn</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion3nnnE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>nb of NNs that the query should request </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion6gt_nnnE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion6gt_nnnE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion6gt_nnnE"></span><span id="faiss::OneRecallAtRCriterion::gt_nnn__idx_t"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a9b3a2242729a0873d255c1684881bbd4"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_nnn</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion6gt_nnnE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>nb of GT NNs required to evaluate criterion </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion4gt_DE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion4gt_DE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion4gt_DE"></span><span id="faiss::OneRecallAtRCriterion::gt_D__std::vector:float:"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a40e91caa9232a597c16fc946d0befd9b"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_D</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion4gt_DE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Ground-truth distances (size nq * gt_nnn) </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion4gt_IE">
-<span id="_CPPv3N5faiss21OneRecallAtRCriterion4gt_IE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion4gt_IE"></span><span id="faiss::OneRecallAtRCriterion::gt_I__std::vector:idx_t:"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1af915fc4df215e3c8d9f71ff42d526144"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_I</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion4gt_IE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Ground-truth indexes (size nq * gt_nnn) </p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss21IntersectionCriterionE">
 <span id="_CPPv3N5faiss21IntersectionCriterionE"></span><span id="_CPPv2N5faiss21IntersectionCriterionE"></span><span id="faiss::IntersectionCriterion"></span><span class="target" id="structfaiss_1_1IntersectionCriterion"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IntersectionCriterion</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss17AutoTuneCriterionE" title="faiss::AutoTuneCriterion"><span class="n"><span class="pre">AutoTuneCriterion</span></span></a><a class="headerlink" href="#_CPPv4N5faiss21IntersectionCriterionE" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="breathe-sectiondef docutils container">
@@ -606,6 +519,93 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss21IntersectionCriterion4gt_IE">
 <span id="_CPPv3N5faiss21IntersectionCriterion4gt_IE"></span><span id="_CPPv2N5faiss21IntersectionCriterion4gt_IE"></span><span id="faiss::IntersectionCriterion::gt_I__std::vector:idx_t:"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1af915fc4df215e3c8d9f71ff42d526144"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_I</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21IntersectionCriterion4gt_IE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Ground-truth indexes (size nq * gt_nnn) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterionE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterionE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterionE"></span><span id="faiss::OneRecallAtRCriterion"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OneRecallAtRCriterion</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss17AutoTuneCriterionE" title="faiss::AutoTuneCriterion"><span class="n"><span class="pre">AutoTuneCriterion</span></span></a><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterionE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t"></span><span id="faiss::OneRecallAtRCriterion::OneRecallAtRCriterion__idx_t.idx_t"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1a96f1529ebce808a196972e017fb17950"></span><span class="sig-name descname"><span class="n"><span class="pre">OneRecallAtRCriterion</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">nq</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">R</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion21OneRecallAtRCriterionE5idx_t5idx_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t">
+<span id="_CPPv3NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t"></span><span id="_CPPv2NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t"></span><span id="faiss::OneRecallAtRCriterion::evaluate__floatCP.idx_tCPC"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1afe472c2ae38534c293b02feebf87988d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evaluate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">D</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">I</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss21OneRecallAtRCriterion8evaluateEPKfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Evaluate the criterion.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>D</strong> – size nq * nnn </p></li>
+<li><p><strong>I</strong> – size nq * nnn </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the criterion, between 0 and 1. Larger is better. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterionD0Ev">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterionD0Ev"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterionD0Ev"></span><span id="faiss::OneRecallAtRCriterion::~OneRecallAtRCriterion"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1a79b1af707034d3984debd15a6aa34255"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~OneRecallAtRCriterion</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterionD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t"></span><span id="faiss::OneRecallAtRCriterion::set_groundtruth__i.floatCP.idx_tCP"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a174f0de8e6fd01905f5fa2170f5039d8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_groundtruth</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gt_nnn</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">gt_D_in</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">gt_I_in</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion15set_groundtruthEiPKfPK5idx_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Intitializes the gt_D and gt_I vectors. Must be called before evaluating</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gt_D_in</strong> – size nq * gt_nnn </p></li>
+<li><p><strong>gt_I_in</strong> – size nq * gt_nnn </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion1RE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion1RE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion1RE"></span><span id="faiss::OneRecallAtRCriterion::R__idx_t"></span><span class="target" id="structfaiss_1_1OneRecallAtRCriterion_1ab25af5442746a34451a7ceeebd40f380"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">R</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion1RE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion2nqE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion2nqE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion2nqE"></span><span id="faiss::OneRecallAtRCriterion::nq__idx_t"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1adcfaafb3f1b3449e2cfd553f0f603a5b"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nq</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion2nqE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>nb of queries this criterion is evaluated on </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion3nnnE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion3nnnE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion3nnnE"></span><span id="faiss::OneRecallAtRCriterion::nnn__idx_t"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a3bb11e873707a812999f8391869aafab"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nnn</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion3nnnE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>nb of NNs that the query should request </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion6gt_nnnE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion6gt_nnnE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion6gt_nnnE"></span><span id="faiss::OneRecallAtRCriterion::gt_nnn__idx_t"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a9b3a2242729a0873d255c1684881bbd4"></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_nnn</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion6gt_nnnE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>nb of GT NNs required to evaluate criterion </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion4gt_DE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion4gt_DE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion4gt_DE"></span><span id="faiss::OneRecallAtRCriterion::gt_D__std::vector:float:"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1a40e91caa9232a597c16fc946d0befd9b"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_D</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion4gt_DE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Ground-truth distances (size nq * gt_nnn) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss21OneRecallAtRCriterion4gt_IE">
+<span id="_CPPv3N5faiss21OneRecallAtRCriterion4gt_IE"></span><span id="_CPPv2N5faiss21OneRecallAtRCriterion4gt_IE"></span><span id="faiss::OneRecallAtRCriterion::gt_I__std::vector:idx_t:"></span><span class="target" id="structfaiss_1_1AutoTuneCriterion_1af915fc4df215e3c8d9f71ff42d526144"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gt_I</span></span></span><a class="headerlink" href="#_CPPv4N5faiss21OneRecallAtRCriterion4gt_IE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Ground-truth indexes (size nq * gt_nnn) </p>
 </dd></dl>
 
@@ -777,7 +777,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss14ParameterSpace9add_rangeERKNSt6stringE">
-<span id="_CPPv3N5faiss14ParameterSpace9add_rangeERKNSt6stringE"></span><span id="_CPPv2N5faiss14ParameterSpace9add_rangeERKNSt6stringE"></span><span id="faiss::ParameterSpace::add_range__ssCR"></span><span class="target" id="structfaiss_1_1ParameterSpace_1a48fcb0d8a091c768dd59b4234c0733c1"></span><a class="reference internal" href="#_CPPv4N5faiss14ParameterRangeE" title="faiss::ParameterRange"><span class="n"><span class="pre">ParameterRange</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add_range</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14ParameterSpace9add_rangeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N5faiss14ParameterSpace9add_rangeERKNSt6stringE"></span><span id="_CPPv2N5faiss14ParameterSpace9add_rangeERKNSt6stringE"></span><span id="faiss::ParameterSpace::add_range__ssCR"></span><span class="target" id="structfaiss_1_1ParameterSpace_1a6fa126b026197762f34ce097833c6f7c"></span><a class="reference internal" href="#_CPPv4N5faiss14ParameterRangeE" title="faiss::ParameterRange"><span class="n"><span class="pre">ParameterRange</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add_range</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14ParameterSpace9add_rangeERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>add a new parameter (or return it if it exists) </p>
 </dd></dl>
 

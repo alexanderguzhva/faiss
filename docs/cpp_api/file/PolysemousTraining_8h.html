@@ -353,66 +353,6 @@
 <p>Copyright (c) Facebook, Inc. and its affiliates.</p>
 <p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParametersE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParametersE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParametersE"></span><span id="faiss::SimulatedAnnealingParameters"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SimulatedAnnealingParameters</span></span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParametersE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="docutils container">
-<em>#include &lt;PolysemousTraining.h&gt;</em></div>
-<p>parameters used for the simulated annealing method </p>
-<p>Subclassed by <a class="reference internal" href="../struct/structfaiss_1_1PolysemousTraining.html#structfaiss_1_1PolysemousTraining"><span class="std std-ref">faiss::PolysemousTraining</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1SimulatedAnnealingOptimizer.html#structfaiss_1_1SimulatedAnnealingOptimizer"><span class="std std-ref">faiss::SimulatedAnnealingOptimizer</span></a></p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv"></span><span id="faiss::SimulatedAnnealingParameters::SimulatedAnnealingParameters"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a28b5f88019d5d5ba8c1bb5be6d5820e7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SimulatedAnnealingParameters</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters16init_temperatureE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters16init_temperatureE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters16init_temperatureE"></span><span id="faiss::SimulatedAnnealingParameters::init_temperature__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a217f2edf539c4c5b7acb9b54129ba024"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_temperature</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.7</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters16init_temperatureE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters17temperature_decayE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters17temperature_decayE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters17temperature_decayE"></span><span id="faiss::SimulatedAnnealingParameters::temperature_decay__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1aa504c46bab0faa2ce816df8294b55ce5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_decay</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.9997893011688015</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters17temperature_decayE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters6n_iterE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters6n_iterE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters6n_iterE"></span><span id="faiss::SimulatedAnnealingParameters::n_iter__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a782872c517c1a0b8211c6179f60e6d8e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_iter</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500000</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters6n_iterE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters6n_redoE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters6n_redoE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters6n_redoE"></span><span id="faiss::SimulatedAnnealingParameters::n_redo__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1adf0dc7ec9cf5cfb6b043b2610e2beff4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_redo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters6n_redoE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters4seedE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters4seedE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters4seedE"></span><span id="faiss::SimulatedAnnealingParameters::seed__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae6b87ff7698b724937bc00c0845a71ad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">123</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters4seedE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters7verboseE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters7verboseE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters7verboseE"></span><span id="faiss::SimulatedAnnealingParameters::verbose__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae0bbe4df85cb764234d6a700d0db00c4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">verbose</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters7verboseE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters14only_bit_flipsE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters14only_bit_flipsE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters14only_bit_flipsE"></span><span id="faiss::SimulatedAnnealingParameters::only_bit_flips__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a1a92240b3cfe75d58c802dbedf4e4c2e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">only_bit_flips</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters14only_bit_flipsE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters11init_randomE">
-<span id="_CPPv3N5faiss28SimulatedAnnealingParameters11init_randomE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters11init_randomE"></span><span id="faiss::SimulatedAnnealingParameters::init_random__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a2a66766c4a8ca802c99a4c1315e197d9"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_random</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters11init_randomE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss20PermutationObjectiveE">
 <span id="_CPPv3N5faiss20PermutationObjectiveE"></span><span id="_CPPv2N5faiss20PermutationObjectiveE"></span><span id="faiss::PermutationObjective"></span><span class="target" id="structfaiss_1_1PermutationObjective"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PermutationObjective</span></span></span><a class="headerlink" href="#_CPPv4N5faiss20PermutationObjectiveE" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
@@ -442,6 +382,143 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss20PermutationObjective1nE">
 <span id="_CPPv3N5faiss20PermutationObjective1nE"></span><span id="_CPPv2N5faiss20PermutationObjective1nE"></span><span id="faiss::PermutationObjective::n__i"></span><span class="target" id="structfaiss_1_1PermutationObjective_1a81657be192b4589b13a3f51fc0765c2f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n</span></span></span><a class="headerlink" href="#_CPPv4N5faiss20PermutationObjective1nE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTrainingE">
+<span id="_CPPv3N5faiss18PolysemousTrainingE"></span><span id="_CPPv2N5faiss18PolysemousTrainingE"></span><span id="faiss::PolysemousTraining"></span><span class="target" id="structfaiss_1_1PolysemousTraining"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PolysemousTraining</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss28SimulatedAnnealingParametersE" title="faiss::SimulatedAnnealingParameters"><span class="n"><span class="pre">SimulatedAnnealingParameters</span></span></a><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTrainingE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;PolysemousTraining.h&gt;</em></div>
+<p>optimizes the order of indices in a <a class="reference internal" href="../struct/structfaiss_1_1ProductQuantizer.html#structfaiss_1_1ProductQuantizer"><span class="std std-ref">ProductQuantizer</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_tE">
+<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_tE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_tE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61ef"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optimization_type_t</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_tE" title="Permalink to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE">
+<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61efa1a5ea7330bd57a7dfeb3fa2308eb9ef1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OT_None</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE">
+<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61efa4f1f59a0027c1662a7aaf66f2a78fb23"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OT_ReproduceDistances_affine</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>default </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE">
+<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61efa514d33b85a240091cdd7b8efaf66a0b5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OT_Ranking_weighted_diff</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>same as _2, but use rank of y+ - rank of y- </p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining18PolysemousTrainingEv">
+<span id="_CPPv3N5faiss18PolysemousTraining18PolysemousTrainingEv"></span><span id="_CPPv2N5faiss18PolysemousTraining18PolysemousTrainingEv"></span><span id="faiss::PolysemousTraining::PolysemousTraining"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a7804711697c63e225d64ac07ce6a8869"></span><span class="sig-name descname"><span class="n"><span class="pre">PolysemousTraining</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining18PolysemousTrainingEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf">
+<span id="_CPPv3NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf"></span><span id="_CPPv2NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf"></span><span id="faiss::PolysemousTraining::optimize_pq_for_hamming__ProductQuantizerR.s.floatCPC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a32b0a5d6cde2c01ebde5a0c02532a94a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_pq_for_hamming</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>reorder the centroids so that the Hamming distance becomes a good approximation of the SDC distance (called by train) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf">
+<span id="_CPPv3NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf"></span><span id="_CPPv2NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf"></span><span id="faiss::PolysemousTraining::optimize_ranking__ProductQuantizerR.s.floatCPC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a139c5ad603fb0624a9f8453a93207742"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_ranking</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>called by optimize_pq_for_hamming </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer">
+<span id="_CPPv3NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer"></span><span id="_CPPv2NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer"></span><span id="faiss::PolysemousTraining::optimize_reproduce_distances__ProductQuantizerRC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1af88810697a594be25ce20ca90faa65f9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_reproduce_distances</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer" title="Permalink to this definition"></a><br /></dt>
+<dd><p>called by optimize_pq_for_hamming </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer">
+<span id="_CPPv3NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer"></span><span id="_CPPv2NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer"></span><span id="faiss::PolysemousTraining::memory_usage_per_thread__ProductQuantizerCRC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1acee2e7d023fa03f5acf2c3a295e1c377"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">memory_usage_per_thread</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer" title="Permalink to this definition"></a><br /></dt>
+<dd><p>make sure we don’t blow up the memory </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining17optimization_typeE">
+<span id="_CPPv3N5faiss18PolysemousTraining17optimization_typeE"></span><span id="_CPPv2N5faiss18PolysemousTraining17optimization_typeE"></span><span id="faiss::PolysemousTraining::optimization_type__Optimization_type_t"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a46f871a4914a2ac992aa4a4895de79e5"></span><a class="reference internal" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_tE" title="faiss::PolysemousTraining::Optimization_type_t"><span class="n"><span class="pre">Optimization_type_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimization_type</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining17optimization_typeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining18ntrain_permutationE">
+<span id="_CPPv3N5faiss18PolysemousTraining18ntrain_permutationE"></span><span id="_CPPv2N5faiss18PolysemousTraining18ntrain_permutationE"></span><span id="faiss::PolysemousTraining::ntrain_permutation__i"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a71013b1d05ce60b41159c753715af50e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ntrain_permutation</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining18ntrain_permutationE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>use 1/4 of the training points for the optimization, with max. ntrain_permutation. If ntrain_permutation == 0: train on centroids </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining17dis_weight_factorE">
+<span id="_CPPv3N5faiss18PolysemousTraining17dis_weight_factorE"></span><span id="_CPPv2N5faiss18PolysemousTraining17dis_weight_factorE"></span><span id="faiss::PolysemousTraining::dis_weight_factor__double"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a45724bac8ffec6453e2dd01294e605d7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dis_weight_factor</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining17dis_weight_factorE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>decay of exp that weights distance loss </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining10max_memoryE">
+<span id="_CPPv3N5faiss18PolysemousTraining10max_memoryE"></span><span id="_CPPv2N5faiss18PolysemousTraining10max_memoryE"></span><span id="faiss::PolysemousTraining::max_memory__s"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1acebf83040fcf2a110a3a2fc25348661a"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_memory</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining10max_memoryE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>refuse to train if it would require more than that amount of RAM </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining11log_patternE">
+<span id="_CPPv3N5faiss18PolysemousTraining11log_patternE"></span><span id="_CPPv2N5faiss18PolysemousTraining11log_patternE"></span><span id="faiss::PolysemousTraining::log_pattern__ss"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a0f5d6c6399aebaa3cfccfa5f00b24283"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">log_pattern</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining11log_patternE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining16init_temperatureE">
+<span id="_CPPv3N5faiss18PolysemousTraining16init_temperatureE"></span><span id="_CPPv2N5faiss18PolysemousTraining16init_temperatureE"></span><span id="faiss::PolysemousTraining::init_temperature__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a217f2edf539c4c5b7acb9b54129ba024"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_temperature</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.7</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining16init_temperatureE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining17temperature_decayE">
+<span id="_CPPv3N5faiss18PolysemousTraining17temperature_decayE"></span><span id="_CPPv2N5faiss18PolysemousTraining17temperature_decayE"></span><span id="faiss::PolysemousTraining::temperature_decay__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1aa504c46bab0faa2ce816df8294b55ce5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_decay</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.9997893011688015</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining17temperature_decayE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining6n_iterE">
+<span id="_CPPv3N5faiss18PolysemousTraining6n_iterE"></span><span id="_CPPv2N5faiss18PolysemousTraining6n_iterE"></span><span id="faiss::PolysemousTraining::n_iter__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a782872c517c1a0b8211c6179f60e6d8e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_iter</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500000</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining6n_iterE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining6n_redoE">
+<span id="_CPPv3N5faiss18PolysemousTraining6n_redoE"></span><span id="_CPPv2N5faiss18PolysemousTraining6n_redoE"></span><span id="faiss::PolysemousTraining::n_redo__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1adf0dc7ec9cf5cfb6b043b2610e2beff4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_redo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining6n_redoE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining4seedE">
+<span id="_CPPv3N5faiss18PolysemousTraining4seedE"></span><span id="_CPPv2N5faiss18PolysemousTraining4seedE"></span><span id="faiss::PolysemousTraining::seed__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae6b87ff7698b724937bc00c0845a71ad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">123</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining4seedE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining7verboseE">
+<span id="_CPPv3N5faiss18PolysemousTraining7verboseE"></span><span id="_CPPv2N5faiss18PolysemousTraining7verboseE"></span><span id="faiss::PolysemousTraining::verbose__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae0bbe4df85cb764234d6a700d0db00c4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">verbose</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining7verboseE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining14only_bit_flipsE">
+<span id="_CPPv3N5faiss18PolysemousTraining14only_bit_flipsE"></span><span id="_CPPv2N5faiss18PolysemousTraining14only_bit_flipsE"></span><span id="faiss::PolysemousTraining::only_bit_flips__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a1a92240b3cfe75d58c802dbedf4e4c2e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">only_bit_flips</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining14only_bit_flipsE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining11init_randomE">
+<span id="_CPPv3N5faiss18PolysemousTraining11init_randomE"></span><span id="_CPPv2N5faiss18PolysemousTraining11init_randomE"></span><span id="faiss::PolysemousTraining::init_random__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a2a66766c4a8ca802c99a4c1315e197d9"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_random</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining11init_randomE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -637,137 +714,60 @@
 </dd></dl>
 
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTrainingE">
-<span id="_CPPv3N5faiss18PolysemousTrainingE"></span><span id="_CPPv2N5faiss18PolysemousTrainingE"></span><span id="faiss::PolysemousTraining"></span><span class="target" id="structfaiss_1_1PolysemousTraining"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PolysemousTraining</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss28SimulatedAnnealingParametersE" title="faiss::SimulatedAnnealingParameters"><span class="n"><span class="pre">SimulatedAnnealingParameters</span></span></a><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTrainingE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParametersE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParametersE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParametersE"></span><span id="faiss::SimulatedAnnealingParameters"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SimulatedAnnealingParameters</span></span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParametersE" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;PolysemousTraining.h&gt;</em></div>
-<p>optimizes the order of indices in a <a class="reference internal" href="../struct/structfaiss_1_1ProductQuantizer.html#structfaiss_1_1ProductQuantizer"><span class="std std-ref">ProductQuantizer</span></a></p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
-<dl class="cpp enum">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_tE">
-<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_tE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_tE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61ef"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optimization_type_t</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_tE" title="Permalink to this definition"></a><br /></dt>
-<dd><p><em>Values:</em></p>
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE">
-<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61efa1a5ea7330bd57a7dfeb3fa2308eb9ef1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OT_None</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_t7OT_NoneE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE">
-<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61efa4f1f59a0027c1662a7aaf66f2a78fb23"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OT_ReproduceDistances_affine</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_t28OT_ReproduceDistances_affineE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>default </p>
-</dd></dl>
-
-<dl class="cpp enumerator">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE">
-<span id="_CPPv3N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE"></span><span id="_CPPv2N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1aeb5a523056697934972f95fd428f61efa514d33b85a240091cdd7b8efaf66a0b5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OT_Ranking_weighted_diff</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_t24OT_Ranking_weighted_diffE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>same as _2, but use rank of y+ - rank of y- </p>
-</dd></dl>
-
-</dd></dl>
-
-</div>
+<p>parameters used for the simulated annealing method </p>
+<p>Subclassed by <a class="reference internal" href="../struct/structfaiss_1_1PolysemousTraining.html#structfaiss_1_1PolysemousTraining"><span class="std std-ref">faiss::PolysemousTraining</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1SimulatedAnnealingOptimizer.html#structfaiss_1_1SimulatedAnnealingOptimizer"><span class="std std-ref">faiss::SimulatedAnnealingOptimizer</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining18PolysemousTrainingEv">
-<span id="_CPPv3N5faiss18PolysemousTraining18PolysemousTrainingEv"></span><span id="_CPPv2N5faiss18PolysemousTraining18PolysemousTrainingEv"></span><span id="faiss::PolysemousTraining::PolysemousTraining"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a7804711697c63e225d64ac07ce6a8869"></span><span class="sig-name descname"><span class="n"><span class="pre">PolysemousTraining</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining18PolysemousTrainingEv" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv"></span><span id="faiss::SimulatedAnnealingParameters::SimulatedAnnealingParameters"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a28b5f88019d5d5ba8c1bb5be6d5820e7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SimulatedAnnealingParameters</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters28SimulatedAnnealingParametersEv" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf">
-<span id="_CPPv3NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf"></span><span id="_CPPv2NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf"></span><span id="faiss::PolysemousTraining::optimize_pq_for_hamming__ProductQuantizerR.s.floatCPC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a32b0a5d6cde2c01ebde5a0c02532a94a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_pq_for_hamming</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining23optimize_pq_for_hammingER16ProductQuantizer6size_tPKf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>reorder the centroids so that the Hamming distance becomes a good approximation of the SDC distance (called by train) </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf">
-<span id="_CPPv3NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf"></span><span id="_CPPv2NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf"></span><span id="faiss::PolysemousTraining::optimize_ranking__ProductQuantizerR.s.floatCPC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a139c5ad603fb0624a9f8453a93207742"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_ranking</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining16optimize_rankingER16ProductQuantizer6size_tPKf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>called by optimize_pq_for_hamming </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer">
-<span id="_CPPv3NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer"></span><span id="_CPPv2NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer"></span><span id="faiss::PolysemousTraining::optimize_reproduce_distances__ProductQuantizerRC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1af88810697a594be25ce20ca90faa65f9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_reproduce_distances</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining28optimize_reproduce_distancesER16ProductQuantizer" title="Permalink to this definition"></a><br /></dt>
-<dd><p>called by optimize_pq_for_hamming </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer">
-<span id="_CPPv3NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer"></span><span id="_CPPv2NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer"></span><span id="faiss::PolysemousTraining::memory_usage_per_thread__ProductQuantizerCRC"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1acee2e7d023fa03f5acf2c3a295e1c377"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">memory_usage_per_thread</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="ProductQuantizer_8h.html#_CPPv4N5faiss16ProductQuantizerE" title="faiss::ProductQuantizer"><span class="n"><span class="pre">ProductQuantizer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pq</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5faiss18PolysemousTraining23memory_usage_per_threadERK16ProductQuantizer" title="Permalink to this definition"></a><br /></dt>
-<dd><p>make sure we don’t blow up the memory </p>
-</dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining17optimization_typeE">
-<span id="_CPPv3N5faiss18PolysemousTraining17optimization_typeE"></span><span id="_CPPv2N5faiss18PolysemousTraining17optimization_typeE"></span><span id="faiss::PolysemousTraining::optimization_type__Optimization_type_t"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a46f871a4914a2ac992aa4a4895de79e5"></span><a class="reference internal" href="#_CPPv4N5faiss18PolysemousTraining19Optimization_type_tE" title="faiss::PolysemousTraining::Optimization_type_t"><span class="n"><span class="pre">Optimization_type_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimization_type</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining17optimization_typeE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters16init_temperatureE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters16init_temperatureE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters16init_temperatureE"></span><span id="faiss::SimulatedAnnealingParameters::init_temperature__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a217f2edf539c4c5b7acb9b54129ba024"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_temperature</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.7</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters16init_temperatureE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining18ntrain_permutationE">
-<span id="_CPPv3N5faiss18PolysemousTraining18ntrain_permutationE"></span><span id="_CPPv2N5faiss18PolysemousTraining18ntrain_permutationE"></span><span id="faiss::PolysemousTraining::ntrain_permutation__i"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a71013b1d05ce60b41159c753715af50e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ntrain_permutation</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining18ntrain_permutationE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>use 1/4 of the training points for the optimization, with max. ntrain_permutation. If ntrain_permutation == 0: train on centroids </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining17dis_weight_factorE">
-<span id="_CPPv3N5faiss18PolysemousTraining17dis_weight_factorE"></span><span id="_CPPv2N5faiss18PolysemousTraining17dis_weight_factorE"></span><span id="faiss::PolysemousTraining::dis_weight_factor__double"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a45724bac8ffec6453e2dd01294e605d7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dis_weight_factor</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining17dis_weight_factorE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>decay of exp that weights distance loss </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining10max_memoryE">
-<span id="_CPPv3N5faiss18PolysemousTraining10max_memoryE"></span><span id="_CPPv2N5faiss18PolysemousTraining10max_memoryE"></span><span id="faiss::PolysemousTraining::max_memory__s"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1acebf83040fcf2a110a3a2fc25348661a"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_memory</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining10max_memoryE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>refuse to train if it would require more than that amount of RAM </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining11log_patternE">
-<span id="_CPPv3N5faiss18PolysemousTraining11log_patternE"></span><span id="_CPPv2N5faiss18PolysemousTraining11log_patternE"></span><span id="faiss::PolysemousTraining::log_pattern__ss"></span><span class="target" id="structfaiss_1_1PolysemousTraining_1a0f5d6c6399aebaa3cfccfa5f00b24283"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">log_pattern</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining11log_patternE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters17temperature_decayE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters17temperature_decayE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters17temperature_decayE"></span><span id="faiss::SimulatedAnnealingParameters::temperature_decay__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1aa504c46bab0faa2ce816df8294b55ce5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_decay</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.9997893011688015</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters17temperature_decayE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining16init_temperatureE">
-<span id="_CPPv3N5faiss18PolysemousTraining16init_temperatureE"></span><span id="_CPPv2N5faiss18PolysemousTraining16init_temperatureE"></span><span id="faiss::PolysemousTraining::init_temperature__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a217f2edf539c4c5b7acb9b54129ba024"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_temperature</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.7</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining16init_temperatureE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters6n_iterE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters6n_iterE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters6n_iterE"></span><span id="faiss::SimulatedAnnealingParameters::n_iter__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a782872c517c1a0b8211c6179f60e6d8e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_iter</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500000</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters6n_iterE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining17temperature_decayE">
-<span id="_CPPv3N5faiss18PolysemousTraining17temperature_decayE"></span><span id="_CPPv2N5faiss18PolysemousTraining17temperature_decayE"></span><span id="faiss::PolysemousTraining::temperature_decay__double"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1aa504c46bab0faa2ce816df8294b55ce5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">temperature_decay</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.9997893011688015</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining17temperature_decayE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters6n_redoE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters6n_redoE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters6n_redoE"></span><span id="faiss::SimulatedAnnealingParameters::n_redo__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1adf0dc7ec9cf5cfb6b043b2610e2beff4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_redo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters6n_redoE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining6n_iterE">
-<span id="_CPPv3N5faiss18PolysemousTraining6n_iterE"></span><span id="_CPPv2N5faiss18PolysemousTraining6n_iterE"></span><span id="faiss::PolysemousTraining::n_iter__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a782872c517c1a0b8211c6179f60e6d8e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_iter</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500000</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining6n_iterE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters4seedE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters4seedE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters4seedE"></span><span id="faiss::SimulatedAnnealingParameters::seed__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae6b87ff7698b724937bc00c0845a71ad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">123</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters4seedE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining6n_redoE">
-<span id="_CPPv3N5faiss18PolysemousTraining6n_redoE"></span><span id="_CPPv2N5faiss18PolysemousTraining6n_redoE"></span><span id="faiss::PolysemousTraining::n_redo__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1adf0dc7ec9cf5cfb6b043b2610e2beff4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_redo</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining6n_redoE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters7verboseE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters7verboseE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters7verboseE"></span><span id="faiss::SimulatedAnnealingParameters::verbose__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae0bbe4df85cb764234d6a700d0db00c4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">verbose</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters7verboseE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining4seedE">
-<span id="_CPPv3N5faiss18PolysemousTraining4seedE"></span><span id="_CPPv2N5faiss18PolysemousTraining4seedE"></span><span id="faiss::PolysemousTraining::seed__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae6b87ff7698b724937bc00c0845a71ad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seed</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">123</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining4seedE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters14only_bit_flipsE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters14only_bit_flipsE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters14only_bit_flipsE"></span><span id="faiss::SimulatedAnnealingParameters::only_bit_flips__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a1a92240b3cfe75d58c802dbedf4e4c2e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">only_bit_flips</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters14only_bit_flipsE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining7verboseE">
-<span id="_CPPv3N5faiss18PolysemousTraining7verboseE"></span><span id="_CPPv2N5faiss18PolysemousTraining7verboseE"></span><span id="faiss::PolysemousTraining::verbose__i"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1ae0bbe4df85cb764234d6a700d0db00c4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">verbose</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining7verboseE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining14only_bit_flipsE">
-<span id="_CPPv3N5faiss18PolysemousTraining14only_bit_flipsE"></span><span id="_CPPv2N5faiss18PolysemousTraining14only_bit_flipsE"></span><span id="faiss::PolysemousTraining::only_bit_flips__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a1a92240b3cfe75d58c802dbedf4e4c2e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">only_bit_flips</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining14only_bit_flipsE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18PolysemousTraining11init_randomE">
-<span id="_CPPv3N5faiss18PolysemousTraining11init_randomE"></span><span id="_CPPv2N5faiss18PolysemousTraining11init_randomE"></span><span id="faiss::PolysemousTraining::init_random__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a2a66766c4a8ca802c99a4c1315e197d9"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_random</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss18PolysemousTraining11init_randomE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss28SimulatedAnnealingParameters11init_randomE">
+<span id="_CPPv3N5faiss28SimulatedAnnealingParameters11init_randomE"></span><span id="_CPPv2N5faiss28SimulatedAnnealingParameters11init_randomE"></span><span id="faiss::SimulatedAnnealingParameters::init_random__b"></span><span class="target" id="structfaiss_1_1SimulatedAnnealingParameters_1a2a66766c4a8ca802c99a4c1315e197d9"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_random</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss28SimulatedAnnealingParameters11init_randomE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 </div>

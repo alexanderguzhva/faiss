@@ -410,13 +410,13 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu19getDevicePropertiesEi">
-<span id="_CPPv3N5faiss3gpu19getDevicePropertiesEi"></span><span id="_CPPv2N5faiss3gpu19getDevicePropertiesEi"></span><span id="faiss::gpu::getDeviceProperties__i"></span><span class="target" id="DeviceUtils_8h_1a5ccce882c56a92a4830ce2fc7bedbc72"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cudaDeviceProp</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getDeviceProperties</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">device</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss3gpu19getDevicePropertiesEi" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N5faiss3gpu19getDevicePropertiesEi"></span><span id="_CPPv2N5faiss3gpu19getDevicePropertiesEi"></span><span id="faiss::gpu::getDeviceProperties__i"></span><span class="target" id="DeviceUtils_8h_1a542b2a71bc3a5e411606a7adca087acc"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cudaDeviceProp</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getDeviceProperties</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">device</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss3gpu19getDevicePropertiesEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns a cached cudaDeviceProp for the given device. </p>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu26getCurrentDevicePropertiesEv">
-<span id="_CPPv3N5faiss3gpu26getCurrentDevicePropertiesEv"></span><span id="_CPPv2N5faiss3gpu26getCurrentDevicePropertiesEv"></span><span id="faiss::gpu::getCurrentDeviceProperties"></span><span class="target" id="DeviceUtils_8h_1af758bcee021c4fd616724dbf287e292a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cudaDeviceProp</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCurrentDeviceProperties</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss3gpu26getCurrentDevicePropertiesEv" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N5faiss3gpu26getCurrentDevicePropertiesEv"></span><span id="_CPPv2N5faiss3gpu26getCurrentDevicePropertiesEv"></span><span id="faiss::gpu::getCurrentDeviceProperties"></span><span class="target" id="DeviceUtils_8h_1a210fa34b658677ebf264f99fb84ba166"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cudaDeviceProp</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCurrentDeviceProperties</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss3gpu26getCurrentDevicePropertiesEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Returns the cached cudaDeviceProp for the current device. </p>
 </dd></dl>
 
@@ -534,35 +534,6 @@
 
 </div>
 <dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScopeE">
-<span id="_CPPv3N5faiss3gpu11DeviceScopeE"></span><span id="_CPPv2N5faiss3gpu11DeviceScopeE"></span><span id="faiss::gpu::DeviceScope"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeviceScope</span></span></span><br /></dt>
-<dd><div class="docutils container">
-<em>#include &lt;DeviceUtils.h&gt;</em></div>
-<p>RAII object to set the current device, and restore the previous device upon destruction </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScope11DeviceScopeEi">
-<span id="_CPPv3N5faiss3gpu11DeviceScope11DeviceScopeEi"></span><span id="_CPPv2N5faiss3gpu11DeviceScope11DeviceScopeEi"></span><span id="faiss::gpu::DeviceScope::DeviceScope__i"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope_1a0a7a0d5443adc242b076a17c2b0e8db9"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeviceScope</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">device</span></span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScopeD0Ev">
-<span id="_CPPv3N5faiss3gpu11DeviceScopeD0Ev"></span><span id="_CPPv2N5faiss3gpu11DeviceScopeD0Ev"></span><span id="faiss::gpu::DeviceScope::~DeviceScope"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope_1a418b10428f83a90c6b7fc4aad6cd9cfe"></span><span class="sig-name descname"><span class="n"><span class="pre">~DeviceScope</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScope11prevDevice_E">
-<span id="_CPPv3N5faiss3gpu11DeviceScope11prevDevice_E"></span><span id="_CPPv2N5faiss3gpu11DeviceScope11prevDevice_E"></span><span id="faiss::gpu::DeviceScope::prevDevice___i"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope_1a9ebf7a524bd0fa7210dd851d7d2baa5c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">prevDevice_</span></span></span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu17CublasHandleScopeE">
 <span id="_CPPv3N5faiss3gpu17CublasHandleScopeE"></span><span id="_CPPv2N5faiss3gpu17CublasHandleScopeE"></span><span id="faiss::gpu::CublasHandleScope"></span><span class="target" id="classfaiss_1_1gpu_1_1CublasHandleScope"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CublasHandleScope</span></span></span><br /></dt>
 <dd><div class="docutils container">
@@ -641,12 +612,12 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu9CudaEventaSERR9CudaEvent">
-<span id="_CPPv3N5faiss3gpu9CudaEventaSERR9CudaEvent"></span><span id="_CPPv2N5faiss3gpu9CudaEventaSERR9CudaEvent"></span><span id="faiss::gpu::CudaEvent::assign-operator__CudaEventRR"></span><span class="target" id="classfaiss_1_1gpu_1_1CudaEvent_1a19acf4ec7faca9bddda2a23f4b1371d3"></span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">event</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<span id="_CPPv3N5faiss3gpu9CudaEventaSERR9CudaEvent"></span><span id="_CPPv2N5faiss3gpu9CudaEventaSERR9CudaEvent"></span><span id="faiss::gpu::CudaEvent::assign-operator__CudaEventRR"></span><span class="target" id="classfaiss_1_1gpu_1_1CudaEvent_1abd1fe2e8b9152442bc154f66f5a227e3"></span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">event</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu9CudaEventaSER9CudaEvent">
-<span id="_CPPv3N5faiss3gpu9CudaEventaSER9CudaEvent"></span><span id="_CPPv2N5faiss3gpu9CudaEventaSER9CudaEvent"></span><span id="faiss::gpu::CudaEvent::assign-operator__CudaEventR"></span><span class="target" id="classfaiss_1_1gpu_1_1CudaEvent_1a204899e640da688e4c5c526656ab0ffc"></span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">event</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><br /></dt>
+<span id="_CPPv3N5faiss3gpu9CudaEventaSER9CudaEvent"></span><span id="_CPPv2N5faiss3gpu9CudaEventaSER9CudaEvent"></span><span id="faiss::gpu::CudaEvent::assign-operator__CudaEventR"></span><span class="target" id="classfaiss_1_1gpu_1_1CudaEvent_1a73bd505515cad0145c25f037a76902fb"></span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1CudaEvent.html#_CPPv4N5faiss3gpu9CudaEventE" title="faiss::gpu::CudaEvent"><span class="n"><span class="pre">CudaEvent</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">event</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -655,6 +626,35 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu9CudaEvent6event_E">
 <span id="_CPPv3N5faiss3gpu9CudaEvent6event_E"></span><span id="_CPPv2N5faiss3gpu9CudaEvent6event_E"></span><span id="faiss::gpu::CudaEvent::event___cudaEvent_t"></span><span class="target" id="classfaiss_1_1gpu_1_1CudaEvent_1a8aaeb33f793e5495ca2d12f76602b4e2"></span><span class="n"><span class="pre">cudaEvent_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">event_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScopeE">
+<span id="_CPPv3N5faiss3gpu11DeviceScopeE"></span><span id="_CPPv2N5faiss3gpu11DeviceScopeE"></span><span id="faiss::gpu::DeviceScope"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeviceScope</span></span></span><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;DeviceUtils.h&gt;</em></div>
+<p>RAII object to set the current device, and restore the previous device upon destruction </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScope11DeviceScopeEi">
+<span id="_CPPv3N5faiss3gpu11DeviceScope11DeviceScopeEi"></span><span id="_CPPv2N5faiss3gpu11DeviceScope11DeviceScopeEi"></span><span id="faiss::gpu::DeviceScope::DeviceScope__i"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope_1a0a7a0d5443adc242b076a17c2b0e8db9"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DeviceScope</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">device</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScopeD0Ev">
+<span id="_CPPv3N5faiss3gpu11DeviceScopeD0Ev"></span><span id="_CPPv2N5faiss3gpu11DeviceScopeD0Ev"></span><span id="faiss::gpu::DeviceScope::~DeviceScope"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope_1a418b10428f83a90c6b7fc4aad6cd9cfe"></span><span class="sig-name descname"><span class="n"><span class="pre">~DeviceScope</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11DeviceScope11prevDevice_E">
+<span id="_CPPv3N5faiss3gpu11DeviceScope11prevDevice_E"></span><span id="_CPPv2N5faiss3gpu11DeviceScope11prevDevice_E"></span><span id="faiss::gpu::DeviceScope::prevDevice___i"></span><span class="target" id="classfaiss_1_1gpu_1_1DeviceScope_1a9ebf7a524bd0fa7210dd851d7d2baa5c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">prevDevice_</span></span></span><br /></dt>
 <dd></dd></dl>
 
 </div>
