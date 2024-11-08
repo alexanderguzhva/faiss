@@ -241,6 +241,7 @@
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx2_8h.html">File code_distance-avx2.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx512_8h.html">File code_distance-avx512.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-generic_8h.html">File code_distance-generic.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code__distance-sve_8h.html">File code_distance-sve.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance_8h.html">File code_distance.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="common_8h.html">File common.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="distances_8h.html">File distances.h</a></li>
@@ -324,69 +325,28 @@
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
-<dd><p>Copyright (c) Facebook, Inc. and its affiliates.</p>
+<dd><p>Implementation of k-means clustering with many variants.</p>
+<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
 <p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implementation of k-means clustering with many variants.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. <a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. PQ4 SIMD packing and accumulation functions</p>
+<p><a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
+<p>PQ4 SIMD packing and accumulation functions</p>
 <p>The basic kernel accumulates nq query vectors with bbs = nb * 2 * 16 vectors and produces an output matrix for that. It is interesting for nq * nb &lt;= 4, otherwise register spilling becomes too large.</p>
 <p>The implementation of these functions is spread over 3 cpp files to reduce parallel compile times. Templates are instantiated explicitly.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. This file contains callbacks for kernels that compute distances.</p>
+<p>This file contains callbacks for kernels that compute distances.</p>
 <p>Throughout the library, vectors are provided as float * pointers. Most algorithms can be optimized when several vectors are processed (added/searched) together in a batch. In this case, they are passed in as a matrix. When n vectors of size d are provided as float * x, component j of vector i is</p>
 <p>x[ i * d + j ]</p>
 <p>where 0 &lt;= i &lt; n and 0 &lt;= j &lt; d. In other words, matrices are always compact. When specifying the size of the matrix, we call it an n*d matrix, which implies a row-major storage.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
+<p>I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
 <p>The read functions return objects that should be deallocated with delete. All references within these objectes are owned by the object.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Definition of inverted lists + a few common classes that implement the interface.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. In this file are the implementations of extra metrics beyond L2 and inner product</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
+<p>Definition of inverted lists + a few common classes that implement the interface.</p>
+<p>Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
+<p>In this file are the implementations of extra metrics beyond L2 and inner product</p>
+<p>Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
+<p>Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpuE">
 <span id="_CPPv3N5faiss3gpuE"></span><span id="_CPPv2N5faiss3gpuE"></span><span id="faiss::gpu"></span><span class="target" id="namespacefaiss_1_1gpu"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpu</span></span></span><br /></dt>
 <dd><dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimerE">
-<span id="_CPPv3N5faiss3gpu8CpuTimerE"></span><span id="_CPPv2N5faiss3gpu8CpuTimerE"></span><span id="faiss::gpu::CpuTimer"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CpuTimer</span></span></span><br /></dt>
-<dd><div class="docutils container">
-<em>#include &lt;Timer.h&gt;</em></div>
-<p>CPU wallclock elapsed timer. </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimer8CpuTimerEv">
-<span id="_CPPv3N5faiss3gpu8CpuTimer8CpuTimerEv"></span><span id="_CPPv2N5faiss3gpu8CpuTimer8CpuTimerEv"></span><span id="faiss::gpu::CpuTimer::CpuTimer"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer_1af2f8e832b4c5425e152834ae7aa2af49"></span><span class="sig-name descname"><span class="n"><span class="pre">CpuTimer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
-<dd><p>Creates and starts a new timer. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimer19elapsedMillisecondsEv">
-<span id="_CPPv3N5faiss3gpu8CpuTimer19elapsedMillisecondsEv"></span><span id="_CPPv2N5faiss3gpu8CpuTimer19elapsedMillisecondsEv"></span><span id="faiss::gpu::CpuTimer::elapsedMilliseconds"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer_1a4a2795debf10bc7eb904d62356e41f0d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elapsedMilliseconds</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
-<dd><p>Returns elapsed time in milliseconds. </p>
-</dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimer6start_E">
-<span id="_CPPv3N5faiss3gpu8CpuTimer6start_E"></span><span id="_CPPv2N5faiss3gpu8CpuTimer6start_E"></span><span id="faiss::gpu::CpuTimer::start___std::chrono::time_point:std::chrono::steady_clock:"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer_1a6714256dcd528ad4c33d7c9eb6969ac4"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">chrono</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">time_point</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">chrono</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">steady_clock</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">start_</span></span></span><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11KernelTimerE">
 <span id="_CPPv3N5faiss3gpu11KernelTimerE"></span><span id="_CPPv2N5faiss3gpu11KernelTimerE"></span><span id="faiss::gpu::KernelTimer"></span><span class="target" id="classfaiss_1_1gpu_1_1KernelTimer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">KernelTimer</span></span></span><br /></dt>
 <dd><div class="docutils container">
@@ -433,6 +393,37 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu11KernelTimer6valid_E">
 <span id="_CPPv3N5faiss3gpu11KernelTimer6valid_E"></span><span id="_CPPv2N5faiss3gpu11KernelTimer6valid_E"></span><span id="faiss::gpu::KernelTimer::valid___b"></span><span class="target" id="classfaiss_1_1gpu_1_1KernelTimer_1a7582d3003da51096c5740c8773d9c3ec"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">valid_</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimerE">
+<span id="_CPPv3N5faiss3gpu8CpuTimerE"></span><span id="_CPPv2N5faiss3gpu8CpuTimerE"></span><span id="faiss::gpu::CpuTimer"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CpuTimer</span></span></span><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Timer.h&gt;</em></div>
+<p>CPU wallclock elapsed timer. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimer8CpuTimerEv">
+<span id="_CPPv3N5faiss3gpu8CpuTimer8CpuTimerEv"></span><span id="_CPPv2N5faiss3gpu8CpuTimer8CpuTimerEv"></span><span id="faiss::gpu::CpuTimer::CpuTimer"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer_1af2f8e832b4c5425e152834ae7aa2af49"></span><span class="sig-name descname"><span class="n"><span class="pre">CpuTimer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates and starts a new timer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimer19elapsedMillisecondsEv">
+<span id="_CPPv3N5faiss3gpu8CpuTimer19elapsedMillisecondsEv"></span><span id="_CPPv2N5faiss3gpu8CpuTimer19elapsedMillisecondsEv"></span><span id="faiss::gpu::CpuTimer::elapsedMilliseconds"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer_1a4a2795debf10bc7eb904d62356e41f0d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elapsedMilliseconds</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Returns elapsed time in milliseconds. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu8CpuTimer6start_E">
+<span id="_CPPv3N5faiss3gpu8CpuTimer6start_E"></span><span id="_CPPv2N5faiss3gpu8CpuTimer6start_E"></span><span id="faiss::gpu::CpuTimer::start___std::chrono::time_point:std::chrono::steady_clock:"></span><span class="target" id="classfaiss_1_1gpu_1_1CpuTimer_1a6714256dcd528ad4c33d7c9eb6969ac4"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">chrono</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">time_point</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">chrono</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">steady_clock</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">start_</span></span></span><br /></dt>
 <dd></dd></dl>
 
 </div>

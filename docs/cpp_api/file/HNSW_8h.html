@@ -241,6 +241,7 @@
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx2_8h.html">File code_distance-avx2.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx512_8h.html">File code_distance-avx512.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-generic_8h.html">File code_distance-generic.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code__distance-sve_8h.html">File code_distance-sve.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance_8h.html">File code_distance.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="common_8h.html">File common.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="distances_8h.html">File distances.h</a></li>
@@ -324,34 +325,24 @@
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
-<dd><p>Copyright (c) Facebook, Inc. and its affiliates.</p>
+<dd><p>Implementation of k-means clustering with many variants.</p>
+<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
 <p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implementation of k-means clustering with many variants.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. <a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. PQ4 SIMD packing and accumulation functions</p>
+<p><a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
+<p>PQ4 SIMD packing and accumulation functions</p>
 <p>The basic kernel accumulates nq query vectors with bbs = nb * 2 * 16 vectors and produces an output matrix for that. It is interesting for nq * nb &lt;= 4, otherwise register spilling becomes too large.</p>
 <p>The implementation of these functions is spread over 3 cpp files to reduce parallel compile times. Templates are instantiated explicitly.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. This file contains callbacks for kernels that compute distances.</p>
+<p>This file contains callbacks for kernels that compute distances.</p>
 <p>Throughout the library, vectors are provided as float * pointers. Most algorithms can be optimized when several vectors are processed (added/searched) together in a batch. In this case, they are passed in as a matrix. When n vectors of size d are provided as float * x, component j of vector i is</p>
 <p>x[ i * d + j ]</p>
 <p>where 0 &lt;= i &lt; n and 0 &lt;= j &lt; d. In other words, matrices are always compact. When specifying the size of the matrix, we call it an n*d matrix, which implies a row-major storage.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
+<p>I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
 <p>The read functions return objects that should be deallocated with delete. All references within these objectes are owned by the object.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Definition of inverted lists + a few common classes that implement the interface.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. In this file are the implementations of extra metrics beyond L2 and inner product</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
+<p>Definition of inverted lists + a few common classes that implement the interface.</p>
+<p>Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
+<p>In this file are the implementations of extra metrics beyond L2 and inner product</p>
+<p>Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
+<p>Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="cpp function">
@@ -366,7 +357,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats">
-<span id="_CPPv3N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats"></span><span id="_CPPv2N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats"></span><span id="faiss::search_from_candidate_unbounded__HNSWCR.HNSW::NodeCR.DistanceComputerR.i.VisitedTableP.HNSWStatsR"></span><span class="target" id="namespacefaiss_1a7fcc71c4eb814ea582ad9ffb0c909d7a"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">priority_queue</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N5faiss4HNSWE" title="faiss::HNSW"><span class="n"><span class="pre">HNSW</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss4HNSW4NodeE" title="faiss::HNSW::Node"><span class="n"><span class="pre">Node</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_from_candidate_unbounded</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss4HNSWE" title="faiss::HNSW"><span class="n"><span class="pre">HNSW</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">hnsw</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss4HNSWE" title="faiss::HNSW"><span class="n"><span class="pre">HNSW</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss4HNSW4NodeE" title="faiss::HNSW::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">node</span></span>, <a class="reference internal" href="DistanceComputer_8h.html#_CPPv4N5faiss16DistanceComputerE" title="faiss::DistanceComputer"><span class="n"><span class="pre">DistanceComputer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qdis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ef</span></span>, <a class="reference internal" href="AuxIndexStructures_8h.html#_CPPv4N5faiss12VisitedTableE" title="faiss::VisitedTable"><span class="n"><span class="pre">VisitedTable</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vt</span></span>, <a class="reference internal" href="#_CPPv4N5faiss9HNSWStatsE" title="faiss::HNSWStats"><span class="n"><span class="pre">HNSWStats</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stats</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats"></span><span id="_CPPv2N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats"></span><span id="faiss::search_from_candidate_unbounded__HNSWCR.HNSW::NodeCR.DistanceComputerR.i.VisitedTableP.HNSWStatsR"></span><span class="target" id="namespacefaiss_1ab54b6b6ec63e400ffd053609ab833ed9"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">priority_queue</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N5faiss4HNSWE" title="faiss::HNSW"><span class="n"><span class="pre">HNSW</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss4HNSW4NodeE" title="faiss::HNSW::Node"><span class="n"><span class="pre">Node</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search_from_candidate_unbounded</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss4HNSWE" title="faiss::HNSW"><span class="n"><span class="pre">HNSW</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">hnsw</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N5faiss4HNSWE" title="faiss::HNSW"><span class="n"><span class="pre">HNSW</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss4HNSW4NodeE" title="faiss::HNSW::Node"><span class="n"><span class="pre">Node</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">node</span></span>, <a class="reference internal" href="DistanceComputer_8h.html#_CPPv4N5faiss16DistanceComputerE" title="faiss::DistanceComputer"><span class="n"><span class="pre">DistanceComputer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">qdis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ef</span></span>, <a class="reference internal" href="AuxIndexStructures_8h.html#_CPPv4N5faiss12VisitedTableE" title="faiss::VisitedTable"><span class="n"><span class="pre">VisitedTable</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vt</span></span>, <a class="reference internal" href="#_CPPv4N5faiss9HNSWStatsE" title="faiss::HNSWStats"><span class="n"><span class="pre">HNSWStats</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stats</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss31search_from_candidate_unboundedERK4HNSWRKN4HNSW4NodeER16DistanceComputeriP12VisitedTableR9HNSWStats" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -378,6 +369,37 @@
 <dd></dd></dl>
 
 </div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSWE">
+<span id="_CPPv3N5faiss20SearchParametersHNSWE"></span><span id="_CPPv2N5faiss20SearchParametersHNSWE"></span><span id="faiss::SearchParametersHNSW"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SearchParametersHNSW</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss16SearchParametersE" title="faiss::SearchParameters"><span class="n"><span class="pre">SearchParameters</span></span></a><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSWE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSWD0Ev">
+<span id="_CPPv3N5faiss20SearchParametersHNSWD0Ev"></span><span id="_CPPv2N5faiss20SearchParametersHNSWD0Ev"></span><span id="faiss::SearchParametersHNSW::~SearchParametersHNSW"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1a3b7ae6bc1c8c9ba88632177ee5915aa7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~SearchParametersHNSW</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSWD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSW8efSearchE">
+<span id="_CPPv3N5faiss20SearchParametersHNSW8efSearchE"></span><span id="_CPPv2N5faiss20SearchParametersHNSW8efSearchE"></span><span id="faiss::SearchParametersHNSW::efSearch__i"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1a97ab6982ca3de6f8420d8e445e925196"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">efSearch</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">16</span></span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSW8efSearchE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSW23check_relative_distanceE">
+<span id="_CPPv3N5faiss20SearchParametersHNSW23check_relative_distanceE"></span><span id="_CPPv2N5faiss20SearchParametersHNSW23check_relative_distanceE"></span><span id="faiss::SearchParametersHNSW::check_relative_distance__b"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1ae3b677b9eb7554502912e60797dc5c2f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check_relative_distance</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSW23check_relative_distanceE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSW13bounded_queueE">
+<span id="_CPPv3N5faiss20SearchParametersHNSW13bounded_queueE"></span><span id="_CPPv2N5faiss20SearchParametersHNSW13bounded_queueE"></span><span id="faiss::SearchParametersHNSW::bounded_queue__b"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1a7e0cb8fd6ab25707248a9de030baf744"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bounded_queue</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSW13bounded_queueE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss4HNSWE">
 <span id="_CPPv3N5faiss4HNSWE"></span><span id="_CPPv2N5faiss4HNSWE"></span><span id="faiss::HNSW"></span><span class="target" id="structfaiss_1_1HNSW"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HNSW</span></span></span><a class="headerlink" href="#_CPPv4N5faiss4HNSWE" title="Permalink to this definition"></a><br /></dt>
@@ -771,37 +793,6 @@
 <span id="_CPPv3N5faiss9HNSWStats5nhopsE"></span><span id="_CPPv2N5faiss9HNSWStats5nhopsE"></span><span id="faiss::HNSWStats::nhops__s"></span><span class="target" id="structfaiss_1_1HNSWStats_1a65c0179c658e493759bed098677a51d4"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nhops</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss9HNSWStats5nhopsE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>number of distances computed </p>
 </dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSWE">
-<span id="_CPPv3N5faiss20SearchParametersHNSWE"></span><span id="_CPPv2N5faiss20SearchParametersHNSWE"></span><span id="faiss::SearchParametersHNSW"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SearchParametersHNSW</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss16SearchParametersE" title="faiss::SearchParameters"><span class="n"><span class="pre">SearchParameters</span></span></a><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSWE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSWD0Ev">
-<span id="_CPPv3N5faiss20SearchParametersHNSWD0Ev"></span><span id="_CPPv2N5faiss20SearchParametersHNSWD0Ev"></span><span id="faiss::SearchParametersHNSW::~SearchParametersHNSW"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1a3b7ae6bc1c8c9ba88632177ee5915aa7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~SearchParametersHNSW</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSWD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSW8efSearchE">
-<span id="_CPPv3N5faiss20SearchParametersHNSW8efSearchE"></span><span id="_CPPv2N5faiss20SearchParametersHNSW8efSearchE"></span><span id="faiss::SearchParametersHNSW::efSearch__i"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1a97ab6982ca3de6f8420d8e445e925196"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">efSearch</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">16</span></span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSW8efSearchE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSW23check_relative_distanceE">
-<span id="_CPPv3N5faiss20SearchParametersHNSW23check_relative_distanceE"></span><span id="_CPPv2N5faiss20SearchParametersHNSW23check_relative_distanceE"></span><span id="faiss::SearchParametersHNSW::check_relative_distance__b"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1ae3b677b9eb7554502912e60797dc5c2f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">check_relative_distance</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSW23check_relative_distanceE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss20SearchParametersHNSW13bounded_queueE">
-<span id="_CPPv3N5faiss20SearchParametersHNSW13bounded_queueE"></span><span id="_CPPv2N5faiss20SearchParametersHNSW13bounded_queueE"></span><span id="faiss::SearchParametersHNSW::bounded_queue__b"></span><span class="target" id="structfaiss_1_1SearchParametersHNSW_1a7e0cb8fd6ab25707248a9de030baf744"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bounded_queue</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N5faiss20SearchParametersHNSW13bounded_queueE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
 
 </div>
 </dd></dl>

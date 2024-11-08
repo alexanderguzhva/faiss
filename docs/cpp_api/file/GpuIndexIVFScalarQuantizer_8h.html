@@ -241,6 +241,7 @@
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx2_8h.html">File code_distance-avx2.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx512_8h.html">File code_distance-avx512.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-generic_8h.html">File code_distance-generic.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code__distance-sve_8h.html">File code_distance-sve.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance_8h.html">File code_distance.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="common_8h.html">File common.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="distances_8h.html">File distances.h</a></li>
@@ -324,38 +325,42 @@
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
-<dd><p>Copyright (c) Facebook, Inc. and its affiliates.</p>
+<dd><p>Implementation of k-means clustering with many variants.</p>
+<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
 <p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implementation of k-means clustering with many variants.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. <a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. PQ4 SIMD packing and accumulation functions</p>
+<p><a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
+<p>PQ4 SIMD packing and accumulation functions</p>
 <p>The basic kernel accumulates nq query vectors with bbs = nb * 2 * 16 vectors and produces an output matrix for that. It is interesting for nq * nb &lt;= 4, otherwise register spilling becomes too large.</p>
 <p>The implementation of these functions is spread over 3 cpp files to reduce parallel compile times. Templates are instantiated explicitly.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. This file contains callbacks for kernels that compute distances.</p>
+<p>This file contains callbacks for kernels that compute distances.</p>
 <p>Throughout the library, vectors are provided as float * pointers. Most algorithms can be optimized when several vectors are processed (added/searched) together in a batch. In this case, they are passed in as a matrix. When n vectors of size d are provided as float * x, component j of vector i is</p>
 <p>x[ i * d + j ]</p>
 <p>where 0 &lt;= i &lt; n and 0 &lt;= j &lt; d. In other words, matrices are always compact. When specifying the size of the matrix, we call it an n*d matrix, which implies a row-major storage.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
+<p>I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
 <p>The read functions return objects that should be deallocated with delete. All references within these objectes are owned by the object.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Definition of inverted lists + a few common classes that implement the interface.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. In this file are the implementations of extra metrics beyond L2 and inner product</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
+<p>Definition of inverted lists + a few common classes that implement the interface.</p>
+<p>Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
+<p>In this file are the implementations of extra metrics beyond L2 and inner product</p>
+<p>Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
+<p>Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpuE">
 <span id="_CPPv3N5faiss3gpuE"></span><span id="_CPPv2N5faiss3gpuE"></span><span id="faiss::gpu"></span><span class="target" id="namespacefaiss_1_1gpu"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">gpu</span></span></span><br /></dt>
-<dd><dl class="cpp class">
+<dd><dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE">
+<span id="_CPPv3N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE"></span><span id="_CPPv2N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE"></span><span id="faiss::gpu::GpuIndexIVFScalarQuantizerConfig"></span><span class="target" id="structfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizerConfig"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuIndexIVFScalarQuantizerConfig</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="DeviceUtils_8h.html#_CPPv4N5faiss3gpuE" title="faiss::gpu"><span class="n"><span class="pre">gpu</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="GpuIndexIVF_8h.html#_CPPv4N5faiss3gpu17GpuIndexIVFConfigE" title="faiss::gpu::GpuIndexIVFConfig"><span class="n"><span class="pre">GpuIndexIVFConfig</span></span></a><a class="headerlink" href="#_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE">
+<span id="_CPPv3N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE"></span><span id="_CPPv2N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE"></span><span id="faiss::gpu::GpuIndexIVFScalarQuantizerConfig::interleavedLayout__b"></span><span class="target" id="structfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizerConfig_1a37a76f2a5f746906d167fbe915e87da1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">interleavedLayout</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Use the alternative memory layout for the IVF lists (currently the default) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu26GpuIndexIVFScalarQuantizerE">
 <span id="_CPPv3N5faiss3gpu26GpuIndexIVFScalarQuantizerE"></span><span id="_CPPv2N5faiss3gpu26GpuIndexIVFScalarQuantizerE"></span><span id="faiss::gpu::GpuIndexIVFScalarQuantizer"></span><span class="target" id="classfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuIndexIVFScalarQuantizer</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="DeviceUtils_8h.html#_CPPv4N5faiss3gpuE" title="faiss::gpu"><span class="n"><span class="pre">gpu</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1GpuIndexIVF.html#_CPPv4N5faiss3gpu11GpuIndexIVFE" title="faiss::gpu::GpuIndexIVF"><span class="n"><span class="pre">GpuIndexIVF</span></span></a><br /></dt>
 <dd><div class="docutils container">
@@ -477,20 +482,6 @@
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu26GpuIndexIVFScalarQuantizer6index_E">
 <span id="_CPPv3N5faiss3gpu26GpuIndexIVFScalarQuantizer6index_E"></span><span id="_CPPv2N5faiss3gpu26GpuIndexIVFScalarQuantizer6index_E"></span><span id="faiss::gpu::GpuIndexIVFScalarQuantizer::index___std::shared_ptr:IVFFlat:"></span><span class="target" id="classfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizer_1ac1309bc4a1fac1a5aaabe077f4f24f5a"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">IVFFlat</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">index_</span></span></span><br /></dt>
 <dd><p>Instance that we own; contains the inverted list. </p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE">
-<span id="_CPPv3N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE"></span><span id="_CPPv2N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE"></span><span id="faiss::gpu::GpuIndexIVFScalarQuantizerConfig"></span><span class="target" id="structfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizerConfig"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GpuIndexIVFScalarQuantizerConfig</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="DeviceUtils_8h.html#_CPPv4N5faiss3gpuE" title="faiss::gpu"><span class="n"><span class="pre">gpu</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="GpuIndexIVF_8h.html#_CPPv4N5faiss3gpu17GpuIndexIVFConfigE" title="faiss::gpu::GpuIndexIVFConfig"><span class="n"><span class="pre">GpuIndexIVFConfig</span></span></a><a class="headerlink" href="#_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfigE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE">
-<span id="_CPPv3N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE"></span><span id="_CPPv2N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE"></span><span id="faiss::gpu::GpuIndexIVFScalarQuantizerConfig::interleavedLayout__b"></span><span class="target" id="structfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizerConfig_1a37a76f2a5f746906d167fbe915e87da1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">interleavedLayout</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N5faiss3gpu32GpuIndexIVFScalarQuantizerConfig17interleavedLayoutE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Use the alternative memory layout for the IVF lists (currently the default) </p>
 </dd></dl>
 
 </div>

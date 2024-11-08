@@ -241,6 +241,7 @@
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx2_8h.html">File code_distance-avx2.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx512_8h.html">File code_distance-avx512.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-generic_8h.html">File code_distance-generic.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code__distance-sve_8h.html">File code_distance-sve.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance_8h.html">File code_distance.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="common_8h.html">File common.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="distances_8h.html">File distances.h</a></li>
@@ -324,34 +325,24 @@
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
-<dd><p>Copyright (c) Facebook, Inc. and its affiliates.</p>
+<dd><p>Implementation of k-means clustering with many variants.</p>
+<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
 <p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implementation of k-means clustering with many variants.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. <a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. PQ4 SIMD packing and accumulation functions</p>
+<p><a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
+<p>PQ4 SIMD packing and accumulation functions</p>
 <p>The basic kernel accumulates nq query vectors with bbs = nb * 2 * 16 vectors and produces an output matrix for that. It is interesting for nq * nb &lt;= 4, otherwise register spilling becomes too large.</p>
 <p>The implementation of these functions is spread over 3 cpp files to reduce parallel compile times. Templates are instantiated explicitly.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. This file contains callbacks for kernels that compute distances.</p>
+<p>This file contains callbacks for kernels that compute distances.</p>
 <p>Throughout the library, vectors are provided as float * pointers. Most algorithms can be optimized when several vectors are processed (added/searched) together in a batch. In this case, they are passed in as a matrix. When n vectors of size d are provided as float * x, component j of vector i is</p>
 <p>x[ i * d + j ]</p>
 <p>where 0 &lt;= i &lt; n and 0 &lt;= j &lt; d. In other words, matrices are always compact. When specifying the size of the matrix, we call it an n*d matrix, which implies a row-major storage.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
+<p>I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
 <p>The read functions return objects that should be deallocated with delete. All references within these objectes are owned by the object.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Definition of inverted lists + a few common classes that implement the interface.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. In this file are the implementations of extra metrics beyond L2 and inner product</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
+<p>Definition of inverted lists + a few common classes that implement the interface.</p>
+<p>Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
+<p>In this file are the implementations of extra metrics beyond L2 and inner product</p>
+<p>Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
+<p>Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
 <dl class="cpp var">
@@ -367,136 +358,6 @@
 
 </div>
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMaxE">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMaxE"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMaxE"></span><span id="faiss::IndexRowwiseMinMax"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMax</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss22IndexRowwiseMinMaxBaseE" title="faiss::IndexRowwiseMinMaxBase"><span class="n"><span class="pre">IndexRowwiseMinMaxBase</span></span></a><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMaxE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="docutils container">
-<em>#include &lt;IndexRowwiseMinMax.h&gt;</em></div>
-<p>Stores scaling coefficients as fp32 values. </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index"></span><span id="faiss::IndexRowwiseMinMax::IndexRowwiseMinMax__IndexP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a4809bc22ae7ea048eab0345f231ba6f5"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMax</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv"></span><span id="faiss::IndexRowwiseMinMax::IndexRowwiseMinMax"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a0746bdb714ebce194e383cd4ef124173"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMax</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf"></span><span id="faiss::IndexRowwiseMinMax::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a71ecee52a0e63061b9a96b2feb628bc9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Perform training on a representative set of vectors</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> – nb of training vectors </p></li>
-<li><p><strong>x</strong> – training vecors, size n * d </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf"></span><span id="faiss::IndexRowwiseMinMax::train_inplace__idx_t.floatP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a110aae6e48f7e1a31792c99961d65c38"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train_inplace</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv">
-<span id="_CPPv3NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv"></span><span id="faiss::IndexRowwiseMinMax::sa_code_sizeC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a656e29f7f050b80cde5ca7e8b56eb960"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_code_size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>size of the produced codes in bytes </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t">
-<span id="_CPPv3NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexRowwiseMinMax::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1ab2dfc5e5adcbfa9fcf5ecd30ddd407a8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
-<dd><p>encode a set of vectors</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>x</strong> – input vectors, size n * d </p></li>
-<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexRowwiseMinMax.html#structfaiss_1_1IndexRowwiseMinMax_1a656e29f7f050b80cde5ca7e8b56eb960"><span class="std std-ref">sa_code_size()</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf">
-<span id="_CPPv3NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexRowwiseMinMax::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1ab04e9ffc561f4de77af64d9ab122d58f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>decode a set of vectors</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexRowwiseMinMax.html#structfaiss_1_1IndexRowwiseMinMax_1a656e29f7f050b80cde5ca7e8b56eb960"><span class="std std-ref">sa_code_size()</span></a></p></li>
-<li><p><strong>x</strong> – output vectors, size n * d </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax3addE5idx_tPKf">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax3addE5idx_tPKf"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax3addE5idx_tPKf"></span><span id="faiss::IndexRowwiseMinMax::add__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1a2c727d28e4d8dc5eedfbea69695cf323"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax3addE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Add n vectors of dimension d to the index.</p>
-<p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>x</strong> – input matrix, size n * d </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters">
-<span id="_CPPv3NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters"></span><span id="faiss::IndexRowwiseMinMax::search__idx_t.floatCP.idx_t.floatP.idx_tP.SearchParametersCPC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1a4f41c5ae635cb0980607c9428a388879"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss16SearchParametersE" title="faiss::SearchParameters"><span class="n"><span class="pre">SearchParameters</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">params</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters" title="Permalink to this definition"></a><br /></dt>
-<dd><p>query n vectors of dimension d to the index.</p>
-<p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> – number of vectors </p></li>
-<li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
-<li><p><strong>k</strong> – number of extracted vectors </p></li>
-<li><p><strong>distances</strong> – output pairwise distances, size n*k </p></li>
-<li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax5resetEv">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax5resetEv"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax5resetEv"></span><span id="faiss::IndexRowwiseMinMax::reset"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1ae2ae0c124b00ce684b6f2195061102f5"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax5resetEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>removes all elements from the database. </p>
-</dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax5indexE">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax5indexE"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax5indexE"></span><span id="faiss::IndexRowwiseMinMax::index__IndexP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1a6def68df271f8809c1ed2cfa3107f082"></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">index</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax5indexE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>sub-index </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax10own_fieldsE">
-<span id="_CPPv3N5faiss18IndexRowwiseMinMax10own_fieldsE"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax10own_fieldsE"></span><span id="faiss::IndexRowwiseMinMax::own_fields__b"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1accffd820463f8e8021de397974d8daba"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">own_fields</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax10own_fieldsE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>whether the subindex needs to be freed in the destructor. </p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss22IndexRowwiseMinMaxBaseE">
 <span id="_CPPv3N5faiss22IndexRowwiseMinMaxBaseE"></span><span id="_CPPv2N5faiss22IndexRowwiseMinMaxBaseE"></span><span id="faiss::IndexRowwiseMinMaxBase"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMaxBase</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><a class="headerlink" href="#_CPPv4N5faiss22IndexRowwiseMinMaxBaseE" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
@@ -504,7 +365,7 @@
 <p>Provides base functions for rowwise normalizing indices. </p>
 <p><a class="reference internal" href="../struct/structfaiss_1_1Index.html#structfaiss_1_1Index"><span class="std std-ref">Index</span></a> wrapper that performs rowwise normalization to [0,1], preserving the coefficients. This is a vector codec index only.</p>
 <p>Basically, this index performs a rowwise scaling to [0,1] of every row in an input dataset before calling subindex::train() and subindex::sa_encode(). <a class="reference internal" href="../struct/structfaiss_1_1gpu_1_1GpuIndexCagra.html#structfaiss_1_1Index_1a16770c0addc888b92deee089d6f97e7c"><span class="std std-ref">sa_encode()</span></a> call stores the scaling coefficients (scaler and minv) in the very beginning of every output code. The format: [scaler][minv][subindex::sa_encode() output] The de-scaling in <a class="reference internal" href="../struct/structfaiss_1_1gpu_1_1GpuIndexCagra.html#structfaiss_1_1Index_1af39e4b00d097ac05dc9e31c52bfb9ed7"><span class="std std-ref">sa_decode()</span></a> is done using: output_rescaled = scaler * output + minv</p>
-<p>An additional train_inplace() function is provided in order to do an inplace scaling before calling subindex::train() and, thus, avoiding the cloning of the input dataset, but modifying the input dataset because of the scaling and the scaling back. It is up to user to call this function instead of <a class="reference internal" href="../struct/structfaiss_1_1IndexRowwiseMinMaxBase.html#structfaiss_1_1Index_1a8f67dfd73993e192dc78f2c93d9d9532"><span class="std std-ref">train()</span></a></p>
+<p>An additional ::train_inplace() function is provided in order to do an inplace scaling before calling subindex::train() and, thus, avoiding the cloning of the input dataset, but modifying the input dataset because of the scaling and the scaling back. It is up to user to call this function instead of ::train()</p>
 <p>Derived classes provide different data types for scaling coefficients. Currently, versions with fp16 and fp32 scaling coefficients are available.<ul class="simple">
 <li><p>fp16 version adds 4 extra bytes per encoded vector</p></li>
 <li><p>fp32 version adds 8 extra bytes per encoded vector </p></li>
@@ -714,6 +575,136 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss22IndexRowwiseMinMaxFP1610own_fieldsE">
 <span id="_CPPv3N5faiss22IndexRowwiseMinMaxFP1610own_fieldsE"></span><span id="_CPPv2N5faiss22IndexRowwiseMinMaxFP1610own_fieldsE"></span><span id="faiss::IndexRowwiseMinMaxFP16::own_fields__b"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1accffd820463f8e8021de397974d8daba"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">own_fields</span></span></span><a class="headerlink" href="#_CPPv4N5faiss22IndexRowwiseMinMaxFP1610own_fieldsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>whether the subindex needs to be freed in the destructor. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMaxE">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMaxE"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMaxE"></span><span id="faiss::IndexRowwiseMinMax"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMax</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss22IndexRowwiseMinMaxBaseE" title="faiss::IndexRowwiseMinMaxBase"><span class="n"><span class="pre">IndexRowwiseMinMaxBase</span></span></a><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMaxE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;IndexRowwiseMinMax.h&gt;</em></div>
+<p>Stores scaling coefficients as fp32 values. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index"></span><span id="faiss::IndexRowwiseMinMax::IndexRowwiseMinMax__IndexP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a4809bc22ae7ea048eab0345f231ba6f5"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMax</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEP5Index" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv"></span><span id="faiss::IndexRowwiseMinMax::IndexRowwiseMinMax"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a0746bdb714ebce194e383cd4ef124173"></span><span class="sig-name descname"><span class="n"><span class="pre">IndexRowwiseMinMax</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax18IndexRowwiseMinMaxEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf"></span><span id="faiss::IndexRowwiseMinMax::train__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a71ecee52a0e63061b9a96b2feb628bc9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax5trainE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Perform training on a representative set of vectors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> – nb of training vectors </p></li>
+<li><p><strong>x</strong> – training vecors, size n * d </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf"></span><span id="faiss::IndexRowwiseMinMax::train_inplace__idx_t.floatP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a110aae6e48f7e1a31792c99961d65c38"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">train_inplace</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax13train_inplaceE5idx_tPf" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv">
+<span id="_CPPv3NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv"></span><span id="faiss::IndexRowwiseMinMax::sa_code_sizeC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1a656e29f7f050b80cde5ca7e8b56eb960"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_code_size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax12sa_code_sizeEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>size of the produced codes in bytes </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t">
+<span id="_CPPv3NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t"></span><span id="faiss::IndexRowwiseMinMax::sa_encode__idx_t.floatCP.uint8_tPC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1ab2dfc5e5adcbfa9fcf5ecd30ddd407a8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_encode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax9sa_encodeE5idx_tPKfP7uint8_t" title="Permalink to this definition"></a><br /></dt>
+<dd><p>encode a set of vectors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> – number of vectors </p></li>
+<li><p><strong>x</strong> – input vectors, size n * d </p></li>
+<li><p><strong>bytes</strong> – output encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexRowwiseMinMax.html#structfaiss_1_1IndexRowwiseMinMax_1a656e29f7f050b80cde5ca7e8b56eb960"><span class="std std-ref">sa_code_size()</span></a></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf">
+<span id="_CPPv3NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf"></span><span id="faiss::IndexRowwiseMinMax::sa_decode__idx_t.uint8_tCP.floatPC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMax_1ab04e9ffc561f4de77af64d9ab122d58f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sa_decode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">bytes</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax9sa_decodeE5idx_tPK7uint8_tPf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>decode a set of vectors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> – number of vectors </p></li>
+<li><p><strong>bytes</strong> – input encoded vectors, size n * <a class="reference internal" href="../struct/structfaiss_1_1IndexRowwiseMinMax.html#structfaiss_1_1IndexRowwiseMinMax_1a656e29f7f050b80cde5ca7e8b56eb960"><span class="std std-ref">sa_code_size()</span></a></p></li>
+<li><p><strong>x</strong> – output vectors, size n * d </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax3addE5idx_tPKf">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax3addE5idx_tPKf"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax3addE5idx_tPKf"></span><span id="faiss::IndexRowwiseMinMax::add__idx_t.floatCP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1a2c727d28e4d8dc5eedfbea69695cf323"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax3addE5idx_tPKf" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Add n vectors of dimension d to the index.</p>
+<p>Vectors are implicitly assigned labels ntotal .. ntotal + n - 1 This function slices the input vectors in chunks smaller than blocksize_add and calls add_core. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> – number of vectors </p></li>
+<li><p><strong>x</strong> – input matrix, size n * d </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters">
+<span id="_CPPv3NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters"></span><span id="_CPPv2NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters"></span><span id="faiss::IndexRowwiseMinMax::search__idx_t.floatCP.idx_t.floatP.idx_tP.SearchParametersCPC"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1a4f41c5ae635cb0980607c9428a388879"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">search</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">x</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distances</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">labels</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss16SearchParametersE" title="faiss::SearchParameters"><span class="n"><span class="pre">SearchParameters</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">params</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK5faiss18IndexRowwiseMinMax6searchE5idx_tPKf5idx_tPfP5idx_tPK16SearchParameters" title="Permalink to this definition"></a><br /></dt>
+<dd><p>query n vectors of dimension d to the index.</p>
+<p>return at most k vectors. If there are not enough results for a query, the result array is padded with -1s.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> – number of vectors </p></li>
+<li><p><strong>x</strong> – input vectors to search, size n * d </p></li>
+<li><p><strong>k</strong> – number of extracted vectors </p></li>
+<li><p><strong>distances</strong> – output pairwise distances, size n*k </p></li>
+<li><p><strong>labels</strong> – output labels of the NNs, size n*k </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax5resetEv">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax5resetEv"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax5resetEv"></span><span id="faiss::IndexRowwiseMinMax::reset"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1ae2ae0c124b00ce684b6f2195061102f5"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax5resetEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>removes all elements from the database. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax5indexE">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax5indexE"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax5indexE"></span><span id="faiss::IndexRowwiseMinMax::index__IndexP"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1a6def68df271f8809c1ed2cfa3107f082"></span><a class="reference internal" href="Index_8h.html#_CPPv4N5faiss5IndexE" title="faiss::Index"><span class="n"><span class="pre">Index</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">index</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax5indexE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>sub-index </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss18IndexRowwiseMinMax10own_fieldsE">
+<span id="_CPPv3N5faiss18IndexRowwiseMinMax10own_fieldsE"></span><span id="_CPPv2N5faiss18IndexRowwiseMinMax10own_fieldsE"></span><span id="faiss::IndexRowwiseMinMax::own_fields__b"></span><span class="target" id="structfaiss_1_1IndexRowwiseMinMaxBase_1accffd820463f8e8021de397974d8daba"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">own_fields</span></span></span><a class="headerlink" href="#_CPPv4N5faiss18IndexRowwiseMinMax10own_fieldsE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>whether the subindex needs to be freed in the destructor. </p>
 </dd></dl>
 

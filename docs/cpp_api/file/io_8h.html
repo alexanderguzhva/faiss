@@ -241,6 +241,7 @@
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx2_8h.html">File code_distance-avx2.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx512_8h.html">File code_distance-avx512.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-generic_8h.html">File code_distance-generic.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code__distance-sve_8h.html">File code_distance-sve.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance_8h.html">File code_distance.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="common_8h.html">File common.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="distances_8h.html">File distances.h</a></li>
@@ -324,34 +325,24 @@
 <dl class="cpp type">
 <dt class="sig sig-object cpp" id="_CPPv45faiss">
 <span id="_CPPv35faiss"></span><span id="_CPPv25faiss"></span><span id="faiss"></span><span class="target" id="namespacefaiss"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">faiss</span></span></span><br /></dt>
-<dd><p>Copyright (c) Facebook, Inc. and its affiliates.</p>
+<dd><p>Implementation of k-means clustering with many variants.</p>
+<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
 <p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implementation of k-means clustering with many variants.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. <a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. PQ4 SIMD packing and accumulation functions</p>
+<p><a class="reference internal" href="../struct/structfaiss_1_1IDSelector.html#structfaiss_1_1IDSelector"><span class="std std-ref">IDSelector</span></a> is intended to define a subset of vectors to handle (for removal or as subset to search)</p>
+<p>PQ4 SIMD packing and accumulation functions</p>
 <p>The basic kernel accumulates nq query vectors with bbs = nb * 2 * 16 vectors and produces an output matrix for that. It is interesting for nq * nb &lt;= 4, otherwise register spilling becomes too large.</p>
 <p>The implementation of these functions is spread over 3 cpp files to reduce parallel compile times. Templates are instantiated explicitly.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. This file contains callbacks for kernels that compute distances.</p>
+<p>This file contains callbacks for kernels that compute distances.</p>
 <p>Throughout the library, vectors are provided as float * pointers. Most algorithms can be optimized when several vectors are processed (added/searched) together in a batch. In this case, they are passed in as a matrix. When n vectors of size d are provided as float * x, component j of vector i is</p>
 <p>x[ i * d + j ]</p>
 <p>where 0 &lt;= i &lt; n and 0 &lt;= j &lt; d. In other words, matrices are always compact. When specifying the size of the matrix, we call it an n*d matrix, which implies a row-major storage.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
+<p>I/O functions can read/write to a filename, a file handle or to an object that abstracts the medium.</p>
 <p>The read functions return objects that should be deallocated with delete. All references within these objectes are owned by the object.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Definition of inverted lists + a few common classes that implement the interface.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. In this file are the implementations of extra metrics beyond L2 and inner product</p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
-<p>Copyright (c) Facebook, Inc. and its affiliates.</p>
-<p>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree. Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
+<p>Definition of inverted lists + a few common classes that implement the interface.</p>
+<p>Since IVF (inverted file) indexes are of so much use for large-scale use cases, we group a few functions related to them in this small library. Most functions work both on IndexIVFs and IndexIVFs embedded within an <a class="reference internal" href="../struct/structfaiss_1_1IndexPreTransform.html#structfaiss_1_1IndexPreTransform"><span class="std std-ref">IndexPreTransform</span></a>.</p>
+<p>In this file are the implementations of extra metrics beyond L2 and inner product</p>
+<p>Implements a few neural net layers, mainly to support <a class="reference internal" href="../struct/structfaiss_1_1QINCo.html#structfaiss_1_1QINCo"><span class="std std-ref">QINCo</span></a></p>
+<p>Defines a few objects that apply transformations to a set of vectors Often these are pre-processing steps. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="cpp function">
@@ -381,6 +372,239 @@
 <dd></dd></dl>
 
 </div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReaderE">
+<span id="_CPPv3N5faiss8IOReaderE"></span><span id="_CPPv2N5faiss8IOReaderE"></span><span id="faiss::IOReader"></span><span class="target" id="structfaiss_1_1IOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IOReader</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOReaderE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="../struct/structPyCallbackIOReader.html#structPyCallbackIOReader"><span class="std std-ref">PyCallbackIOReader</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1BufferedIOReader.html#structfaiss_1_1BufferedIOReader"><span class="std std-ref">faiss::BufferedIOReader</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1FileIOReader.html#structfaiss_1_1FileIOReader"><span class="std std-ref">faiss::FileIOReader</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1VectorIOReader.html#structfaiss_1_1VectorIOReader"><span class="std std-ref">faiss::VectorIOReader</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReaderclEPv6size_t6size_t">
+<span id="_CPPv3N5faiss8IOReaderclEPv6size_t6size_t"></span><span id="_CPPv2N5faiss8IOReaderclEPv6size_t6size_t"></span><span id="faiss::IOReader::call-operator__voidP.s.s"></span><span class="target" id="structfaiss_1_1IOReader_1a6fa10ab7638729e93a9e47b51de55f5a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss8IOReaderclEPv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReader14filedescriptorEv">
+<span id="_CPPv3N5faiss8IOReader14filedescriptorEv"></span><span id="_CPPv2N5faiss8IOReader14filedescriptorEv"></span><span id="faiss::IOReader::filedescriptor"></span><span class="target" id="structfaiss_1_1IOReader_1a91eec3e578f8477753a2bf3e493e5df6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8IOReader14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReaderD0Ev">
+<span id="_CPPv3N5faiss8IOReaderD0Ev"></span><span id="_CPPv2N5faiss8IOReaderD0Ev"></span><span id="faiss::IOReader::~IOReader"></span><span class="target" id="structfaiss_1_1IOReader_1a46de47cde1c687dfa10015386f627b8f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~IOReader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8IOReaderD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReader4nameE">
+<span id="_CPPv3N5faiss8IOReader4nameE"></span><span id="_CPPv2N5faiss8IOReader4nameE"></span><span id="faiss::IOReader::name__ss"></span><span class="target" id="structfaiss_1_1IOReader_1a5b3322fb17e1d9c770b1904600500d65"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOReader4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriterE">
+<span id="_CPPv3N5faiss8IOWriterE"></span><span id="_CPPv2N5faiss8IOWriterE"></span><span id="faiss::IOWriter"></span><span class="target" id="structfaiss_1_1IOWriter"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IOWriter</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriterE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="../struct/structPyCallbackIOWriter.html#structPyCallbackIOWriter"><span class="std std-ref">PyCallbackIOWriter</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1BufferedIOWriter.html#structfaiss_1_1BufferedIOWriter"><span class="std std-ref">faiss::BufferedIOWriter</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1FileIOWriter.html#structfaiss_1_1FileIOWriter"><span class="std std-ref">faiss::FileIOWriter</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1VectorIOWriter.html#structfaiss_1_1VectorIOWriter"><span class="std std-ref">faiss::VectorIOWriter</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriterclEPKv6size_t6size_t">
+<span id="_CPPv3N5faiss8IOWriterclEPKv6size_t6size_t"></span><span id="_CPPv2N5faiss8IOWriterclEPKv6size_t6size_t"></span><span id="faiss::IOWriter::call-operator__voidCP.s.s"></span><span class="target" id="structfaiss_1_1IOWriter_1aa73c701a23e18f4c746f96ac15f52f11"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriterclEPKv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriter14filedescriptorEv">
+<span id="_CPPv3N5faiss8IOWriter14filedescriptorEv"></span><span id="_CPPv2N5faiss8IOWriter14filedescriptorEv"></span><span id="faiss::IOWriter::filedescriptor"></span><span class="target" id="structfaiss_1_1IOWriter_1a5df4dc0988a10e2a8e914e789b12f5b0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8IOWriter14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriterD0Ev">
+<span id="_CPPv3N5faiss8IOWriterD0Ev"></span><span id="_CPPv2N5faiss8IOWriterD0Ev"></span><span id="faiss::IOWriter::~IOWriter"></span><span class="target" id="structfaiss_1_1IOWriter_1a0b7fbb3222d8d2668ace6249d7dcd6aa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~IOWriter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">false</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriterD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriter4nameE">
+<span id="_CPPv3N5faiss8IOWriter4nameE"></span><span id="_CPPv2N5faiss8IOWriter4nameE"></span><span id="faiss::IOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReaderE">
+<span id="_CPPv3N5faiss14VectorIOReaderE"></span><span id="_CPPv2N5faiss14VectorIOReaderE"></span><span id="faiss::VectorIOReader"></span><span class="target" id="structfaiss_1_1VectorIOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VectorIOReader</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOReaderE" title="faiss::IOReader"><span class="n"><span class="pre">IOReader</span></span></a><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReaderE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReaderclEPv6size_t6size_t">
+<span id="_CPPv3N5faiss14VectorIOReaderclEPv6size_t6size_t"></span><span id="_CPPv2N5faiss14VectorIOReaderclEPv6size_t6size_t"></span><span id="faiss::VectorIOReader::call-operator__voidP.s.s"></span><span class="target" id="structfaiss_1_1VectorIOReader_1a7eb8ab296df82e601420c5073f19fa43"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReaderclEPv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader14filedescriptorEv">
+<span id="_CPPv3N5faiss14VectorIOReader14filedescriptorEv"></span><span id="_CPPv2N5faiss14VectorIOReader14filedescriptorEv"></span><span id="faiss::VectorIOReader::filedescriptor"></span><span class="target" id="structfaiss_1_1IOReader_1a91eec3e578f8477753a2bf3e493e5df6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader4dataE">
+<span id="_CPPv3N5faiss14VectorIOReader4dataE"></span><span id="_CPPv2N5faiss14VectorIOReader4dataE"></span><span id="faiss::VectorIOReader::data__std::vector:uint8_t:"></span><span class="target" id="structfaiss_1_1VectorIOReader_1a0bc2d0055617f0da626a8377f6d76b42"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint8_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader4dataE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader2rpE">
+<span id="_CPPv3N5faiss14VectorIOReader2rpE"></span><span id="_CPPv2N5faiss14VectorIOReader2rpE"></span><span id="faiss::VectorIOReader::rp__s"></span><span class="target" id="structfaiss_1_1VectorIOReader_1a5d2da3a979d582dcfbba15e341d24ac0"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rp</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader2rpE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader4nameE">
+<span id="_CPPv3N5faiss14VectorIOReader4nameE"></span><span id="_CPPv2N5faiss14VectorIOReader4nameE"></span><span id="faiss::VectorIOReader::name__ss"></span><span class="target" id="structfaiss_1_1IOReader_1a5b3322fb17e1d9c770b1904600500d65"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriterE">
+<span id="_CPPv3N5faiss14VectorIOWriterE"></span><span id="_CPPv2N5faiss14VectorIOWriterE"></span><span id="faiss::VectorIOWriter"></span><span class="target" id="structfaiss_1_1VectorIOWriter"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VectorIOWriter</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOWriterE" title="faiss::IOWriter"><span class="n"><span class="pre">IOWriter</span></span></a><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriterE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriterclEPKv6size_t6size_t">
+<span id="_CPPv3N5faiss14VectorIOWriterclEPKv6size_t6size_t"></span><span id="_CPPv2N5faiss14VectorIOWriterclEPKv6size_t6size_t"></span><span id="faiss::VectorIOWriter::call-operator__voidCP.s.s"></span><span class="target" id="structfaiss_1_1VectorIOWriter_1a06e4b9c1f49f9df496751f8063d5c879"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriterclEPKv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriter14filedescriptorEv">
+<span id="_CPPv3N5faiss14VectorIOWriter14filedescriptorEv"></span><span id="_CPPv2N5faiss14VectorIOWriter14filedescriptorEv"></span><span id="faiss::VectorIOWriter::filedescriptor"></span><span class="target" id="structfaiss_1_1IOWriter_1a5df4dc0988a10e2a8e914e789b12f5b0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriter14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriter4dataE">
+<span id="_CPPv3N5faiss14VectorIOWriter4dataE"></span><span id="_CPPv2N5faiss14VectorIOWriter4dataE"></span><span id="faiss::VectorIOWriter::data__std::vector:uint8_t:"></span><span class="target" id="structfaiss_1_1VectorIOWriter_1a2b3f128d0d030a34225041ba627fb815"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint8_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriter4dataE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriter4nameE">
+<span id="_CPPv3N5faiss14VectorIOWriter4nameE"></span><span id="_CPPv2N5faiss14VectorIOWriter4nameE"></span><span id="faiss::VectorIOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReaderE">
+<span id="_CPPv3N5faiss12FileIOReaderE"></span><span id="_CPPv2N5faiss12FileIOReaderE"></span><span id="faiss::FileIOReader"></span><span class="target" id="structfaiss_1_1FileIOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FileIOReader</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOReaderE" title="faiss::IOReader"><span class="n"><span class="pre">IOReader</span></span></a><a class="headerlink" href="#_CPPv4N5faiss12FileIOReaderE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader12FileIOReaderEP4FILE">
+<span id="_CPPv3N5faiss12FileIOReader12FileIOReaderEP4FILE"></span><span id="_CPPv2N5faiss12FileIOReader12FileIOReaderEP4FILE"></span><span id="faiss::FileIOReader::FileIOReader__FILEP"></span><span class="target" id="structfaiss_1_1FileIOReader_1afe31b806e5d08f8306bcaeccea8d1533"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOReader</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader12FileIOReaderEP4FILE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader12FileIOReaderEPKc">
+<span id="_CPPv3N5faiss12FileIOReader12FileIOReaderEPKc"></span><span id="_CPPv2N5faiss12FileIOReader12FileIOReaderEPKc"></span><span id="faiss::FileIOReader::FileIOReader__cCP"></span><span class="target" id="structfaiss_1_1FileIOReader_1a261ba851e6fc12bf452c1ca9f10dd001"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOReader</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">fname</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader12FileIOReaderEPKc" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReaderD0Ev">
+<span id="_CPPv3N5faiss12FileIOReaderD0Ev"></span><span id="_CPPv2N5faiss12FileIOReaderD0Ev"></span><span id="faiss::FileIOReader::~FileIOReader"></span><span class="target" id="structfaiss_1_1FileIOReader_1a0e55df8c460124aae00ebe7e142b1360"></span><span class="sig-name descname"><span class="n"><span class="pre">~FileIOReader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReaderD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReaderclEPv6size_t6size_t">
+<span id="_CPPv3N5faiss12FileIOReaderclEPv6size_t6size_t"></span><span id="_CPPv2N5faiss12FileIOReaderclEPv6size_t6size_t"></span><span id="faiss::FileIOReader::call-operator__voidP.s.s"></span><span class="target" id="structfaiss_1_1FileIOReader_1a7b255677a3b90783243ca666d2613a06"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReaderclEPv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader14filedescriptorEv">
+<span id="_CPPv3N5faiss12FileIOReader14filedescriptorEv"></span><span id="_CPPv2N5faiss12FileIOReader14filedescriptorEv"></span><span id="faiss::FileIOReader::filedescriptor"></span><span class="target" id="structfaiss_1_1FileIOReader_1aebd8ec08fe7dc8d92dc62a11a6ef7b53"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader1fE">
+<span id="_CPPv3N5faiss12FileIOReader1fE"></span><span id="_CPPv2N5faiss12FileIOReader1fE"></span><span id="faiss::FileIOReader::f__FILEP"></span><span class="target" id="structfaiss_1_1FileIOReader_1a39ec5a14f8490c870543aae2674af69b"></span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">f</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader1fE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader10need_closeE">
+<span id="_CPPv3N5faiss12FileIOReader10need_closeE"></span><span id="_CPPv2N5faiss12FileIOReader10need_closeE"></span><span id="faiss::FileIOReader::need_close__b"></span><span class="target" id="structfaiss_1_1FileIOReader_1a4ef78024e4a2eb33c5b810c5a7bf01d2"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">need_close</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader10need_closeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader4nameE">
+<span id="_CPPv3N5faiss12FileIOReader4nameE"></span><span id="_CPPv2N5faiss12FileIOReader4nameE"></span><span id="faiss::FileIOReader::name__ss"></span><span class="target" id="structfaiss_1_1IOReader_1a5b3322fb17e1d9c770b1904600500d65"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriterE">
+<span id="_CPPv3N5faiss12FileIOWriterE"></span><span id="_CPPv2N5faiss12FileIOWriterE"></span><span id="faiss::FileIOWriter"></span><span class="target" id="structfaiss_1_1FileIOWriter"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FileIOWriter</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOWriterE" title="faiss::IOWriter"><span class="n"><span class="pre">IOWriter</span></span></a><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriterE" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter12FileIOWriterEP4FILE">
+<span id="_CPPv3N5faiss12FileIOWriter12FileIOWriterEP4FILE"></span><span id="_CPPv2N5faiss12FileIOWriter12FileIOWriterEP4FILE"></span><span id="faiss::FileIOWriter::FileIOWriter__FILEP"></span><span class="target" id="structfaiss_1_1FileIOWriter_1a04edda07f635072eb02f5ade60a826cc"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOWriter</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">wf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter12FileIOWriterEP4FILE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter12FileIOWriterEPKc">
+<span id="_CPPv3N5faiss12FileIOWriter12FileIOWriterEPKc"></span><span id="_CPPv2N5faiss12FileIOWriter12FileIOWriterEPKc"></span><span id="faiss::FileIOWriter::FileIOWriter__cCP"></span><span class="target" id="structfaiss_1_1FileIOWriter_1aa9918cbd4b4ff6b9d8603e58c4b9da7c"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOWriter</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">fname</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter12FileIOWriterEPKc" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriterD0Ev">
+<span id="_CPPv3N5faiss12FileIOWriterD0Ev"></span><span id="_CPPv2N5faiss12FileIOWriterD0Ev"></span><span id="faiss::FileIOWriter::~FileIOWriter"></span><span class="target" id="structfaiss_1_1FileIOWriter_1a7bf3a41d7f92cc20656cb99d902cdc57"></span><span class="sig-name descname"><span class="n"><span class="pre">~FileIOWriter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriterD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriterclEPKv6size_t6size_t">
+<span id="_CPPv3N5faiss12FileIOWriterclEPKv6size_t6size_t"></span><span id="_CPPv2N5faiss12FileIOWriterclEPKv6size_t6size_t"></span><span id="faiss::FileIOWriter::call-operator__voidCP.s.s"></span><span class="target" id="structfaiss_1_1FileIOWriter_1a7a95b4427902bee7b903db9ea09b755c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriterclEPKv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter14filedescriptorEv">
+<span id="_CPPv3N5faiss12FileIOWriter14filedescriptorEv"></span><span id="_CPPv2N5faiss12FileIOWriter14filedescriptorEv"></span><span id="faiss::FileIOWriter::filedescriptor"></span><span class="target" id="structfaiss_1_1FileIOWriter_1af2af08b67cbe1dc170869a0d25438e06"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter1fE">
+<span id="_CPPv3N5faiss12FileIOWriter1fE"></span><span id="_CPPv2N5faiss12FileIOWriter1fE"></span><span id="faiss::FileIOWriter::f__FILEP"></span><span class="target" id="structfaiss_1_1FileIOWriter_1acf255930d7040567e3981886eb653468"></span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">f</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter1fE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter10need_closeE">
+<span id="_CPPv3N5faiss12FileIOWriter10need_closeE"></span><span id="_CPPv2N5faiss12FileIOWriter10need_closeE"></span><span id="faiss::FileIOWriter::need_close__b"></span><span class="target" id="structfaiss_1_1FileIOWriter_1ad5a95eab91a4b55a759410c034e75509"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">need_close</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter10need_closeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter4nameE">
+<span id="_CPPv3N5faiss12FileIOWriter4nameE"></span><span id="_CPPv2N5faiss12FileIOWriter4nameE"></span><span id="faiss::FileIOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss16BufferedIOReaderE">
 <span id="_CPPv3N5faiss16BufferedIOReaderE"></span><span id="_CPPv2N5faiss16BufferedIOReaderE"></span><span id="faiss::BufferedIOReader"></span><span class="target" id="structfaiss_1_1BufferedIOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BufferedIOReader</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOReaderE" title="faiss::IOReader"><span class="n"><span class="pre">IOReader</span></span></a><a class="headerlink" href="#_CPPv4N5faiss16BufferedIOReaderE" title="Permalink to this definition"></a><br /></dt>
@@ -521,239 +745,6 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss16BufferedIOWriter4nameE">
 <span id="_CPPv3N5faiss16BufferedIOWriter4nameE"></span><span id="_CPPv2N5faiss16BufferedIOWriter4nameE"></span><span id="faiss::BufferedIOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss16BufferedIOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReaderE">
-<span id="_CPPv3N5faiss12FileIOReaderE"></span><span id="_CPPv2N5faiss12FileIOReaderE"></span><span id="faiss::FileIOReader"></span><span class="target" id="structfaiss_1_1FileIOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FileIOReader</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOReaderE" title="faiss::IOReader"><span class="n"><span class="pre">IOReader</span></span></a><a class="headerlink" href="#_CPPv4N5faiss12FileIOReaderE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader12FileIOReaderEP4FILE">
-<span id="_CPPv3N5faiss12FileIOReader12FileIOReaderEP4FILE"></span><span id="_CPPv2N5faiss12FileIOReader12FileIOReaderEP4FILE"></span><span id="faiss::FileIOReader::FileIOReader__FILEP"></span><span class="target" id="structfaiss_1_1FileIOReader_1afe31b806e5d08f8306bcaeccea8d1533"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOReader</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader12FileIOReaderEP4FILE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader12FileIOReaderEPKc">
-<span id="_CPPv3N5faiss12FileIOReader12FileIOReaderEPKc"></span><span id="_CPPv2N5faiss12FileIOReader12FileIOReaderEPKc"></span><span id="faiss::FileIOReader::FileIOReader__cCP"></span><span class="target" id="structfaiss_1_1FileIOReader_1a261ba851e6fc12bf452c1ca9f10dd001"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOReader</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">fname</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader12FileIOReaderEPKc" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReaderD0Ev">
-<span id="_CPPv3N5faiss12FileIOReaderD0Ev"></span><span id="_CPPv2N5faiss12FileIOReaderD0Ev"></span><span id="faiss::FileIOReader::~FileIOReader"></span><span class="target" id="structfaiss_1_1FileIOReader_1a0e55df8c460124aae00ebe7e142b1360"></span><span class="sig-name descname"><span class="n"><span class="pre">~FileIOReader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReaderD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReaderclEPv6size_t6size_t">
-<span id="_CPPv3N5faiss12FileIOReaderclEPv6size_t6size_t"></span><span id="_CPPv2N5faiss12FileIOReaderclEPv6size_t6size_t"></span><span id="faiss::FileIOReader::call-operator__voidP.s.s"></span><span class="target" id="structfaiss_1_1FileIOReader_1a7b255677a3b90783243ca666d2613a06"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReaderclEPv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader14filedescriptorEv">
-<span id="_CPPv3N5faiss12FileIOReader14filedescriptorEv"></span><span id="_CPPv2N5faiss12FileIOReader14filedescriptorEv"></span><span id="faiss::FileIOReader::filedescriptor"></span><span class="target" id="structfaiss_1_1FileIOReader_1aebd8ec08fe7dc8d92dc62a11a6ef7b53"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader1fE">
-<span id="_CPPv3N5faiss12FileIOReader1fE"></span><span id="_CPPv2N5faiss12FileIOReader1fE"></span><span id="faiss::FileIOReader::f__FILEP"></span><span class="target" id="structfaiss_1_1FileIOReader_1a39ec5a14f8490c870543aae2674af69b"></span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">f</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader1fE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader10need_closeE">
-<span id="_CPPv3N5faiss12FileIOReader10need_closeE"></span><span id="_CPPv2N5faiss12FileIOReader10need_closeE"></span><span id="faiss::FileIOReader::need_close__b"></span><span class="target" id="structfaiss_1_1FileIOReader_1a4ef78024e4a2eb33c5b810c5a7bf01d2"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">need_close</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader10need_closeE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOReader4nameE">
-<span id="_CPPv3N5faiss12FileIOReader4nameE"></span><span id="_CPPv2N5faiss12FileIOReader4nameE"></span><span id="faiss::FileIOReader::name__ss"></span><span class="target" id="structfaiss_1_1IOReader_1a5b3322fb17e1d9c770b1904600500d65"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOReader4nameE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriterE">
-<span id="_CPPv3N5faiss12FileIOWriterE"></span><span id="_CPPv2N5faiss12FileIOWriterE"></span><span id="faiss::FileIOWriter"></span><span class="target" id="structfaiss_1_1FileIOWriter"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FileIOWriter</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOWriterE" title="faiss::IOWriter"><span class="n"><span class="pre">IOWriter</span></span></a><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriterE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter12FileIOWriterEP4FILE">
-<span id="_CPPv3N5faiss12FileIOWriter12FileIOWriterEP4FILE"></span><span id="_CPPv2N5faiss12FileIOWriter12FileIOWriterEP4FILE"></span><span id="faiss::FileIOWriter::FileIOWriter__FILEP"></span><span class="target" id="structfaiss_1_1FileIOWriter_1a04edda07f635072eb02f5ade60a826cc"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOWriter</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">wf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter12FileIOWriterEP4FILE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter12FileIOWriterEPKc">
-<span id="_CPPv3N5faiss12FileIOWriter12FileIOWriterEPKc"></span><span id="_CPPv2N5faiss12FileIOWriter12FileIOWriterEPKc"></span><span id="faiss::FileIOWriter::FileIOWriter__cCP"></span><span class="target" id="structfaiss_1_1FileIOWriter_1aa9918cbd4b4ff6b9d8603e58c4b9da7c"></span><span class="sig-name descname"><span class="n"><span class="pre">FileIOWriter</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">fname</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter12FileIOWriterEPKc" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriterD0Ev">
-<span id="_CPPv3N5faiss12FileIOWriterD0Ev"></span><span id="_CPPv2N5faiss12FileIOWriterD0Ev"></span><span id="faiss::FileIOWriter::~FileIOWriter"></span><span class="target" id="structfaiss_1_1FileIOWriter_1a7bf3a41d7f92cc20656cb99d902cdc57"></span><span class="sig-name descname"><span class="n"><span class="pre">~FileIOWriter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriterD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriterclEPKv6size_t6size_t">
-<span id="_CPPv3N5faiss12FileIOWriterclEPKv6size_t6size_t"></span><span id="_CPPv2N5faiss12FileIOWriterclEPKv6size_t6size_t"></span><span id="faiss::FileIOWriter::call-operator__voidCP.s.s"></span><span class="target" id="structfaiss_1_1FileIOWriter_1a7a95b4427902bee7b903db9ea09b755c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriterclEPKv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter14filedescriptorEv">
-<span id="_CPPv3N5faiss12FileIOWriter14filedescriptorEv"></span><span id="_CPPv2N5faiss12FileIOWriter14filedescriptorEv"></span><span id="faiss::FileIOWriter::filedescriptor"></span><span class="target" id="structfaiss_1_1FileIOWriter_1af2af08b67cbe1dc170869a0d25438e06"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter1fE">
-<span id="_CPPv3N5faiss12FileIOWriter1fE"></span><span id="_CPPv2N5faiss12FileIOWriter1fE"></span><span id="faiss::FileIOWriter::f__FILEP"></span><span class="target" id="structfaiss_1_1FileIOWriter_1acf255930d7040567e3981886eb653468"></span><span class="n"><span class="pre">FILE</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">f</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter1fE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter10need_closeE">
-<span id="_CPPv3N5faiss12FileIOWriter10need_closeE"></span><span id="_CPPv2N5faiss12FileIOWriter10need_closeE"></span><span id="faiss::FileIOWriter::need_close__b"></span><span class="target" id="structfaiss_1_1FileIOWriter_1ad5a95eab91a4b55a759410c034e75509"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">need_close</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter10need_closeE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss12FileIOWriter4nameE">
-<span id="_CPPv3N5faiss12FileIOWriter4nameE"></span><span id="_CPPv2N5faiss12FileIOWriter4nameE"></span><span id="faiss::FileIOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss12FileIOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReaderE">
-<span id="_CPPv3N5faiss8IOReaderE"></span><span id="_CPPv2N5faiss8IOReaderE"></span><span id="faiss::IOReader"></span><span class="target" id="structfaiss_1_1IOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IOReader</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOReaderE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Subclassed by <a class="reference internal" href="../struct/structPyCallbackIOReader.html#structPyCallbackIOReader"><span class="std std-ref">PyCallbackIOReader</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1BufferedIOReader.html#structfaiss_1_1BufferedIOReader"><span class="std std-ref">faiss::BufferedIOReader</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1FileIOReader.html#structfaiss_1_1FileIOReader"><span class="std std-ref">faiss::FileIOReader</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1VectorIOReader.html#structfaiss_1_1VectorIOReader"><span class="std std-ref">faiss::VectorIOReader</span></a></p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReaderclEPv6size_t6size_t">
-<span id="_CPPv3N5faiss8IOReaderclEPv6size_t6size_t"></span><span id="_CPPv2N5faiss8IOReaderclEPv6size_t6size_t"></span><span id="faiss::IOReader::call-operator__voidP.s.s"></span><span class="target" id="structfaiss_1_1IOReader_1a6fa10ab7638729e93a9e47b51de55f5a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss8IOReaderclEPv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReader14filedescriptorEv">
-<span id="_CPPv3N5faiss8IOReader14filedescriptorEv"></span><span id="_CPPv2N5faiss8IOReader14filedescriptorEv"></span><span id="faiss::IOReader::filedescriptor"></span><span class="target" id="structfaiss_1_1IOReader_1a91eec3e578f8477753a2bf3e493e5df6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8IOReader14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReaderD0Ev">
-<span id="_CPPv3N5faiss8IOReaderD0Ev"></span><span id="_CPPv2N5faiss8IOReaderD0Ev"></span><span id="faiss::IOReader::~IOReader"></span><span class="target" id="structfaiss_1_1IOReader_1a46de47cde1c687dfa10015386f627b8f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~IOReader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8IOReaderD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOReader4nameE">
-<span id="_CPPv3N5faiss8IOReader4nameE"></span><span id="_CPPv2N5faiss8IOReader4nameE"></span><span id="faiss::IOReader::name__ss"></span><span class="target" id="structfaiss_1_1IOReader_1a5b3322fb17e1d9c770b1904600500d65"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOReader4nameE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriterE">
-<span id="_CPPv3N5faiss8IOWriterE"></span><span id="_CPPv2N5faiss8IOWriterE"></span><span id="faiss::IOWriter"></span><span class="target" id="structfaiss_1_1IOWriter"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IOWriter</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriterE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Subclassed by <a class="reference internal" href="../struct/structPyCallbackIOWriter.html#structPyCallbackIOWriter"><span class="std std-ref">PyCallbackIOWriter</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1BufferedIOWriter.html#structfaiss_1_1BufferedIOWriter"><span class="std std-ref">faiss::BufferedIOWriter</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1FileIOWriter.html#structfaiss_1_1FileIOWriter"><span class="std std-ref">faiss::FileIOWriter</span></a>, <a class="reference internal" href="../struct/structfaiss_1_1VectorIOWriter.html#structfaiss_1_1VectorIOWriter"><span class="std std-ref">faiss::VectorIOWriter</span></a></p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriterclEPKv6size_t6size_t">
-<span id="_CPPv3N5faiss8IOWriterclEPKv6size_t6size_t"></span><span id="_CPPv2N5faiss8IOWriterclEPKv6size_t6size_t"></span><span id="faiss::IOWriter::call-operator__voidCP.s.s"></span><span class="target" id="structfaiss_1_1IOWriter_1aa73c701a23e18f4c746f96ac15f52f11"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriterclEPKv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriter14filedescriptorEv">
-<span id="_CPPv3N5faiss8IOWriter14filedescriptorEv"></span><span id="_CPPv2N5faiss8IOWriter14filedescriptorEv"></span><span id="faiss::IOWriter::filedescriptor"></span><span class="target" id="structfaiss_1_1IOWriter_1a5df4dc0988a10e2a8e914e789b12f5b0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss8IOWriter14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriterD0Ev">
-<span id="_CPPv3N5faiss8IOWriterD0Ev"></span><span id="_CPPv2N5faiss8IOWriterD0Ev"></span><span id="faiss::IOWriter::~IOWriter"></span><span class="target" id="structfaiss_1_1IOWriter_1a0b7fbb3222d8d2668ace6249d7dcd6aa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~IOWriter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">false</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriterD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss8IOWriter4nameE">
-<span id="_CPPv3N5faiss8IOWriter4nameE"></span><span id="_CPPv2N5faiss8IOWriter4nameE"></span><span id="faiss::IOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss8IOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReaderE">
-<span id="_CPPv3N5faiss14VectorIOReaderE"></span><span id="_CPPv2N5faiss14VectorIOReaderE"></span><span id="faiss::VectorIOReader"></span><span class="target" id="structfaiss_1_1VectorIOReader"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VectorIOReader</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOReaderE" title="faiss::IOReader"><span class="n"><span class="pre">IOReader</span></span></a><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReaderE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReaderclEPv6size_t6size_t">
-<span id="_CPPv3N5faiss14VectorIOReaderclEPv6size_t6size_t"></span><span id="_CPPv2N5faiss14VectorIOReaderclEPv6size_t6size_t"></span><span id="faiss::VectorIOReader::call-operator__voidP.s.s"></span><span class="target" id="structfaiss_1_1VectorIOReader_1a7eb8ab296df82e601420c5073f19fa43"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReaderclEPv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader14filedescriptorEv">
-<span id="_CPPv3N5faiss14VectorIOReader14filedescriptorEv"></span><span id="_CPPv2N5faiss14VectorIOReader14filedescriptorEv"></span><span id="faiss::VectorIOReader::filedescriptor"></span><span class="target" id="structfaiss_1_1IOReader_1a91eec3e578f8477753a2bf3e493e5df6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader4dataE">
-<span id="_CPPv3N5faiss14VectorIOReader4dataE"></span><span id="_CPPv2N5faiss14VectorIOReader4dataE"></span><span id="faiss::VectorIOReader::data__std::vector:uint8_t:"></span><span class="target" id="structfaiss_1_1VectorIOReader_1a0bc2d0055617f0da626a8377f6d76b42"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint8_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader4dataE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader2rpE">
-<span id="_CPPv3N5faiss14VectorIOReader2rpE"></span><span id="_CPPv2N5faiss14VectorIOReader2rpE"></span><span id="faiss::VectorIOReader::rp__s"></span><span class="target" id="structfaiss_1_1VectorIOReader_1a5d2da3a979d582dcfbba15e341d24ac0"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rp</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader2rpE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOReader4nameE">
-<span id="_CPPv3N5faiss14VectorIOReader4nameE"></span><span id="_CPPv2N5faiss14VectorIOReader4nameE"></span><span id="faiss::VectorIOReader::name__ss"></span><span class="target" id="structfaiss_1_1IOReader_1a5b3322fb17e1d9c770b1904600500d65"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOReader4nameE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriterE">
-<span id="_CPPv3N5faiss14VectorIOWriterE"></span><span id="_CPPv2N5faiss14VectorIOWriterE"></span><span id="faiss::VectorIOWriter"></span><span class="target" id="structfaiss_1_1VectorIOWriter"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VectorIOWriter</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N5faiss8IOWriterE" title="faiss::IOWriter"><span class="n"><span class="pre">IOWriter</span></span></a><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriterE" title="Permalink to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriterclEPKv6size_t6size_t">
-<span id="_CPPv3N5faiss14VectorIOWriterclEPKv6size_t6size_t"></span><span id="_CPPv2N5faiss14VectorIOWriterclEPKv6size_t6size_t"></span><span id="faiss::VectorIOWriter::call-operator__voidCP.s.s"></span><span class="target" id="structfaiss_1_1VectorIOWriter_1a06e4b9c1f49f9df496751f8063d5c879"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nitems</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriterclEPKv6size_t6size_t" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriter14filedescriptorEv">
-<span id="_CPPv3N5faiss14VectorIOWriter14filedescriptorEv"></span><span id="_CPPv2N5faiss14VectorIOWriter14filedescriptorEv"></span><span id="faiss::VectorIOWriter::filedescriptor"></span><span class="target" id="structfaiss_1_1IOWriter_1a5df4dc0988a10e2a8e914e789b12f5b0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filedescriptor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriter14filedescriptorEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriter4dataE">
-<span id="_CPPv3N5faiss14VectorIOWriter4dataE"></span><span id="_CPPv2N5faiss14VectorIOWriter4dataE"></span><span id="faiss::VectorIOWriter::data__std::vector:uint8_t:"></span><span class="target" id="structfaiss_1_1VectorIOWriter_1a2b3f128d0d030a34225041ba627fb815"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint8_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriter4dataE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss14VectorIOWriter4nameE">
-<span id="_CPPv3N5faiss14VectorIOWriter4nameE"></span><span id="_CPPv2N5faiss14VectorIOWriter4nameE"></span><span id="faiss::VectorIOWriter::name__ss"></span><span class="target" id="structfaiss_1_1IOWriter_1a6157db36726d944663194dde4cd27d1f"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N5faiss14VectorIOWriter4nameE" title="Permalink to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 </div>
