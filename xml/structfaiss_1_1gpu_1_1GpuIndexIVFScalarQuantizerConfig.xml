@@ -1,15 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizerConfig" kind="struct" language="C++" prot="public">
     <compoundname>faiss::gpu::GpuIndexIVFScalarQuantizerConfig</compoundname>
     <basecompoundref refid="structfaiss_1_1gpu_1_1GpuIndexIVFConfig" prot="public" virt="non-virtual">faiss::gpu::GpuIndexIVFConfig</basecompoundref>
-    <sectiondef kind="public-attrib">
+      <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizerConfig_1a37a76f2a5f746906d167fbe915e87da1" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool faiss::gpu::GpuIndexIVFScalarQuantizerConfig::interleavedLayout</definition>
         <argsstring></argsstring>
         <name>interleavedLayout</name>
-        <qualifiedname>faiss::gpu::GpuIndexIVFScalarQuantizerConfig::interleavedLayout</qualifiedname>
         <initializer>= true</initializer>
         <briefdescription>
         </briefdescription>
@@ -25,7 +24,6 @@
         <definition>IndicesOptions faiss::gpu::GpuIndexIVFConfig::indicesOptions</definition>
         <argsstring></argsstring>
         <name>indicesOptions</name>
-        <qualifiedname>faiss::gpu::GpuIndexIVFConfig::indicesOptions</qualifiedname>
         <initializer>= INDICES_64_BIT</initializer>
         <briefdescription>
 <para><ref refid="structfaiss_1_1Index" kindref="compound">Index</ref> storage options for the GPU. </para>
@@ -41,7 +39,6 @@
         <definition>GpuIndexFlatConfig faiss::gpu::GpuIndexIVFConfig::flatConfig</definition>
         <argsstring></argsstring>
         <name>flatConfig</name>
-        <qualifiedname>faiss::gpu::GpuIndexIVFConfig::flatConfig</qualifiedname>
         <briefdescription>
 <para>Configuration for the coarse quantizer object. </para>
         </briefdescription>
@@ -56,7 +53,6 @@
         <definition>bool faiss::gpu::GpuIndexIVFConfig::allowCpuCoarseQuantizer</definition>
         <argsstring></argsstring>
         <name>allowCpuCoarseQuantizer</name>
-        <qualifiedname>faiss::gpu::GpuIndexIVFConfig::allowCpuCoarseQuantizer</qualifiedname>
         <initializer>= false</initializer>
         <briefdescription>
         </briefdescription>
@@ -72,7 +68,6 @@
         <definition>int faiss::gpu::GpuIndexConfig::device</definition>
         <argsstring></argsstring>
         <name>device</name>
-        <qualifiedname>faiss::gpu::GpuIndexConfig::device</qualifiedname>
         <initializer>= 0</initializer>
         <briefdescription>
 <para>GPU device on which the index is resident. </para>
@@ -81,14 +76,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/gpu/GpuIndex.h" line="33" column="9" bodyfile="faiss/gpu/GpuIndex.h" bodystart="33" bodyend="-1"/>
+        <location file="faiss/gpu/GpuIndex.h" line="34" column="9" bodyfile="faiss/gpu/GpuIndex.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1gpu_1_1GpuIndexConfig_1adf7c9461009108a9a433a077ab322d2e" prot="public" static="no" mutable="no">
         <type>MemorySpace</type>
         <definition>MemorySpace faiss::gpu::GpuIndexConfig::memorySpace</definition>
         <argsstring></argsstring>
         <name>memorySpace</name>
-        <qualifiedname>faiss::gpu::GpuIndexConfig::memorySpace</qualifiedname>
         <initializer>= MemorySpace::Device</initializer>
         <briefdescription>
         </briefdescription>
@@ -97,14 +91,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/gpu/GpuIndex.h" line="38" column="17" bodyfile="faiss/gpu/GpuIndex.h" bodystart="38" bodyend="-1"/>
+        <location file="faiss/gpu/GpuIndex.h" line="39" column="17" bodyfile="faiss/gpu/GpuIndex.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1gpu_1_1GpuIndexConfig_1a05798a3f679d7273e4cf99a1468c8336" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool faiss::gpu::GpuIndexConfig::use_raft</definition>
         <argsstring></argsstring>
         <name>use_raft</name>
-        <qualifiedname>faiss::gpu::GpuIndexConfig::use_raft</qualifiedname>
         <initializer>= false</initializer>
         <briefdescription>
 <para>Should the index dispatch down to RAFT? </para>
@@ -113,9 +106,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/gpu/GpuIndex.h" line="44" column="10" bodyfile="faiss/gpu/GpuIndex.h" bodystart="44" bodyend="-1"/>
+        <location file="faiss/gpu/GpuIndex.h" line="45" column="10" bodyfile="faiss/gpu/GpuIndex.h" bodystart="45" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -143,12 +136,6 @@
         <label>faiss::gpu::GpuIndexConfig</label>
         <link refid="structfaiss_1_1gpu_1_1GpuIndexConfig"/>
       </node>
-      <node id="4">
-        <label>faiss::gpu::GpuIndexFlatConfig</label>
-        <link refid="structfaiss_1_1gpu_1_1GpuIndexFlatConfig"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="2">
         <label>faiss::gpu::GpuIndexIVFConfig</label>
         <link refid="structfaiss_1_1gpu_1_1GpuIndexIVFConfig"/>
@@ -156,6 +143,12 @@
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>flatConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>faiss::gpu::GpuIndexFlatConfig</label>
+        <link refid="structfaiss_1_1gpu_1_1GpuIndexFlatConfig"/>
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">

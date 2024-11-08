@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="hamming_8h" kind="file" language="C++">
     <compoundname>hamming.h</compoundname>
     <includes local="no">stdint.h</includes>
@@ -9,6 +9,13 @@
     <includes refid="mode_8h" local="no">faiss/utils/approx_topk/mode.h</includes>
     <includes refid="hamming-inl_8h" local="no">faiss/utils/hamming-inl.h</includes>
     <incdepgraph>
+      <node id="19">
+        <label>faiss/utils/hamming-inl.h</label>
+        <link refid="hamming-inl_8h_source"/>
+      </node>
+      <node id="11">
+        <label>limits</label>
+      </node>
       <node id="3">
         <label>faiss/impl/platform_macros.h</label>
         <link refid="platform__macros_8h_source"/>
@@ -16,6 +23,64 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="14">
+        <label>faiss/utils/hamming_distance/hamdis-inl.h</label>
+        <link refid="hamdis-inl_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>faiss/utils/hamming_distance/generic-inl.h</label>
+        <link refid="generic-inl_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>faiss/utils/hamming.h</label>
+        <link refid="hamming_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>faiss/utils/approx_topk/mode.h</label>
+        <link refid="mode_8h_source"/>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
+      </node>
+      <node id="12">
+        <label>utility</label>
       </node>
       <node id="6">
         <label>faiss/utils/Heap.h</label>
@@ -39,58 +104,6 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="18">
-        <label>faiss/utils/approx_topk/mode.h</label>
-        <link refid="mode_8h_source"/>
-      </node>
-      <node id="19">
-        <label>faiss/utils/hamming-inl.h</label>
-        <link refid="hamming-inl_8h_source"/>
-      </node>
-      <node id="1">
-        <label>faiss/utils/hamming.h</label>
-        <link refid="hamming_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>faiss/utils/hamming_distance/common.h</label>
-        <link refid="common_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>faiss/utils/hamming_distance/generic-inl.h</label>
-        <link refid="generic-inl_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>faiss/utils/hamming_distance/hamdis-inl.h</label>
-        <link refid="hamdis-inl_8h_source"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
       <node id="13">
         <label>faiss/utils/ordered_key_value.h</label>
         <link refid="ordered__key__value_8h_source"/>
@@ -101,35 +114,22 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>cassert</label>
+      <node id="17">
+        <label>cstddef</label>
       </node>
       <node id="7">
         <label>climits</label>
       </node>
-      <node id="8">
-        <label>cmath</label>
-      </node>
-      <node id="17">
-        <label>cstddef</label>
-      </node>
-      <node id="4">
-        <label>cstdint</label>
-      </node>
-      <node id="5">
-        <label>cstdio</label>
-      </node>
       <node id="9">
         <label>cstring</label>
       </node>
-      <node id="11">
-        <label>limits</label>
-      </node>
-      <node id="2">
-        <label>stdint.h</label>
-      </node>
-      <node id="12">
-        <label>utility</label>
+      <node id="15">
+        <label>faiss/utils/hamming_distance/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="structfaiss_1_1BitstringWriter" prot="public">faiss::BitstringWriter</innerclass>
@@ -140,8 +140,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Facebook,<sp/>Inc.<sp/>and<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>

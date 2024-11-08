@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="IndexFastScan_8h" kind="file" language="C++">
     <compoundname>IndexFastScan.h</compoundname>
     <includes refid="Index_8h" local="no">faiss/Index.h</includes>
@@ -7,6 +7,51 @@
     <includedby refid="IndexAdditiveQuantizerFastScan_8h" local="no">faiss/IndexAdditiveQuantizerFastScan.h</includedby>
     <includedby refid="IndexPQFastScan_8h" local="no">faiss/IndexPQFastScan.h</includedby>
     <incdepgraph>
+      <node id="10">
+        <label>faiss/utils/AlignedTable.h</label>
+        <link refid="AlignedTable_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="11">
+        <label>cassert</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>typeinfo</label>
+      </node>
+      <node id="6">
+        <label>cstdio</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="12">
+        <label>cstdlib</label>
+      </node>
       <node id="2">
         <label>faiss/Index.h</label>
         <link refid="Index_8h_source"/>
@@ -35,62 +80,19 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>faiss/utils/AlignedTable.h</label>
-        <link refid="AlignedTable_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
       <node id="14">
         <label>algorithm</label>
-      </node>
-      <node id="11">
-        <label>cassert</label>
-      </node>
-      <node id="5">
-        <label>cstdint</label>
-      </node>
-      <node id="6">
-        <label>cstdio</label>
-      </node>
-      <node id="12">
-        <label>cstdlib</label>
       </node>
       <node id="13">
         <label>cstring</label>
       </node>
-      <node id="7">
-        <label>sstream</label>
-      </node>
-      <node id="8">
-        <label>string</label>
-      </node>
-      <node id="9">
-        <label>typeinfo</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>faiss/IndexAdditiveQuantizerFastScan.h</label>
-        <link refid="IndexAdditiveQuantizerFastScan_8h_source"/>
+      <node id="3">
+        <label>faiss/IndexPQFastScan.h</label>
+        <link refid="IndexPQFastScan_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>faiss/IndexFastScan.h</label>
@@ -100,15 +102,13 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>faiss/IndexPQFastScan.h</label>
-        <link refid="IndexPQFastScan_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
       <node id="4">
         <label>faiss/cppcontrib/factory_tools.h</label>
         <link refid="factory__tools_8h_source"/>
+      </node>
+      <node id="2">
+        <label>faiss/IndexAdditiveQuantizerFastScan.h</label>
+        <link refid="IndexAdditiveQuantizerFastScan_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structfaiss_1_1IndexFastScan" prot="public">faiss::IndexFastScan</innerclass>
@@ -119,8 +119,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Facebook,<sp/>Inc.<sp/>and<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>

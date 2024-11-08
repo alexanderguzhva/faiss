@@ -1,25 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="GpuIndicesOptions_8h" kind="file" language="C++">
     <compoundname>GpuIndicesOptions.h</compoundname>
     <includedby refid="GpuCloner_8h" local="no">faiss/gpu/GpuCloner.h</includedby>
     <includedby refid="GpuClonerOptions_8h" local="no">faiss/gpu/GpuClonerOptions.h</includedby>
     <includedby refid="GpuIndexIVF_8h" local="no">faiss/gpu/GpuIndexIVF.h</includedby>
     <invincdepgraph>
-      <node id="2">
-        <label>faiss/gpu/GpuCloner.h</label>
-        <link refid="GpuCloner_8h_source"/>
-      </node>
-      <node id="3">
-        <label>faiss/gpu/GpuClonerOptions.h</label>
-        <link refid="GpuClonerOptions_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>faiss/gpu/GpuIndexCagra.h</label>
-        <link refid="GpuIndexCagra_8h_source"/>
-      </node>
       <node id="4">
         <label>faiss/gpu/GpuIndexIVF.h</label>
         <link refid="GpuIndexIVF_8h_source"/>
@@ -30,19 +16,11 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="5">
-        <label>faiss/gpu/GpuIndexIVFFlat.h</label>
-        <link refid="GpuIndexIVFFlat_8h_source"/>
-      </node>
-      <node id="6">
-        <label>faiss/gpu/GpuIndexIVFPQ.h</label>
-        <link refid="GpuIndexIVFPQ_8h_source"/>
-        <childnode refid="7" relation="include">
+      <node id="3">
+        <label>faiss/gpu/GpuClonerOptions.h</label>
+        <link refid="GpuClonerOptions_8h_source"/>
+        <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="8">
-        <label>faiss/gpu/GpuIndexIVFScalarQuantizer.h</label>
-        <link refid="GpuIndexIVFScalarQuantizer_8h_source"/>
       </node>
       <node id="1">
         <label>faiss/gpu/GpuIndicesOptions.h</label>
@@ -54,6 +32,28 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="7">
+        <label>faiss/gpu/GpuIndexCagra.h</label>
+        <link refid="GpuIndexCagra_8h_source"/>
+      </node>
+      <node id="6">
+        <label>faiss/gpu/GpuIndexIVFPQ.h</label>
+        <link refid="GpuIndexIVFPQ_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>faiss/gpu/GpuIndexIVFFlat.h</label>
+        <link refid="GpuIndexIVFFlat_8h_source"/>
+      </node>
+      <node id="8">
+        <label>faiss/gpu/GpuIndexIVFScalarQuantizer.h</label>
+        <link refid="GpuIndexIVFScalarQuantizer_8h_source"/>
+      </node>
+      <node id="2">
+        <label>faiss/gpu/GpuCloner.h</label>
+        <link refid="GpuCloner_8h_source"/>
+      </node>
     </invincdepgraph>
     <innernamespace refid="namespacefaiss">faiss</innernamespace>
     <innernamespace refid="namespacefaiss_1_1gpu">faiss::gpu</innernamespace>
@@ -62,8 +62,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Facebook,<sp/>Inc.<sp/>and<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>

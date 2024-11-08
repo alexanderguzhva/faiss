@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="ThreadedIndex-inl_8h" kind="file" language="C++">
     <compoundname>ThreadedIndex-inl.h</compoundname>
     <includes refid="FaissAssert_8h" local="no">faiss/impl/FaissAssert.h</includes>
@@ -7,6 +7,50 @@
     <includes local="no">iostream</includes>
     <includedby refid="ThreadedIndex_8h" local="no">faiss/impl/ThreadedIndex.h</includedby>
     <incdepgraph>
+      <node id="3">
+        <label>faiss/impl/FaissException.h</label>
+        <link refid="FaissException_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>cstdio</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>cstdlib</label>
+      </node>
+      <node id="12">
+        <label>iostream</label>
+      </node>
       <node id="2">
         <label>faiss/impl/FaissAssert.h</label>
         <link refid="FaissAssert_8h_source"/>
@@ -21,18 +65,6 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>faiss/impl/FaissException.h</label>
-        <link refid="FaissException_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
       <node id="1">
         <label>faiss/impl/ThreadedIndex-inl.h</label>
         <link refid="ThreadedIndex-inl_8h"/>
@@ -43,73 +75,27 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="8">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>cstdint</label>
-      </node>
-      <node id="10">
-        <label>cstdio</label>
-      </node>
-      <node id="11">
-        <label>cstdlib</label>
-      </node>
-      <node id="4">
-        <label>exception</label>
-      </node>
-      <node id="12">
-        <label>iostream</label>
-      </node>
-      <node id="5">
-        <label>string</label>
-      </node>
-      <node id="6">
-        <label>utility</label>
-      </node>
-      <node id="7">
-        <label>vector</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>faiss/IndexReplicas.h</label>
-        <link refid="IndexReplicas_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
       <node id="6">
         <label>faiss/IndexShards.h</label>
         <link refid="IndexShards_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
+      </node>
+      <node id="5">
+        <label>faiss/MetaIndexes.h</label>
+        <link refid="MetaIndexes_8h_source"/>
+      </node>
+      <node id="4">
+        <label>faiss/gpu/perf/IndexWrapper.h</label>
+        <link refid="IndexWrapper_8h_source"/>
       </node>
       <node id="7">
         <label>faiss/IndexShardsIVF.h</label>
         <link refid="IndexShardsIVF_8h_source"/>
-      </node>
-      <node id="4">
-        <label>faiss/MetaIndexes.h</label>
-        <link refid="MetaIndexes_8h_source"/>
-      </node>
-      <node id="5">
-        <label>faiss/gpu/perf/IndexWrapper.h</label>
-        <link refid="IndexWrapper_8h_source"/>
-      </node>
-      <node id="1">
-        <label>faiss/impl/ThreadedIndex-inl.h</label>
-        <link refid="ThreadedIndex-inl_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
       </node>
       <node id="2">
         <label>faiss/impl/ThreadedIndex.h</label>
@@ -119,6 +105,20 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>faiss/IndexReplicas.h</label>
+        <link refid="IndexReplicas_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>faiss/impl/ThreadedIndex-inl.h</label>
+        <link refid="ThreadedIndex-inl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
     </invincdepgraph>
     <innernamespace refid="namespacefaiss">faiss</innernamespace>
     <briefdescription>
@@ -126,8 +126,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Facebook,<sp/>Inc.<sp/>and<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>
@@ -270,7 +270,7 @@
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad9737fc7ae37894085c9816a924cce3a" kindref="member">handleExceptions</ref>(exceptions);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1a542cf4d499962a3d7a0db924424d8870" kindref="member">handleExceptions</ref>(exceptions);</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="147"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
@@ -312,7 +312,7 @@
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad9737fc7ae37894085c9816a924cce3a" kindref="member">handleExceptions</ref>(exceptions);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1a542cf4d499962a3d7a0db924424d8870" kindref="member">handleExceptions</ref>(exceptions);</highlight></codeline>
 <codeline lineno="188"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>faiss</highlight><highlight class="normal"></highlight></codeline>
