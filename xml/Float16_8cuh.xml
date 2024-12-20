@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="Float16_8cuh" kind="file" language="C++">
     <compoundname>Float16.cuh</compoundname>
     <briefdescription>
@@ -21,11 +21,22 @@
 <codeline><highlight class="normal">#include<sp/>&lt;faiss/gpu/utils/DeviceUtils.h&gt;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">//<sp/>Some<sp/>compute<sp/>capabilities<sp/>have<sp/>full<sp/>float16<sp/>ALUs.</highlight></codeline>
-<codeline><highlight class="normal">#if<sp/>__CUDA_ARCH__<sp/>&gt;=<sp/>530<sp/>||<sp/>defined(USE_AMD_ROCM)</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>__CUDA_ARCH__<sp/>&gt;=<sp/>530</highlight></codeline>
 <codeline><highlight class="normal">#define<sp/>FAISS_USE_FULL_FLOAT16<sp/>1</highlight></codeline>
 <codeline><highlight class="normal">#endif<sp/>//<sp/>__CUDA_ARCH__<sp/>types</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Some<sp/>compute<sp/>capabilities<sp/>have<sp/>full<sp/>bfloat16<sp/>ALUs.</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>__CUDA_ARCH__<sp/>&gt;=<sp/>800<sp/>||<sp/>defined(USE_AMD_ROCM)</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>FAISS_USE_FULL_BFLOAT16<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">#endif<sp/>//<sp/>__CUDA_ARCH__<sp/>types</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>!defined(USE_AMD_ROCM)</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;cuda_bf16.h&gt;</highlight></codeline>
 <codeline><highlight class="normal">#include<sp/>&lt;cuda_fp16.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#else</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;hip/hip_bf16.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;hip/hip_fp16.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#endif<sp/>//<sp/>!defined(USE_AMD_ROCM)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">namespace<sp/>faiss<sp/>{</highlight></codeline>
 <codeline><highlight class="normal">namespace<sp/>gpu<sp/>{</highlight></codeline>

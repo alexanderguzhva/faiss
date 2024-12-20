@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="dir_42f4926097fe2768058790a30a036468" kind="dir">
     <compoundname>faiss/gpu/utils</compoundname>
     <innerdir refid="dir_e0bc4e8ba6e534e3fbf335254ee8d911">faiss/gpu/utils/blockselect</innerdir>
@@ -8,6 +8,7 @@
     <innerfile refid="Comparators_8cuh">Comparators.cuh</innerfile>
     <innerfile refid="ConversionOperators_8cuh">ConversionOperators.cuh</innerfile>
     <innerfile refid="CopyUtils_8cuh">CopyUtils.cuh</innerfile>
+    <innerfile refid="CuvsUtils_8h">CuvsUtils.h</innerfile>
     <innerfile refid="DeviceDefs_8cuh">DeviceDefs.cuh</innerfile>
     <innerfile refid="DeviceTensor-inl_8cuh">DeviceTensor-inl.cuh</innerfile>
     <innerfile refid="DeviceTensor_8cuh">DeviceTensor.cuh</innerfile>
@@ -27,7 +28,6 @@
     <innerfile refid="NoTypeTensor_8cuh">NoTypeTensor.cuh</innerfile>
     <innerfile refid="Pair_8cuh">Pair.cuh</innerfile>
     <innerfile refid="PtxUtils_8cuh">PtxUtils.cuh</innerfile>
-    <innerfile refid="RaftUtils_8h">RaftUtils.h</innerfile>
     <innerfile refid="ReductionOperators_8cuh">ReductionOperators.cuh</innerfile>
     <innerfile refid="Reductions_8cuh">Reductions.cuh</innerfile>
     <innerfile refid="Select_8cuh">Select.cuh</innerfile>
