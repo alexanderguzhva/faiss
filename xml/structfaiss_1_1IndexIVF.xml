@@ -1662,7 +1662,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>encode a set of vectors sa_encode will call encode_vector with include_listno=true <parameterlist kind="param"><parameteritem>
+<para>encode a set of vectors sa_encode will call encode_vectors with include_listno=true <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>n</parametername>
 </parameternamelist>
@@ -1984,10 +1984,9 @@
         <reimplementedby refid="structfaiss_1_1IndexAdditiveQuantizer_1af849220ce067392a737dcbca233326ad">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexAdditiveQuantizerFastScan_1a3b295457588bd7f11782f84683eaff8d">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexFlat_1af84e108340092e5d3970ab8824a71658">sa_decode</reimplementedby>
-        <reimplementedby refid="structfaiss_1_1IndexIVFAdditiveQuantizerFastScan_1a71dcc40c559af0fa5040b0e457ca3b44">sa_decode</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexIVFFastScan_1a0f23ffc33cf0de396080f9c07888f9ca">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexIVFFlat_1a1464960b17488f8ee8ae600c07f7b72c">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexIVFPQ_1adb7494c07ce7812226ad41c8b6dca992">sa_decode</reimplementedby>
-        <reimplementedby refid="structfaiss_1_1IndexIVFPQFastScan_1acc76166d19edf5e34a36f352cf9c02cd">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexLattice_1a3fd27c778f435412336110785ba7124d">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexLSH_1ac1eaeea883e641e50c5b770fb02edc25">sa_decode</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexPQ_1a104104a52149ebdcb8ab79dc01180b6e">sa_decode</reimplementedby>
