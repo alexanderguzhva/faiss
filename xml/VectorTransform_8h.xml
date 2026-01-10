@@ -14,19 +14,21 @@
         <link refid="Index_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="5">
         <label>faiss/MetricType.h</label>
         <link refid="MetricType_8h_source"/>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -39,31 +41,63 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
+      <node id="9">
+        <label>faiss/impl/FaissAssert.h</label>
+        <link refid="FaissAssert_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
       </node>
-      <node id="7">
+      <node id="10">
+        <label>faiss/impl/FaissException.h</label>
+        <link refid="FaissException_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>cstdint</label>
       </node>
-      <node id="8">
+      <node id="7">
         <label>cstdio</label>
       </node>
-      <node id="9">
+      <node id="8">
+        <label>cstdlib</label>
+      </node>
+      <node id="11">
+        <label>exception</label>
+      </node>
+      <node id="15">
         <label>sstream</label>
       </node>
       <node id="2">
         <label>stdint.h</label>
       </node>
-      <node id="10">
+      <node id="12">
         <label>string</label>
       </node>
-      <node id="11">
-        <label>typeinfo</label>
+      <node id="13">
+        <label>utility</label>
       </node>
       <node id="3">
         <label>vector</label>
@@ -148,7 +182,7 @@
 <codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>nothing<sp/>by<sp/>default.</highlight></codeline>
 <codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
 <codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>n<sp/><sp/><sp/><sp/><sp/><sp/>nb<sp/>of<sp/>training<sp/>vectors</highlight></codeline>
-<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/>training<sp/>vecors,<sp/>size<sp/>n<sp/>*<sp/>d</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/>training<sp/>vectors,<sp/>size<sp/>n<sp/>*<sp/>d</highlight></codeline>
 <codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42" refid="structfaiss_1_1VectorTransform_1ab781e04a6c8afe04689b3fc64be512d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1VectorTransform_1ab781e04a6c8afe04689b3fc64be512d5" kindref="member">train</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>x);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -360,7 +394,7 @@
 <codeline lineno="249" refid="structfaiss_1_1OPQMatrix_1abc57f03c88623a5844c7ac06a927ab6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1OPQMatrix_1abc57f03c88623a5844c7ac06a927ab6a" kindref="member">train</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>x)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="250"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="252"><highlight class="comment">/**<sp/>remap<sp/>dimensions<sp/>for<sp/>intput<sp/>vectors,<sp/>possibly<sp/>inserting<sp/>0s</highlight></codeline>
+<codeline lineno="252"><highlight class="comment">/**<sp/>remap<sp/>dimensions<sp/>for<sp/>input<sp/>vectors,<sp/>possibly<sp/>inserting<sp/>0s</highlight></codeline>
 <codeline lineno="253"><highlight class="comment"><sp/>*<sp/>strictly<sp/>speaking<sp/>this<sp/>is<sp/>also<sp/>a<sp/>linear<sp/>transform<sp/>but<sp/>we<sp/>don&apos;t<sp/>want</highlight></codeline>
 <codeline lineno="254"><highlight class="comment"><sp/>*<sp/>to<sp/>compute<sp/>it<sp/>with<sp/>matrix<sp/>multiplies<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="255" refid="structfaiss_1_1RemapDimensionsTransform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfaiss_1_1RemapDimensionsTransform" kindref="compound">RemapDimensionsTransform</ref><sp/>:<sp/><ref refid="structfaiss_1_1VectorTransform" kindref="compound">VectorTransform</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>

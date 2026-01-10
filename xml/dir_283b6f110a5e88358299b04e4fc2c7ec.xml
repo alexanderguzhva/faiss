@@ -7,6 +7,7 @@
     <innerdir refid="dir_dd54f55b8e87373dfa8f730dca1dd7f8">faiss/impl</innerdir>
     <innerdir refid="dir_71a5f2b83da87e7fb52bb1a9a3fef9ad">faiss/invlists</innerdir>
     <innerdir refid="dir_17d03c0b48df2002720ab53d8fded289">faiss/python</innerdir>
+    <innerdir refid="dir_51108e9799b33ddabac525d49cc3884e">faiss/svs</innerdir>
     <innerdir refid="dir_8ad259f5ae9600a74caf331497f5b251">faiss/utils</innerdir>
     <innerfile refid="AutoTune_8h">AutoTune.h</innerfile>
     <innerfile refid="clone__index_8h">clone_index.h</innerfile>
@@ -33,11 +34,13 @@
     <innerfile refid="IndexIVFAdditiveQuantizerFastScan_8h">IndexIVFAdditiveQuantizerFastScan.h</innerfile>
     <innerfile refid="IndexIVFFastScan_8h">IndexIVFFastScan.h</innerfile>
     <innerfile refid="IndexIVFFlat_8h">IndexIVFFlat.h</innerfile>
+    <innerfile refid="IndexIVFFlatPanorama_8h">IndexIVFFlatPanorama.h</innerfile>
     <innerfile refid="IndexIVFIndependentQuantizer_8h">IndexIVFIndependentQuantizer.h</innerfile>
     <innerfile refid="IndexIVFPQ_8h">IndexIVFPQ.h</innerfile>
     <innerfile refid="IndexIVFPQFastScan_8h">IndexIVFPQFastScan.h</innerfile>
     <innerfile refid="IndexIVFPQR_8h">IndexIVFPQR.h</innerfile>
     <innerfile refid="IndexIVFRaBitQ_8h">IndexIVFRaBitQ.h</innerfile>
+    <innerfile refid="IndexIVFRaBitQFastScan_8h">IndexIVFRaBitQFastScan.h</innerfile>
     <innerfile refid="IndexIVFSpectralHash_8h">IndexIVFSpectralHash.h</innerfile>
     <innerfile refid="IndexLattice_8h">IndexLattice.h</innerfile>
     <innerfile refid="IndexLSH_8h">IndexLSH.h</innerfile>
@@ -48,6 +51,7 @@
     <innerfile refid="IndexPQFastScan_8h">IndexPQFastScan.h</innerfile>
     <innerfile refid="IndexPreTransform_8h">IndexPreTransform.h</innerfile>
     <innerfile refid="IndexRaBitQ_8h">IndexRaBitQ.h</innerfile>
+    <innerfile refid="IndexRaBitQFastScan_8h">IndexRaBitQFastScan.h</innerfile>
     <innerfile refid="IndexRefine_8h">IndexRefine.h</innerfile>
     <innerfile refid="IndexReplicas_8h">IndexReplicas.h</innerfile>
     <innerfile refid="IndexRowwiseMinMax_8h">IndexRowwiseMinMax.h</innerfile>

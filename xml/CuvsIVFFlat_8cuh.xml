@@ -64,7 +64,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>///<sp/>Reserve<sp/>GPU<sp/>memory<sp/>in<sp/>our<sp/>inverted<sp/>lists<sp/>for<sp/>this<sp/>number<sp/>of<sp/>vectors</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>reserveMemory(idx_t<sp/>numVecs)<sp/>override;</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>///<sp/>Find<sp/>the<sp/>approximate<sp/>k<sp/>nearest<sp/>neigbors<sp/>for<sp/>`queries`<sp/>against</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>///<sp/>Find<sp/>the<sp/>approximate<sp/>k<sp/>nearest<sp/>neighbors<sp/>for<sp/>`queries`<sp/>against</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>///<sp/>our<sp/>database</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>search(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Index*<sp/>coarseQuantizer,</highlight></codeline>
@@ -144,7 +144,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CuvsIVFFlatCodePackerInterleaved(</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size_t<sp/>list_size,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>dim,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>chuk_size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>chunk_size);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>pack_1(const<sp/>uint8_t*<sp/>flat_code,<sp/>size_t<sp/>offset,<sp/>uint8_t*<sp/>block)</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>final;</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>unpack_1(const<sp/>uint8_t*<sp/>block,<sp/>size_t<sp/>offset,<sp/>uint8_t*<sp/>flat_code)</highlight></codeline>

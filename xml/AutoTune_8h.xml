@@ -17,7 +17,7 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -25,25 +25,19 @@
         <link refid="Index_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="16">
         <label>faiss/IndexBinary.h</label>
         <link refid="IndexBinary_8h_source"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
@@ -53,32 +47,68 @@
         <link refid="MetricType_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="9">
+        <label>faiss/impl/FaissAssert.h</label>
+        <link refid="FaissAssert_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>faiss/impl/FaissException.h</label>
+        <link refid="FaissException_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>cstdint</label>
       </node>
-      <node id="8">
+      <node id="7">
         <label>cstdio</label>
       </node>
-      <node id="9">
+      <node id="8">
+        <label>cstdlib</label>
+      </node>
+      <node id="11">
+        <label>exception</label>
+      </node>
+      <node id="15">
         <label>sstream</label>
       </node>
       <node id="2">
         <label>stdint.h</label>
       </node>
-      <node id="10">
+      <node id="12">
         <label>string</label>
       </node>
-      <node id="11">
-        <label>typeinfo</label>
+      <node id="13">
+        <label>utility</label>
       </node>
       <node id="3">
         <label>vector</label>
@@ -143,7 +173,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1AutoTuneCriterion" kindref="compound">AutoTuneCriterion</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/><ref refid="structfaiss_1_1AutoTuneCriterion_1adcfaafb3f1b3449e2cfd553f0f603a5b" kindref="member">nq</ref>,<sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/><ref refid="structfaiss_1_1AutoTuneCriterion_1a3bb11e873707a812999f8391869aafab" kindref="member">nnn</ref>);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Intitializes<sp/>the<sp/>gt_D<sp/>and<sp/>gt_I<sp/>vectors.<sp/>Must<sp/>be<sp/>called<sp/>before<sp/>evaluating</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Initializes<sp/>the<sp/>gt_D<sp/>and<sp/>gt_I<sp/>vectors.<sp/>Must<sp/>be<sp/>called<sp/>before<sp/>evaluating</highlight></codeline>
 <codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
 <codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>gt_D_in<sp/><sp/>size<sp/>nq<sp/>*<sp/>gt_nnn</highlight></codeline>
 <codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>gt_I_in<sp/><sp/>size<sp/>nq<sp/>*<sp/>gt_nnn</highlight></codeline>

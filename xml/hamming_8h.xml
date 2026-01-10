@@ -15,6 +15,10 @@
         <link refid="MetricType_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>faiss/impl/IDSelector.h</label>
@@ -26,41 +30,41 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="10">
         <label>faiss/impl/platform_macros.h</label>
         <link refid="platform__macros_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>faiss/utils/Heap.h</label>
         <link refid="Heap_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>faiss/utils/approx_topk/mode.h</label>
         <link refid="mode_8h_source"/>
       </node>
-      <node id="23">
+      <node id="24">
         <label>faiss/utils/hamming-inl.h</label>
         <link refid="hamming-inl_8h_source"/>
       </node>
@@ -71,77 +75,80 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>faiss/utils/hamming_distance/common.h</label>
+        <link refid="common_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+      </node>
+      <node id="21">
+        <label>faiss/utils/hamming_distance/generic-inl.h</label>
+        <link refid="generic-inl_8h_source"/>
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="19">
-        <label>faiss/utils/hamming_distance/common.h</label>
-        <link refid="common_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>faiss/utils/hamming_distance/generic-inl.h</label>
-        <link refid="generic-inl_8h_source"/>
-        <childnode refid="14" relation="include">
+        <label>faiss/utils/hamming_distance/hamdis-inl.h</label>
+        <link refid="hamdis-inl_8h_source"/>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
       </node>
       <node id="18">
-        <label>faiss/utils/hamming_distance/hamdis-inl.h</label>
-        <link refid="hamdis-inl_8h_source"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
         <label>faiss/utils/ordered_key_value.h</label>
         <link refid="ordered__key__value_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>cassert</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>climits</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>cmath</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>cstddef</label>
       </node>
-      <node id="8">
+      <node id="7">
         <label>cstdint</label>
       </node>
-      <node id="9">
+      <node id="8">
         <label>cstdio</label>
       </node>
-      <node id="13">
+      <node id="9">
+        <label>cstdlib</label>
+      </node>
+      <node id="14">
         <label>cstring</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>limits</label>
       </node>
       <node id="2">
@@ -150,7 +157,7 @@
       <node id="4">
         <label>unordered_set</label>
       </node>
-      <node id="16">
+      <node id="17">
         <label>utility</label>
       </node>
       <node id="5">
@@ -181,7 +188,7 @@
 <codeline lineno="14"><highlight class="comment"><sp/>*<sp/>fvecs2bitvecs).</highlight></codeline>
 <codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="16"><highlight class="comment"><sp/>*<sp/>User-defined<sp/>type<sp/>hamdis_t<sp/>is<sp/>used<sp/>for<sp/>distances<sp/>because<sp/>at<sp/>this<sp/>time</highlight></codeline>
-<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>it<sp/>is<sp/>still<sp/>uncler<sp/>clear<sp/>how<sp/>we<sp/>will<sp/>need<sp/>to<sp/>balance</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>it<sp/>is<sp/>still<sp/>unclear<sp/>clear<sp/>how<sp/>we<sp/>will<sp/>need<sp/>to<sp/>balance</highlight></codeline>
 <codeline lineno="18"><highlight class="comment"><sp/>*<sp/>-<sp/>flexibility<sp/>in<sp/>vector<sp/>size<sp/>(may<sp/>need<sp/>16-<sp/>or<sp/>even<sp/>8-bit<sp/>vectors)</highlight></codeline>
 <codeline lineno="19"><highlight class="comment"><sp/>*<sp/>-<sp/>memory<sp/>usage</highlight></codeline>
 <codeline lineno="20"><highlight class="comment"><sp/>*<sp/>-<sp/>cache-misses<sp/>when<sp/>dealing<sp/>with<sp/>large<sp/>volumes<sp/>of<sp/>data<sp/>(fewer<sp/>bits<sp/>is<sp/>better)</highlight></codeline>

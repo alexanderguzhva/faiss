@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacefaiss_1_1rabitq__utils" kind="namespace" language="C++">
+    <compoundname>faiss::rabitq_utils</compoundname>
+    <innerclass refid="structfaiss_1_1rabitq__utils_1_1ExtraBitsFactors" prot="public">faiss::rabitq_utils::ExtraBitsFactors</innerclass>
+    <innerclass refid="structfaiss_1_1rabitq__utils_1_1QueryFactorsData" prot="public">faiss::rabitq_utils::QueryFactorsData</innerclass>
+    <innerclass refid="structfaiss_1_1rabitq__utils_1_1SignBitFactors" prot="public">faiss::rabitq_utils::SignBitFactors</innerclass>
+    <innerclass refid="structfaiss_1_1rabitq__utils_1_1SignBitFactorsWithError" prot="public">faiss::rabitq_utils::SignBitFactorsWithError</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="RaBitQUtils_8h_1a6d8f1381f334033fce7b24083624c200" prot="public" static="no" extern="yes" mutable="no">
+        <type>FAISS_API const float</type>
+        <definition>FAISS_API const float faiss::rabitq_utils::Z_MAX_BY_QB[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>Z_MAX_BY_QB</name>
+        <qualifiedname>faiss::rabitq_utils::Z_MAX_BY_QB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ideal quantizer radii for quantizers of 1..8 bits, optimized to minimize L2 reconstruction error. Shared between all RaBitQ implementations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="81" column="30" declfile="faiss/impl/RaBitQUtils.h" declline="81" declcolumn="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="RaBitQUtils_8h_1acd13d8ea72089c8b929681b422023f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfaiss_1_1rabitq__utils_1_1SignBitFactorsWithError" kindref="compound">SignBitFactorsWithError</ref></type>
+        <definition>SignBitFactorsWithError faiss::rabitq_utils::compute_vector_factors</definition>
+        <argsstring>(const float *x, size_t d, const float *centroid, MetricType metric_type, bool compute_error=true)</argsstring>
+        <name>compute_vector_factors</name>
+        <qualifiedname>faiss::rabitq_utils::compute_vector_factors</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>centroid</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref></type>
+          <declname>metric_type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>compute_error</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute factors for a single database vector using RaBitQ algorithm. This function consolidates the mathematical logic that was duplicated between <ref refid="structfaiss_1_1IndexRaBitQ" kindref="compound">IndexRaBitQ</ref> and <ref refid="structfaiss_1_1IndexRaBitQFastScan" kindref="compound">IndexRaBitQFastScan</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input vector (d dimensions) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensionality </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centroid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>database centroid (nullptr if not used) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metric_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance metric (L2 or Inner Product) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compute_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to compute f_error (false for 1-bit mode) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed factors for distance computation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="94" column="25" declfile="faiss/impl/RaBitQUtils.h" declline="94" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1a331fb43e107f687e17ccd9d3c7c59a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::rabitq_utils::compute_vector_intermediate_values</definition>
+        <argsstring>(const float *x, size_t d, const float *centroid, float &amp;norm_L2sqr, float &amp;or_L2sqr, float &amp;dp_oO)</argsstring>
+        <name>compute_vector_intermediate_values</name>
+        <qualifiedname>faiss::rabitq_utils::compute_vector_intermediate_values</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>centroid</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>norm_L2sqr</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>or_L2sqr</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>dp_oO</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute intermediate values needed for vector factor computation. Separated out to allow different bit packing strategies while sharing the core mathematical computation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input vector (d dimensions) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensionality </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centroid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>database centroid (nullptr if not used) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>norm_L2sqr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: ||or - c||^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>or_L2sqr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: ||or||^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dp_oO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: sum of |or_i - c_i| (absolute deviations) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="112" column="6" declfile="faiss/impl/RaBitQUtils.h" declline="112" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1ae2ce53f865a2754f82b416b803b8df7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfaiss_1_1rabitq__utils_1_1SignBitFactorsWithError" kindref="compound">SignBitFactorsWithError</ref></type>
+        <definition>SignBitFactorsWithError faiss::rabitq_utils::compute_factors_from_intermediates</definition>
+        <argsstring>(float norm_L2sqr, float or_L2sqr, float dp_oO, size_t d, MetricType metric_type, bool compute_error=true)</argsstring>
+        <name>compute_factors_from_intermediates</name>
+        <qualifiedname>faiss::rabitq_utils::compute_factors_from_intermediates</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>norm_L2sqr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>or_L2sqr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dp_oO</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref></type>
+          <declname>metric_type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>compute_error</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute final factors from intermediate values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>norm_L2sqr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>||or - c||^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>or_L2sqr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>||or||^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dp_oO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sum of |or_i - c_i| </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensionality </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metric_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance metric </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>compute_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to compute f_error (false for 1-bit mode) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed factors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="129" column="25" declfile="faiss/impl/RaBitQUtils.h" declline="129" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1a9a5a3bbed90878c9ffc93e8651e730f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfaiss_1_1rabitq__utils_1_1QueryFactorsData" kindref="compound">QueryFactorsData</ref></type>
+        <definition>QueryFactorsData faiss::rabitq_utils::compute_query_factors</definition>
+        <argsstring>(const float *query, size_t d, const float *centroid, uint8_t qb, bool centered, MetricType metric_type, std::vector&lt; float &gt; &amp;rotated_q, std::vector&lt; uint8_t &gt; &amp;rotated_qq)</argsstring>
+        <name>compute_query_factors</name>
+        <qualifiedname>faiss::rabitq_utils::compute_query_factors</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>centroid</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>qb</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>centered</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref></type>
+          <declname>metric_type</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>rotated_q</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>rotated_qq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute query factors for RaBitQ distance computation. This consolidates the query processing logic shared between implementations.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>query vector (d dimensions) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensionality </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centroid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>database centroid (nullptr if not used) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of quantization bits (1-8) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to use centered quantization </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metric_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance metric </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotated_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: query - centroid </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotated_qq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: quantized query values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed query factors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="150" column="18" declfile="faiss/impl/RaBitQUtils.h" declline="150" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1a421d9c2001db5a8d4bf07c6209ccaf56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faiss::rabitq_utils::extract_bit_standard</definition>
+        <argsstring>(const uint8_t *code, size_t bit_index)</argsstring>
+        <name>extract_bit_standard</name>
+        <qualifiedname>faiss::rabitq_utils::extract_bit_standard</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bit_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract bit value from RaBitQ code in standard format. Used by <ref refid="structfaiss_1_1IndexRaBitQ" kindref="compound">IndexRaBitQ</ref> which stores bits sequentially.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RaBitQ code data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which bit to extract (0 to d-1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bit value (true/false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="167" column="6" declfile="faiss/impl/RaBitQUtils.h" declline="167" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1a25c2a02b5726381eb9ef994adab75592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faiss::rabitq_utils::extract_bit_fastscan</definition>
+        <argsstring>(const uint8_t *code, size_t bit_index)</argsstring>
+        <name>extract_bit_fastscan</name>
+        <qualifiedname>faiss::rabitq_utils::extract_bit_fastscan</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bit_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract bit value from FastScan code format. Used by <ref refid="structfaiss_1_1IndexRaBitQFastScan" kindref="compound">IndexRaBitQFastScan</ref> which packs bits into 4-bit sub-quantizers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FastScan code data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which bit to extract (0 to d-1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bit value (true/false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="176" column="6" declfile="faiss/impl/RaBitQUtils.h" declline="176" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1a5b048fb1446148b1da2df5976b54a7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::rabitq_utils::set_bit_standard</definition>
+        <argsstring>(uint8_t *code, size_t bit_index)</argsstring>
+        <name>set_bit_standard</name>
+        <qualifiedname>faiss::rabitq_utils::set_bit_standard</qualifiedname>
+        <param>
+          <type>uint8_t *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bit_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set bit value in standard RaBitQ code format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RaBitQ code data to modify </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which bit to set (0 to d-1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="182" column="6" declfile="faiss/impl/RaBitQUtils.h" declline="182" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1aba390a0849a8f08f12e5356afbd66f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::rabitq_utils::set_bit_fastscan</definition>
+        <argsstring>(uint8_t *code, size_t bit_index)</argsstring>
+        <name>set_bit_fastscan</name>
+        <qualifiedname>faiss::rabitq_utils::set_bit_fastscan</qualifiedname>
+        <param>
+          <type>uint8_t *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bit_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set bit value in FastScan code format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FastScan code data to modify </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which bit to set (0 to d-1) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="188" column="6" declfile="faiss/impl/RaBitQUtils.h" declline="188" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1a63efa56aca52ce9b6902cd89961de18d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float faiss::rabitq_utils::compute_1bit_adjusted_distance</definition>
+        <argsstring>(float normalized_distance, const SignBitFactors &amp;db_factors, const QueryFactorsData &amp;query_factors, bool centered, size_t qb, size_t d)</argsstring>
+        <name>compute_1bit_adjusted_distance</name>
+        <qualifiedname>faiss::rabitq_utils::compute_1bit_adjusted_distance</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>normalized_distance</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1rabitq__utils_1_1SignBitFactors" kindref="compound">SignBitFactors</ref> &amp;</type>
+          <declname>db_factors</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1rabitq__utils_1_1QueryFactorsData" kindref="compound">QueryFactorsData</ref> &amp;</type>
+          <declname>query_factors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>centered</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>qb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute adjusted 1-bit distance from normalized LUT distance. This is the core distance formula shared by all RaBitQ handlers.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>normalized_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance from SIMD LUT lookup (after normalization) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>db_factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Database vector factors (<ref refid="structfaiss_1_1rabitq__utils_1_1SignBitFactors" kindref="compound">SignBitFactors</ref> or <ref refid="structfaiss_1_1rabitq__utils_1_1SignBitFactorsWithError" kindref="compound">SignBitFactorsWithError</ref>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>query_factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Query factors computed during search </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether centered quantization is used </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of quantization bits </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimensionality </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Adjusted distance value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="203" column="14" bodyfile="faiss/impl/RaBitQUtils.h" bodystart="203" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1ac9075cf5f1fa83e90c93fdb6b81d621e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::rabitq_utils::extract_code_inline</definition>
+        <argsstring>(const uint8_t *ex_code, size_t index, size_t ex_bits)</argsstring>
+        <name>extract_code_inline</name>
+        <qualifiedname>faiss::rabitq_utils::extract_code_inline</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>ex_code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ex_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract multi-bit code on-the-fly from packed ex-bit codes. This inline function extracts a single code value without unpacking the entire array, enabling efficient on-the-fly decoding during distance computation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ex_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packed ex-bit codes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>which code to extract (0 to d-1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ex_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits per code (1-8) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>extracted code value in range [0, 2^ex_bits - 1] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="252" column="12" bodyfile="faiss/impl/RaBitQUtils.h" bodystart="252" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="RaBitQUtils_8h_1acccd7d3d493e13b32e250700d4750f4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float faiss::rabitq_utils::compute_full_multibit_distance</definition>
+        <argsstring>(const uint8_t *sign_bits, const uint8_t *ex_code, const ExtraBitsFactors &amp;ex_fac, const float *rotated_q, float qr_to_c_L2sqr, float qr_norm_L2sqr, size_t d, size_t ex_bits, MetricType metric_type)</argsstring>
+        <name>compute_full_multibit_distance</name>
+        <qualifiedname>faiss::rabitq_utils::compute_full_multibit_distance</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sign_bits</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>ex_code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1rabitq__utils_1_1ExtraBitsFactors" kindref="compound">ExtraBitsFactors</ref> &amp;</type>
+          <declname>ex_fac</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>rotated_q</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>qr_to_c_L2sqr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>qr_norm_L2sqr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ex_bits</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref></type>
+          <declname>metric_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute full multi-bit distance from sign bits and ex-bit codes. This is the core distance computation shared by RaBitQFastScan handlers.</para>
+<para>The multi-bit distance combines the sign bit (1-bit) with additional magnitude bits (ex_bits) to compute a more accurate distance estimate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sign_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unpacked sign bits (1-bit codes in standard format) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ex_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>packed ex-bit codes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ex_fac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ex-bit factors (f_add_ex, f_rescale_ex) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotated_q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rotated query vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qr_to_c_L2sqr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>precomputed ||query_rotated - centroid||^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qr_norm_L2sqr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>precomputed ||query_rotated||^2 (0 for L2 metric) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dimensionality </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ex_bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of extra bits (nb_bits - 1) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metric_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance metric (L2 or Inner Product) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>computed full multi-bit distance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/RaBitQUtils.h" line="291" column="14" bodyfile="faiss/impl/RaBitQUtils.h" bodystart="291" bodyend="327"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/impl/FastScanDistancePostProcessing.h" line="17" column="1"/>
+  </compounddef>
+</doxygen>

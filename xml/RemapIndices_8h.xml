@@ -10,13 +10,11 @@
         <link refid="Index_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -24,39 +22,75 @@
         <link refid="MetricType_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>faiss/gpu/impl/RemapIndices.h</label>
         <link refid="RemapIndices_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
+      <node id="7">
+        <label>faiss/impl/FaissAssert.h</label>
+        <link refid="FaissAssert_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-      </node>
-      <node id="5">
-        <label>cstdint</label>
-      </node>
-      <node id="6">
-        <label>cstdio</label>
-      </node>
-      <node id="7">
-        <label>sstream</label>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="8">
-        <label>string</label>
+        <label>faiss/impl/FaissException.h</label>
+        <link refid="FaissException_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
       </node>
       <node id="9">
-        <label>typeinfo</label>
+        <label>exception</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
       </node>
       <node id="10">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="12">
         <label>vector</label>
       </node>
     </incdepgraph>
@@ -84,7 +118,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="16"><highlight class="comment">///<sp/>Utility<sp/>function<sp/>to<sp/>translate<sp/>(list<sp/>id,<sp/>offset)<sp/>to<sp/>a<sp/>user<sp/>index<sp/>on</highlight></codeline>
 <codeline lineno="17"><highlight class="comment">///<sp/>the<sp/>CPU.<sp/>In<sp/>a<sp/>cpp<sp/>in<sp/>order<sp/>to<sp/>use<sp/>OpenMP.</highlight></codeline>
-<codeline lineno="18"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ivfOffsetToUserIndex(</highlight></codeline>
+<codeline lineno="18" refid="namespacefaiss_1_1gpu_1a515c8e59be866b46dc43041c138022f7" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1_1gpu_1a515c8e59be866b46dc43041c138022f7" kindref="member">ivfOffsetToUserIndex</ref>(</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>indices,</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>numLists,</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>queries,</highlight></codeline>
