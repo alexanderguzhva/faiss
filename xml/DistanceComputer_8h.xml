@@ -17,8 +17,6 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
       </node>
       <node id="3">
         <label>faiss/MetricType.h</label>
@@ -28,6 +26,8 @@
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -43,11 +43,15 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -70,6 +74,9 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
+      <node id="14">
+        <label>cinttypes</label>
+      </node>
       <node id="4">
         <label>cstdint</label>
       </node>
@@ -82,8 +89,8 @@
       <node id="9">
         <label>exception</label>
       </node>
-      <node id="14">
-        <label>sstream</label>
+      <node id="15">
+        <label>limits</label>
       </node>
       <node id="10">
         <label>string</label>
@@ -359,6 +366,64 @@
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>faiss/impl/scalar_quantizer/codecs.h</label>
+        <link refid="codecs_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>faiss/impl/scalar_quantizer/distance_computers.h</label>
+        <link refid="distance__computers_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>faiss/impl/scalar_quantizer/quantizers.h</label>
+        <link refid="quantizers_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>faiss/impl/scalar_quantizer/scanners.h</label>
+        <link refid="scanners_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>faiss/impl/scalar_quantizer/similarities.h</label>
+        <link refid="similarities_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>faiss/impl/scalar_quantizer/sq-dispatch.h</label>
+        <link refid="sq-dispatch_8h_source"/>
+      </node>
+      <node id="43">
+        <label>faiss/impl/scalar_quantizer/training.h</label>
+        <link refid="training_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structfaiss_1_1DistanceComputer" prot="public">faiss::DistanceComputer</innerclass>

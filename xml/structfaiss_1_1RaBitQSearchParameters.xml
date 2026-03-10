@@ -10,7 +10,7 @@
         <argsstring></argsstring>
         <name>qb</name>
         <qualifiedname>faiss::RaBitQSearchParameters::qb</qualifiedname>
-        <initializer>= 0</initializer>
+        <initializer>= 4</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/Index.h" line="88" column="16" bodyfile="faiss/Index.h" bodystart="88" bodyend="-1"/>
+        <location file="faiss/Index.h" line="90" column="16" bodyfile="faiss/Index.h" bodystart="90" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

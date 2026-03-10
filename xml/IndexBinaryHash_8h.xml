@@ -18,8 +18,6 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
       </node>
       <node id="4">
         <label>faiss/IndexBinary.h</label>
@@ -31,16 +29,16 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>faiss/IndexBinaryFlat.h</label>
         <link refid="IndexBinaryFlat_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -52,11 +50,11 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -68,6 +66,8 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="10">
         <label>faiss/impl/FaissAssert.h</label>
@@ -76,11 +76,15 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -95,16 +99,16 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="19">
         <label>faiss/impl/maybe_owned_vector.h</label>
         <link refid="maybe__owned__vector_8h_source"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -119,52 +123,55 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="24">
         <label>faiss/utils/Heap.h</label>
         <link refid="Heap_8h_source"/>
-        <childnode refid="24" relation="include">
-        </childnode>
         <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
         <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="23">
         <label>faiss/utils/approx_topk/mode.h</label>
         <link refid="mode_8h_source"/>
       </node>
       <node id="29">
         <label>faiss/utils/ordered_key_value.h</label>
         <link refid="ordered__key__value_8h_source"/>
-        <childnode refid="24" relation="include">
-        </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>cassert</label>
       </node>
-      <node id="24">
-        <label>climits</label>
+      <node id="16">
+        <label>cinttypes</label>
       </node>
       <node id="25">
+        <label>climits</label>
+      </node>
+      <node id="26">
         <label>cmath</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>cstddef</label>
       </node>
       <node id="5">
@@ -176,22 +183,19 @@
       <node id="9">
         <label>cstdlib</label>
       </node>
-      <node id="20">
+      <node id="21">
         <label>cstring</label>
       </node>
       <node id="12">
         <label>exception</label>
       </node>
-      <node id="28">
+      <node id="17">
         <label>limits</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>memory</label>
       </node>
-      <node id="16">
-        <label>sstream</label>
-      </node>
-      <node id="26">
+      <node id="27">
         <label>stdint.h</label>
       </node>
       <node id="13">
@@ -301,8 +305,8 @@
 <codeline lineno="82"><highlight class="comment">/**<sp/>just<sp/>uses<sp/>the<sp/>b<sp/>first<sp/>bits<sp/>as<sp/>a<sp/>hash<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83" refid="structfaiss_1_1IndexBinaryMultiHash" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfaiss_1_1IndexBinaryMultiHash" kindref="compound">IndexBinaryMultiHash</ref><sp/>:<sp/><ref refid="structfaiss_1_1IndexBinary" kindref="compound">IndexBinary</ref><sp/>{</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>where<sp/>the<sp/>vectors<sp/>are<sp/>actually<sp/>stored</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1IndexBinaryFlat" kindref="compound">IndexBinaryFlat</ref>*<sp/>storage;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>own_fields;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1IndexBinaryFlat" kindref="compound">IndexBinaryFlat</ref>*<sp/>storage<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>own_fields<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>maps<sp/>hash<sp/>values<sp/>to<sp/>the<sp/>ids<sp/>that<sp/>hash<sp/>to<sp/>them</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Map<sp/>=<sp/>std::unordered_map&lt;idx_t,<sp/>std::vector&lt;idx_t&gt;&gt;;</highlight></codeline>

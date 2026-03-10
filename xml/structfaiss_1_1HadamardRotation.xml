@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structfaiss_1_1HadamardRotation" kind="struct" language="C++" prot="public">
+    <compoundname>faiss::HadamardRotation</compoundname>
+    <basecompoundref refid="structfaiss_1_1VectorTransform" prot="public" virt="non-virtual">faiss::VectorTransform</basecompoundref>
+    <includes refid="VectorTransform_8h" local="no">VectorTransform.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1HadamardRotation_1a26e7d67687f76be9a2aa8ad10ceda833" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t faiss::HadamardRotation::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>faiss::HadamardRotation::seed</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="134" column="14" bodyfile="faiss/VectorTransform.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HadamardRotation_1a1c132fb43763a79abb6669eabf1b58c4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; faiss::HadamardRotation::signs1</definition>
+        <argsstring></argsstring>
+        <name>signs1</name>
+        <qualifiedname>faiss::HadamardRotation::signs1</qualifiedname>
+        <briefdescription>
+<para>Sign-flip vectors, each of size d_out, generated from seed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="137" column="17" bodyfile="faiss/VectorTransform.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HadamardRotation_1a37c0de897839bded104d29490508047d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; faiss::HadamardRotation::signs2</definition>
+        <argsstring></argsstring>
+        <name>signs2</name>
+        <qualifiedname>faiss::HadamardRotation::signs2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="137" column="24" bodyfile="faiss/VectorTransform.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HadamardRotation_1acc6fec44d3a99d1a246b2fa85c107f41" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; faiss::HadamardRotation::signs3</definition>
+        <argsstring></argsstring>
+        <name>signs3</name>
+        <qualifiedname>faiss::HadamardRotation::signs3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="137" column="31" bodyfile="faiss/VectorTransform.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1VectorTransform_1afdf56cbd261a571cf6b8872be5bd43b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int faiss::VectorTransform::d_in</definition>
+        <argsstring></argsstring>
+        <name>d_in</name>
+        <qualifiedname>faiss::VectorTransform::d_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="26" column="9" bodyfile="faiss/VectorTransform.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1VectorTransform_1a589d612f7b1773614619a0cbecd728a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int faiss::VectorTransform::d_out</definition>
+        <argsstring></argsstring>
+        <name>d_out</name>
+        <qualifiedname>faiss::VectorTransform::d_out</qualifiedname>
+        <briefdescription>
+<para>! input dimension </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="27" column="9" bodyfile="faiss/VectorTransform.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1VectorTransform_1ab511f1ddf608c00204555881ca28cb02" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool faiss::VectorTransform::is_trained</definition>
+        <argsstring></argsstring>
+        <name>is_trained</name>
+        <qualifiedname>faiss::VectorTransform::is_trained</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set if the <ref refid="structfaiss_1_1VectorTransform" kindref="compound">VectorTransform</ref> does not require training, or if training is done already </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="34" column="10" bodyfile="faiss/VectorTransform.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfaiss_1_1HadamardRotation_1a84542c09fad43be41c450d6e0db1a0a8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::HadamardRotation::HadamardRotation</definition>
+        <argsstring>(int d, uint32_t seed=12345)</argsstring>
+        <name>HadamardRotation</name>
+        <qualifiedname>faiss::HadamardRotation::HadamardRotation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed</declname>
+          <defval>12345</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="139" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HadamardRotation_1aa1ce92b4a61a605755011fe0a8233cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::HadamardRotation::init</definition>
+        <argsstring>(uint32_t seed_in)</argsstring>
+        <name>init</name>
+        <qualifiedname>faiss::HadamardRotation::init</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HadamardRotation_1a36e4f4f76f451e7b4724aabca37d867c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void faiss::HadamardRotation::train</definition>
+        <argsstring>(idx_t n, const float *x) override</argsstring>
+        <name>train</name>
+        <qualifiedname>faiss::HadamardRotation::train</qualifiedname>
+        <reimplements refid="structfaiss_1_1VectorTransform_1ab781e04a6c8afe04689b3fc64be512d5">train</reimplements>
+        <param>
+          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Perform training on a representative set of vectors. Does nothing by default.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nb of training vectors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training vectors, size n * d </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HadamardRotation_1a8b51c06a5b6ba821394c7f9ae313043c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void faiss::HadamardRotation::apply_noalloc</definition>
+        <argsstring>(idx_t n, const float *x, float *xt) const override</argsstring>
+        <name>apply_noalloc</name>
+        <qualifiedname>faiss::HadamardRotation::apply_noalloc</qualifiedname>
+        <reimplements refid="structfaiss_1_1VectorTransform_1a90f1a218c224c049f1bd8b77a78d6aa0">apply_noalloc</reimplements>
+        <param>
+          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>xt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply the transformation and return the result in a provided matrix <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors to transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input vectors, size n * d_in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output vectors, size n * d_out </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HadamardRotation_1a026d7491ad09a3cd017752aebaf2a11e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void faiss::HadamardRotation::check_identical</definition>
+        <argsstring>(const VectorTransform &amp;other) const override</argsstring>
+        <name>check_identical</name>
+        <qualifiedname>faiss::HadamardRotation::check_identical</qualifiedname>
+        <reimplements refid="structfaiss_1_1VectorTransform_1ab6ac3b3be9e794a5eaa6b122709b4f99">check_identical</reimplements>
+        <param>
+          <type>const <ref refid="structfaiss_1_1VectorTransform" kindref="compound">VectorTransform</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HadamardRotation_1a4daf2a8a3b1a30d6f4659c8032cd65ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::HadamardRotation::HadamardRotation</definition>
+        <argsstring>()</argsstring>
+        <name>HadamardRotation</name>
+        <qualifiedname>faiss::HadamardRotation::HadamardRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="149" column="5" bodyfile="faiss/VectorTransform.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1VectorTransform_1a99fb80aeff049dc92300d2ed79d30883" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * faiss::VectorTransform::apply</definition>
+        <argsstring>(idx_t n, const float *x) const</argsstring>
+        <name>apply</name>
+        <qualifiedname>faiss::VectorTransform::apply</qualifiedname>
+        <param>
+          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>apply the transformation and return the result in an allocated pointer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of vectors to transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input vectors, size n * d_in </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>output vectors, size n * d_out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="49" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1VectorTransform_1a0913e3b521a6d34f523c291508e82adb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void faiss::VectorTransform::reverse_transform</definition>
+        <argsstring>(idx_t n, const float *xt, float *x) const</argsstring>
+        <name>reverse_transform</name>
+        <qualifiedname>faiss::VectorTransform::reverse_transform</qualifiedname>
+        <reimplementedby refid="structfaiss_1_1LinearTransform_1aabcea47432734c860fdf6fcc3a998563">reverse_transform</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1RemapDimensionsTransform_1ac94a16755e3eb8693547f3a7ae90cec3">reverse_transform</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1NormalizationTransform_1af280b21563b819ebb292a6f63d011ad1">reverse_transform</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1CenteringTransform_1a01aacceb0950fcb39b0f5e18103ea6d5">reverse_transform</reimplementedby>
+        <param>
+          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>xt</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reverse transformation. May not be implemented or may return approximate result </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/VectorTransform.h" line="60" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Three rounds of random sign-flip + Fast Walsh-Hadamard Transform. Produces a pseudo-random rotation in O(d log d) time. d_out is the smallest power of 2 &gt;= d_in (zero-padded as needed). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>faiss::HadamardRotation</label>
+        <link refid="structfaiss_1_1HadamardRotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>faiss::VectorTransform</label>
+        <link refid="structfaiss_1_1VectorTransform"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>faiss::HadamardRotation</label>
+        <link refid="structfaiss_1_1HadamardRotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>faiss::VectorTransform</label>
+        <link refid="structfaiss_1_1VectorTransform"/>
+      </node>
+    </collaborationgraph>
+    <location file="faiss/VectorTransform.h" line="133" column="1" bodyfile="faiss/VectorTransform.h" bodystart="133" bodyend="150"/>
+    <listofallmembers>
+      <member refid="structfaiss_1_1VectorTransform_1a99fb80aeff049dc92300d2ed79d30883" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>apply</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a8b51c06a5b6ba821394c7f9ae313043c" prot="public" virt="virtual"><scope>faiss::HadamardRotation</scope><name>apply_noalloc</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a026d7491ad09a3cd017752aebaf2a11e" prot="public" virt="virtual"><scope>faiss::HadamardRotation</scope><name>check_identical</name></member>
+      <member refid="structfaiss_1_1VectorTransform_1afdf56cbd261a571cf6b8872be5bd43b6" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>d_in</name></member>
+      <member refid="structfaiss_1_1VectorTransform_1a589d612f7b1773614619a0cbecd728a9" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>d_out</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a84542c09fad43be41c450d6e0db1a0a8" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>HadamardRotation</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a4daf2a8a3b1a30d6f4659c8032cd65ba" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>HadamardRotation</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1aa1ce92b4a61a605755011fe0a8233cad" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>init</name></member>
+      <member refid="structfaiss_1_1VectorTransform_1ab511f1ddf608c00204555881ca28cb02" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>is_trained</name></member>
+      <member refid="structfaiss_1_1VectorTransform_1a0913e3b521a6d34f523c291508e82adb" prot="public" virt="virtual"><scope>faiss::HadamardRotation</scope><name>reverse_transform</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a26e7d67687f76be9a2aa8ad10ceda833" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>seed</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a1c132fb43763a79abb6669eabf1b58c4" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>signs1</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a37c0de897839bded104d29490508047d" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>signs2</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1acc6fec44d3a99d1a246b2fa85c107f41" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>signs3</name></member>
+      <member refid="structfaiss_1_1HadamardRotation_1a36e4f4f76f451e7b4724aabca37d867c" prot="public" virt="virtual"><scope>faiss::HadamardRotation</scope><name>train</name></member>
+      <member refid="structfaiss_1_1VectorTransform_1a137f48bab695736f0b1d79a50cddc858" prot="public" virt="non-virtual"><scope>faiss::HadamardRotation</scope><name>VectorTransform</name></member>
+      <member refid="structfaiss_1_1VectorTransform_1a6e003e61f6f88afb18e65f1493b904a8" prot="public" virt="virtual"><scope>faiss::HadamardRotation</scope><name>~VectorTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

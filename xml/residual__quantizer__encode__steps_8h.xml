@@ -16,8 +16,6 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
       </node>
       <node id="5">
         <label>faiss/MetricType.h</label>
@@ -28,6 +26,8 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="8">
         <label>faiss/impl/FaissAssert.h</label>
@@ -36,11 +36,15 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -72,12 +76,15 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="15">
+      <node id="16">
         <label>faiss/utils/approx_topk/mode.h</label>
         <link refid="mode_8h_source"/>
+      </node>
+      <node id="14">
+        <label>cinttypes</label>
       </node>
       <node id="2">
         <label>cstdint</label>
@@ -91,8 +98,8 @@
       <node id="10">
         <label>exception</label>
       </node>
-      <node id="14">
-        <label>sstream</label>
+      <node id="15">
+        <label>limits</label>
       </node>
       <node id="11">
         <label>string</label>
