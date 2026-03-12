@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="structfaiss_1_1InvertedListScanner" kind="struct" language="C++" prot="public" abstract="yes">
     <compoundname>faiss::InvertedListScanner</compoundname>
+    <derivedcompoundref refid="structfaiss_1_1IVFFlatScanner" prot="public" virt="non-virtual">faiss::IVFFlatScanner&lt; VectorDistance &gt;</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerIP" prot="public" virt="non-virtual">faiss::scalar_quantizer::IVFSQScannerIP&lt; DCClass &gt;</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerL2" prot="public" virt="non-virtual">faiss::scalar_quantizer::IVFSQScannerL2&lt; DCClass &gt;</derivedcompoundref>
     <includes refid="IndexIVF_8h" local="no">IndexIVF.h</includes>
@@ -118,6 +119,7 @@
         <qualifiedname>faiss::InvertedListScanner::set_query</qualifiedname>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerIP_1a35e0e0dd17881bf2350ef7aff22ac628">set_query</reimplementedby>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerL2_1a255923afc0c80b1041e51d2c37047031">set_query</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IVFFlatScanner_1aa2e6024a4b382cff5dde6b2f1a6b157f">set_query</reimplementedby>
         <param>
           <type>const float *</type>
           <declname>query_vector</declname>
@@ -139,6 +141,7 @@
         <qualifiedname>faiss::InvertedListScanner::set_list</qualifiedname>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerIP_1ad0e44119153ba72e078d01b1d64232be">set_list</reimplementedby>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerL2_1a15a9254cb50839bbae6ef8e70091f82e">set_list</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IVFFlatScanner_1a554a16daa1af18ccc551f92b9c098b71">set_list</reimplementedby>
         <param>
           <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
           <declname>list_no</declname>
@@ -164,6 +167,7 @@
         <qualifiedname>faiss::InvertedListScanner::distance_to_code</qualifiedname>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerIP_1a799c381d6dc4c1ce219ce21b9706415e">distance_to_code</reimplementedby>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerL2_1a92a120a2b6f83a9a1037771e134e15f5">distance_to_code</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IVFFlatScanner_1a4a6451c30aa63d933b4eb4edd95f899e">distance_to_code</reimplementedby>
         <param>
           <type>const uint8_t *</type>
           <declname>code</declname>
@@ -374,6 +378,7 @@
         <argsstring>(size_t n, const uint8_t *codes, const idx_t *ids, ResultHandler &amp;handler) const</argsstring>
         <name>scan_codes</name>
         <qualifiedname>faiss::InvertedListScanner::scan_codes</qualifiedname>
+        <reimplementedby refid="structfaiss_1_1IVFFlatScanner_1a89b5d5e7bd65eb09c871d3e6145efbbf">scan_codes</reimplementedby>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerIP_1af4602275509ac492f5e37de3ede50b2a">scan_codes</reimplementedby>
         <reimplementedby refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerL2_1aa0a064413a7205841ad31070dc839901">scan_codes</reimplementedby>
         <param>
@@ -421,17 +426,23 @@
 <para>Object that handles a query. The inverted lists to scan are provided externally. The object has a lot of state, but distance_to_code and scan_codes can be called in multiple threads </para>
     </detaileddescription>
     <inheritancegraph>
+      <node id="2">
+        <label>faiss::IVFFlatScanner&lt; VectorDistance &gt;</label>
+        <link refid="structfaiss_1_1IVFFlatScanner"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="1">
         <label>faiss::InvertedListScanner</label>
         <link refid="structfaiss_1_1InvertedListScanner"/>
       </node>
-      <node id="2">
+      <node id="3">
         <label>faiss::scalar_quantizer::IVFSQScannerIP&lt; DCClass &gt;</label>
         <link refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerIP"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>faiss::scalar_quantizer::IVFSQScannerL2&lt; DCClass &gt;</label>
         <link refid="structfaiss_1_1scalar__quantizer_1_1IVFSQScannerL2"/>
         <childnode refid="1" relation="public-inheritance">
