@@ -140,15 +140,15 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="structfaiss_1_1IndexFlatL2_1a4462b429fcb6afa74f654ab73a320b0b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structfaiss_1_1IndexFlatL2_1aa747de096e120ac5f46cd7fe9d7dc912" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>faiss::IndexFlatL2::IndexFlatL2</definition>
-        <argsstring>(idx_t d)</argsstring>
+        <argsstring>(idx_t d_in)</argsstring>
         <name>IndexFlatL2</name>
         <qualifiedname>faiss::IndexFlatL2::IndexFlatL2</qualifiedname>
         <param>
           <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
-          <declname>d</declname>
+          <declname>d_in</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1009,13 +1009,13 @@
         </inbodydescription>
         <location file="faiss/Index.h" line="132" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="structfaiss_1_1Index_1a54ff87dfd8b420f214e610865a70afbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="structfaiss_1_1Index_1ab1b5c141c872f5b37298322b1daefde5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>virtual void faiss::Index::train</definition>
+        <definition>virtual void faiss::Index::train_with_queries</definition>
         <argsstring>(idx_t n, const float *x, idx_t n_train_q, const float *xq_train)</argsstring>
-        <name>train</name>
-        <qualifiedname>faiss::Index::train</qualifiedname>
-        <reimplementedby refid="structfaiss_1_1IndexSVSVamanaLeanVec_1a0be9635c638cc74ca0285df76c690118">train</reimplementedby>
+        <name>train_with_queries</name>
+        <qualifiedname>faiss::Index::train_with_queries</qualifiedname>
+        <reimplementedby refid="structfaiss_1_1IndexSVSVamanaLeanVec_1ae83c352204cc61df4adf2424e5bfe737">train_with_queries</reimplementedby>
         <param>
           <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
           <declname>n</declname>
@@ -1035,7 +1035,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Perfrom training on a representative set of vectors and a representative set of queries</para>
+<para>Perform training on a representative set of vectors and a representative set of queries</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>n</parametername>
@@ -1832,12 +1832,12 @@
       <member refid="structfaiss_1_1IndexFlatL2_1a146056772fd978a5e46adf23bf424c6d" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>get_FlatCodesDistanceComputer</name></member>
       <member refid="structfaiss_1_1IndexFlat_1ad2cfa04b291b3fa43aef842de6a2f676" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>get_xb</name></member>
       <member refid="structfaiss_1_1IndexFlat_1a7728074ce264b47e4f80246e85a34444" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>get_xb</name></member>
-      <member refid="structfaiss_1_1Index_1a7b8cc435b5619d5d8382010a424bf67e" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>Index</name></member>
+      <member refid="structfaiss_1_1Index_1a21006538b84bd86d06ba8c22457c8db1" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>Index</name></member>
       <member refid="structfaiss_1_1IndexFlat_1a7c4a216055a21621b5ba48bb042d46df" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlat</name></member>
       <member refid="structfaiss_1_1IndexFlat_1a75a158c47a9710c9c268b22d2c6730fa" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlat</name></member>
       <member refid="structfaiss_1_1IndexFlatCodes_1afccb3874bf2c6e0ff430aeb2cdb87122" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlatCodes</name></member>
       <member refid="structfaiss_1_1IndexFlatCodes_1aadee8e22d573fd5832cb1d8d99781d6f" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlatCodes</name></member>
-      <member refid="structfaiss_1_1IndexFlatL2_1a4462b429fcb6afa74f654ab73a320b0b" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlatL2</name></member>
+      <member refid="structfaiss_1_1IndexFlatL2_1aa747de096e120ac5f46cd7fe9d7dc912" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlatL2</name></member>
       <member refid="structfaiss_1_1IndexFlatL2_1ac6113789570e7efbb3bd23965a3c7d33" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>IndexFlatL2</name></member>
       <member refid="structfaiss_1_1Index_1a6e92732617c4dbe364e7678dd8773a7f" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>is_trained</name></member>
       <member refid="structfaiss_1_1IndexFlatCodes_1a3648a16e47f5f9567c50ad4fd49453ca" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>merge_from</name></member>
@@ -1861,8 +1861,8 @@
       <member refid="structfaiss_1_1Index_1a2c8558fcff4af954a0988348fdbc1c37" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>search_subset</name></member>
       <member refid="structfaiss_1_1IndexFlatL2_1a7e6bb354238d8612e04e2a97a3cf6f5d" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>sync_l2norms</name></member>
       <member refid="structfaiss_1_1Index_1a8f67dfd73993e192dc78f2c93d9d9532" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>train</name></member>
-      <member refid="structfaiss_1_1Index_1a54ff87dfd8b420f214e610865a70afbf" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>train</name></member>
       <member refid="structfaiss_1_1Index_1af8f340497140cc8b091f4732c3460537" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>train_ex</name></member>
+      <member refid="structfaiss_1_1Index_1ab1b5c141c872f5b37298322b1daefde5" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>train_with_queries</name></member>
       <member refid="structfaiss_1_1Index_1a5590d847c5c2b958affd2a05e58a6f23" prot="public" virt="non-virtual"><scope>faiss::IndexFlatL2</scope><name>verbose</name></member>
       <member refid="structfaiss_1_1Index_1a5fa7dbbb77a2a5c69b444672d2f1b982" prot="public" virt="virtual"><scope>faiss::IndexFlatL2</scope><name>~Index</name></member>
     </listofallmembers>

@@ -39,6 +39,7 @@
 <codeline><highlight class="normal">#include<sp/>&lt;optional&gt;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#include<sp/>&lt;faiss/MetricType.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;faiss/impl/IDSelector.h&gt;</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">#include<sp/>&lt;cuvs/neighbors/cagra.hpp&gt;</highlight></codeline>
 <codeline><highlight class="normal">#include<sp/>&lt;cuvs/neighbors/ivf_pq.hpp&gt;</highlight></codeline>
@@ -48,9 +49,14 @@
 <codeline><highlight class="normal">///<sp/>Algorithm<sp/>used<sp/>to<sp/>build<sp/>underlying<sp/>CAGRA<sp/>graph</highlight></codeline>
 <codeline><highlight class="normal">enum<sp/>class<sp/>cagra_build_algo<sp/>{<sp/>IVF_PQ,<sp/>NN_DESCENT<sp/>};</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">enum<sp/>class<sp/>cagra_search_algo<sp/>{<sp/>SINGLE_CTA,<sp/>MULTI_CTA<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">enum<sp/>class<sp/>cagra_search_algo<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SINGLE_CTA<sp/>=<sp/>0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MULTI_CTA<sp/>=<sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MULTI_KERNEL<sp/>=<sp/>2,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>AUTO<sp/>=<sp/>100</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">enum<sp/>class<sp/>cagra_hash_mode<sp/>{<sp/>HASH,<sp/>SMALL,<sp/>AUTO<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">enum<sp/>class<sp/>cagra_hash_mode<sp/>{<sp/>HASH<sp/>=<sp/>0,<sp/>SMALL<sp/>=<sp/>1,<sp/>AUTO<sp/>=<sp/>100<sp/>};</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">namespace<sp/>gpu<sp/>{</highlight></codeline>
 <codeline></codeline>
@@ -107,7 +113,8 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx_t<sp/>hashmap_min_bitlen,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float<sp/>hashmap_max_fill_rate,</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx_t<sp/>num_random_samplings,</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx_t<sp/>rand_xor_mask);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx_t<sp/>rand_xor_mask,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>IDSelector*<sp/>sel<sp/>=<sp/>nullptr);</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>reset();</highlight></codeline>
 <codeline></codeline>
