@@ -398,7 +398,7 @@
 </listitem><listitem><para>accumulate_q_4step_256 / pq4_accumulate_loop_qbs_fixed_scaler_256 (QBS path, bbs == 32, 256-bit kernel only)</para>
 </listitem></itemizedlist>
 </para>
-<para>The QBS helpers use pq4_kernel_qbs_256 exclusively (not <ref refid="decompose__qbs_8h_source" kindref="compound">decompose_qbs.h</ref>) because <ref refid="decompose__qbs_8h_source" kindref="compound">decompose_qbs.h</ref> includes <ref refid="kernels__simd512_8h_source" kindref="compound">kernels_simd512.h</ref> which uses 512-bit types that are empty primary templates when SINGLE_SIMD_LEVEL=NONE (DD mode). SL-parameterizing the 512-bit kernels is future work.</para>
+<para>The QBS helpers here use pq4_kernel_qbs_256 exclusively (not <ref refid="decompose__qbs_8h_source" kindref="compound">decompose_qbs.h</ref>) because <ref refid="decompose__qbs_8h_source" kindref="compound">decompose_qbs.h</ref> includes <ref refid="kernels__simd512_8h_source" kindref="compound">kernels_simd512.h</ref> whose 512-bit types need explicit SIMD levels. The 512-bit QBS path lives in <ref refid="accumulate__loops__512_8h" kindref="compound">accumulate_loops_512.h</ref>, used by the AVX512 per-ISA TU.</para>
 <para>All functions live in <computeroutput>namespace faiss</computeroutput> (not anonymous) so they can be shared by both the per-SIMD TU dispatcher (<ref refid="dispatching_8h" kindref="compound">dispatching.h</ref>) and the old free-function search paths (pq4_fast_scan_search_1.cpp).</para>
 <para>The QBS helpers here always use pq4_kernel_qbs_256 (never 512-bit). This is required for the per-SIMD DD TUs where SINGLE_SIMD_LEVEL=NONE leaves 512-bit types empty. The old pq4_fast_scan_search_qbs.cpp continues to use <ref refid="decompose__qbs_8h_source" kindref="compound">decompose_qbs.h</ref> which includes both 256 and 512 paths. </para>
     </detaileddescription>
@@ -422,10 +422,10 @@
 <codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>-<sp/>accumulate_q_4step_256<sp/>/<sp/>pq4_accumulate_loop_qbs_fixed_scaler_256</highlight></codeline>
 <codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>(QBS<sp/>path,<sp/>bbs<sp/>==<sp/>32,<sp/>256-bit<sp/>kernel<sp/>only)</highlight></codeline>
 <codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>The<sp/>QBS<sp/>helpers<sp/>use<sp/>pq4_kernel_qbs_256<sp/>exclusively<sp/>(not<sp/>decompose_qbs.h)</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>because<sp/>decompose_qbs.h<sp/>includes<sp/>kernels_simd512.h<sp/>which<sp/>uses<sp/>512-bit</highlight></codeline>
-<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>types<sp/>that<sp/>are<sp/>empty<sp/>primary<sp/>templates<sp/>when<sp/>SINGLE_SIMD_LEVEL=NONE</highlight></codeline>
-<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(DD<sp/>mode).<sp/>SL-parameterizing<sp/>the<sp/>512-bit<sp/>kernels<sp/>is<sp/>future<sp/>work.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>The<sp/>QBS<sp/>helpers<sp/>here<sp/>use<sp/>pq4_kernel_qbs_256<sp/>exclusively<sp/>(not</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>decompose_qbs.h)<sp/>because<sp/>decompose_qbs.h<sp/>includes<sp/>kernels_simd512.h</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>whose<sp/>512-bit<sp/>types<sp/>need<sp/>explicit<sp/>SIMD<sp/>levels.<sp/><sp/>The<sp/>512-bit<sp/>QBS<sp/>path</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>lives<sp/>in<sp/>accumulate_loops_512.h,<sp/>used<sp/>by<sp/>the<sp/>AVX512<sp/>per-ISA<sp/>TU.</highlight></codeline>
 <codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="25"><highlight class="comment"><sp/>*<sp/>All<sp/>functions<sp/>live<sp/>in<sp/>`namespace<sp/>faiss`<sp/>(not<sp/>anonymous)<sp/>so<sp/>they<sp/>can<sp/>be</highlight></codeline>
 <codeline lineno="26"><highlight class="comment"><sp/>*<sp/>shared<sp/>by<sp/>both<sp/>the<sp/>per-SIMD<sp/>TU<sp/>dispatcher<sp/>(dispatching.h)<sp/>and<sp/>the<sp/>old</highlight></codeline>

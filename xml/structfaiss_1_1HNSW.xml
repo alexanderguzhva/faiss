@@ -452,10 +452,10 @@
         </inbodydescription>
         <location file="faiss/impl/HNSW.h" line="165" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="structfaiss_1_1HNSW_1ad5daee8b3291db7301a7e0356106516c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structfaiss_1_1HNSW_1a9a4d48d862f771f049d26d984347d170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void faiss::HNSW::add_links_starting_from</definition>
-        <argsstring>(DistanceComputer &amp;ptdis, storage_idx_t pt_id, storage_idx_t nearest, float d_nearest, int level, omp_lock_t *locks, VisitedTable &amp;vt, bool keep_max_size_level0=false)</argsstring>
+        <argsstring>(DistanceComputer &amp;ptdis, storage_idx_t pt_id, storage_idx_t nearest, float d_nearest, int level, LockVector &amp;locks, VisitedTable &amp;vt, bool keep_max_size_level0=false)</argsstring>
         <name>add_links_starting_from</name>
         <qualifiedname>faiss::HNSW::add_links_starting_from</qualifiedname>
         <param>
@@ -479,7 +479,7 @@
           <declname>level</declname>
         </param>
         <param>
-          <type>omp_lock_t *</type>
+          <type><ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;</type>
           <declname>locks</declname>
         </param>
         <param>
@@ -499,10 +499,10 @@
         </inbodydescription>
         <location file="faiss/impl/HNSW.h" line="167" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="structfaiss_1_1HNSW_1a26ee6c4294298223efbe56561efa8b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structfaiss_1_1HNSW_1a4015f2928d3465decfbeff8835b49954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void faiss::HNSW::add_with_locks</definition>
-        <argsstring>(DistanceComputer &amp;ptdis, int pt_level, int pt_id, std::vector&lt; omp_lock_t &gt; &amp;locks, VisitedTable &amp;vt, bool keep_max_size_level0=false)</argsstring>
+        <argsstring>(DistanceComputer &amp;ptdis, int pt_level, int pt_id, LockVector &amp;locks, VisitedTable &amp;vt, bool keep_max_size_level0=false)</argsstring>
         <name>add_with_locks</name>
         <qualifiedname>faiss::HNSW::add_with_locks</qualifiedname>
         <param>
@@ -518,7 +518,7 @@
           <declname>pt_id</declname>
         </param>
         <param>
-          <type>std::vector&lt; omp_lock_t &gt; &amp;</type>
+          <type><ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;</type>
           <declname>locks</declname>
         </param>
         <param>
@@ -783,8 +783,8 @@
     </collaborationgraph>
     <location file="faiss/impl/HNSW.h" line="59" column="1" bodyfile="faiss/impl/HNSW.h" bodystart="59" bodyend="227"/>
     <listofallmembers>
-      <member refid="structfaiss_1_1HNSW_1ad5daee8b3291db7301a7e0356106516c" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>add_links_starting_from</name></member>
-      <member refid="structfaiss_1_1HNSW_1a26ee6c4294298223efbe56561efa8b8b" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>add_with_locks</name></member>
+      <member refid="structfaiss_1_1HNSW_1a9a4d48d862f771f049d26d984347d170" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>add_links_starting_from</name></member>
+      <member refid="structfaiss_1_1HNSW_1a4015f2928d3465decfbeff8835b49954" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>add_with_locks</name></member>
       <member refid="structfaiss_1_1HNSW_1a907c94e0eca5200af1dc8d0aea482665" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>assign_probas</name></member>
       <member refid="structfaiss_1_1HNSW_1a86e1f4c2250e11ae9966a16eb0b8d4f4" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>C</name></member>
       <member refid="structfaiss_1_1HNSW_1adbf81f0b21102b942182c904892e0858" prot="public" virt="non-virtual"><scope>faiss::HNSW</scope><name>check_relative_distance</name></member>

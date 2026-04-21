@@ -484,8 +484,6 @@
       <node id="70">
         <label>faiss/impl/hnsw/MinimaxHeap.h</label>
         <link refid="MinimaxHeap_8h_source"/>
-        <childnode refid="39" relation="include">
-        </childnode>
       </node>
       <node id="36">
         <label>faiss/impl/index_read_utils.h</label>

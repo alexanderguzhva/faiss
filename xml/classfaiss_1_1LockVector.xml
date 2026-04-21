@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classfaiss_1_1LockVector" kind="class" language="C++" prot="public">
+    <compoundname>faiss::LockVector</compoundname>
+    <includes refid="LockVector_8h" local="no">LockVector.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfaiss_1_1LockVector_1a0da030ba41bfc1df104dc0dc9492e094" prot="private" static="no" mutable="no">
+        <type>omp_lock_t *</type>
+        <definition>omp_lock_t* faiss::LockVector::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>faiss::LockVector::data_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="59" column="16" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfaiss_1_1LockVector_1af2d1141883a8081d27207e095dc41572" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::LockVector::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>faiss::LockVector::size_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="60" column="12" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfaiss_1_1LockVector_1a4db0a2db8a0a1a2e5d5dfeff0d89d24b" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::LockVector::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <qualifiedname>faiss::LockVector::capacity_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="61" column="12" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1ac0f3f1e6e0d4b5e67ef910ea6a0352ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::LockVector::LockVector</definition>
+        <argsstring>()=default</argsstring>
+        <name>LockVector</name>
+        <qualifiedname>faiss::LockVector::LockVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="19" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1acbdfe68d4a2bce76796d7a73ef1eb778" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::LockVector::LockVector</definition>
+        <argsstring>(size_t n)</argsstring>
+        <name>LockVector</name>
+        <qualifiedname>faiss::LockVector::LockVector</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="20" column="14" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a75b482a722d89b4248a52a764b137630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::LockVector::LockVector</definition>
+        <argsstring>(const LockVector &amp;)</argsstring>
+        <name>LockVector</name>
+        <qualifiedname>faiss::LockVector::LockVector</qualifiedname>
+        <param>
+          <type>const <ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="24" column="5" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a2b4de097dffa6af0a24fdb564a1a2212" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::LockVector::LockVector</definition>
+        <argsstring>(LockVector &amp;&amp;other) noexcept</argsstring>
+        <name>LockVector</name>
+        <qualifiedname>faiss::LockVector::LockVector</qualifiedname>
+        <param>
+          <type><ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a34bd496ef6e80b40deb9bb922cb4865c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::LockVector::~LockVector</definition>
+        <argsstring>()</argsstring>
+        <name>~LockVector</name>
+        <qualifiedname>faiss::LockVector::~LockVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="27" column="5" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a6d8675c5fc051becd572ec691a435f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;</type>
+        <definition>LockVector &amp; faiss::LockVector::operator=</definition>
+        <argsstring>(const LockVector &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>faiss::LockVector::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="31" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1ad0dfebc1640d4136e0a88d82eb01820c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;</type>
+        <definition>LockVector &amp; faiss::LockVector::operator=</definition>
+        <argsstring>(LockVector &amp;&amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>faiss::LockVector::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classfaiss_1_1LockVector" kindref="compound">LockVector</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="32" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1ab5a2bfc9e50e2d72d94c1eba999cda6f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t faiss::LockVector::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>faiss::LockVector::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="34" column="12" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a9564c9c58778b4a897e8efa30cbfed71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::LockVector::prepare</definition>
+        <argsstring>(size_t new_size)</argsstring>
+        <name>prepare</name>
+        <qualifiedname>faiss::LockVector::prepare</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a45c5faa50576a9d775543d0e508ded99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::LockVector::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>faiss::LockVector::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1affacd7525363ade2410438591486b48f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::LockVector::lock</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>lock</name>
+        <qualifiedname>faiss::LockVector::lock</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="43" column="10" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a116ab98171a03587642262f59aa16a28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::LockVector::unlock</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>unlock</name>
+        <qualifiedname>faiss::LockVector::unlock</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="48" column="10" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1LockVector_1a847e0ce7d2d2d7c77462ed5d49808565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faiss::LockVector::try_lock</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>try_lock</name>
+        <qualifiedname>faiss::LockVector::try_lock</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/hnsw/LockVector.h" line="53" column="10" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contiguous, growable array of locks with geometric growth. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/impl/hnsw/LockVector.h" line="17" column="1" bodyfile="faiss/impl/hnsw/LockVector.h" bodystart="17" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classfaiss_1_1LockVector_1a4db0a2db8a0a1a2e5d5dfeff0d89d24b" prot="private" virt="non-virtual"><scope>faiss::LockVector</scope><name>capacity_</name></member>
+      <member refid="classfaiss_1_1LockVector_1a45c5faa50576a9d775543d0e508ded99" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>clear</name></member>
+      <member refid="classfaiss_1_1LockVector_1a0da030ba41bfc1df104dc0dc9492e094" prot="private" virt="non-virtual"><scope>faiss::LockVector</scope><name>data_</name></member>
+      <member refid="classfaiss_1_1LockVector_1affacd7525363ade2410438591486b48f" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>lock</name></member>
+      <member refid="classfaiss_1_1LockVector_1ac0f3f1e6e0d4b5e67ef910ea6a0352ed" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>LockVector</name></member>
+      <member refid="classfaiss_1_1LockVector_1acbdfe68d4a2bce76796d7a73ef1eb778" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>LockVector</name></member>
+      <member refid="classfaiss_1_1LockVector_1a75b482a722d89b4248a52a764b137630" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>LockVector</name></member>
+      <member refid="classfaiss_1_1LockVector_1a2b4de097dffa6af0a24fdb564a1a2212" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>LockVector</name></member>
+      <member refid="classfaiss_1_1LockVector_1a6d8675c5fc051becd572ec691a435f38" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>operator=</name></member>
+      <member refid="classfaiss_1_1LockVector_1ad0dfebc1640d4136e0a88d82eb01820c" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>operator=</name></member>
+      <member refid="classfaiss_1_1LockVector_1a9564c9c58778b4a897e8efa30cbfed71" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>prepare</name></member>
+      <member refid="classfaiss_1_1LockVector_1ab5a2bfc9e50e2d72d94c1eba999cda6f" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>size</name></member>
+      <member refid="classfaiss_1_1LockVector_1af2d1141883a8081d27207e095dc41572" prot="private" virt="non-virtual"><scope>faiss::LockVector</scope><name>size_</name></member>
+      <member refid="classfaiss_1_1LockVector_1a847e0ce7d2d2d7c77462ed5d49808565" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>try_lock</name></member>
+      <member refid="classfaiss_1_1LockVector_1a116ab98171a03587642262f59aa16a28" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>unlock</name></member>
+      <member refid="classfaiss_1_1LockVector_1a34bd496ef6e80b40deb9bb922cb4865c" prot="public" virt="non-virtual"><scope>faiss::LockVector</scope><name>~LockVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
