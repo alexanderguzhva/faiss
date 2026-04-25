@@ -4,39 +4,6 @@
     <compoundname>faiss::ArrayInvertedListsPanorama</compoundname>
     <basecompoundref refid="structfaiss_1_1ArrayInvertedLists" prot="public" virt="non-virtual">faiss::ArrayInvertedLists</basecompoundref>
     <includes refid="InvertedLists_8h" local="no">InvertedLists.h</includes>
-    <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedListsPanorama_1ae7c00b74c0614aff6c254a8a1e835be1" prot="public" static="yes" constexpr="yes" mutable="no">
-        <type>constexpr size_t</type>
-        <definition>constexpr size_t faiss::ArrayInvertedListsPanorama::kBatchSize</definition>
-        <argsstring></argsstring>
-        <name>kBatchSize</name>
-        <qualifiedname>faiss::ArrayInvertedListsPanorama::kBatchSize</qualifiedname>
-        <initializer>= 128</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="301" column="29" bodyfile="faiss/invlists/InvertedLists.h" bodystart="301" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structfaiss_1_1InvertedLists_1aae4b0f912ddda23dfef1085b4b683af7" prot="public" static="yes" mutable="no">
-        <type>const size_t</type>
-        <definition>const size_t faiss::InvertedLists::INVALID_CODE_SIZE</definition>
-        <argsstring></argsstring>
-        <name>INVALID_CODE_SIZE</name>
-        <qualifiedname>faiss::InvertedLists::INVALID_CODE_SIZE</qualifiedname>
-        <initializer>= static_cast&lt;size_t&gt;(-1)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>used for <ref refid="structfaiss_1_1BlockInvertedLists" kindref="compound">BlockInvertedLists</ref>, where the codes are packed into groups and the individual code size is meaningless </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="71" column="25" bodyfile="faiss/invlists/InvertedLists.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedListsPanorama_1a5382cbc1998cb1e46395309b29a0d3ea" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structfaiss_1_1MaybeOwnedVector" kindref="compound">MaybeOwnedVector</ref>&lt; float &gt; &gt;</type>
@@ -50,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="302" column="17" bodyfile="faiss/invlists/InvertedLists.h" bodystart="302" bodyend="-1"/>
+        <location file="faiss/invlists/InvertedLists.h" line="301" column="17" bodyfile="faiss/invlists/InvertedLists.h" bodystart="301" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedListsPanorama_1a5594ce9feb3099e318d4e7ed66fb8b15" prot="public" static="no" mutable="no">
         <type>const size_t</type>
@@ -64,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="303" column="18" bodyfile="faiss/invlists/InvertedLists.h" bodystart="303" bodyend="-1"/>
+        <location file="faiss/invlists/InvertedLists.h" line="302" column="18" bodyfile="faiss/invlists/InvertedLists.h" bodystart="302" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedListsPanorama_1ad95b140de94b879164236dae97b08cbf" prot="public" static="no" mutable="no">
         <type>const size_t</type>
@@ -78,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="304" column="18" bodyfile="faiss/invlists/InvertedLists.h" bodystart="304" bodyend="-1"/>
+        <location file="faiss/invlists/InvertedLists.h" line="303" column="18" bodyfile="faiss/invlists/InvertedLists.h" bodystart="303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedListsPanorama_1a7d8486c52f697dff1559a93389110b83" prot="public" static="no" mutable="no">
         <type><ref refid="structfaiss_1_1Panorama" kindref="compound">Panorama</ref></type>
@@ -92,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="305" column="14" bodyfile="faiss/invlists/InvertedLists.h" bodystart="305" bodyend="-1"/>
+        <location file="faiss/invlists/InvertedLists.h" line="304" column="14" bodyfile="faiss/invlists/InvertedLists.h" bodystart="304" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedLists_1a6f32dcbae471038a067b9b310e338f4b" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structfaiss_1_1MaybeOwnedVector" kindref="compound">MaybeOwnedVector</ref>&lt; uint8_t &gt; &gt;</type>
@@ -171,10 +138,10 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="structfaiss_1_1ArrayInvertedListsPanorama_1ac370cd41612de481f34f24dd393700bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structfaiss_1_1ArrayInvertedListsPanorama_1aa170aa16cd9a04327c96d86f83388dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>faiss::ArrayInvertedListsPanorama::ArrayInvertedListsPanorama</definition>
-        <argsstring>(size_t nlist_in, size_t code_size_in, size_t n_levels_in)</argsstring>
+        <argsstring>(size_t nlist_in, size_t code_size_in, size_t n_levels_in, size_t batch_size=Panorama::kDefaultBatchSize)</argsstring>
         <name>ArrayInvertedListsPanorama</name>
         <qualifiedname>faiss::ArrayInvertedListsPanorama::ArrayInvertedListsPanorama</qualifiedname>
         <param>
@@ -189,13 +156,18 @@
           <type>size_t</type>
           <declname>n_levels_in</declname>
         </param>
+        <param>
+          <type>size_t</type>
+          <declname>batch_size</declname>
+          <defval>Panorama::kDefaultBatchSize</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/invlists/InvertedLists.h" line="307" column="5"/>
+        <location file="faiss/invlists/InvertedLists.h" line="306" column="5"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1ArrayInvertedListsPanorama_1a030b45656a2572d85b80fa05d2673eeb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const float *</type>
@@ -811,6 +783,24 @@
         <location file="faiss/invlists/InvertedLists.h" line="163" column="5" bodyfile="faiss/invlists/InvertedLists.h" bodystart="163" bodyend="175"/>
       </memberdef>
     </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1InvertedLists_1aae4b0f912ddda23dfef1085b4b683af7" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t faiss::InvertedLists::INVALID_CODE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>INVALID_CODE_SIZE</name>
+        <qualifiedname>faiss::InvertedLists::INVALID_CODE_SIZE</qualifiedname>
+        <initializer>= static_cast&lt;size_t&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>used for <ref refid="structfaiss_1_1BlockInvertedLists" kindref="compound">BlockInvertedLists</ref>, where the codes are packed into groups and the individual code size is meaningless </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/invlists/InvertedLists.h" line="71" column="25" bodyfile="faiss/invlists/InvertedLists.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -864,7 +854,7 @@
       <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1a72c3abf8547925e21430aa2bcb34c9d1" prot="public" virt="virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>add_entries</name></member>
       <member refid="structfaiss_1_1InvertedLists_1aa8fe060cb73a42c570d7e835ab172356" prot="public" virt="virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>add_entry</name></member>
       <member refid="structfaiss_1_1ArrayInvertedLists_1a625794376aca87bf31645a92deb73fda" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>ArrayInvertedLists</name></member>
-      <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1ac370cd41612de481f34f24dd393700bf" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>ArrayInvertedListsPanorama</name></member>
+      <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1aa170aa16cd9a04327c96d86f83388dc0" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>ArrayInvertedListsPanorama</name></member>
       <member refid="structfaiss_1_1InvertedLists_1ae06049e4259edb47d443ef87bdedc744" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>code_size</name></member>
       <member refid="structfaiss_1_1ArrayInvertedLists_1a6f32dcbae471038a067b9b310e338f4b" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>codes</name></member>
       <member refid="structfaiss_1_1InvertedLists_1a903eed79c2fd1483c6e0eb500200da9f" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>compute_ntotal</name></member>
@@ -881,7 +871,6 @@
       <member refid="structfaiss_1_1InvertedLists_1aae4b0f912ddda23dfef1085b4b683af7" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>INVALID_CODE_SIZE</name></member>
       <member refid="structfaiss_1_1InvertedLists_1a0abb61a7f9be829d91e43c4725ce9c5b" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>InvertedLists</name></member>
       <member refid="structfaiss_1_1ArrayInvertedLists_1a88c4b8532f054274ec2ade7194e95698" prot="public" virt="virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>is_empty</name></member>
-      <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1ae7c00b74c0614aff6c254a8a1e835be1" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>kBatchSize</name></member>
       <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1ad95b140de94b879164236dae97b08cbf" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>level_width</name></member>
       <member refid="structfaiss_1_1ArrayInvertedLists_1af43d3f5c5bd897205853b289603fb42b" prot="public" virt="virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>list_size</name></member>
       <member refid="structfaiss_1_1InvertedLists_1ac2a0686121ef5bdd6eb70f7eb3cf9b3a" prot="public" virt="non-virtual"><scope>faiss::ArrayInvertedListsPanorama</scope><name>merge_from</name></member>

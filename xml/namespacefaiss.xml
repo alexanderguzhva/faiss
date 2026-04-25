@@ -5214,6 +5214,222 @@
         </inbodydescription>
         <location file="faiss/impl/maybe_owned_vector.h" line="317" column="6" bodyfile="faiss/impl/maybe_owned_vector.h" bodystart="317" bodyend="321"/>
       </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a363323eeb7964d0be3b343a97660aea2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>AllActive</declname>
+            <defname>AllActive</defname>
+            <defval>false</defval>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>LevelWidth</declname>
+            <defname>LevelWidth</defname>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>FAISS_PRAGMA_IMPRECISE_FUNCTION_BEGIN void</type>
+        <definition>static FAISS_PRAGMA_IMPRECISE_FUNCTION_BEGIN void faiss::compute_level_dot_kernel</definition>
+        <argsstring>(const float *FAISS_RESTRICT query_level, const float *FAISS_RESTRICT level_storage, const uint32_t *active_indices, const size_t num_active, const size_t level_width_dims, float *FAISS_RESTRICT dot_products)</argsstring>
+        <name>compute_level_dot_kernel</name>
+        <qualifiedname>faiss::compute_level_dot_kernel</qualifiedname>
+        <param>
+          <type>const float *FAISS_RESTRICT</type>
+          <declname>query_level</declname>
+        </param>
+        <param>
+          <type>const float *FAISS_RESTRICT</type>
+          <declname>level_storage</declname>
+        </param>
+        <param>
+          <type>const uint32_t *</type>
+          <declname>active_indices</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>num_active</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>level_width_dims</declname>
+        </param>
+        <param>
+          <type>float *FAISS_RESTRICT</type>
+          <declname>dot_products</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute dot products between query_level and active vectors.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>AllActive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, vectors are at sequential positions 0..N-1 (first level, full batch). If false, positions come from active_indices (subsequent levels after pruning). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LevelWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Compile-time level width in floats (0 = use runtime level_width_dims). Enables full loop unrolling. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/Panorama.h" line="41" column="20" bodyfile="faiss/impl/Panorama.h" bodystart="41" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a9831b89f0165e35baa42f0613aeecdd7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>bool</type>
+            <declname>AllActive</declname>
+            <defname>AllActive</defname>
+          </param>
+          <param>
+            <type>typename C</type>
+          </param>
+          <param>
+            <type>MetricType</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+        </templateparamlist>
+        <type>FAISS_PRAGMA_IMPRECISE_FUNCTION_END static FAISS_PRAGMA_IMPRECISE_FUNCTION_BEGIN void</type>
+        <definition>FAISS_PRAGMA_IMPRECISE_FUNCTION_END static FAISS_PRAGMA_IMPRECISE_FUNCTION_BEGIN void faiss::prune_kernel</definition>
+        <argsstring>(float *FAISS_RESTRICT exact_distances, const float *FAISS_RESTRICT dot_buffer, const float *FAISS_RESTRICT level_cum_sums, uint8_t *FAISS_RESTRICT active_byteset, const uint32_t *FAISS_RESTRICT active_indices, const uint32_t num_active, const float query_cum_norm, const float threshold)</argsstring>
+        <name>prune_kernel</name>
+        <qualifiedname>faiss::prune_kernel</qualifiedname>
+        <param>
+          <type>float *FAISS_RESTRICT</type>
+          <declname>exact_distances</declname>
+        </param>
+        <param>
+          <type>const float *FAISS_RESTRICT</type>
+          <declname>dot_buffer</declname>
+        </param>
+        <param>
+          <type>const float *FAISS_RESTRICT</type>
+          <declname>level_cum_sums</declname>
+        </param>
+        <param>
+          <type>uint8_t *FAISS_RESTRICT</type>
+          <declname>active_byteset</declname>
+        </param>
+        <param>
+          <type>const uint32_t *FAISS_RESTRICT</type>
+          <declname>active_indices</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>num_active</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>query_cum_norm</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update exact distances with the current level&apos;s dot products, then apply <ref refid="structfaiss_1_1Panorama" kindref="compound">Panorama</ref> pruning: for each active vector, compute a lower bound on the final distance and mark it for removal if it cannot beat the current threshold. Writes 0/1 into active_byteset for subsequent compaction.</para>
+<para>Uses <computeroutput>if constexpr</computeroutput> on C::is_max rather than C::cmp() to ensure the comparison autovectorizes (C::cmp generates scalar function calls). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/Panorama.h" line="97" column="20" bodyfile="faiss/impl/Panorama.h" bodystart="97" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a827b618a63e28ed37e15d58bac2651bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FAISS_PRAGMA_IMPRECISE_FUNCTION_END size_t</type>
+        <definition>FAISS_PRAGMA_IMPRECISE_FUNCTION_END size_t faiss::compact_active_kernel</definition>
+        <argsstring>(uint32_t *active_indices, const uint8_t *FAISS_RESTRICT active_byteset, const size_t num_active)</argsstring>
+        <name>compact_active_kernel</name>
+        <qualifiedname>faiss::compact_active_kernel</qualifiedname>
+        <param>
+          <type>uint32_t *</type>
+          <declname>active_indices</declname>
+        </param>
+        <param>
+          <type>const uint8_t *FAISS_RESTRICT</type>
+          <declname>active_byteset</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>num_active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compact active_indices in-place, removing entries where active_byteset[i] is zero. Returns the new count of active elements. Uses a branchless BMI2 + AVX2 fast path (8 elements/iteration via _pext_u64 permutation) with a scalar fallback for the tail and non-x86 platforms. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/Panorama.h" line="137" column="15" bodyfile="faiss/impl/Panorama.h" bodystart="137" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ae6f31f1aa3caf51109b4826f5beea953" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename LambdaType</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto faiss::with_level_width</definition>
+        <argsstring>(size_t width, LambdaType &amp;&amp;action)</argsstring>
+        <name>with_level_width</name>
+        <qualifiedname>faiss::with_level_width</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>LambdaType &amp;&amp;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Specialize for common float level widths (multiples of 8 up to 128). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/Panorama.h" line="190" column="13" bodyfile="faiss/impl/Panorama.h" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1acbfa0bb394a6f92972d97f6d4b1f8d3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Lambda</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto faiss::with_bool</definition>
+        <argsstring>(bool value, Lambda &amp;&amp;fn)</argsstring>
+        <name>with_bool</name>
+        <qualifiedname>faiss::with_bool</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Lambda &amp;&amp;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/Panorama.h" line="196" column="13" bodyfile="faiss/impl/Panorama.h" bodystart="196" bodyend="202"/>
+      </memberdef>
       <memberdef kind="function" id="namespacefaiss_1abd58cb9ccddf108229bd3f2d3f0d2bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void faiss::beam_search_encode_step</definition>

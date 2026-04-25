@@ -19,6 +19,20 @@
         </inbodydescription>
         <location file="faiss/IndexIVFFlatPanorama.h" line="39" column="12" bodyfile="faiss/IndexIVFFlatPanorama.h" bodystart="39" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1IndexIVFFlatPanorama_1a03622f5ea11aa41b97d0cfc92c9cf73a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::IndexIVFFlatPanorama::batch_size</definition>
+        <argsstring></argsstring>
+        <name>batch_size</name>
+        <qualifiedname>faiss::IndexIVFFlatPanorama::batch_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/IndexIVFFlatPanorama.h" line="40" column="12" bodyfile="faiss/IndexIVFFlatPanorama.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1IndexIVFFlatPanorama_1aad0419e3bdd8bcb26b3b35a13a7fc15c" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structfaiss_1_1MaybeOwnedVector" kindref="compound">MaybeOwnedVector</ref>&lt; float &gt; &gt;</type>
         <definition>std::vector&lt;MaybeOwnedVector&lt;float&gt; &gt; faiss::IndexIVFFlatPanorama::cum_sums</definition>
@@ -31,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVFFlatPanorama.h" line="41" column="17" bodyfile="faiss/IndexIVFFlatPanorama.h" bodystart="41" bodyend="-1"/>
+        <location file="faiss/IndexIVFFlatPanorama.h" line="42" column="17" bodyfile="faiss/IndexIVFFlatPanorama.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1IndexIVF_1aa0e8fc5e04cbd8e0dde61f98bc7dd0bc" prot="public" static="no" mutable="no">
         <type><ref refid="structfaiss_1_1InvertedLists" kindref="compound">InvertedLists</ref> *</type>
@@ -363,10 +377,10 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="structfaiss_1_1IndexIVFFlatPanorama_1a0bf704a9a7bb615db79b9638af436591" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structfaiss_1_1IndexIVFFlatPanorama_1ae332c5889f86e1a2ffc56e9008ae7975" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
         <definition>faiss::IndexIVFFlatPanorama::IndexIVFFlatPanorama</definition>
-        <argsstring>(Index *quantizer, size_t d, size_t nlist_, int n_levels, MetricType=METRIC_L2, bool own_invlists=true)</argsstring>
+        <argsstring>(Index *quantizer, size_t d, size_t nlist_, int n_levels, MetricType=METRIC_L2, bool own_invlists=true, size_t batch_size=Panorama::kDefaultBatchSize)</argsstring>
         <name>IndexIVFFlatPanorama</name>
         <qualifiedname>faiss::IndexIVFFlatPanorama::IndexIVFFlatPanorama</qualifiedname>
         <param>
@@ -394,13 +408,18 @@
           <declname>own_invlists</declname>
           <defval>true</defval>
         </param>
+        <param>
+          <type>size_t</type>
+          <declname>batch_size</declname>
+          <defval>Panorama::kDefaultBatchSize</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVFFlatPanorama.h" line="43" column="14"/>
+        <location file="faiss/IndexIVFFlatPanorama.h" line="44" column="14"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1IndexIVFFlatPanorama_1a892bca2b82d19902f792cc09d7711eb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="structfaiss_1_1InvertedListScanner" kindref="compound">InvertedListScanner</ref> *</type>
@@ -429,7 +448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVFFlatPanorama.h" line="51" column="25"/>
+        <location file="faiss/IndexIVFFlatPanorama.h" line="53" column="25"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1IndexIVFFlatPanorama_1a903b66bafb3113dd9b43fc7e6c5c8173" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -458,7 +477,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVFFlatPanorama.h" line="56" column="10"/>
+        <location file="faiss/IndexIVFFlatPanorama.h" line="58" column="10"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1IndexIVFFlatPanorama_1ad64bbb332d4f9fdfa2710af94f07dc5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -472,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVFFlatPanorama.h" line="59" column="5"/>
+        <location file="faiss/IndexIVFFlatPanorama.h" line="61" column="5"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1IndexIVFFlat_1ae78a755e5cd0e53aed9154d168bcc653" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -2635,7 +2654,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="faiss/IndexIVFFlatPanorama.h" line="38" column="1" bodyfile="faiss/IndexIVFFlatPanorama.h" bodystart="38" bodyend="60"/>
+    <location file="faiss/IndexIVFFlatPanorama.h" line="38" column="1" bodyfile="faiss/IndexIVFFlatPanorama.h" bodystart="38" bodyend="62"/>
     <listofallmembers>
       <member refid="structfaiss_1_1IndexIVF_1a821002a9d3a1a74dc8d6f6072eca4075" prot="public" virt="virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>add</name></member>
       <member refid="structfaiss_1_1IndexIVFFlat_1ae78a755e5cd0e53aed9154d168bcc653" prot="public" virt="virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>add_core</name></member>
@@ -2644,6 +2663,7 @@
       <member refid="structfaiss_1_1IndexIVF_1a14e75169bddcd0251134821416b060a1" prot="public" virt="virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>add_with_ids</name></member>
       <member refid="structfaiss_1_1Index_1ac306752b6e39ee77a97c2a0ac193b8c5" prot="public" virt="virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>add_with_ids_ex</name></member>
       <member refid="structfaiss_1_1Index_1a010ae05c4ba70d309f9821d9b03182aa" prot="public" virt="virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>assign</name></member>
+      <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a03622f5ea11aa41b97d0cfc92c9cf73a" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>batch_size</name></member>
       <member refid="structfaiss_1_1IndexIVF_1acb4c54db659b15a5471102ccc2cd2b43" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>by_residual</name></member>
       <member refid="structfaiss_1_1IndexIVF_1a5a097e5b50f8b220db61b52c6fdaf1f9" prot="public" virt="virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>check_compatible_for_merge</name></member>
       <member refid="structfaiss_1_1IndexIVF_1a92fd8b2703f8d47c89aa69f39e0fa683" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>check_ids_sorted</name></member>
@@ -2672,7 +2692,7 @@
       <member refid="structfaiss_1_1IndexIVF_1a74c689174e4a82a35512cafdd0878158" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVF</name></member>
       <member refid="structfaiss_1_1IndexIVFFlat_1a0bd6a2d2a6bbe8bf9edff3d36eff8eb0" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVFFlat</name></member>
       <member refid="structfaiss_1_1IndexIVFFlat_1a22b8eebcf0685fc484886913f4296382" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVFFlat</name></member>
-      <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a0bf704a9a7bb615db79b9638af436591" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVFFlatPanorama</name></member>
+      <member refid="structfaiss_1_1IndexIVFFlatPanorama_1ae332c5889f86e1a2ffc56e9008ae7975" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVFFlatPanorama</name></member>
       <member refid="structfaiss_1_1IndexIVFFlatPanorama_1ad64bbb332d4f9fdfa2710af94f07dc5f" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVFFlatPanorama</name></member>
       <member refid="structfaiss_1_1IndexIVFInterface_1a42d6cbfc07119b277be0e2bb900f1ebf" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>IndexIVFInterface</name></member>
       <member refid="structfaiss_1_1IndexIVF_1aa0e8fc5e04cbd8e0dde61f98bc7dd0bc" prot="public" virt="non-virtual"><scope>faiss::IndexIVFFlatPanorama</scope><name>invlists</name></member>

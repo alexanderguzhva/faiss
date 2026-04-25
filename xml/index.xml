@@ -193,8 +193,6 @@
     <member refid="structfaiss_1_1InvertedLists_1aae4b0f912ddda23dfef1085b4b683af7" kind="variable"><name>INVALID_CODE_SIZE</name></member>
   </compound>
   <compound refid="structfaiss_1_1ArrayInvertedListsPanorama" kind="struct"><name>faiss::ArrayInvertedListsPanorama</name>
-    <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1ae7c00b74c0614aff6c254a8a1e835be1" kind="variable"><name>kBatchSize</name></member>
-    <member refid="structfaiss_1_1InvertedLists_1aae4b0f912ddda23dfef1085b4b683af7" kind="variable"><name>INVALID_CODE_SIZE</name></member>
     <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1a5382cbc1998cb1e46395309b29a0d3ea" kind="variable"><name>cum_sums</name></member>
     <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1a5594ce9feb3099e318d4e7ed66fb8b15" kind="variable"><name>n_levels</name></member>
     <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1ad95b140de94b879164236dae97b08cbf" kind="variable"><name>level_width</name></member>
@@ -204,7 +202,7 @@
     <member refid="structfaiss_1_1InvertedLists_1afaf8b7aa3e846aa4553f6aae67827ec8" kind="variable"><name>nlist</name></member>
     <member refid="structfaiss_1_1InvertedLists_1ae06049e4259edb47d443ef87bdedc744" kind="variable"><name>code_size</name></member>
     <member refid="structfaiss_1_1InvertedLists_1a8d364ca073bda125730576b8cda17c9d" kind="variable"><name>use_iterator</name></member>
-    <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1ac370cd41612de481f34f24dd393700bf" kind="function"><name>ArrayInvertedListsPanorama</name></member>
+    <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1aa170aa16cd9a04327c96d86f83388dc0" kind="function"><name>ArrayInvertedListsPanorama</name></member>
     <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1a030b45656a2572d85b80fa05d2673eeb" kind="function"><name>get_cum_sums</name></member>
     <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1a72c3abf8547925e21430aa2bcb34c9d1" kind="function"><name>add_entries</name></member>
     <member refid="structfaiss_1_1ArrayInvertedListsPanorama_1a876d33b4e3e9c64b15f806a06c65f1d9" kind="function"><name>update_entries</name></member>
@@ -234,6 +232,7 @@
     <member refid="structfaiss_1_1InvertedLists_1a102adbbc3c4457ab23932e9113d98573adff0557b40fbf1001a01e45e39bd67ee" kind="enumvalue"><name>SUBSET_TYPE_ELEMENT_RANGE</name></member>
     <member refid="structfaiss_1_1InvertedLists_1a102adbbc3c4457ab23932e9113d98573a5d55a8816a2f7a3f98de02e44a4976dc" kind="enumvalue"><name>SUBSET_TYPE_INVLIST_FRACTION</name></member>
     <member refid="structfaiss_1_1InvertedLists_1a102adbbc3c4457ab23932e9113d98573a28818c3eeac36130c18c2e6bac7ee4ef" kind="enumvalue"><name>SUBSET_TYPE_INVLIST</name></member>
+    <member refid="structfaiss_1_1InvertedLists_1aae4b0f912ddda23dfef1085b4b683af7" kind="variable"><name>INVALID_CODE_SIZE</name></member>
   </compound>
   <compound refid="structfaiss_1_1AutoTuneCriterion" kind="struct"><name>faiss::AutoTuneCriterion</name>
     <member refid="structfaiss_1_1AutoTuneCriterion_1adcfaafb3f1b3449e2cfd553f0f603a5b" kind="variable"><name>nq</name></member>
@@ -4538,6 +4537,7 @@
   </compound>
   <compound refid="structfaiss_1_1IndexIVFFlatPanorama" kind="struct"><name>faiss::IndexIVFFlatPanorama</name>
     <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a4c70a23269f504832e5ea152661eb365" kind="variable"><name>n_levels</name></member>
+    <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a03622f5ea11aa41b97d0cfc92c9cf73a" kind="variable"><name>batch_size</name></member>
     <member refid="structfaiss_1_1IndexIVFFlatPanorama_1aad0419e3bdd8bcb26b3b35a13a7fc15c" kind="variable"><name>cum_sums</name></member>
     <member refid="structfaiss_1_1IndexIVF_1aa0e8fc5e04cbd8e0dde61f98bc7dd0bc" kind="variable"><name>invlists</name></member>
     <member refid="structfaiss_1_1IndexIVF_1a5743b18d78fe1b9910d8ff8670f207d7" kind="variable"><name>own_invlists</name></member>
@@ -4560,7 +4560,7 @@
     <member refid="structfaiss_1_1Level1Quantizer_1ab688c629cd42122d73517078b87f483d" kind="variable"><name>own_fields</name></member>
     <member refid="structfaiss_1_1Level1Quantizer_1abb7097ed40b15ba0af08af6d03608f72" kind="variable"><name>cp</name></member>
     <member refid="structfaiss_1_1Level1Quantizer_1a45d29dd6a5c53789c08e5ceb3f63d989" kind="variable"><name>clustering_index</name></member>
-    <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a0bf704a9a7bb615db79b9638af436591" kind="function"><name>IndexIVFFlatPanorama</name></member>
+    <member refid="structfaiss_1_1IndexIVFFlatPanorama_1ae332c5889f86e1a2ffc56e9008ae7975" kind="function"><name>IndexIVFFlatPanorama</name></member>
     <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a892bca2b82d19902f792cc09d7711eb6" kind="function"><name>get_InvertedListScanner</name></member>
     <member refid="structfaiss_1_1IndexIVFFlatPanorama_1a903b66bafb3113dd9b43fc7e6c5c8173" kind="function"><name>reconstruct_from_offset</name></member>
     <member refid="structfaiss_1_1IndexIVFFlatPanorama_1ad64bbb332d4f9fdfa2710af94f07dc5f" kind="function"><name>IndexIVFFlatPanorama</name></member>
@@ -9257,6 +9257,7 @@
     <member refid="structfaiss_1_1OutputBufferConverter_3_01T_00_01U_00_01std_1_1enable__if__t_3_01std_1_1is__same_a6814903930b03e09cd49b3c9c013253_1ad6fa017bb2429393b5362f220ca45940" kind="function"><name>operator std::span&lt; T &gt;</name></member>
   </compound>
   <compound refid="structfaiss_1_1Panorama" kind="struct"><name>faiss::Panorama</name>
+    <member refid="structfaiss_1_1Panorama_1a03b9727771332834277dc56aaf1f35bc" kind="variable"><name>kDefaultBatchSize</name></member>
     <member refid="structfaiss_1_1Panorama_1a0628ed744f5bc804f87e7e9f03b53604" kind="variable"><name>d</name></member>
     <member refid="structfaiss_1_1Panorama_1af3a96532780aedf8d83a7534882dfd68" kind="variable"><name>code_size</name></member>
     <member refid="structfaiss_1_1Panorama_1ac885ad39deed6034073c8d839fcd113e" kind="variable"><name>n_levels</name></member>
@@ -9269,7 +9270,7 @@
     <member refid="structfaiss_1_1Panorama_1ab721afb080cbcc7bf0af53d71c2f65be" kind="function"><name>compute_cumulative_sums</name></member>
     <member refid="structfaiss_1_1Panorama_1a1880485cda3bb3d1c98b2735de2d8925" kind="function"><name>compute_query_cum_sums</name></member>
     <member refid="structfaiss_1_1Panorama_1a890cce5c088cd98066dc5210ccfa31a8" kind="function"><name>copy_entry</name></member>
-    <member refid="structfaiss_1_1Panorama_1a703b840b015db4678d9080006cdcedc7" kind="function"><name>progressive_filter_batch</name></member>
+    <member refid="structfaiss_1_1Panorama_1a5f996d9544137bc259eb9296ddb5eea9" kind="function"><name>progressive_filter_batch</name></member>
     <member refid="structfaiss_1_1Panorama_1ae8c69dd7c911cf621b7110f4ad576819" kind="function"><name>reconstruct</name></member>
   </compound>
   <compound refid="structfaiss_1_1PanoramaStats" kind="struct"><name>faiss::PanoramaStats</name>
@@ -9883,6 +9884,22 @@
     <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTemplate_3_01Codec_00_01QuantizerTemplateScaling_1_d0b54c1d5580c4f0c3be0e42b36550f3_1a7fe0ed6e064d13c88dca09b4967485a3" kind="function"><name>decode_vector</name></member>
     <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTemplate_3_01Codec_00_01QuantizerTemplateScaling_1_d0b54c1d5580c4f0c3be0e42b36550f3_1aa3adea66d6bb5ed1e8df7d365035cfad" kind="function"><name>reconstruct_component</name></member>
   </compound>
+  <compound refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE" kind="struct"><name>faiss::scalar_quantizer::QuantizerTurboQuantMSE</name>
+  </compound>
+  <compound refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4" kind="struct"><name>faiss::scalar_quantizer::QuantizerTurboQuantMSE&lt; NBits, SIMDLevel::NONE &gt;</name>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1ad990a65aa0e43b2864927b0c989e868c" kind="variable"><name>kCentroidsCount</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1a15d32df4624082ccca5c3f0b576d78dc" kind="variable"><name>kIndexMask</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1aaaf82a0f334305aef68476ac4c7b9b8b" kind="variable"><name>d</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1a396df0845ba782627b4caf9d9d0b5e1d" kind="variable"><name>centroids</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1abc43ca60dc6f4d4dcf606c36374ff269" kind="variable"><name>boundaries</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1aec5eadb822743aab3a7c1974ef04db6d" kind="function"><name>QuantizerTurboQuantMSE</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1ac715fda88a66162476a0e4e41744cfb4" kind="function"><name>select_index</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1a67a9aa4e488550b6e7328835758c9979" kind="function"><name>encode_index</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1afde2f51a8c8a13a8310748c8702bea60" kind="function"><name>decode_index</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1a6991491ba13a91fe434e7e33ac695340" kind="function"><name>encode_vector</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1a6fe20784a98cdea8f6e2d6f5aac47f16" kind="function"><name>decode_vector</name></member>
+    <member refid="structfaiss_1_1scalar__quantizer_1_1QuantizerTurboQuantMSE_3_01NBits_00_01SIMDLevel_1_1NONE_01_4_1a2199383e3257775e5933618f7782de40" kind="function"><name>reconstruct_component</name></member>
+  </compound>
   <compound refid="structfaiss_1_1rabitq__utils_1_1QueryFactorsData" kind="struct"><name>faiss::rabitq_utils::QueryFactorsData</name>
     <member refid="structfaiss_1_1rabitq__utils_1_1QueryFactorsData_1a76e317feef2f672682aba86b106c2fce" kind="variable"><name>c1</name></member>
     <member refid="structfaiss_1_1rabitq__utils_1_1QueryFactorsData_1a27af93ddaac7290afbe4d6bd20920b15" kind="variable"><name>c2</name></member>
@@ -10469,6 +10486,11 @@
     <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952eae6cdb226519ce240694da1a4f21232cd" kind="enumvalue"><name>QT_bf16</name></member>
     <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952eaab5c903ada4c52a308aae478d9e40452" kind="enumvalue"><name>QT_8bit_direct_signed</name></member>
     <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952ea0a3662a1beaeae6bb52895f4ea229399" kind="enumvalue"><name>QT_0bit</name></member>
+    <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952ea0ba6b499883c48ad063ff627d4d98099" kind="enumvalue"><name>QT_1bit_tqmse</name></member>
+    <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952ea97c627e4a1c4de701476e62cefa55c81" kind="enumvalue"><name>QT_2bit_tqmse</name></member>
+    <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952eaded304f706a74b53c6eea653069d8f0a" kind="enumvalue"><name>QT_3bit_tqmse</name></member>
+    <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952ead1c9451e794b77d542dbba16726c5ad2" kind="enumvalue"><name>QT_4bit_tqmse</name></member>
+    <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952ea286fea768bd9b4cdfc5fbbe769ec0fb6" kind="enumvalue"><name>QT_8bit_tqmse</name></member>
     <member refid="structfaiss_1_1ScalarQuantizer_1a1201dbd1611fa5c10782ade5d0e4952ea078b633a7a11d97a8a140a56a0648439" kind="enumvalue"><name>QT_count</name></member>
     <member refid="structfaiss_1_1ScalarQuantizer_1a867ad0000e4ccfd40bbb1e01e7882d06" kind="enum"><name>RangeStat</name></member>
     <member refid="structfaiss_1_1ScalarQuantizer_1a867ad0000e4ccfd40bbb1e01e7882d06aa52f2f14616c61c04baf6323d43588fd" kind="enumvalue"><name>RS_minmax</name></member>
@@ -12264,6 +12286,11 @@
     <member refid="namespacefaiss_1a613c867df3afeba8421d7ca1200e7529" kind="function"><name>kmeans1d</name></member>
     <member refid="namespacefaiss_1ae753c3918c4698ce7ad1eacb25b9c574" kind="function"><name>operator==</name></member>
     <member refid="namespacefaiss_1a19490ca11481c398d216a3e808386497" kind="function"><name>operator!=</name></member>
+    <member refid="namespacefaiss_1a363323eeb7964d0be3b343a97660aea2" kind="function"><name>compute_level_dot_kernel</name></member>
+    <member refid="namespacefaiss_1a9831b89f0165e35baa42f0613aeecdd7" kind="function"><name>prune_kernel</name></member>
+    <member refid="namespacefaiss_1a827b618a63e28ed37e15d58bac2651bf" kind="function"><name>compact_active_kernel</name></member>
+    <member refid="namespacefaiss_1ae6f31f1aa3caf51109b4826f5beea953" kind="function"><name>with_level_width</name></member>
+    <member refid="namespacefaiss_1acbfa0bb394a6f92972d97f6d4b1f8d3c" kind="function"><name>with_bool</name></member>
     <member refid="namespacefaiss_1abd58cb9ccddf108229bd3f2d3f0d2bac" kind="function"><name>beam_search_encode_step</name></member>
     <member refid="namespacefaiss_1abbf2bb1faef7c8072b82a7db323397a0" kind="function"><name>beam_search_encode_step_tab</name></member>
     <member refid="namespacefaiss_1ae298d588e823c407f64b5a0aab4c9148" kind="function"><name>dispatch_knn_ResultHandler</name></member>
@@ -12653,6 +12680,7 @@
   <compound refid="namespacefaiss_1_1cppcontrib_1_1detail_1_1_0d5" kind="namespace"><name>faiss::cppcontrib::detail::@5</name>
   </compound>
   <compound refid="namespacefaiss_1_1detail" kind="namespace"><name>faiss::detail</name>
+    <member refid="namespacefaiss_1_1detail_1ace450562f499446f88cfc5596a421e9d" kind="function"><name>dispatch_width</name></member>
   </compound>
   <compound refid="namespacefaiss_1_1detail_1_1simdlib" kind="namespace"><name>faiss::detail::simdlib</name>
     <member refid="simdlib__neon_8h_1afc331a48c5bd48bef46e092ea2fc317f" kind="typedef"><name>remove_cv_ref_t</name></member>
@@ -12919,6 +12947,7 @@
     <member refid="sq-dispatch_8h_1a18cda87f7f14bce99d80b0b2cf695df5" kind="function"><name>sq_select_InvertedListScanner&lt; THE_LEVEL_TO_DISPATCH &gt;</name></member>
     <member refid="training_8h_1a7832c78df26bd9df1561e07d4da31891" kind="function"><name>train_Uniform</name></member>
     <member refid="training_8h_1a034e56b144961f4bf96372b957fb0885" kind="function"><name>train_NonUniform</name></member>
+    <member refid="training_8h_1abf3cbfe5f3be5bb8f2d0f8e720245576" kind="function"><name>train_TurboQuantMSE</name></member>
   </compound>
   <compound refid="namespacefaiss_1_1simd__partitioning" kind="namespace"><name>faiss::simd_partitioning</name>
   </compound>
@@ -13282,6 +13311,7 @@
     <member refid="platform__macros_8h_1a8bf69ed1a28e4db9afeea26ef5d0358e" kind="define"><name>posix_memalign_free</name></member>
     <member refid="platform__macros_8h_1a8e7a3bf6003d72a62606f343c2db6245" kind="define"><name>ALIGNED</name></member>
     <member refid="platform__macros_8h_1aec1bc9078e503a72e556dbaba7bd87df" kind="define"><name>FAISS_PACKED</name></member>
+    <member refid="platform__macros_8h_1a5e2365b4bdcdfaa1b60d9c44cd226733" kind="define"><name>FAISS_RESTRICT</name></member>
     <member refid="platform__macros_8h_1a5db2a02c2a94ef34720cb33a8fa41e79" kind="define"><name>FAISS_PACK_STRUCTS_BEGIN</name></member>
     <member refid="platform__macros_8h_1af21bb2324a630f7e1e7ec34eecfd564c" kind="define"><name>FAISS_PACK_STRUCTS_END</name></member>
     <member refid="platform__macros_8h_1ad7d30d301b7cb834b0671c66350fdb57" kind="define"><name>FAISS_ALWAYS_INLINE</name></member>
