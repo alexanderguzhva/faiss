@@ -5,7 +5,7 @@
     <basecompoundref refid="structfaiss_1_1AutoTuneCriterion" prot="public" virt="non-virtual">faiss::AutoTuneCriterion</basecompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structfaiss_1_1OneRecallAtRCriterion_1ab25af5442746a34451a7ceeebd40f380" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::OneRecallAtRCriterion::R</definition>
         <argsstring></argsstring>
         <name>R</name>
@@ -19,7 +19,7 @@
         <location file="faiss/AutoTune.h" line="57" column="11" bodyfile="faiss/AutoTune.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1AutoTuneCriterion_1adcfaafb3f1b3449e2cfd553f0f603a5b" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::AutoTuneCriterion::nq</definition>
         <argsstring></argsstring>
         <name>nq</name>
@@ -34,7 +34,7 @@
         <location file="faiss/AutoTune.h" line="26" column="11" bodyfile="faiss/AutoTune.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1AutoTuneCriterion_1a3bb11e873707a812999f8391869aafab" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::AutoTuneCriterion::nnn</definition>
         <argsstring></argsstring>
         <name>nnn</name>
@@ -49,7 +49,7 @@
         <location file="faiss/AutoTune.h" line="27" column="11" bodyfile="faiss/AutoTune.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1AutoTuneCriterion_1a9b3a2242729a0873d255c1684881bbd4" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::AutoTuneCriterion::gt_nnn</definition>
         <argsstring></argsstring>
         <name>gt_nnn</name>
@@ -79,7 +79,7 @@
         <location file="faiss/AutoTune.h" line="30" column="17" bodyfile="faiss/AutoTune.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1AutoTuneCriterion_1af915fc4df215e3c8d9f71ff42d526144" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt;</type>
         <definition>std::vector&lt;idx_t&gt; faiss::AutoTuneCriterion::gt_I</definition>
         <argsstring></argsstring>
         <name>gt_I</name>
@@ -102,11 +102,11 @@
         <name>OneRecallAtRCriterion</name>
         <qualifiedname>faiss::OneRecallAtRCriterion::OneRecallAtRCriterion</qualifiedname>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>nq</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>R</declname>
         </param>
         <briefdescription>
@@ -129,7 +129,7 @@
           <declname>D</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>I</declname>
         </param>
         <briefdescription>
@@ -190,7 +190,7 @@
           <declname>gt_D_in</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>gt_I_in</declname>
         </param>
         <briefdescription>

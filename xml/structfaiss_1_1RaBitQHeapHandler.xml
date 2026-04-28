@@ -325,7 +325,7 @@
         <location file="faiss/impl/fast_scan/simd_result_handlers.h" line="119" column="12" bodyfile="faiss/impl/fast_scan/simd_result_handlers.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1SIMDResultHandlerToFloat_1aa0cd900277b35f820861167b221f3b07" prot="public" static="no" mutable="no">
-        <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+        <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
         <definition>const idx_t* faiss::SIMDResultHandlerToFloat::id_map</definition>
         <argsstring></argsstring>
         <name>id_map</name>

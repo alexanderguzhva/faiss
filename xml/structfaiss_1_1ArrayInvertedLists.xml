@@ -21,7 +21,7 @@
         <location file="faiss/invlists/InvertedLists.h" line="265" column="17" bodyfile="faiss/invlists/InvertedLists.h" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1ArrayInvertedLists_1a69c8684d73ed2e24eb8aa24215fc5d4b" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="structfaiss_1_1MaybeOwnedVector" kindref="compound">MaybeOwnedVector</ref>&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &gt;</type>
+        <type>std::vector&lt; <ref refid="structfaiss_1_1MaybeOwnedVector" kindref="compound">MaybeOwnedVector</ref>&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &gt;</type>
         <definition>std::vector&lt;MaybeOwnedVector&lt;idx_t&gt; &gt; faiss::ArrayInvertedLists::ids</definition>
         <argsstring></argsstring>
         <name>ids</name>
@@ -149,7 +149,7 @@
         <location file="faiss/invlists/InvertedLists.h" line="271" column="19"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1ArrayInvertedLists_1a525f43baf797fae9c75ed9b227ac657d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+        <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
         <definition>const idx_t * faiss::ArrayInvertedLists::get_ids</definition>
         <argsstring>(size_t list_no) const override</argsstring>
         <name>get_ids</name>
@@ -188,7 +188,7 @@
           <declname>n_entry</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>ids</declname>
         </param>
         <param>
@@ -224,7 +224,7 @@
           <declname>n_entry</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>ids</declname>
         </param>
         <param>
@@ -270,7 +270,7 @@
         <name>permute_invlists</name>
         <qualifiedname>faiss::ArrayInvertedLists::permute_invlists</qualifiedname>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>map</declname>
         </param>
         <briefdescription>
@@ -368,7 +368,7 @@
           <declname>list_no</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>ids</declname>
         </param>
         <briefdescription>
@@ -381,7 +381,7 @@
         <location file="faiss/invlists/InvertedLists.h" line="97" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1InvertedLists_1ac1fb72410cefa4f4d28ec90677c02ab3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>virtual idx_t faiss::InvertedLists::get_single_id</definition>
         <argsstring>(size_t list_no, size_t offset) const</argsstring>
         <name>get_single_id</name>
@@ -457,7 +457,7 @@
         <reimplementedby refid="structfaiss_1_1StopWordsInvertedLists_1a5cf766b8b0a6e6c036af843c4bf07935">prefetch_lists</reimplementedby>
         <reimplementedby refid="structfaiss_1_1OnDiskInvertedLists_1ae15b20276854461b83e4c180724418cc">prefetch_lists</reimplementedby>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>list_nos</declname>
         </param>
         <param>
@@ -509,7 +509,7 @@
           <declname>list_no</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>theid</declname>
         </param>
         <param>
@@ -545,7 +545,7 @@
           <declname>offset</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>id</declname>
         </param>
         <param>
@@ -612,11 +612,11 @@
           <declname>subset_type</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>a1</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>a2</declname>
         </param>
         <briefdescription>

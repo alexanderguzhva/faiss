@@ -3,6 +3,7 @@
   <compounddef id="sorting_8h" kind="file" language="C++">
     <compoundname>sorting.h</compoundname>
     <includes refid="platform__macros_8h" local="no">faiss/impl/platform_macros.h</includes>
+    <includedby refid="IndexBinaryIVF__impl_8h" local="no">faiss/impl/binary_hamming/IndexBinaryIVF_impl.h</includedby>
     <incdepgraph>
       <node id="2">
         <label>faiss/impl/platform_macros.h</label>
@@ -25,6 +26,18 @@
         <label>cstdio</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>faiss/impl/binary_hamming/IndexBinaryIVF_impl.h</label>
+        <link refid="IndexBinaryIVF__impl_8h_source"/>
+      </node>
+      <node id="1">
+        <label>faiss/utils/sorting.h</label>
+        <link refid="sorting_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innernamespace refid="namespacefaiss">faiss</innernamespace>
     <briefdescription>
     </briefdescription>

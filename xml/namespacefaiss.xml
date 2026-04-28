@@ -50,19 +50,35 @@
     <innerclass refid="structfaiss_1_1FileIOReader" prot="public">faiss::FileIOReader</innerclass>
     <innerclass refid="structfaiss_1_1FileIOWriter" prot="public">faiss::FileIOWriter</innerclass>
     <innerclass refid="structfaiss_1_1FlatCodesDistanceComputer" prot="public">faiss::FlatCodesDistanceComputer</innerclass>
-    <innerclass refid="structfaiss_1_1GenHammingComputer16" prot="public">faiss::GenHammingComputer16</innerclass>
-    <innerclass refid="structfaiss_1_1GenHammingComputer32" prot="public">faiss::GenHammingComputer32</innerclass>
-    <innerclass refid="structfaiss_1_1GenHammingComputer8" prot="public">faiss::GenHammingComputer8</innerclass>
-    <innerclass refid="structfaiss_1_1GenHammingComputerM8" prot="public">faiss::GenHammingComputerM8</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer16__tpl" prot="public">faiss::GenHammingComputer16_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer16__tpl_3_01SIMDLevel_1_1AVX2_01_4" prot="public">faiss::GenHammingComputer16_tpl&lt; SIMDLevel::AVX2 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer16__tpl_3_01SIMDLevel_1_1AVX512_01_4" prot="public">faiss::GenHammingComputer16_tpl&lt; SIMDLevel::AVX512 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer16__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::GenHammingComputer16_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer32__tpl" prot="public">faiss::GenHammingComputer32_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4" prot="public">faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX512_01_4" prot="public">faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX512 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::GenHammingComputer32_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer8__tpl" prot="public">faiss::GenHammingComputer8_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputer8__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::GenHammingComputer8_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputerM8__tpl" prot="public">faiss::GenHammingComputerM8_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputerM8__tpl_3_01SIMDLevel_1_1AVX2_01_4" prot="public">faiss::GenHammingComputerM8_tpl&lt; SIMDLevel::AVX2 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputerM8__tpl_3_01SIMDLevel_1_1AVX512_01_4" prot="public">faiss::GenHammingComputerM8_tpl&lt; SIMDLevel::AVX512 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1GenHammingComputerM8__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::GenHammingComputerM8_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
     <innerclass refid="structfaiss_1_1HadamardRotation" prot="public">faiss::HadamardRotation</innerclass>
-    <innerclass refid="structfaiss_1_1HammingComputer" prot="public">faiss::HammingComputer</innerclass>
-    <innerclass refid="structfaiss_1_1HammingComputer16" prot="public">faiss::HammingComputer16</innerclass>
-    <innerclass refid="structfaiss_1_1HammingComputer20" prot="public">faiss::HammingComputer20</innerclass>
-    <innerclass refid="structfaiss_1_1HammingComputer32" prot="public">faiss::HammingComputer32</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer16__tpl" prot="public">faiss::HammingComputer16_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer16__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::HammingComputer16_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer20__tpl" prot="public">faiss::HammingComputer20_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer20__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::HammingComputer20_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer32__tpl" prot="public">faiss::HammingComputer32_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer32__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::HammingComputer32_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
     <innerclass refid="structfaiss_1_1HammingComputer4" prot="public">faiss::HammingComputer4</innerclass>
-    <innerclass refid="structfaiss_1_1HammingComputer64" prot="public">faiss::HammingComputer64</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer64__tpl" prot="public">faiss::HammingComputer64_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1AVX512_01_4" prot="public">faiss::HammingComputer64_tpl&lt; SIMDLevel::AVX512 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
     <innerclass refid="structfaiss_1_1HammingComputer8" prot="public">faiss::HammingComputer8</innerclass>
-    <innerclass refid="structfaiss_1_1HammingComputerDefault" prot="public">faiss::HammingComputerDefault</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputerDefault__tpl" prot="public">faiss::HammingComputerDefault_tpl</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputerDefault__tpl_3_01SIMDLevel_1_1AVX512_01_4" prot="public">faiss::HammingComputerDefault_tpl&lt; SIMDLevel::AVX512 &gt;</innerclass>
+    <innerclass refid="structfaiss_1_1HammingComputerDefault__tpl_3_01SIMDLevel_1_1NONE_01_4" prot="public">faiss::HammingComputerDefault_tpl&lt; SIMDLevel::NONE &gt;</innerclass>
     <innerclass refid="structfaiss_1_1HCounterState" prot="public">faiss::HCounterState</innerclass>
     <innerclass refid="structfaiss_1_1HeapArray" prot="public">faiss::HeapArray</innerclass>
     <innerclass refid="structfaiss_1_1HeapBlockResultHandler" prot="public">faiss::HeapBlockResultHandler</innerclass>
@@ -365,6 +381,495 @@
     <innernamespace refid="namespacefaiss_1_1simd__partitioning">faiss::simd_partitioning</innernamespace>
     <innernamespace refid="namespacefaiss_1_1simd__result__handlers">faiss::simd_result_handlers</innernamespace>
     <innernamespace refid="namespacefaiss_1_1svs__io">faiss::svs_io</innernamespace>
+    <sectiondef kind="user-defined">
+      <header>IndexBinaryHNSW dispatch</header>
+      <memberdef kind="function" id="namespacefaiss_1a3b270886d10d9188ac96726f40b669e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfaiss_1_1DistanceComputer" kindref="compound">DistanceComputer</ref> *</type>
+        <definition>DistanceComputer * faiss::make_binary_hnsw_distance_computer_fixSL</definition>
+        <argsstring>(int code_size, IndexBinaryFlat *flat_storage)</argsstring>
+        <name>make_binary_hnsw_distance_computer_fixSL</name>
+        <qualifiedname>faiss::make_binary_hnsw_distance_computer_fixSL</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1IndexBinaryFlat" kindref="compound">IndexBinaryFlat</ref> *</type>
+          <declname>flat_storage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="35" column="18" declfile="faiss/impl/binary_hamming/dispatch.h" declline="35" declcolumn="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>IndexBinaryIVF dispatch</header>
+      <memberdef kind="function" id="namespacefaiss_1aff1ef71c9f09e97c189600f5afc6af89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfaiss_1_1BinaryInvertedListScanner" kindref="compound">BinaryInvertedListScanner</ref> *</type>
+        <definition>BinaryInvertedListScanner * faiss::make_binary_ivf_scanner_fixSL</definition>
+        <argsstring>(size_t code_size, bool store_pairs)</argsstring>
+        <name>make_binary_ivf_scanner_fixSL</name>
+        <qualifiedname>faiss::make_binary_ivf_scanner_fixSL</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="43" column="27" declfile="faiss/impl/binary_hamming/dispatch.h" declline="43" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1af631126b783cfd195239fe8ea9886575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::search_knn_hamming_per_invlist_fixSL</definition>
+        <argsstring>(int code_size, const IndexBinaryIVF *ivf, size_t n, const uint8_t *x, idx_t k, const idx_t *keys_in, const int32_t *coarse_dis, int32_t *distances, idx_t *labels, bool store_pairs, const IVFSearchParameters *params)</argsstring>
+        <name>search_knn_hamming_per_invlist_fixSL</name>
+        <qualifiedname>faiss::search_knn_hamming_per_invlist_fixSL</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryIVF" kindref="compound">IndexBinaryIVF</ref> *</type>
+          <declname>ivf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>keys_in</declname>
+        </param>
+        <param>
+          <type>const int32_t *</type>
+          <declname>coarse_dis</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">IVFSearchParameters</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="48" column="6" declfile="faiss/impl/binary_hamming/dispatch.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a9f0d55d347bd6ba78878e154611527a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::search_knn_hamming_count_fixSL</definition>
+        <argsstring>(int code_size, bool store_pairs, const IndexBinaryIVF *ivf, size_t nx, const uint8_t *x, const idx_t *keys, int k, int32_t *distances, idx_t *labels, const IVFSearchParameters *params)</argsstring>
+        <name>search_knn_hamming_count_fixSL</name>
+        <qualifiedname>faiss::search_knn_hamming_count_fixSL</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryIVF" kindref="compound">IndexBinaryIVF</ref> *</type>
+          <declname>ivf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">IVFSearchParameters</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="62" column="6" declfile="faiss/impl/binary_hamming/dispatch.h" declline="62" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>IndexBinaryHash dispatch</header>
+      <memberdef kind="function" id="namespacefaiss_1a87655a72b4281832d8ff7df554052ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_hash_knn_search_fixSL</definition>
+        <argsstring>(const IndexBinaryHash &amp;index, const uint8_t *q, idx_t k, int32_t *heap_sim, idx_t *heap_ids, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_hash_knn_search_fixSL</name>
+        <qualifiedname>faiss::binary_hash_knn_search_fixSL</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryHash" kindref="compound">IndexBinaryHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>heap_sim</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>heap_ids</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="78" column="6" declfile="faiss/impl/binary_hamming/dispatch.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a2ea099a84b5a37a70556588afedeb7e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_hash_range_search_fixSL</definition>
+        <argsstring>(const IndexBinaryHash &amp;index, const uint8_t *q, int radius, RangeQueryResult &amp;qres, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_hash_range_search_fixSL</name>
+        <qualifiedname>faiss::binary_hash_range_search_fixSL</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryHash" kindref="compound">IndexBinaryHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1RangeQueryResult" kindref="compound">RangeQueryResult</ref> &amp;</type>
+          <declname>qres</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="89" column="6" declfile="faiss/impl/binary_hamming/dispatch.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a96e35ce4b7abdd1a4dbb82e22843631c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_multihash_knn_search_fixSL</definition>
+        <argsstring>(const IndexBinaryMultiHash &amp;index, const uint8_t *q, idx_t k, int32_t *heap_sim, idx_t *heap_ids, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_multihash_knn_search_fixSL</name>
+        <qualifiedname>faiss::binary_multihash_knn_search_fixSL</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryMultiHash" kindref="compound">IndexBinaryMultiHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>heap_sim</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>heap_ids</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="99" column="6" declfile="faiss/impl/binary_hamming/dispatch.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a60ef8eeff80f8aa132d7315fc7c85805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_multihash_range_search_fixSL</definition>
+        <argsstring>(const IndexBinaryMultiHash &amp;index, const uint8_t *q, int radius, RangeQueryResult &amp;qres, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_multihash_range_search_fixSL</name>
+        <qualifiedname>faiss::binary_multihash_range_search_fixSL</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryMultiHash" kindref="compound">IndexBinaryMultiHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1RangeQueryResult" kindref="compound">RangeQueryResult</ref> &amp;</type>
+          <declname>qres</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="110" column="6" declfile="faiss/impl/binary_hamming/dispatch.h" declline="110" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>IndexIVFSpectralHash dispatch</header>
+      <memberdef kind="function" id="namespacefaiss_1a8d5d8b3bdf35e259cf565838cba14e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structfaiss_1_1InvertedListScanner" kindref="compound">InvertedListScanner</ref> *</type>
+        <definition>InvertedListScanner * faiss::make_spectral_hash_scanner_fixSL</definition>
+        <argsstring>(int code_size, const IndexIVFSpectralHash *index, bool store_pairs)</argsstring>
+        <name>make_spectral_hash_scanner_fixSL</name>
+        <qualifiedname>faiss::make_spectral_hash_scanner_fixSL</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexIVFSpectralHash" kindref="compound">IndexIVFSpectralHash</ref> *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="123" column="21" declfile="faiss/impl/binary_hamming/dispatch.h" declline="123" declcolumn="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>IndexPQ polysemous dispatch</header>
+      <memberdef kind="function" id="namespacefaiss_1a8759433f5f09a2a52af0591a759c19e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t faiss::polysemous_inner_loop_fixSL</definition>
+        <argsstring>(int code_size, const IndexPQ *index, const float *dis_table_qi, const uint8_t *q_code, size_t k, float *heap_dis, int64_t *heap_ids, int ht)</argsstring>
+        <name>polysemous_inner_loop_fixSL</name>
+        <qualifiedname>faiss::polysemous_inner_loop_fixSL</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexPQ" kindref="compound">IndexPQ</ref> *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>dis_table_qi</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q_code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>heap_dis</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>heap_ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ht</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="132" column="8" declfile="faiss/impl/binary_hamming/dispatch.h" declline="132" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="enum">
       <memberdef kind="enum" id="namespacefaiss_1ad58caa5fc1ff24471af5f971d4471c85" prot="public" static="no" strong="yes">
         <type>uint8_t</type>
@@ -690,6 +1195,35 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacefaiss_1aa720d0a3336270110940fce7e0f423b5" prot="public" static="no">
+        <type><ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">SearchParametersIVF</ref></type>
+        <definition>typedef SearchParametersIVF faiss::IVFSearchParameters</definition>
+        <argsstring></argsstring>
+        <name>IVFSearchParameters</name>
+        <qualifiedname>faiss::IVFSearchParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="28" column="1" bodyfile="faiss/impl/binary_hamming/dispatch.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t faiss::idx_t</definition>
+        <argsstring></argsstring>
+        <name>idx_t</name>
+        <qualifiedname>faiss::idx_t</qualifiedname>
+        <briefdescription>
+<para>all vector indices are this type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/dispatch.h" line="30" column="1" bodyfile="faiss/impl/binary_hamming/dispatch.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacefaiss_1a728ebc1898262f333334247c4aa3db35" prot="public" static="no">
         <type><ref refid="structfaiss_1_1simd16uint16__tpl" kindref="compound">simd16uint16_tpl</ref>&lt; <ref refid="namespacefaiss_1aca360ba1cc6270b79a9228cdf3e63df5" kindref="member">SINGLE_SIMD_LEVEL_256</ref> &gt;</type>
         <definition>typedef simd16uint16_tpl&lt; SINGLE_SIMD_LEVEL_256 &gt; faiss::simd16uint16</definition>
@@ -719,7 +1253,7 @@
         <location file="faiss/impl/fast_scan/kernels_simd256.h" line="16" column="1" bodyfile="faiss/impl/fast_scan/kernels_simd256.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacefaiss_1a33b1dcce3a5a4c296a1f4553c3299ddd" prot="public" static="no">
-        <type><ref refid="structfaiss_1_1ResultHandlerUnordered" kindref="compound">ResultHandlerUnordered</ref>&lt; float, <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt;</type>
+        <type><ref refid="structfaiss_1_1ResultHandlerUnordered" kindref="compound">ResultHandlerUnordered</ref>&lt; float, <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt;</type>
         <definition>typedef ResultHandlerUnordered&lt; float, idx_t &gt; faiss::ResultHandler</definition>
         <argsstring></argsstring>
         <name>ResultHandler</name>
@@ -787,20 +1321,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="faiss/IndexIDMap.h" line="127" column="1" bodyfile="faiss/IndexIDMap.h" bodystart="127" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacefaiss_1a0423615e86d00dda03ae73c199c705af" prot="public" static="no">
-        <type><ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">SearchParametersIVF</ref></type>
-        <definition>using faiss::IVFSearchParameters = typedef SearchParametersIVF</definition>
-        <argsstring></argsstring>
-        <name>IVFSearchParameters</name>
-        <qualifiedname>faiss::IVFSearchParameters</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/IndexIVF.h" line="79" column="1" bodyfile="faiss/IndexIVF.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacefaiss_1af3735e1903da947aaa2d79389d4ddfd0" prot="public" static="no">
         <type><ref refid="classfaiss_1_1IndexReplicasTemplate" kindref="compound">IndexReplicasTemplate</ref>&lt; <ref refid="structfaiss_1_1Index" kindref="compound">Index</ref> &gt;</type>
@@ -871,21 +1391,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="faiss/invlists/InvertedLists.h" line="396" column="1" bodyfile="faiss/invlists/InvertedLists.h" bodystart="396" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" prot="public" static="no">
-        <type>int64_t</type>
-        <definition>using faiss::idx_t = typedef int64_t</definition>
-        <argsstring></argsstring>
-        <name>idx_t</name>
-        <qualifiedname>faiss::idx_t</qualifiedname>
-        <briefdescription>
-<para>all vector indices are this type </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/MetricType.h" line="52" column="1" bodyfile="faiss/MetricType.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacefaiss_1ab5013a4e3523c9176d5222115f2c0736" prot="public" static="no">
         <type><ref refid="structfaiss_1_1simd8uint32__tpl" kindref="compound">simd8uint32_tpl</ref>&lt; <ref refid="namespacefaiss_1aca360ba1cc6270b79a9228cdf3e63df5" kindref="member">SINGLE_SIMD_LEVEL_256</ref> &gt;</type>
@@ -1525,7 +2030,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="104" column="25" declfile="faiss/utils/hamming.h" declline="104" declcolumn="25"/>
+        <location file="faiss/utils/hamming.h" line="108" column="25" declfile="faiss/utils/hamming.h" declline="108" declcolumn="25"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a807d8fdc887adb34ff028c3ccaeb1fe1" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr uint8_t</type>
@@ -2444,6 +2949,430 @@
         <inbodydescription>
         </inbodydescription>
         <location file="faiss/impl/approx_topk/simdlib256-inl.h" line="27" column="25" bodyfile="faiss/impl/approx_topk/simdlib256-inl.h" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a008c2be900116b8475fb6d85df2f3f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_hash_knn_search_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const IndexBinaryHash &amp;index, const uint8_t *q, idx_t k, int32_t *heap_sim, idx_t *heap_ids, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_hash_knn_search_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::binary_hash_knn_search_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryHash" kindref="compound">IndexBinaryHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>heap_sim</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>heap_ids</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" line="207" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" bodystart="207" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a6ca292de82c5b9b80cce39a643d3629f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_hash_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const IndexBinaryHash &amp;index, const uint8_t *q, int radius, RangeQueryResult &amp;qres, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_hash_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::binary_hash_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryHash" kindref="compound">IndexBinaryHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1RangeQueryResult" kindref="compound">RangeQueryResult</ref> &amp;</type>
+          <declname>qres</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" line="225" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" bodystart="225" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1aea1f4666fc00ee7d3bf3e3f3fc301432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_multihash_knn_search_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const IndexBinaryMultiHash &amp;index, const uint8_t *q, idx_t k, int32_t *heap_sim, idx_t *heap_ids, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_multihash_knn_search_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::binary_multihash_knn_search_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryMultiHash" kindref="compound">IndexBinaryMultiHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>heap_sim</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>heap_ids</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" line="244" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" bodystart="244" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a3f015537f5b58b33a9e8480cb6c9cc69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::binary_multihash_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const IndexBinaryMultiHash &amp;index, const uint8_t *q, int radius, RangeQueryResult &amp;qres, size_t &amp;n0, size_t &amp;nlist, size_t &amp;ndis)</argsstring>
+        <name>binary_multihash_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::binary_multihash_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryMultiHash" kindref="compound">IndexBinaryMultiHash</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1RangeQueryResult" kindref="compound">RangeQueryResult</ref> &amp;</type>
+          <declname>qres</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>nlist</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>ndis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" line="258" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryHash_impl.h" bodystart="258" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a8f22e22a36ff2b596f844398cccb812a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="structfaiss_1_1DistanceComputer" kindref="compound">DistanceComputer</ref> *</type>
+        <definition>DistanceComputer * faiss::make_binary_hnsw_distance_computer_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int code_size, IndexBinaryFlat *flat_storage)</argsstring>
+        <name>make_binary_hnsw_distance_computer_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::make_binary_hnsw_distance_computer_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1IndexBinaryFlat" kindref="compound">IndexBinaryFlat</ref> *</type>
+          <declname>flat_storage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryHNSW_impl.h" line="64" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryHNSW_impl.h" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a87c8f12fe6214ccd4a3490b316fcb1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="structfaiss_1_1BinaryInvertedListScanner" kindref="compound">BinaryInvertedListScanner</ref> *</type>
+        <definition>BinaryInvertedListScanner * faiss::make_binary_ivf_scanner_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(size_t code_size, bool store_pairs)</argsstring>
+        <name>make_binary_ivf_scanner_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::make_binary_ivf_scanner_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryIVF_impl.h" line="393" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryIVF_impl.h" bodystart="393" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a260ee6d2bac21611bb295a2a3718f8d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::search_knn_hamming_per_invlist_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int code_size, const IndexBinaryIVF *ivf, size_t n, const uint8_t *x, idx_t k, const idx_t *keys_in, const int32_t *coarse_dis, int32_t *distances, idx_t *labels, bool store_pairs, const IVFSearchParameters *params)</argsstring>
+        <name>search_knn_hamming_per_invlist_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::search_knn_hamming_per_invlist_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryIVF" kindref="compound">IndexBinaryIVF</ref> *</type>
+          <declname>ivf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>keys_in</declname>
+        </param>
+        <param>
+          <type>const int32_t *</type>
+          <declname>coarse_dis</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">IVFSearchParameters</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryIVF_impl.h" line="405" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryIVF_impl.h" bodystart="405" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a91099e9f5ca17931ab4c8c34ca0c5cc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::search_knn_hamming_count_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int code_size, bool store_pairs, const IndexBinaryIVF *ivf, size_t nx, const uint8_t *x, const idx_t *keys, int k, int32_t *distances, idx_t *labels, const IVFSearchParameters *params)</argsstring>
+        <name>search_knn_hamming_count_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::search_knn_hamming_count_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexBinaryIVF" kindref="compound">IndexBinaryIVF</ref> *</type>
+          <declname>ivf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>keys</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">IVFSearchParameters</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexBinaryIVF_impl.h" line="434" column="1" bodyfile="faiss/impl/binary_hamming/IndexBinaryIVF_impl.h" bodystart="434" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ac1aa3ed37b06f29cb5fee627114aa949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type><ref refid="structfaiss_1_1InvertedListScanner" kindref="compound">InvertedListScanner</ref> *</type>
+        <definition>InvertedListScanner * faiss::make_spectral_hash_scanner_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int code_size, const IndexIVFSpectralHash *index, bool store_pairs)</argsstring>
+        <name>make_spectral_hash_scanner_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::make_spectral_hash_scanner_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexIVFSpectralHash" kindref="compound">IndexIVFSpectralHash</ref> *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>store_pairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h" line="143" column="1" bodyfile="faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h" bodystart="143" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a60aed20192940f1656ae26d0285e5b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t faiss::polysemous_inner_loop_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int code_size, const IndexPQ *index, const float *dis_table_qi, const uint8_t *q_code, size_t k, float *heap_dis, int64_t *heap_ids, int ht)</argsstring>
+        <name>polysemous_inner_loop_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::polysemous_inner_loop_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IndexPQ" kindref="compound">IndexPQ</ref> *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>dis_table_qi</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>q_code</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>heap_dis</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>heap_ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ht</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/binary_hamming/IndexPQ_impl.h" line="76" column="1" bodyfile="faiss/impl/binary_hamming/IndexPQ_impl.h" bodystart="76" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1aa8b83b549454ccc5c41f385976136eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>size_t</type>
@@ -4805,7 +5734,7 @@
           <declname>f</declname>
         </param>
         <param>
-          <type>std::vector&lt; std::vector&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &gt; *</type>
+          <type>std::vector&lt; std::vector&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &gt; *</type>
           <declname>ids</declname>
           <defval>nullptr</defval>
         </param>
@@ -4854,7 +5783,7 @@
           <declname>ivf</declname>
         </param>
         <param>
-          <type>std::vector&lt; std::vector&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &gt; &amp;</type>
+          <type>std::vector&lt; std::vector&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &gt; &amp;</type>
           <declname>ids</declname>
         </param>
         <briefdescription>
@@ -5031,11 +5960,11 @@
         <name>smawk</name>
         <qualifiedname>faiss::smawk</qualifiedname>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>nrows</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>ncols</declname>
         </param>
         <param>
@@ -5043,7 +5972,7 @@
           <declname>x</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>argmins</declname>
         </param>
         <briefdescription>
@@ -12280,7 +13209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="47" column="6" declfile="faiss/utils/hamming.h" declline="47" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="51" column="6" declfile="faiss/utils/hamming.h" declline="51" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a224890519ae5efe7a3c8cdf94bda60e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12310,7 +13239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="56" column="6" declfile="faiss/utils/hamming.h" declline="56" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="60" column="6" declfile="faiss/utils/hamming.h" declline="60" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ad8f68b3bcb7a897358ab8501ea86b897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12340,7 +13269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="58" column="6" declfile="faiss/utils/hamming.h" declline="58" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="62" column="6" declfile="faiss/utils/hamming.h" declline="62" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1afde8c1f96d4c776b101dd67cc0064c3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12366,7 +13295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="60" column="6" declfile="faiss/utils/hamming.h" declline="60" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="64" column="6" declfile="faiss/utils/hamming.h" declline="64" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a6ea3261fda6f9dc53c401b4cccb90268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12405,7 +13334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="64" column="6" declfile="faiss/utils/hamming.h" declline="64" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="68" column="6" declfile="faiss/utils/hamming.h" declline="68" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a0832c5ab58f4d1a340b0bde273c5b501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12478,7 +13407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="113" column="6" declfile="faiss/utils/hamming.h" declline="113" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="117" column="6" declfile="faiss/utils/hamming.h" declline="117" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ac7029919748e69f5ef7f813deb2b04d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12576,7 +13505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="132" column="6" declfile="faiss/utils/hamming.h" declline="132" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="136" column="6" declfile="faiss/utils/hamming.h" declline="136" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a0c5abbe20058359340d9c7cb635f344b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12614,7 +13543,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="143" column="6" declfile="faiss/utils/hamming.h" declline="143" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="147" column="6" declfile="faiss/utils/hamming.h" declline="147" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a35a6c82c3a7b3d7616fc2c6cee53979d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12731,7 +13660,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="163" column="6" declfile="faiss/utils/hamming.h" declline="163" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="167" column="6" declfile="faiss/utils/hamming.h" declline="167" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a182286f2abe99d5570f6308474b55e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12779,7 +13708,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="175" column="6" declfile="faiss/utils/hamming.h" declline="175" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="179" column="6" declfile="faiss/utils/hamming.h" declline="179" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ac713458e556afa5bd612b88944292d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12821,7 +13750,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="187" column="6" declfile="faiss/utils/hamming.h" declline="187" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="191" column="6" declfile="faiss/utils/hamming.h" declline="191" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ad32229f823f2a0a920f0b62a702a67c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -12867,7 +13796,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="198" column="8" declfile="faiss/utils/hamming.h" declline="198" declcolumn="8"/>
+        <location file="faiss/utils/hamming.h" line="202" column="8" declfile="faiss/utils/hamming.h" declline="202" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a399cfe2b1a7b2e3d722e10654c164ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12901,7 +13830,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="209" column="6" declfile="faiss/utils/hamming.h" declline="209" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="213" column="6" declfile="faiss/utils/hamming.h" declline="213" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1af860acfd5b9adbb6a50d4b458d0df8b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>hamdis_t</type>
@@ -12927,7 +13856,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="65" column="17" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="65" bodyend="74" declfile="faiss/utils/hamming.h" declline="217" declcolumn="10"/>
+        <location file="faiss/utils/hamming_distance/common.h" line="187" column="17" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="187" bodyend="196" declfile="faiss/utils/hamming.h" declline="221" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a31146ebd95375313ae7c02ba06209ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -12967,7 +13896,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="221" column="6" declfile="faiss/utils/hamming.h" declline="221" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="225" column="6" declfile="faiss/utils/hamming.h" declline="225" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ab693555b4e075c52e578e508206ee975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13056,7 +13985,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="238" column="6" declfile="faiss/utils/hamming.h" declline="238" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="242" column="6" declfile="faiss/utils/hamming.h" declline="242" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1af7eb09d1daf10d9f8917a059175c4f74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13105,7 +14034,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="250" column="6" declfile="faiss/utils/hamming.h" declline="250" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="254" column="6" declfile="faiss/utils/hamming.h" declline="254" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a5310d0165a1a1f6a923d313549d9508c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13194,7 +14123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="267" column="6" declfile="faiss/utils/hamming.h" declline="267" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="271" column="6" declfile="faiss/utils/hamming.h" declline="271" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a4a3d77f3647685d4bea401f50928cd37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -13243,24 +14172,275 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming.h" line="279" column="6" declfile="faiss/utils/hamming.h" declline="279" declcolumn="6"/>
+        <location file="faiss/utils/hamming.h" line="283" column="6" declfile="faiss/utils/hamming.h" declline="283" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a6ae1b2a404a4f618609a5b87eecc344b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1a39372f49e950292a6ddc481df7167294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
-            <type>size_t</type>
-            <declname>nbits</declname>
-            <defname>nbits</defname>
-          </param>
-          <param>
-            <type>typename T</type>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
           </param>
         </templateparamlist>
-        <type>T</type>
-        <definition>T faiss::hamming</definition>
-        <argsstring>(const uint8_t *bs1, const uint8_t *bs2)</argsstring>
-        <name>hamming</name>
-        <qualifiedname>faiss::hamming</qualifiedname>
+        <type>void</type>
+        <definition>void faiss::hammings_knn_hc_fixSL</definition>
+        <argsstring>(int_maxheap_array_t *ha, const uint8_t *a, const uint8_t *b, size_t nb, size_t ncodes, int ordered, ApproxTopK_mode_t approx_topk_mode, const IDSelector *sel)</argsstring>
+        <name>hammings_knn_hc_fixSL</name>
+        <qualifiedname>faiss::hammings_knn_hc_fixSL</qualifiedname>
+        <param>
+          <type><ref refid="structfaiss_1_1HeapArray" kindref="compound">int_maxheap_array_t</ref> *</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ordered</declname>
+        </param>
+        <param>
+          <type>ApproxTopK_mode_t</type>
+          <declname>approx_topk_mode</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Per-SIMD-level Hamming function implementations. Specializations live in per-ISA TUs (hamming_avx2.cpp, etc.). The <computeroutput>_fixSL</computeroutput> suffix marks these as pinned-to-a-SIMDLevel (no dispatch), distinguishing them from the non-templated DD entry points above. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="297" column="6" declfile="faiss/utils/hamming.h" declline="297" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a9c6a1b86714cf87e1380b407f30c6735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hammings_knn_mc_fixSL</definition>
+        <argsstring>(const uint8_t *a, const uint8_t *b, size_t na, size_t nb, size_t k, size_t ncodes, int32_t *distances, int64_t *labels, const IDSelector *sel)</argsstring>
+        <name>hammings_knn_mc_fixSL</name>
+        <qualifiedname>faiss::hammings_knn_mc_fixSL</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="308" column="6" declfile="faiss/utils/hamming.h" declline="308" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a6e2b27269cfab105e53b37a6b9f02b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hamming_range_search_fixSL</definition>
+        <argsstring>(const uint8_t *a, const uint8_t *b, size_t na, size_t nb, int radius, size_t code_size, RangeSearchResult *result, const IDSelector *sel)</argsstring>
+        <name>hamming_range_search_fixSL</name>
+        <qualifiedname>faiss::hamming_range_search_fixSL</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1RangeSearchResult" kindref="compound">RangeSearchResult</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="320" column="6" declfile="faiss/utils/hamming.h" declline="320" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a66781a9de0ece128347ac8437eb7ed43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hammings_fixSL</definition>
+        <argsstring>(const uint8_t *a, const uint8_t *b, size_t na, size_t nb, size_t ncodes, hamdis_t *dis)</argsstring>
+        <name>hammings_fixSL</name>
+        <qualifiedname>faiss::hammings_fixSL</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>hamdis_t *</type>
+          <declname>dis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="331" column="6" declfile="faiss/utils/hamming.h" declline="331" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a882b93ec50ca056e6faa1ee8025e1623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::generalized_hammings_knn_hc_fixSL</definition>
+        <argsstring>(int_maxheap_array_t *ha, const uint8_t *a, const uint8_t *b, size_t nb, size_t code_size, int ordered)</argsstring>
+        <name>generalized_hammings_knn_hc_fixSL</name>
+        <qualifiedname>faiss::generalized_hammings_knn_hc_fixSL</qualifiedname>
+        <param>
+          <type><ref refid="structfaiss_1_1HeapArray" kindref="compound">int_maxheap_array_t</ref> *</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ordered</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="340" column="6" declfile="faiss/utils/hamming.h" declline="340" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a621b7d76c4df33ee8cd6620275e79e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hamming_count_thres_fixSL</definition>
+        <argsstring>(const uint8_t *bs1, const uint8_t *bs2, size_t n1, size_t n2, hamdis_t ht, size_t ncodes, size_t *nptr)</argsstring>
+        <name>hamming_count_thres_fixSL</name>
+        <qualifiedname>faiss::hamming_count_thres_fixSL</qualifiedname>
         <param>
           <type>const uint8_t *</type>
           <declname>bs1</declname>
@@ -13269,13 +14449,145 @@
           <type>const uint8_t *</type>
           <declname>bs2</declname>
         </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nptr</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="25" column="10" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="25" bodyend="33"/>
+        <location file="faiss/utils/hamming.h" line="349" column="6" declfile="faiss/utils/hamming.h" declline="349" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a53dacbb6f3fbf553473bd1be766acac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::crosshamming_count_thres_fixSL</definition>
+        <argsstring>(const uint8_t *dbs, size_t n, hamdis_t ht, size_t ncodes, size_t *nptr)</argsstring>
+        <name>crosshamming_count_thres_fixSL</name>
+        <qualifiedname>faiss::crosshamming_count_thres_fixSL</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>dbs</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="359" column="6" declfile="faiss/utils/hamming.h" declline="359" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ad6213d3126c994aa6458a45cee81f797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t faiss::match_hamming_thres_fixSL</definition>
+        <argsstring>(const uint8_t *bs1, const uint8_t *bs2, size_t n1, size_t n2, hamdis_t ht, size_t ncodes, int64_t *idx, hamdis_t *dis)</argsstring>
+        <name>match_hamming_thres_fixSL</name>
+        <qualifiedname>faiss::match_hamming_thres_fixSL</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>hamdis_t *</type>
+          <declname>dis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming.h" line="367" column="8" declfile="faiss/utils/hamming.h" declline="367" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a69337e23232a204be3e1464713fee62d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::generalized_hamming_64</definition>
+        <argsstring>(uint64_t a)</argsstring>
+        <name>generalized_hamming_64</name>
+        <qualifiedname>faiss::generalized_hamming_64</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/common.h" line="51" column="12" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="51" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a866a1991153d86e11e93d22b1567d578" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13304,7 +14616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="37" column="17" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="37" bodyend="45"/>
+        <location file="faiss/utils/hamming_distance/common.h" line="164" column="17" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="164" bodyend="172" declfile="faiss/utils/hamming_distance/common.h" declline="70" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a020c4142c2661fa5387255c73e1b3510" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13328,7 +14640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="49" column="8" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="49" bodyend="51"/>
+        <location file="faiss/utils/hamming_distance/common.h" line="73" column="8" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="73" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a251cd1d86f57ca5499d939d3f5ae093e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13352,7 +14664,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="54" column="8" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="54" bodyend="56"/>
+        <location file="faiss/utils/hamming_distance/common.h" line="176" column="8" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="176" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a8d4176559a9c361225a047c03f62d648" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -13376,17 +14688,353 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="59" column="8" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="59" bodyend="62"/>
+        <location file="faiss/utils/hamming_distance/common.h" line="181" column="8" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="181" bodyend="184"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a69337e23232a204be3e1464713fee62d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1a2c9b9efb50052fed5670253e03a9ed04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>nbits</declname>
+            <defname>nbits</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hammings_impl</definition>
+        <argsstring>(const uint64_t *__restrict bs1, const uint64_t *__restrict bs2, size_t n1, size_t n2, hamdis_t *__restrict dis)</argsstring>
+        <name>hammings_impl</name>
+        <qualifiedname>faiss::hammings_impl</qualifiedname>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>hamdis_t *__restrict</type>
+          <declname>dis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/common.h" line="206" column="13" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="206" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a9ace4dd821cb97fff9597370204ba295" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::hammings_impl_runtime</definition>
+        <argsstring>(const uint64_t *__restrict bs1, const uint64_t *__restrict bs2, size_t n1, size_t n2, size_t nbits, hamdis_t *__restrict dis)</argsstring>
+        <name>hammings_impl_runtime</name>
+        <qualifiedname>faiss::hammings_impl_runtime</qualifiedname>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbits</declname>
+        </param>
+        <param>
+          <type>hamdis_t *__restrict</type>
+          <declname>dis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/common.h" line="223" column="13" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="223" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a99eeb0f1c4e7d5ad36a3477c03671ad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>nbits</declname>
+            <defname>nbits</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hamming_count_thres_impl</definition>
+        <argsstring>(const uint64_t *__restrict bs1, const uint64_t *__restrict bs2, size_t n1, size_t n2, hamdis_t ht, size_t *__restrict nptr)</argsstring>
+        <name>hamming_count_thres_impl</name>
+        <qualifiedname>faiss::hamming_count_thres_impl</qualifiedname>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t *__restrict</type>
+          <declname>nptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/common.h" line="242" column="13" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="242" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ab6150b8954042d1967fcac6d9b9f2897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>nbits</declname>
+            <defname>nbits</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::crosshamming_count_thres_impl</definition>
+        <argsstring>(const uint64_t *__restrict dbs, size_t n, int ht, size_t *__restrict nptr)</argsstring>
+        <name>crosshamming_count_thres_impl</name>
+        <qualifiedname>faiss::crosshamming_count_thres_impl</qualifiedname>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>dbs</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t *__restrict</type>
+          <declname>nptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/common.h" line="267" column="13" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="267" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ae7b4748b26515e1a85f257ae9739640b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>nbits</declname>
+            <defname>nbits</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t faiss::match_hamming_thres_impl</definition>
+        <argsstring>(const uint64_t *__restrict bs1, const uint64_t *__restrict bs2, size_t n1, size_t n2, int ht, int64_t *__restrict idx, hamdis_t *__restrict hams)</argsstring>
+        <name>match_hamming_thres_impl</name>
+        <qualifiedname>faiss::match_hamming_thres_impl</qualifiedname>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint64_t *__restrict</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>int64_t *__restrict</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>hamdis_t *__restrict</type>
+          <declname>hams</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/common.h" line="289" column="15" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="289" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a2c061ddfcac65e2bdf53f7483d15f3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::FAISS_INHERIT_HAMMING</definition>
+        <argsstring>(HammingComputer16)</argsstring>
+        <name>FAISS_INHERIT_HAMMING</name>
+        <qualifiedname>faiss::FAISS_INHERIT_HAMMING</qualifiedname>
+        <param>
+          <type>HammingComputer16</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="38" column="1" declfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" declline="38" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a305a02ecf514c78f82fae7e0f8c8efd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::FAISS_INHERIT_HAMMING</definition>
+        <argsstring>(HammingComputer20)</argsstring>
+        <name>FAISS_INHERIT_HAMMING</name>
+        <qualifiedname>faiss::FAISS_INHERIT_HAMMING</qualifiedname>
+        <param>
+          <type>HammingComputer20</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="39" column="1" declfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" declline="39" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a09aca8860a23b96c0968ab464ae39f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::FAISS_INHERIT_HAMMING</definition>
+        <argsstring>(HammingComputer32)</argsstring>
+        <name>FAISS_INHERIT_HAMMING</name>
+        <qualifiedname>faiss::FAISS_INHERIT_HAMMING</qualifiedname>
+        <param>
+          <type>HammingComputer32</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="40" column="1" declfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" declline="40" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ac697e23b4118ec2372457fb68c6d7d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::FAISS_INHERIT_HAMMING</definition>
+        <argsstring>(HammingComputer64)</argsstring>
+        <name>FAISS_INHERIT_HAMMING</name>
+        <qualifiedname>faiss::FAISS_INHERIT_HAMMING</qualifiedname>
+        <param>
+          <type>HammingComputer64</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="41" column="1" declfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" declline="41" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a92b1fe06f47f7252f04e079e95128a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::FAISS_INHERIT_HAMMING</definition>
+        <argsstring>(HammingComputerDefault)</argsstring>
+        <name>FAISS_INHERIT_HAMMING</name>
+        <qualifiedname>faiss::FAISS_INHERIT_HAMMING</qualifiedname>
+        <param>
+          <type>HammingComputerDefault</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="42" column="1" declfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" declline="42" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ad8a3bac72b2e76f7b203eb5991adc7ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::FAISS_INHERIT_HAMMING</definition>
+        <argsstring>(GenHammingComputer8)</argsstring>
+        <name>FAISS_INHERIT_HAMMING</name>
+        <qualifiedname>faiss::FAISS_INHERIT_HAMMING</qualifiedname>
+        <param>
+          <type>GenHammingComputer8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="43" column="1" declfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" declline="43" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a74d57ebe67a55441fa7b7c2a13563d43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
-        <definition>int faiss::generalized_hamming_64</definition>
-        <argsstring>(uint64_t a)</argsstring>
-        <name>generalized_hamming_64</name>
-        <qualifiedname>faiss::generalized_hamming_64</qualifiedname>
+        <definition>int faiss::hamming_popcount_tail</definition>
+        <argsstring>(const uint64_t *a64, const uint64_t *b64, int i_start, int quotient8, const uint8_t *a8, const uint8_t *b8, int remainder8)</argsstring>
+        <name>hamming_popcount_tail</name>
+        <qualifiedname>faiss::hamming_popcount_tail</qualifiedname>
         <param>
-          <type>uint64_t</type>
-          <declname>a</declname>
+          <type>const uint64_t *</type>
+          <declname>a64</declname>
+        </param>
+        <param>
+          <type>const uint64_t *</type>
+          <declname>b64</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i_start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quotient8</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b8</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>remainder8</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -13394,292 +15042,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx2-inl.h" line="359" column="12" bodyfile="faiss/utils/hamming_distance/avx2-inl.h" bodystart="359" bodyend="365"/>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="22" column="12" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="22" bodyend="90"/>
       </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a020c4142c2661fa5387255c73e1b3510" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespacefaiss_1ace414a88fc1c43aceb6c6ad164823847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
-        </templateparamlist>
-        <type>hamdis_t</type>
-        <definition>hamdis_t faiss::hamming&lt; 64 &gt;</definition>
-        <argsstring>(const uint64_t *pa, const uint64_t *pb)</argsstring>
-        <name>hamming&lt; 64 &gt;</name>
-        <qualifiedname>faiss::hamming&lt; 64 &gt;</qualifiedname>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pa</declname>
-        </param>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pb</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx512-inl.h" line="54" column="8" bodyfile="faiss/utils/hamming_distance/avx512-inl.h" bodystart="54" bodyend="56"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a251cd1d86f57ca5499d939d3f5ae093e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-        </templateparamlist>
-        <type>hamdis_t</type>
-        <definition>hamdis_t faiss::hamming&lt; 128 &gt;</definition>
-        <argsstring>(const uint64_t *pa, const uint64_t *pb)</argsstring>
-        <name>hamming&lt; 128 &gt;</name>
-        <qualifiedname>faiss::hamming&lt; 128 &gt;</qualifiedname>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pa</declname>
-        </param>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pb</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx512-inl.h" line="59" column="8" bodyfile="faiss/utils/hamming_distance/avx512-inl.h" bodystart="59" bodyend="61"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a8d4176559a9c361225a047c03f62d648" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-        </templateparamlist>
-        <type>hamdis_t</type>
-        <definition>hamdis_t faiss::hamming&lt; 256 &gt;</definition>
-        <argsstring>(const uint64_t *pa, const uint64_t *pb)</argsstring>
-        <name>hamming&lt; 256 &gt;</name>
-        <qualifiedname>faiss::hamming&lt; 256 &gt;</qualifiedname>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pa</declname>
-        </param>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pb</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/avx512-inl.h" line="64" column="8" bodyfile="faiss/utils/hamming_distance/avx512-inl.h" bodystart="64" bodyend="67"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a8af12986585c75db3a1dbb2b74b6111e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int faiss::popcount32</definition>
-        <argsstring>(uint32_t x)</argsstring>
-        <name>popcount32</name>
-        <qualifiedname>faiss::popcount32</qualifiedname>
-        <param>
-          <type>uint32_t</type>
-          <declname>x</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/common.h" line="21" column="12" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="21" bodyend="23"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a7d2125afc95e3417b270cb9428f8e0ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int faiss::popcount64</definition>
-        <argsstring>(uint64_t x)</argsstring>
-        <name>popcount64</name>
-        <qualifiedname>faiss::popcount64</qualifiedname>
-        <param>
-          <type>uint64_t</type>
-          <declname>x</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/common.h" line="26" column="12" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="26" bodyend="28"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a020c4142c2661fa5387255c73e1b3510" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-        </templateparamlist>
-        <type>hamdis_t</type>
-        <definition>hamdis_t faiss::hamming&lt; 64 &gt;</definition>
-        <argsstring>(const uint64_t *pa, const uint64_t *pb)</argsstring>
-        <name>hamming&lt; 64 &gt;</name>
-        <qualifiedname>faiss::hamming&lt; 64 &gt;</qualifiedname>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pa</declname>
-        </param>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pb</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/generic-inl.h" line="47" column="8" bodyfile="faiss/utils/hamming_distance/generic-inl.h" bodystart="47" bodyend="49"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a251cd1d86f57ca5499d939d3f5ae093e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-        </templateparamlist>
-        <type>hamdis_t</type>
-        <definition>hamdis_t faiss::hamming&lt; 128 &gt;</definition>
-        <argsstring>(const uint64_t *pa, const uint64_t *pb)</argsstring>
-        <name>hamming&lt; 128 &gt;</name>
-        <qualifiedname>faiss::hamming&lt; 128 &gt;</qualifiedname>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pa</declname>
-        </param>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pb</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/generic-inl.h" line="52" column="8" bodyfile="faiss/utils/hamming_distance/generic-inl.h" bodystart="52" bodyend="54"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a8d4176559a9c361225a047c03f62d648" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-        </templateparamlist>
-        <type>hamdis_t</type>
-        <definition>hamdis_t faiss::hamming&lt; 256 &gt;</definition>
-        <argsstring>(const uint64_t *pa, const uint64_t *pb)</argsstring>
-        <name>hamming&lt; 256 &gt;</name>
-        <qualifiedname>faiss::hamming&lt; 256 &gt;</qualifiedname>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pa</declname>
-        </param>
-        <param>
-          <type>const uint64_t *</type>
-          <declname>pb</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/generic-inl.h" line="57" column="8" bodyfile="faiss/utils/hamming_distance/generic-inl.h" bodystart="57" bodyend="60"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a3c20def47976af19292a160b2ec551d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::SPECIALIZED_HC</definition>
-        <argsstring>(4)</argsstring>
-        <name>SPECIALIZED_HC</name>
-        <qualifiedname>faiss::SPECIALIZED_HC</qualifiedname>
-        <param>
-          <type>4</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="49" column="1" declfile="faiss/utils/hamming_distance/hamdis-inl.h" declline="49" declcolumn="1"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1acb4e4208ec84a403e02dba1b18b29840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::SPECIALIZED_HC</definition>
-        <argsstring>(8)</argsstring>
-        <name>SPECIALIZED_HC</name>
-        <qualifiedname>faiss::SPECIALIZED_HC</qualifiedname>
-        <param>
-          <type>8</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="50" column="1" declfile="faiss/utils/hamming_distance/hamdis-inl.h" declline="50" declcolumn="1"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a138c0f4e83d2e8b7fdd90ef895f8c6f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::SPECIALIZED_HC</definition>
-        <argsstring>(16)</argsstring>
-        <name>SPECIALIZED_HC</name>
-        <qualifiedname>faiss::SPECIALIZED_HC</qualifiedname>
-        <param>
-          <type>16</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="51" column="1" declfile="faiss/utils/hamming_distance/hamdis-inl.h" declline="51" declcolumn="1"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a965aa1292a3957feaaec0f4ed1b54f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::SPECIALIZED_HC</definition>
-        <argsstring>(20)</argsstring>
-        <name>SPECIALIZED_HC</name>
-        <qualifiedname>faiss::SPECIALIZED_HC</qualifiedname>
-        <param>
-          <type>20</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="52" column="1" declfile="faiss/utils/hamming_distance/hamdis-inl.h" declline="52" declcolumn="1"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a69f0b96e4d8c59be97ee73aedafac0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::SPECIALIZED_HC</definition>
-        <argsstring>(32)</argsstring>
-        <name>SPECIALIZED_HC</name>
-        <qualifiedname>faiss::SPECIALIZED_HC</qualifiedname>
-        <param>
-          <type>32</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="53" column="1" declfile="faiss/utils/hamming_distance/hamdis-inl.h" declline="53" declcolumn="1"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1aadcee2efcbb11d2c1d284589ba12b8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::SPECIALIZED_HC</definition>
-        <argsstring>(64)</argsstring>
-        <name>SPECIALIZED_HC</name>
-        <qualifiedname>faiss::SPECIALIZED_HC</qualifiedname>
-        <param>
-          <type>64</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="54" column="1" declfile="faiss/utils/hamming_distance/hamdis-inl.h" declline="54" declcolumn="1"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a2054e07a6f5836428496e956708e1ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>SL</declname>
+            <defname>SL</defname>
+          </param>
           <param>
             <type>class F</type>
           </param>
@@ -13703,7 +15074,363 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/hamming_distance/hamdis-inl.h" line="65" column="10" bodyfile="faiss/utils/hamming_distance/hamdis-inl.h" bodystart="65" bodyend="82"/>
+        <location file="faiss/utils/hamming_distance/hamming_computer.h" line="125" column="10" bodyfile="faiss/utils/hamming_distance/hamming_computer.h" bodystart="125" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a7e7970c7b6e78837074358ff5756abcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hammings_knn_hc_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int_maxheap_array_t *ha, const uint8_t *a, const uint8_t *b, size_t nb, size_t ncodes, int ordered, ApproxTopK_mode_t approx_topk_mode, const IDSelector *sel)</argsstring>
+        <name>hammings_knn_hc_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::hammings_knn_hc_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type><ref refid="structfaiss_1_1HeapArray" kindref="compound">int_maxheap_array_t</ref> *</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ordered</declname>
+        </param>
+        <param>
+          <type>ApproxTopK_mode_t</type>
+          <declname>approx_topk_mode</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="310" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="310" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1ae22e5a9dc806d1f71c7cad99f0deb9d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hammings_knn_mc_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const uint8_t *a, const uint8_t *b, size_t na, size_t nb, size_t k, size_t ncodes, int32_t *distances, int64_t *labels, const IDSelector *sel)</argsstring>
+        <name>hammings_knn_mc_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::hammings_knn_mc_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="326" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="326" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a71d5671337c8c4749970ebbcfaf64ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hamming_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const uint8_t *a, const uint8_t *b, size_t na, size_t nb, int radius, size_t code_size, RangeSearchResult *result, const IDSelector *sel)</argsstring>
+        <name>hamming_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::hamming_range_search_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type><ref refid="structfaiss_1_1RangeSearchResult" kindref="compound">RangeSearchResult</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> *</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="343" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="343" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a266f0d1f649b46fd7aca59afcdb96d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hammings_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const uint8_t *a, const uint8_t *b, size_t na, size_t nb, size_t ncodes, hamdis_t *dis)</argsstring>
+        <name>hammings_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::hammings_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>na</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>hamdis_t *</type>
+          <declname>dis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="360" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="360" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1adcf203dcbeb99d34bb3ea12b27d52126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::generalized_hammings_knn_hc_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(int_maxheap_array_t *ha, const uint8_t *a, const uint8_t *b, size_t nb, size_t code_size, int ordered)</argsstring>
+        <name>generalized_hammings_knn_hc_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::generalized_hammings_knn_hc_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type><ref refid="structfaiss_1_1HeapArray" kindref="compound">int_maxheap_array_t</ref> *</type>
+          <declname>ha</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>code_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ordered</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="388" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="388" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a99f4eccf995e726436cba10280af60b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::hamming_count_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const uint8_t *bs1, const uint8_t *bs2, size_t n1, size_t n2, hamdis_t ht, size_t ncodes, size_t *nptr)</argsstring>
+        <name>hamming_count_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::hamming_count_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="399" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="399" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a23deeebdc288d699af8ca1ef2f96ffea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void faiss::crosshamming_count_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const uint8_t *dbs, size_t n, hamdis_t ht, size_t ncodes, size_t *nptr)</argsstring>
+        <name>crosshamming_count_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::crosshamming_count_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>dbs</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>nptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="426" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="426" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a5a016901d28f4acae79709d1a5aa3f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t faiss::match_hamming_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</definition>
+        <argsstring>(const uint8_t *bs1, const uint8_t *bs2, size_t n1, size_t n2, hamdis_t ht, size_t ncodes, int64_t *idx, hamdis_t *dis)</argsstring>
+        <name>match_hamming_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</name>
+        <qualifiedname>faiss::match_hamming_thres_fixSL&lt; THE_SIMD_LEVEL &gt;</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bs1</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>bs2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>hamdis_t</type>
+          <declname>ht</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ncodes</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>hamdis_t *</type>
+          <declname>dis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_impl.h" line="451" column="1" bodyfile="faiss/utils/hamming_distance/hamming_impl.h" bodystart="451" bodyend="477"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a1d40aec5723474516de576263cc03048" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -14592,7 +16319,7 @@
           <declname>all_distances</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>all_labels</declname>
         </param>
         <param>
@@ -14600,7 +16327,7 @@
           <declname>distances</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>labels</declname>
         </param>
         <briefdescription>
@@ -16408,7 +18135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1017" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1017" bodyend="1026"/>
+        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1018" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1018" bodyend="1027"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a365c7b264fd4da7aa79578276f96813d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -16448,7 +18175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1029" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1029" bodyend="1038"/>
+        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1030" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1030" bodyend="1039"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1affbb8aa8afdebbd4b862b4bb17bc3abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -16488,7 +18215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1041" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1041" bodyend="1050"/>
+        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1042" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1042" bodyend="1051"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a01cfcf4776dc6fd86604fd28bbebc228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -16528,7 +18255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1053" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1053" bodyend="1062"/>
+        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1054" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1054" bodyend="1063"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ae1e48fd083ff81b655dcb416f2b15d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -16564,7 +18291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1065" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1065" bodyend="1072"/>
+        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1066" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1066" bodyend="1073"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a46042faedc4f69e954b48f7970576f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -16600,7 +18327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1075" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1075" bodyend="1082"/>
+        <location file="faiss/utils/simd_impl/partitioning_simdlib256.h" line="1076" column="1" bodyfile="faiss/utils/simd_impl/partitioning_simdlib256.h" bodystart="1076" bodyend="1083"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a5fdac0aa4da8e5008a9fb67ea5d091e5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>

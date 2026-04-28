@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1ab5869d347751feeb548bf0b8842196ee" prot="public" static="no" mutable="no">
+        <type>__m256i</type>
+        <definition>__m256i faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="78" column="13" bodyfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1a230e5374edda4aeb098da8dfcb95800c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::GenHammingComputer32_tpl</definition>
+        <argsstring>(const uint8_t *a8, FAISS_MAYBE_UNUSED int code_size)</argsstring>
+        <name>GenHammingComputer32_tpl</name>
+        <qualifiedname>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::GenHammingComputer32_tpl</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>FAISS_MAYBE_UNUSED int</type>
+          <declname>code_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="80" column="5" bodyfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1a8bd0344444c5ac59ee5f752ad2ec1295" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::hamming</definition>
+        <argsstring>(const uint8_t *b8) const</argsstring>
+        <name>hamming</name>
+        <qualifiedname>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::hamming</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="87" column="16" bodyfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" bodystart="87" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1ac3196f2e5fb5d5481b2183577b81a2d2" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>static constexpr int faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::get_code_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_code_size</name>
+        <qualifiedname>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;::get_code_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="94" column="33" bodyfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/utils/hamming_distance/hamming_computer-avx2.h" line="77" column="1" bodyfile="faiss/utils/hamming_distance/hamming_computer-avx2.h" bodystart="77" bodyend="97"/>
+    <listofallmembers>
+      <member refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1ab5869d347751feeb548bf0b8842196ee" prot="public" virt="non-virtual"><scope>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;</scope><name>a</name></member>
+      <member refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1a230e5374edda4aeb098da8dfcb95800c" prot="public" virt="non-virtual"><scope>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;</scope><name>GenHammingComputer32_tpl</name></member>
+      <member refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1ac3196f2e5fb5d5481b2183577b81a2d2" prot="public" virt="non-virtual"><scope>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;</scope><name>get_code_size</name></member>
+      <member refid="structfaiss_1_1GenHammingComputer32__tpl_3_01SIMDLevel_1_1AVX2_01_4_1a8bd0344444c5ac59ee5f752ad2ec1295" prot="public" virt="non-virtual"><scope>faiss::GenHammingComputer32_tpl&lt; SIMDLevel::AVX2 &gt;</scope><name>hamming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -7,6 +7,7 @@
     <includes local="no">utility</includes>
     <includes refid="simdlib__dispatch_8h" local="no">faiss/impl/simdlib/simdlib_dispatch.h</includes>
     <includes refid="Heap_8h" local="no">faiss/utils/Heap.h</includes>
+    <includedby refid="hamming__impl_8h" local="no">faiss/utils/hamming_distance/hamming_impl.h</includedby>
     <incdepgraph>
       <node id="10">
         <label>faiss/impl/platform_macros.h</label>
@@ -134,6 +135,18 @@
         <label>utility</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>faiss/utils/approx_topk_hamming/approx_topk_hamming.h</label>
+        <link refid="approx__topk__hamming_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>faiss/utils/hamming_distance/hamming_impl.h</label>
+        <link refid="hamming__impl_8h_source"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="structfaiss_1_1HeapWithBucketsForHamming32" prot="public">faiss::HeapWithBucketsForHamming32</innerclass>
     <innerclass refid="structfaiss_1_1HeapWithBucketsForHamming32_3_01CMax_3_01int_00_01int64__t_01_4_00_01NBUCKETS_00_01N_00_01HammingComputerT_01_4" prot="public">faiss::HeapWithBucketsForHamming32&lt; CMax&lt; int, int64_t &gt;, NBUCKETS, N, HammingComputerT &gt;</innerclass>
     <innerclass refid="structfaiss_1_1HeapWithBucketsForHamming16" prot="public">faiss::HeapWithBucketsForHamming16</innerclass>

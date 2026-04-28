@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d9c18ecf33bce9e28b450a61753b43c1" kind="dir">
+    <compoundname>faiss/impl/binary_hamming</compoundname>
+    <innerfile refid="dispatch_8h">dispatch.h</innerfile>
+    <innerfile refid="IndexBinaryHash__impl_8h">IndexBinaryHash_impl.h</innerfile>
+    <innerfile refid="IndexBinaryHNSW__impl_8h">IndexBinaryHNSW_impl.h</innerfile>
+    <innerfile refid="IndexBinaryIVF__impl_8h">IndexBinaryIVF_impl.h</innerfile>
+    <innerfile refid="IndexIVFSpectralHash__impl_8h">IndexIVFSpectralHash_impl.h</innerfile>
+    <innerfile refid="IndexPQ__impl_8h">IndexPQ_impl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/impl/binary_hamming/"/>
+  </compounddef>
+</doxygen>

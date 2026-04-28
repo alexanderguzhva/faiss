@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="popcount_8h" kind="file" language="C++">
+    <compoundname>popcount.h</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="hamming_8h" local="no">faiss/utils/hamming.h</includedby>
+    <includedby refid="common_8h" local="no">faiss/utils/hamming_distance/common.h</includedby>
+    <includedby refid="rabitq__simd_8h" local="no">faiss/utils/rabitq_simd.h</includedby>
+    <includedby refid="partitioning__simdlib256_8h" local="no">faiss/utils/simd_impl/partitioning_simdlib256.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>faiss/utils/popcount.h</label>
+        <link refid="popcount_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>faiss/IndexIVFRaBitQFastScan.h</label>
+        <link refid="IndexIVFRaBitQFastScan_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>faiss/IndexRaBitQFastScan.h</label>
+        <link refid="IndexRaBitQFastScan_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>faiss/impl/RaBitQUtils.h</label>
+        <link refid="RaBitQUtils_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>faiss/impl/RaBitQuantizerMultiBit.h</label>
+        <link refid="RaBitQuantizerMultiBit_8h_source"/>
+      </node>
+      <node id="3">
+        <label>faiss/impl/binary_hamming/IndexBinaryHNSW_impl.h</label>
+        <link refid="IndexBinaryHNSW__impl_8h_source"/>
+      </node>
+      <node id="4">
+        <label>faiss/impl/binary_hamming/IndexBinaryHash_impl.h</label>
+        <link refid="IndexBinaryHash__impl_8h_source"/>
+      </node>
+      <node id="5">
+        <label>faiss/impl/binary_hamming/IndexBinaryIVF_impl.h</label>
+        <link refid="IndexBinaryIVF__impl_8h_source"/>
+      </node>
+      <node id="6">
+        <label>faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h</label>
+        <link refid="IndexIVFSpectralHash__impl_8h_source"/>
+      </node>
+      <node id="7">
+        <label>faiss/impl/binary_hamming/IndexPQ_impl.h</label>
+        <link refid="IndexPQ__impl_8h_source"/>
+      </node>
+      <node id="17">
+        <label>faiss/impl/fast_scan/rabitq_dispatching.h</label>
+        <link refid="rabitq__dispatching_8h"/>
+      </node>
+      <node id="20">
+        <label>faiss/impl/fast_scan/rabitq_result_handler.h</label>
+        <link refid="rabitq__result__handler_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>faiss/utils/hamming.h</label>
+        <link refid="hamming_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>faiss/utils/hamming_distance/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>faiss/utils/hamming_distance/hamming_computer-avx2.h</label>
+        <link refid="hamming__computer-avx2_8h_source"/>
+      </node>
+      <node id="13">
+        <label>faiss/utils/hamming_distance/hamming_computer-avx512.h</label>
+        <link refid="hamming__computer-avx512_8h_source"/>
+      </node>
+      <node id="11">
+        <label>faiss/utils/hamming_distance/hamming_computer-generic.h</label>
+        <link refid="hamming__computer-generic_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>faiss/utils/hamming_distance/hamming_computer.h</label>
+        <link refid="hamming__computer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>faiss/utils/hamming_distance/hamming_impl.h</label>
+        <link refid="hamming__impl_8h_source"/>
+      </node>
+      <node id="1">
+        <label>faiss/utils/popcount.h</label>
+        <link refid="popcount_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>faiss/utils/rabitq_simd.h</label>
+        <link refid="rabitq__simd_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>faiss/utils/simd_impl/partitioning_simdlib256.h</label>
+        <link refid="partitioning__simdlib256_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="popcount_8h_1a000d434de4cd08a324cab836be0c5431" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int popcount32</definition>
+        <argsstring>(uint32_t x)</argsstring>
+        <name>popcount32</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/popcount.h" line="23" column="12" bodyfile="faiss/utils/popcount.h" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="popcount_8h_1ad710291e05c540deb2824cb3b67e652d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int popcount64</definition>
+        <argsstring>(uint64_t x)</argsstring>
+        <name>popcount64</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/popcount.h" line="26" column="12" bodyfile="faiss/utils/popcount.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>popcount<sp/>=<sp/>count<sp/>number<sp/>of<sp/>1s<sp/>in<sp/>the<sp/>binary<sp/>representation<sp/>of<sp/>a<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;intrin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>popcount32(uint32_t<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>__popcnt(x);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>popcount64(uint64_t<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(__popcnt64(x));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>popcount32(uint32_t<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>__builtin_popcount(x);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>popcount64(uint64_t<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>__builtin_popcountll(x);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="faiss/utils/popcount.h"/>
+  </compounddef>
+</doxygen>

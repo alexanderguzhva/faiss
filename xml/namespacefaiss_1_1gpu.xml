@@ -687,7 +687,7 @@
           <declname>vectorsRowMajor</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>numVectors</declname>
         </param>
         <param>
@@ -699,7 +699,7 @@
           <declname>queriesRowMajor</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>numQueries</declname>
         </param>
         <param>
@@ -715,7 +715,7 @@
           <declname>outDistances</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>outIndices</declname>
         </param>
         <briefdescription>
@@ -1108,15 +1108,15 @@
         <name>ivfOffsetToUserIndex</name>
         <qualifiedname>faiss::gpu::ivfOffsetToUserIndex</qualifiedname>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>indices</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>numLists</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>queries</declname>
         </param>
         <param>
@@ -1124,7 +1124,7 @@
           <declname>k</declname>
         </param>
         <param>
-          <type>const std::vector&lt; std::vector&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &gt; &amp;</type>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &gt; &amp;</type>
           <declname>listOffsetToUserIndex</declname>
         </param>
         <briefdescription>
@@ -1442,7 +1442,7 @@
           <declname>refDist</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">faiss::idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">faiss::idx_t</ref> *</type>
           <declname>refInd</declname>
         </param>
         <param>
@@ -1450,7 +1450,7 @@
           <declname>testDist</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">faiss::idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">faiss::idx_t</ref> *</type>
           <declname>testInd</declname>
         </param>
         <param>
@@ -1686,7 +1686,7 @@
         <location file="faiss/gpu/utils/CuvsUtils.h" line="63" column="6" declfile="faiss/gpu/utils/CuvsUtils.h" declline="63" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1_1gpu_1a3cc563a7cb538b461187b53cc29188ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::gpu::inplaceGatherFilteredRows</definition>
         <argsstring>(GpuResources *res, Tensor&lt; float, 2, true &gt; &amp;vecs, Tensor&lt; idx_t, 1, true &gt; &amp;indices)</argsstring>
         <name>inplaceGatherFilteredRows</name>
@@ -1700,7 +1700,7 @@
           <declname>vecs</declname>
         </param>
         <param>
-          <type>Tensor&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>, 1, true &gt; &amp;</type>
+          <type>Tensor&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>, 1, true &gt; &amp;</type>
           <declname>indices</declname>
         </param>
         <briefdescription>
@@ -1727,7 +1727,7 @@
           <declname>src</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>dst</declname>
         </param>
         <param>
@@ -1735,7 +1735,7 @@
           <declname>count</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>n</declname>
         </param>
         <briefdescription>

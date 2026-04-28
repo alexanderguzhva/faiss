@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a7b23de89f25bcb9aedf5bae5f7ee50f7" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a0</definition>
+        <argsstring></argsstring>
+        <name>a0</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="14" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a3f1ea9b38573ed5ab3335b94559e44d4" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a1</definition>
+        <argsstring></argsstring>
+        <name>a1</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="17" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1aee4363d0b3c696ef9b9f5aa8e97ddf3d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a2</definition>
+        <argsstring></argsstring>
+        <name>a2</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="20" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a61b946dfb1846bcb2c67b4c02cfc8e83" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a3</definition>
+        <argsstring></argsstring>
+        <name>a3</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="23" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1af5de6853654bbe036914a2daf5ad5bc1" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a4</definition>
+        <argsstring></argsstring>
+        <name>a4</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="26" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a464cb19876508363134fbbfc3e111f77" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a5</definition>
+        <argsstring></argsstring>
+        <name>a5</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="29" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a00a894e63932992953022e8aaecdc9ad" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a6</definition>
+        <argsstring></argsstring>
+        <name>a6</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="32" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a34dc163e1b8978e6a8b7164fb557d162" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a7</definition>
+        <argsstring></argsstring>
+        <name>a7</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::a7</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="221" column="35" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a9b28aaf6b1fd1a6b1b7e8fdacd868dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::HammingComputer64_tpl</definition>
+        <argsstring>()</argsstring>
+        <name>HammingComputer64_tpl</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::HammingComputer64_tpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="223" column="5" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a01fadccbb9ac266a1214c0b5194b7ead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::HammingComputer64_tpl</definition>
+        <argsstring>(const uint8_t *a8, int code_size)</argsstring>
+        <name>HammingComputer64_tpl</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::HammingComputer64_tpl</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>code_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="225" column="5" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1af68a4326c08f43ff3bd888375529f0ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::set</definition>
+        <argsstring>(const uint8_t *a8, FAISS_MAYBE_UNUSED int code_size)</argsstring>
+        <name>set</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::set</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>FAISS_MAYBE_UNUSED int</type>
+          <declname>code_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="229" column="10" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="229" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a0d538476c8a6738e8830582b195ace1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::hamming</definition>
+        <argsstring>(const uint8_t *b8) const</argsstring>
+        <name>hamming</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::hamming</qualifiedname>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>b8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="242" column="16" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="242" bodyend="248"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a2c8361f0c24cfc3e66eded3ee469c585" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>static constexpr int faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::get_code_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_code_size</name>
+        <qualifiedname>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;::get_code_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="250" column="33" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="250" bodyend="252"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/utils/hamming_distance/hamming_computer-generic.h" line="220" column="1" bodyfile="faiss/utils/hamming_distance/hamming_computer-generic.h" bodystart="220" bodyend="253"/>
+    <listofallmembers>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a7b23de89f25bcb9aedf5bae5f7ee50f7" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a0</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a3f1ea9b38573ed5ab3335b94559e44d4" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a1</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1aee4363d0b3c696ef9b9f5aa8e97ddf3d" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a2</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a61b946dfb1846bcb2c67b4c02cfc8e83" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a3</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1af5de6853654bbe036914a2daf5ad5bc1" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a4</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a464cb19876508363134fbbfc3e111f77" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a5</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a00a894e63932992953022e8aaecdc9ad" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a6</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a34dc163e1b8978e6a8b7164fb557d162" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>a7</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a2c8361f0c24cfc3e66eded3ee469c585" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>get_code_size</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a0d538476c8a6738e8830582b195ace1e" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>hamming</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a9b28aaf6b1fd1a6b1b7e8fdacd868dcd" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>HammingComputer64_tpl</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1a01fadccbb9ac266a1214c0b5194b7ead" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>HammingComputer64_tpl</name></member>
+      <member refid="structfaiss_1_1HammingComputer64__tpl_3_01SIMDLevel_1_1NONE_01_4_1af68a4326c08f43ff3bd888375529f0ea" prot="public" virt="non-virtual"><scope>faiss::HammingComputer64_tpl&lt; SIMDLevel::NONE &gt;</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

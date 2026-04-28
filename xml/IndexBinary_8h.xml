@@ -123,10 +123,10 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="13">
         <label>faiss/IVFlib.h</label>
         <link refid="IVFlib_8h_source"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -136,25 +136,25 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -164,10 +164,14 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="11">
         <label>faiss/IndexBinaryFromFloat.h</label>
         <link refid="IndexBinaryFromFloat_8h_source"/>
       </node>
@@ -180,40 +184,44 @@
       <node id="7">
         <label>faiss/IndexBinaryHash.h</label>
         <link refid="IndexBinaryHash_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
-      <node id="10">
+      <node id="12">
         <label>faiss/IndexBinaryIVF.h</label>
         <link refid="IndexBinaryIVF_8h_source"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="16">
         <label>faiss/IndexIDMap.h</label>
         <link refid="IndexIDMap_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>faiss/IndexReplicas.h</label>
-        <link refid="IndexReplicas_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>faiss/IndexShards.h</label>
-        <link refid="IndexShards_8h_source"/>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="18">
+        <label>faiss/IndexReplicas.h</label>
+        <link refid="IndexReplicas_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>faiss/IndexShards.h</label>
+        <link refid="IndexShards_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
         <label>faiss/IndexShardsIVF.h</label>
         <link refid="IndexShardsIVF_8h_source"/>
       </node>
-      <node id="14">
+      <node id="17">
         <label>faiss/MetaIndexes.h</label>
         <link refid="MetaIndexes_8h_source"/>
       </node>
@@ -221,7 +229,7 @@
         <label>faiss/gpu/GpuAutoTune.h</label>
         <link refid="GpuAutoTune_8h_source"/>
       </node>
-      <node id="19">
+      <node id="22">
         <label>faiss/gpu/GpuCloner.h</label>
         <link refid="GpuCloner_8h_source"/>
       </node>
@@ -229,27 +237,39 @@
         <label>faiss/gpu/GpuIndexBinaryCagra.h</label>
         <link refid="GpuIndexBinaryCagra_8h_source"/>
       </node>
-      <node id="8">
+      <node id="9">
         <label>faiss/gpu/GpuIndexBinaryFlat.h</label>
         <link refid="GpuIndexBinaryFlat_8h_source"/>
       </node>
-      <node id="16">
+      <node id="19">
         <label>faiss/gpu/perf/IndexWrapper.h</label>
         <link refid="IndexWrapper_8h_source"/>
       </node>
-      <node id="20">
+      <node id="23">
         <label>faiss/impl/ThreadedIndex.h</label>
         <link refid="ThreadedIndex_8h_source"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="10">
+        <label>faiss/impl/binary_hamming/IndexBinaryHNSW_impl.h</label>
+        <link refid="IndexBinaryHNSW__impl_8h_source"/>
+      </node>
+      <node id="8">
+        <label>faiss/impl/binary_hamming/IndexBinaryHash_impl.h</label>
+        <link refid="IndexBinaryHash__impl_8h_source"/>
+      </node>
+      <node id="15">
+        <label>faiss/impl/binary_hamming/IndexBinaryIVF_impl.h</label>
+        <link refid="IndexBinaryIVF__impl_8h_source"/>
+      </node>
+      <node id="24">
         <label>faiss/index_factory.h</label>
         <link refid="index__factory_8h_source"/>
       </node>
-      <node id="12">
+      <node id="14">
         <label>faiss/python/python_callbacks.h</label>
         <link refid="python__callbacks_8h_source"/>
       </node>
@@ -295,7 +315,7 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33" refid="structfaiss_1_1IndexBinary_1a0e485a7189eec2675032486d3b12cf88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a0e485a7189eec2675032486d3b12cf88" kindref="member">d</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>vector<sp/>dimension</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34" refid="structfaiss_1_1IndexBinary_1a277c2645b8def11c5d982384098c5380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a277c2645b8def11c5d982384098c5380" kindref="member">code_size</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>number<sp/>of<sp/>bytes<sp/>per<sp/>vector<sp/>(<sp/>=<sp/>d<sp/>/<sp/>8<sp/>)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="structfaiss_1_1IndexBinary_1a41b6759d127475d5fcd2b3982a8f355e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/><ref refid="structfaiss_1_1IndexBinary_1a41b6759d127475d5fcd2b3982a8f355e" kindref="member">ntotal</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>total<sp/>nb<sp/>of<sp/>indexed<sp/>vectors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structfaiss_1_1IndexBinary_1a41b6759d127475d5fcd2b3982a8f355e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/><ref refid="structfaiss_1_1IndexBinary_1a41b6759d127475d5fcd2b3982a8f355e" kindref="member">ntotal</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">///&lt;<sp/>total<sp/>nb<sp/>of<sp/>indexed<sp/>vectors</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36" refid="structfaiss_1_1IndexBinary_1a1656c00d77d55999becd71e3d8ea6dd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a1656c00d77d55999becd71e3d8ea6dd7" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">///&lt;<sp/>verbosity<sp/>level</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>set<sp/>if<sp/>the<sp/>Index<sp/>does<sp/>not<sp/>require<sp/>training,<sp/>or<sp/>if<sp/>training<sp/>is<sp/>done</highlight></codeline>
@@ -305,7 +325,7 @@
 <codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>type<sp/>of<sp/>metric<sp/>this<sp/>index<sp/>uses<sp/>for<sp/>search</highlight></codeline>
 <codeline lineno="43" refid="structfaiss_1_1IndexBinary_1a344529c829717012b530ef9c13b145b7" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref><sp/><ref refid="structfaiss_1_1IndexBinary_1a344529c829717012b530ef9c13b145b7" kindref="member">metric_type</ref><sp/>=<sp/><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752cace9aa175fe11f346aa0a70df58977ff1" kindref="member">METRIC_L2</ref>;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary" kindref="compound">IndexBinary</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/><ref refid="structfaiss_1_1IndexBinary_1a0e485a7189eec2675032486d3b12cf88" kindref="member">d</ref><sp/>=<sp/>0,<sp/><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref><sp/>metric<sp/>=<sp/><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752cace9aa175fe11f346aa0a70df58977ff1" kindref="member">METRIC_L2</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary" kindref="compound">IndexBinary</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/><ref refid="structfaiss_1_1IndexBinary_1a0e485a7189eec2675032486d3b12cf88" kindref="member">d</ref><sp/>=<sp/>0,<sp/><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752c" kindref="member">MetricType</ref><sp/>metric<sp/>=<sp/><ref refid="namespacefaiss_1afd12191c638da74760ff397cf319752cace9aa175fe11f346aa0a70df58977ff1" kindref="member">METRIC_L2</ref>);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary" kindref="compound">~IndexBinary</ref>();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -314,8 +334,8 @@
 <codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>n<sp/><sp/><sp/><sp/><sp/><sp/>nb<sp/>of<sp/>training<sp/>vectors</highlight></codeline>
 <codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/>training<sp/>vectors,<sp/>size<sp/>n<sp/>*<sp/>d<sp/>/<sp/>8</highlight></codeline>
 <codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54" refid="structfaiss_1_1IndexBinary_1a3c0ffd1655d8a5486660cb025340c9a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a3c0ffd1655d8a5486660cb025340c9a4" kindref="member">train</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>train_ex(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>x,<sp/>NumericType<sp/>numeric_type)<sp/>{</highlight></codeline>
+<codeline lineno="54" refid="structfaiss_1_1IndexBinary_1a3c0ffd1655d8a5486660cb025340c9a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a3c0ffd1655d8a5486660cb025340c9a4" kindref="member">train</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>train_ex(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>x,<sp/>NumericType<sp/>numeric_type)<sp/>{</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numeric_type<sp/>==<sp/>NumericType::UInt8)<sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1IndexBinary_1a3c0ffd1655d8a5486660cb025340c9a4" kindref="member">train</ref>(n,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(x));</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -328,8 +348,8 @@
 <codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Vectors<sp/>are<sp/>implicitly<sp/>assigned<sp/>labels<sp/>ntotal<sp/>..<sp/>ntotal<sp/>+<sp/>n<sp/>-<sp/>1</highlight></codeline>
 <codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/>input<sp/>matrix,<sp/>size<sp/>n<sp/>*<sp/>d<sp/>/<sp/>8</highlight></codeline>
 <codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68" refid="structfaiss_1_1IndexBinary_1af04b1093cdebfea189e0e04da68794d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1af04b1093cdebfea189e0e04da68794d7" kindref="member">add</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_ex(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>x,<sp/>NumericType<sp/>numeric_type)<sp/>{</highlight></codeline>
+<codeline lineno="68" refid="structfaiss_1_1IndexBinary_1af04b1093cdebfea189e0e04da68794d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1af04b1093cdebfea189e0e04da68794d7" kindref="member">add</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_ex(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>x,<sp/>NumericType<sp/>numeric_type)<sp/>{</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numeric_type<sp/>==<sp/>NumericType::UInt8)<sp/>{</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1IndexBinary_1af04b1093cdebfea189e0e04da68794d7" kindref="member">add</ref>(n,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(x));</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -344,12 +364,12 @@
 <codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
 <codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>xids<sp/>if<sp/>non-null,<sp/>ids<sp/>to<sp/>store<sp/>for<sp/>the<sp/>vectors<sp/>(size<sp/>n)</highlight></codeline>
 <codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84" refid="structfaiss_1_1IndexBinary_1a33c74f55b919bf39138bb2ba60bbaafc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a33c74f55b919bf39138bb2ba60bbaafc" kindref="member">add_with_ids</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>xids);</highlight></codeline>
+<codeline lineno="84" refid="structfaiss_1_1IndexBinary_1a33c74f55b919bf39138bb2ba60bbaafc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a33c74f55b919bf39138bb2ba60bbaafc" kindref="member">add_with_ids</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>xids);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_with_ids_ex(</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>x,</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NumericType<sp/>numeric_type,</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>xids)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>xids)<sp/>{</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numeric_type<sp/>==<sp/>NumericType::UInt8)<sp/>{</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1IndexBinary_1a33c74f55b919bf39138bb2ba60bbaafc" kindref="member">add_with_ids</ref>(n,<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(x),<sp/>xids);</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -368,19 +388,19 @@
 <codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>distances<sp/><sp/><sp/>output<sp/>pairwise<sp/>distances,<sp/>size<sp/>n*k</highlight></codeline>
 <codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107" refid="structfaiss_1_1IndexBinary_1ad155e375a04e1500f84ffe45a7b98586" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1ad155e375a04e1500f84ffe45a7b98586" kindref="member">search</ref>(</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>k,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>k,</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>distances,</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>labels,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>labels,</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1SearchParameters" kindref="compound">SearchParameters</ref>*<sp/>params<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>search_ex(</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>x,</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NumericType<sp/>numeric_type,</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>k,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>k,</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>distances,</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>labels,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>labels,</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1SearchParameters" kindref="compound">SearchParameters</ref>*<sp/>params<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numeric_type<sp/>==<sp/>NumericType::UInt8)<sp/>{</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1IndexBinary_1ad155e375a04e1500f84ffe45a7b98586" kindref="member">search</ref>(n,</highlight></codeline>
@@ -409,7 +429,7 @@
 <codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>result<sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>table</highlight></codeline>
 <codeline lineno="147"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="148" refid="structfaiss_1_1IndexBinary_1a7d8f56aff2b732ce74fbc0f09af45e63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a7d8f56aff2b732ce74fbc0f09af45e63" kindref="member">range_search</ref>(</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfaiss_1_1RangeSearchResult" kindref="compound">RangeSearchResult</ref>*<sp/>result,</highlight></codeline>
@@ -422,7 +442,7 @@
 <codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>x<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>input<sp/>vectors<sp/>to<sp/>search,<sp/>size<sp/>n<sp/>*<sp/>d<sp/>/<sp/>8</highlight></codeline>
 <codeline lineno="160"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>labels<sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>labels<sp/>of<sp/>the<sp/>NNs,<sp/>size<sp/>n*k</highlight></codeline>
 <codeline lineno="161"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162" refid="structfaiss_1_1IndexBinary_1aa706d8807d29c91e0a148553a8202bc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1aa706d8807d29c91e0a148553a8202bc9" kindref="member">assign</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,<sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>labels,<sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>k<sp/>=<sp/>1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162" refid="structfaiss_1_1IndexBinary_1aa706d8807d29c91e0a148553a8202bc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1aa706d8807d29c91e0a148553a8202bc9" kindref="member">assign</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,<sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>labels,<sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>k<sp/>=<sp/>1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Removes<sp/>all<sp/>elements<sp/>from<sp/>the<sp/>database.</highlight></codeline>
 <codeline lineno="165" refid="structfaiss_1_1IndexBinary_1a11bff8bcaa366c563076a3d18f3ae30c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a11bff8bcaa366c563076a3d18f3ae30c" kindref="member">reset</ref>()<sp/>=<sp/>0;</highlight></codeline>
@@ -437,14 +457,14 @@
 <codeline lineno="174"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>key<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id<sp/>of<sp/>the<sp/>vector<sp/>to<sp/>reconstruct</highlight></codeline>
 <codeline lineno="175"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>recons<sp/><sp/><sp/><sp/><sp/><sp/>reconstructed<sp/>vector<sp/>(size<sp/>d<sp/>/<sp/>8)</highlight></codeline>
 <codeline lineno="176"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="177" refid="structfaiss_1_1IndexBinary_1ad4938acd1d31afd49c81fbb5211121c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1ad4938acd1d31afd49c81fbb5211121c3" kindref="member">reconstruct</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>key,<sp/>uint8_t*<sp/>recons)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177" refid="structfaiss_1_1IndexBinary_1ad4938acd1d31afd49c81fbb5211121c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1ad4938acd1d31afd49c81fbb5211121c3" kindref="member">reconstruct</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>key,<sp/>uint8_t*<sp/>recons)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Reconstruct<sp/>vectors<sp/>i0<sp/>to<sp/>i0<sp/>+<sp/>ni<sp/>-<sp/>1.</highlight></codeline>
 <codeline lineno="180"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
 <codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>may<sp/>not<sp/>be<sp/>defined<sp/>for<sp/>some<sp/>indexes.</highlight></codeline>
 <codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>recons<sp/><sp/><sp/><sp/><sp/><sp/>reconstructed<sp/>vectors<sp/>(size<sp/>ni<sp/>*<sp/>d<sp/>/<sp/>8)</highlight></codeline>
 <codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="184" refid="structfaiss_1_1IndexBinary_1afbeb7aa476a119b17cbfdb87e9de91e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1afbeb7aa476a119b17cbfdb87e9de91e4" kindref="member">reconstruct_n</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>i0,<sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>ni,<sp/>uint8_t*<sp/>recons)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184" refid="structfaiss_1_1IndexBinary_1afbeb7aa476a119b17cbfdb87e9de91e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1afbeb7aa476a119b17cbfdb87e9de91e4" kindref="member">reconstruct_n</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>i0,<sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>ni,<sp/>uint8_t*<sp/>recons)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="186"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Similar<sp/>to<sp/>search,<sp/>but<sp/>also<sp/>reconstructs<sp/>the<sp/>stored<sp/>vectors<sp/>(or<sp/>an</highlight></codeline>
 <codeline lineno="187"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>approximation<sp/>in<sp/>the<sp/>case<sp/>of<sp/>lossy<sp/>coding)<sp/>for<sp/>the<sp/>search<sp/>results.</highlight></codeline>
@@ -455,11 +475,11 @@
 <codeline lineno="192"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>recons<sp/><sp/><sp/><sp/><sp/><sp/>reconstructed<sp/>vectors<sp/>size<sp/>(n,<sp/>k,<sp/>d)</highlight></codeline>
 <codeline lineno="193"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>**/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="194" refid="structfaiss_1_1IndexBinary_1a82b07fe855fba3208ae05391328b9ec3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a82b07fe855fba3208ae05391328b9ec3" kindref="member">search_and_reconstruct</ref>(</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>x,</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>k,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>k,</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t*<sp/>distances,</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>labels,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>labels,</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t*<sp/>recons,</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1SearchParameters" kindref="compound">SearchParameters</ref>*<sp/>params<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -470,7 +490,7 @@
 <codeline lineno="207"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>On<sp/>output,<sp/>other<sp/>is<sp/>empty.</highlight></codeline>
 <codeline lineno="208"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>add_id<sp/>is<sp/>added<sp/>to<sp/>all<sp/>moved<sp/>ids</highlight></codeline>
 <codeline lineno="209"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>(for<sp/>sequential<sp/>ids,<sp/>this<sp/>would<sp/>be<sp/>this-&gt;ntotal)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210" refid="structfaiss_1_1IndexBinary_1ab148fd07d1066eea71123640c764b377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1ab148fd07d1066eea71123640c764b377" kindref="member">merge_from</ref>(<ref refid="structfaiss_1_1IndexBinary" kindref="compound">IndexBinary</ref>&amp;<sp/>otherIndex,<sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>add_id<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="210" refid="structfaiss_1_1IndexBinary_1ab148fd07d1066eea71123640c764b377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1ab148fd07d1066eea71123640c764b377" kindref="member">merge_from</ref>(<ref refid="structfaiss_1_1IndexBinary" kindref="compound">IndexBinary</ref>&amp;<sp/>otherIndex,<sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>add_id<sp/>=<sp/>0);</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="212"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>check<sp/>that<sp/>the<sp/>two<sp/>indexes<sp/>are<sp/>compatible<sp/>(ie,<sp/>they<sp/>are</highlight></codeline>
 <codeline lineno="213"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>trained<sp/>in<sp/>the<sp/>same<sp/>way<sp/>and<sp/>have<sp/>the<sp/>same</highlight></codeline>
@@ -482,7 +502,7 @@
 <codeline lineno="219" refid="structfaiss_1_1IndexBinary_1aa65f1178997d72127f1ebca5cd7656a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1aa65f1178997d72127f1ebca5cd7656a2" kindref="member">sa_code_size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="221"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Same<sp/>as<sp/>add_with_ids<sp/>for<sp/>IndexBinary.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="222" refid="structfaiss_1_1IndexBinary_1a144d5d72fceb98fe9daea9cb393bbfd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a144d5d72fceb98fe9daea9cb393bbfd9" kindref="member">add_sa_codes</ref>(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>codes,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>xids);</highlight></codeline>
+<codeline lineno="222" refid="structfaiss_1_1IndexBinary_1a144d5d72fceb98fe9daea9cb393bbfd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IndexBinary_1a144d5d72fceb98fe9daea9cb393bbfd9" kindref="member">add_sa_codes</ref>(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>codes,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>xids);</highlight></codeline>
 <codeline lineno="223"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>faiss</highlight><highlight class="normal"></highlight></codeline>

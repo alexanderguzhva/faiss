@@ -235,6 +235,8 @@
         <link refid="IndexBinaryIVF_8h_source"/>
         <childnode refid="17" relation="include">
         </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>faiss/IndexFlat.h</label>
@@ -263,15 +265,13 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
@@ -279,17 +279,19 @@
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -302,63 +304,65 @@
         <label>faiss/IndexIVFAdditiveQuantizerFastScan.h</label>
         <link refid="IndexIVFAdditiveQuantizerFastScan_8h_source"/>
       </node>
-      <node id="21">
+      <node id="22">
         <label>faiss/IndexIVFFastScan.h</label>
         <link refid="IndexIVFFastScan_8h_source"/>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-      </node>
-      <node id="25">
-        <label>faiss/IndexIVFFlat.h</label>
-        <link refid="IndexIVFFlat_8h_source"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-      </node>
-      <node id="26">
-        <label>faiss/IndexIVFFlatPanorama.h</label>
-        <link refid="IndexIVFFlatPanorama_8h_source"/>
-      </node>
-      <node id="28">
-        <label>faiss/IndexIVFIndependentQuantizer.h</label>
-        <link refid="IndexIVFIndependentQuantizer_8h_source"/>
-      </node>
-      <node id="29">
-        <label>faiss/IndexIVFPQ.h</label>
-        <link refid="IndexIVFPQ_8h_source"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>faiss/IndexIVFPQFastScan.h</label>
-        <link refid="IndexIVFPQFastScan_8h_source"/>
-      </node>
-      <node id="30">
-        <label>faiss/IndexIVFPQR.h</label>
-        <link refid="IndexIVFPQR_8h_source"/>
-      </node>
-      <node id="31">
-        <label>faiss/IndexIVFRaBitQ.h</label>
-        <link refid="IndexIVFRaBitQ_8h_source"/>
-        <childnode refid="23" relation="include">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>faiss/IndexIVFRaBitQFastScan.h</label>
-        <link refid="IndexIVFRaBitQFastScan_8h_source"/>
         <childnode refid="24" relation="include">
         </childnode>
       </node>
+      <node id="26">
+        <label>faiss/IndexIVFFlat.h</label>
+        <link refid="IndexIVFFlat_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>faiss/IndexIVFFlatPanorama.h</label>
+        <link refid="IndexIVFFlatPanorama_8h_source"/>
+      </node>
+      <node id="29">
+        <label>faiss/IndexIVFIndependentQuantizer.h</label>
+        <link refid="IndexIVFIndependentQuantizer_8h_source"/>
+      </node>
+      <node id="30">
+        <label>faiss/IndexIVFPQ.h</label>
+        <link refid="IndexIVFPQ_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>faiss/IndexIVFPQFastScan.h</label>
+        <link refid="IndexIVFPQFastScan_8h_source"/>
+      </node>
+      <node id="31">
+        <label>faiss/IndexIVFPQR.h</label>
+        <link refid="IndexIVFPQR_8h_source"/>
+      </node>
       <node id="32">
+        <label>faiss/IndexIVFRaBitQ.h</label>
+        <link refid="IndexIVFRaBitQ_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>faiss/IndexIVFRaBitQFastScan.h</label>
+        <link refid="IndexIVFRaBitQFastScan_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
         <label>faiss/IndexIVFSpectralHash.h</label>
         <link refid="IndexIVFSpectralHash_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>faiss/IndexNNDescent.h</label>
@@ -370,17 +374,17 @@
         <label>faiss/IndexNSG.h</label>
         <link refid="IndexNSG_8h_source"/>
       </node>
-      <node id="33">
+      <node id="35">
         <label>faiss/IndexScalarQuantizer.h</label>
         <link refid="IndexScalarQuantizer_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="37">
         <label>faiss/IndexShardsIVF.h</label>
         <link refid="IndexShardsIVF_8h_source"/>
       </node>
@@ -388,41 +392,41 @@
         <label>faiss/gpu/GpuIcmEncoder.h</label>
         <link refid="GpuIcmEncoder_8h_source"/>
       </node>
-      <node id="37">
+      <node id="39">
         <label>faiss/gpu/GpuIndexBinaryCagra.h</label>
         <link refid="GpuIndexBinaryCagra_8h_source"/>
       </node>
-      <node id="36">
+      <node id="38">
         <label>faiss/gpu/GpuIndexCagra.h</label>
         <link refid="GpuIndexCagra_8h_source"/>
-        <childnode refid="37" relation="include">
-        </childnode>
-      </node>
-      <node id="38">
-        <label>faiss/gpu/GpuIndexIVF.h</label>
-        <link refid="GpuIndexIVF_8h_source"/>
         <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-      </node>
-      <node id="39">
-        <label>faiss/gpu/GpuIndexIVFFlat.h</label>
-        <link refid="GpuIndexIVFFlat_8h_source"/>
       </node>
       <node id="40">
-        <label>faiss/gpu/GpuIndexIVFPQ.h</label>
-        <link refid="GpuIndexIVFPQ_8h_source"/>
+        <label>faiss/gpu/GpuIndexIVF.h</label>
+        <link refid="GpuIndexIVF_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="41">
+        <label>faiss/gpu/GpuIndexIVFFlat.h</label>
+        <link refid="GpuIndexIVFFlat_8h_source"/>
+      </node>
+      <node id="42">
+        <label>faiss/gpu/GpuIndexIVFPQ.h</label>
+        <link refid="GpuIndexIVFPQ_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
         <label>faiss/gpu/GpuIndexIVFScalarQuantizer.h</label>
         <link refid="GpuIndexIVFScalarQuantizer_8h_source"/>
       </node>
-      <node id="46">
+      <node id="48">
         <label>faiss/gpu/test/TestUtils.h</label>
         <link refid="TestUtils_8h_source"/>
       </node>
@@ -488,43 +492,51 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="41">
+      <node id="21">
+        <label>faiss/impl/binary_hamming/IndexBinaryIVF_impl.h</label>
+        <link refid="IndexBinaryIVF__impl_8h_source"/>
+      </node>
+      <node id="34">
+        <label>faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h</label>
+        <link refid="IndexIVFSpectralHash__impl_8h_source"/>
+      </node>
+      <node id="43">
         <label>faiss/impl/expanded_scanners.h</label>
         <link refid="expanded__scanners_8h_source"/>
-        <childnode refid="42" relation="include">
+        <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>faiss/impl/fast_scan/rabitq_dispatching.h</label>
         <link refid="rabitq__dispatching_8h"/>
       </node>
-      <node id="47">
+      <node id="49">
         <label>faiss/impl/fast_scan/rabitq_result_handler.h</label>
         <link refid="rabitq__result__handler_8h_source"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="44">
+      <node id="46">
         <label>faiss/impl/index_read_utils.h</label>
         <link refid="index__read__utils_8h_source"/>
       </node>
-      <node id="42">
+      <node id="44">
         <label>faiss/impl/scalar_quantizer/scanners.h</label>
         <link refid="scanners_8h_source"/>
-        <childnode refid="43" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="43">
+      <node id="45">
         <label>faiss/impl/scalar_quantizer/sq-dispatch.h</label>
         <link refid="sq-dispatch_8h_source"/>
       </node>
-      <node id="48">
+      <node id="50">
         <label>faiss/invlists/BlockInvertedLists.h</label>
         <link refid="BlockInvertedLists_8h_source"/>
       </node>
-      <node id="49">
+      <node id="51">
         <label>faiss/invlists/DirectMap.h</label>
         <link refid="DirectMap_8h_source"/>
         <childnode refid="16" relation="include">
@@ -535,28 +547,28 @@
         <link refid="InvertedLists_8h_source"/>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="47" relation="include">
-        </childnode>
         <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="50">
+      <node id="52">
         <label>faiss/invlists/InvertedListsIOHook.h</label>
         <link refid="InvertedListsIOHook_8h_source"/>
-        <childnode refid="48" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
-        <childnode refid="45" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
       </node>
-      <node id="45">
+      <node id="47">
         <label>faiss/invlists/OnDiskInvertedLists.h</label>
         <link refid="OnDiskInvertedLists_8h_source"/>
       </node>
@@ -564,7 +576,7 @@
         <label>faiss/python/python_callbacks.h</label>
         <link refid="python__callbacks_8h_source"/>
       </node>
-      <node id="27">
+      <node id="28">
         <label>faiss/utils/simd_impl/IVFFlatScanner-inl.h</label>
         <link refid="IVFFlatScanner-inl_8h_source"/>
       </node>
@@ -869,7 +881,7 @@
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>batch_no,</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>list_size,</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref>*<sp/>sel,</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>*<sp/>ids,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>*<sp/>ids,</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_sel,</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint32_t&gt;&amp;<sp/>active_indices,</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;&amp;<sp/>active_byteset,</highlight></codeline>
@@ -892,7 +904,7 @@
 <codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_active<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>curr_batch_size;<sp/>i++)<sp/>{</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>global_idx<sp/>=<sp/>batch_start<sp/>+<sp/>i;</highlight></codeline>
-<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>(ids<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>?<sp/>global_idx<sp/>:<sp/>ids[global_idx];</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>(ids<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>?<sp/>global_idx<sp/>:<sp/>ids[global_idx];</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>include<sp/>=<sp/>!use_sel<sp/>||<sp/>sel-&gt;is_member(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"></highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>active_indices[num_active]<sp/>=<sp/>i;</highlight></codeline>
@@ -963,7 +975,7 @@
 <codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="385"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SWIG</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="386"><highlight class="normal"></highlight></codeline>
-<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reconstruct(<ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref><sp/>key,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>recons,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>codes_base)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reconstruct(<ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref><sp/>key,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>recons,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>codes_base)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="388"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="389"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>faiss</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="390"><highlight class="normal"></highlight></codeline>

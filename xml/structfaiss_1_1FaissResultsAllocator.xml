@@ -5,7 +5,7 @@
     <basecompoundref prot="public" virt="non-virtual">svs_runtime::ResultsAllocator</basecompoundref>
     <sectiondef kind="private-type">
       <memberdef kind="typedef" id="structfaiss_1_1FaissResultsAllocator_1a856f851361a6dc78e9f245913428874f" prot="private" static="no">
-        <type><ref refid="structfaiss_1_1OutputBufferConverter" kindref="compound">OutputBufferConverter</ref>&lt; size_t, <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">faiss::idx_t</ref> &gt;</type>
+        <type><ref refid="structfaiss_1_1OutputBufferConverter" kindref="compound">OutputBufferConverter</ref>&lt; size_t, <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">faiss::idx_t</ref> &gt;</type>
         <definition>using faiss::FaissResultsAllocator::LabelsConverter =  OutputBufferConverter&lt;size_t, faiss::idx_t&gt;</definition>
         <argsstring></argsstring>
         <name>LabelsConverter</name>

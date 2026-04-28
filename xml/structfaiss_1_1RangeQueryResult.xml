@@ -5,7 +5,7 @@
     <includes refid="AuxIndexStructures_8h" local="no">AuxIndexStructures.h</includes>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structfaiss_1_1RangeQueryResult_1a8484aad57f5421a12c16099349e535a2" prot="public" static="no" mutable="no">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::RangeQueryResult::qno</definition>
         <argsstring></argsstring>
         <name>qno</name>
@@ -59,7 +59,7 @@
           <declname>dis</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>id</declname>
         </param>
         <briefdescription>

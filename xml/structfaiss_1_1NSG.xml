@@ -232,11 +232,11 @@
           <declname>storage</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>n</declname>
         </param>
         <param>
-          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &amp;</type>
+          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &amp;</type>
           <declname>knn_graph</declname>
         </param>
         <param>
@@ -280,7 +280,7 @@
           <declname>k</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>I</declname>
         </param>
         <param>
@@ -310,7 +310,7 @@
           <declname>storage</declname>
         </param>
         <param>
-          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &amp;</type>
+          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &amp;</type>
           <declname>knn_graph</declname>
         </param>
         <briefdescription>
@@ -426,7 +426,7 @@
           <declname>vt</declname>
         </param>
         <param>
-          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &amp;</type>
+          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &amp;</type>
           <declname>knn_graph</declname>
         </param>
         <param>
@@ -452,7 +452,7 @@
           <declname>storage</declname>
         </param>
         <param>
-          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt; &amp;</type>
+          <type>const <ref refid="structfaiss_1_1nsg_1_1Graph" kindref="compound">nsg::Graph</ref>&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt; &amp;</type>
           <declname>knn_graph</declname>
         </param>
         <param>

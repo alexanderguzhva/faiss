@@ -61,7 +61,7 @@
         <location file="faiss/invlists/DirectMap.h" line="45" column="10" bodyfile="faiss/invlists/DirectMap.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1DirectMap_1a5372a8a241fd5cd2940518c523ace9dc" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt;</type>
+        <type>std::vector&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt;</type>
         <definition>std::vector&lt;idx_t&gt; faiss::DirectMap::array</definition>
         <argsstring></argsstring>
         <name>array</name>
@@ -76,7 +76,7 @@
         <location file="faiss/invlists/DirectMap.h" line="48" column="17" bodyfile="faiss/invlists/DirectMap.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1DirectMap_1a5328b57d925865e464733f3512b0563f" prot="public" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref>, <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> &gt;</type>
+        <type>std::unordered_map&lt; <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref>, <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> &gt;</type>
         <definition>std::unordered_map&lt;idx_t, idx_t&gt; faiss::DirectMap::hashtable</definition>
         <argsstring></argsstring>
         <name>hashtable</name>
@@ -133,13 +133,13 @@
         <location file="faiss/invlists/DirectMap.h" line="54" column="10"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1DirectMap_1a032a4c2fbc9cfa556a84f8d8c1288ac7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
         <definition>idx_t faiss::DirectMap::get</definition>
         <argsstring>(idx_t id) const</argsstring>
         <name>get</name>
         <qualifiedname>faiss::DirectMap::get</qualifiedname>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>id</declname>
         </param>
         <briefdescription>
@@ -173,7 +173,7 @@
         <name>check_can_add</name>
         <qualifiedname>faiss::DirectMap::check_can_add</qualifiedname>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>ids</declname>
         </param>
         <briefdescription>
@@ -193,11 +193,11 @@
         <name>add_single_id</name>
         <qualifiedname>faiss::DirectMap::add_single_id</qualifiedname>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>id</declname>
         </param>
         <param>
-          <type><ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref></type>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
           <declname>list_no</declname>
         </param>
         <param>
@@ -267,11 +267,11 @@
           <declname>n</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>ids</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacefaiss_1ad63e84aa82f5bb0405ed924d58b20e2e" kindref="member">idx_t</ref> *</type>
+          <type>const <ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
           <declname>list_nos</declname>
         </param>
         <param>
