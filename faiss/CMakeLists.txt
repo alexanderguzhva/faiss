@@ -43,6 +43,8 @@ set(FAISS_SIMD_SVE_SRC
 )
 set(FAISS_SIMD_RVV_SRC
   impl/scalar_quantizer/sq-rvv.cpp
+  utils/simd_impl/distances_rvv.cpp
+  utils/simd_impl/rabitq_rvv.cpp
 )
 # Select SIMD sources based on target architecture
 if(CMAKE_SYSTEM_PROCESSOR MATCHES "(x86_64|amd64|AMD64)")
