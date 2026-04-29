@@ -1178,6 +1178,13 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespacefaiss_1a337b16cea2a5084cf0316bfb33353a9ea94d94128625bd5d1372db1de8e85c969" prot="public">
+          <name>RISCV_RVV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespacefaiss_1a337b16cea2a5084cf0316bfb33353a9ea4905ac9d6a22bdfc1ae096094ce6248d" prot="public">
           <name>COUNT</name>
           <briefdescription>
@@ -1191,7 +1198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="19" column="1" bodyfile="faiss/utils/simd_levels.h" bodystart="19" bodyend="30"/>
+        <location file="faiss/utils/simd_levels.h" line="19" column="1" bodyfile="faiss/utils/simd_levels.h" bodystart="19" bodyend="32"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -2115,7 +2122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="62" column="28" bodyfile="faiss/utils/simd_levels.h" bodystart="62" bodyend="-1"/>
+        <location file="faiss/utils/simd_levels.h" line="66" column="28" bodyfile="faiss/utils/simd_levels.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1aca360ba1cc6270b79a9228cdf3e63df5" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr SIMDLevel</type>
@@ -2132,7 +2139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="86" column="28" bodyfile="faiss/utils/simd_levels.h" bodystart="86" bodyend="-1"/>
+        <location file="faiss/utils/simd_levels.h" line="90" column="28" bodyfile="faiss/utils/simd_levels.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1aba162c9eeaabb62aebb068258bcd8652" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr SIMDLevel</type>
@@ -2149,7 +2156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="106" column="28" bodyfile="faiss/utils/simd_levels.h" bodystart="106" bodyend="-1"/>
+        <location file="faiss/utils/simd_levels.h" line="110" column="28" bodyfile="faiss/utils/simd_levels.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a68d671ff6d57b17f9fbf3c65607fbcff" prot="public" static="no" extern="yes" mutable="no">
         <type>FAISS_API int</type>
@@ -6797,7 +6804,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/simd_dispatch.h" line="58" column="13" bodyfile="faiss/impl/simd_dispatch.h" bodystart="58" bodyend="118"/>
+        <location file="faiss/impl/simd_dispatch.h" line="58" column="13" bodyfile="faiss/impl/simd_dispatch.h" bodystart="58" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ae20d9852f7ee86d7be2a4af07e51f0c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -6838,7 +6845,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/simd_dispatch.h" line="150" column="13" bodyfile="faiss/impl/simd_dispatch.h" bodystart="150" bodyend="153"/>
+        <location file="faiss/impl/simd_dispatch.h" line="158" column="13" bodyfile="faiss/impl/simd_dispatch.h" bodystart="158" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1ae781ed20ba5c00d9d1d50d0847e98ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -6862,7 +6869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/simd_dispatch.h" line="160" column="13" bodyfile="faiss/impl/simd_dispatch.h" bodystart="160" bodyend="163"/>
+        <location file="faiss/impl/simd_dispatch.h" line="168" column="13" bodyfile="faiss/impl/simd_dispatch.h" bodystart="168" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1aa850ed8ca17317a9c9f63c6ccea22581" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structfaiss_1_1simd16uint16__tpl" kindref="compound">simd16uint16_tpl</ref>&lt; SIMDLevel::AVX2 &gt;</type>
@@ -18349,7 +18356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="112" column="15" bodyfile="faiss/utils/simd_levels.h" bodystart="112" bodyend="122"/>
+        <location file="faiss/utils/simd_levels.h" line="116" column="15" bodyfile="faiss/utils/simd_levels.h" bodystart="116" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a79e514996c26613456730d2427a8a842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -18368,7 +18375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="125" column="13" declfile="faiss/utils/simd_levels.h" declline="125" declcolumn="13"/>
+        <location file="faiss/utils/simd_levels.h" line="132" column="13" declfile="faiss/utils/simd_levels.h" declline="132" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a119eb2565e7e64e0edc288c10cf35a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>SIMDLevel</type>
@@ -18387,7 +18394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="128" column="11" declfile="faiss/utils/simd_levels.h" declline="128" declcolumn="11"/>
+        <location file="faiss/utils/simd_levels.h" line="135" column="11" declfile="faiss/utils/simd_levels.h" declline="135" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a027b726c606d329c30840e51b539ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

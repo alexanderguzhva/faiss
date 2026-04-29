@@ -24,14 +24,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/utils/simd_levels.h" line="99" column="32" bodyfile="faiss/utils/simd_levels.h" bodystart="99" bodyend="-1"/>
+        <location file="faiss/utils/simd_levels.h" line="103" column="32" bodyfile="faiss/utils/simd_levels.h" bodystart="103" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="faiss/utils/simd_levels.h" line="98" column="1" bodyfile="faiss/utils/simd_levels.h" bodystart="98" bodyend="101"/>
+    <location file="faiss/utils/simd_levels.h" line="102" column="1" bodyfile="faiss/utils/simd_levels.h" bodystart="102" bodyend="105"/>
     <listofallmembers>
       <member refid="structfaiss_1_1simd512__level__selector_1ad4e52a0bfa9a9b681a4d2a1f0b0f3ebd" prot="public" virt="non-virtual"><scope>faiss::simd512_level_selector</scope><name>value</name></member>
     </listofallmembers>
