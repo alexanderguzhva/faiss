@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classfaiss_1_1gpu__metal_1_1StandardMetalResources" kind="class" language="C++" prot="public">
+    <compoundname>faiss::gpu_metal::StandardMetalResources</compoundname>
+    <includes refid="StandardMetalResources_8h" local="no">StandardMetalResources.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1a7bca05868ed90e3485076f8761e5dcdb" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MetalResources&gt; faiss::gpu_metal::StandardMetalResources::res_</definition>
+        <argsstring></argsstring>
+        <name>res_</name>
+        <qualifiedname>faiss::gpu_metal::StandardMetalResources::res_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/StandardMetalResources.h" line="31" column="21" bodyfile="faiss/gpu_metal/StandardMetalResources.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1af75cc15204fd031772c1a0b40e390241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::gpu_metal::StandardMetalResources::StandardMetalResources</definition>
+        <argsstring>()</argsstring>
+        <name>StandardMetalResources</name>
+        <qualifiedname>faiss::gpu_metal::StandardMetalResources::StandardMetalResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/StandardMetalResources.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1a73bc520da61fef3a410c8f5e127a593c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; MetalResources &gt; faiss::gpu_metal::StandardMetalResources::getResources</definition>
+        <argsstring>() const</argsstring>
+        <name>getResources</name>
+        <qualifiedname>faiss::gpu_metal::StandardMetalResources::getResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/StandardMetalResources.h" line="23" column="21" bodyfile="faiss/gpu_metal/StandardMetalResources.h" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1a6785f61f2f3275ce2b3489b8f5bcd321" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faiss::gpu_metal::StandardMetalResources::isAvailable</definition>
+        <argsstring>() const</argsstring>
+        <name>isAvailable</name>
+        <qualifiedname>faiss::gpu_metal::StandardMetalResources::isAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/StandardMetalResources.h" line="26" column="10" bodyfile="faiss/gpu_metal/StandardMetalResources.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Default Metal resources (single device). Use with index_cpu_to_metal_gpu. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/gpu_metal/StandardMetalResources.h" line="20" column="1" bodyfile="faiss/gpu_metal/StandardMetalResources.h" bodystart="20" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1a73bc520da61fef3a410c8f5e127a593c" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::StandardMetalResources</scope><name>getResources</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1a6785f61f2f3275ce2b3489b8f5bcd321" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::StandardMetalResources</scope><name>isAvailable</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1a7bca05868ed90e3485076f8761e5dcdb" prot="private" virt="non-virtual"><scope>faiss::gpu_metal::StandardMetalResources</scope><name>res_</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1StandardMetalResources_1af75cc15204fd031772c1a0b40e390241" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::StandardMetalResources</scope><name>StandardMetalResources</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

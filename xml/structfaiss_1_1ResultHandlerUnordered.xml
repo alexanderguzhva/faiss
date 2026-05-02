@@ -24,7 +24,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="30" column="7" bodyfile="faiss/impl/ResultHandler.h" bodystart="30" bodyend="30"/>
+        <location file="faiss/impl/ResultHandler.h" line="31" column="7" bodyfile="faiss/impl/ResultHandler.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1ResultHandlerUnordered_1a4f036aa994636a558a6815ed4cb97015" prot="public" static="no" mutable="no">
+        <type><ref refid="structfaiss_1_1InvertedListScannerStats" kindref="compound">InvertedListScannerStats</ref></type>
+        <definition>InvertedListScannerStats faiss::ResultHandlerUnordered&lt; T, TI &gt;::stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <qualifiedname>faiss::ResultHandlerUnordered::stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/ResultHandler.h" line="34" column="30" bodyfile="faiss/impl/ResultHandler.h" bodystart="34" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -54,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="33" column="18"/>
+        <location file="faiss/impl/ResultHandler.h" line="37" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1ResultHandlerUnordered_1abdb19c231ff11313ea9eaf72d6dd3631" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -68,16 +82,30 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="35" column="13" bodyfile="faiss/impl/ResultHandler.h" bodystart="35" bodyend="35"/>
+        <location file="faiss/impl/ResultHandler.h" line="39" column="13" bodyfile="faiss/impl/ResultHandler.h" bodystart="39" bodyend="39"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="faiss/impl/ResultHandler.h" line="28" column="1" bodyfile="faiss/impl/ResultHandler.h" bodystart="28" bodyend="36"/>
+    <collaborationgraph>
+      <node id="2">
+        <label>faiss::InvertedListScannerStats</label>
+        <link refid="structfaiss_1_1InvertedListScannerStats"/>
+      </node>
+      <node id="1">
+        <label>faiss::ResultHandlerUnordered&lt; T, TI &gt;</label>
+        <link refid="structfaiss_1_1ResultHandlerUnordered"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="faiss/impl/ResultHandler.h" line="29" column="1" bodyfile="faiss/impl/ResultHandler.h" bodystart="29" bodyend="40"/>
     <listofallmembers>
       <member refid="structfaiss_1_1ResultHandlerUnordered_1ab45ce5bc55959438c08d17c785c22320" prot="public" virt="pure-virtual"><scope>faiss::ResultHandlerUnordered</scope><name>add_result</name></member>
+      <member refid="structfaiss_1_1ResultHandlerUnordered_1a4f036aa994636a558a6815ed4cb97015" prot="public" virt="non-virtual"><scope>faiss::ResultHandlerUnordered</scope><name>stats</name></member>
       <member refid="structfaiss_1_1ResultHandlerUnordered_1a1ada12ca763782120f2c1b8bc47c2584" prot="public" virt="non-virtual"><scope>faiss::ResultHandlerUnordered</scope><name>threshold</name></member>
       <member refid="structfaiss_1_1ResultHandlerUnordered_1abdb19c231ff11313ea9eaf72d6dd3631" prot="public" virt="virtual"><scope>faiss::ResultHandlerUnordered</scope><name>~ResultHandlerUnordered</name></member>
     </listofallmembers>

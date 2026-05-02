@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="MetalResources_8h" kind="file" language="C++">
+    <compoundname>MetalResources.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes local="no">Metal/Metal.h</includes>
+    <includes local="no">cstddef</includes>
+    <includedby refid="MetalIndex_8h" local="no">faiss/gpu_metal/MetalIndex.h</includedby>
+    <includedby refid="StandardMetalResources_8h" local="no">faiss/gpu_metal/StandardMetalResources.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>faiss/gpu_metal/MetalResources.h</label>
+        <link refid="MetalResources_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="3">
+        <label>Metal/Metal.h</label>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>faiss/gpu_metal/GpuIndexFlat.h</label>
+        <link refid="gpu__metal_2GpuIndexFlat_8h_source"/>
+      </node>
+      <node id="2">
+        <label>faiss/gpu_metal/MetalIndex.h</label>
+        <link refid="MetalIndex_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>faiss/gpu_metal/MetalIndexFlat.h</label>
+        <link refid="MetalIndexFlat_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>faiss/gpu_metal/MetalResources.h</label>
+        <link refid="MetalResources_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>faiss/gpu_metal/StandardMetalResources.h</label>
+        <link refid="StandardMetalResources_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classfaiss_1_1gpu__metal_1_1MetalResources" prot="public">faiss::gpu_metal::MetalResources</innerclass>
+    <innernamespace refid="namespacefaiss">faiss</innernamespace>
+    <innernamespace refid="namespacefaiss_1_1gpu__metal">faiss::gpu_metal</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>@lint-ignore-every<sp/>LICENSELINT</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="2"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>its<sp/>affiliates.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>This<sp/>header<sp/>uses<sp/>Objective-C<sp/>types<sp/>(Metal<sp/>framework:<sp/>id,<sp/>nil,<sp/>MTLDevice,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>etc.).<sp/>For<sp/>correct<sp/>IDE/linter<sp/>behavior,<sp/>associate<sp/>this<sp/>file<sp/>with</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>&quot;Objective-C++&quot;:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Metal/Metal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacefaiss" kindref="compound">faiss</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gpu_metal<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///<sp/>Allocation<sp/>type<sp/>for<sp/>Metal<sp/>buffers<sp/>(mirrors<sp/>faiss::gpu::AllocType<sp/>roles).</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MetalAllocType<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437a0fcde2e6fdc2c0afd9a35bde9e99a269" kindref="member">Other</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437a547b2cb3c7589068effabb0cad9fa907" kindref="member">FlatData</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437a0b8e7919f13d089aef4f3bb6fd8420ab" kindref="member">IVFLists</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437a65a8f1712a80b76e79e2e36087ece51f" kindref="member">Quantizer</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437a73a4afa64cdd0c13b4bc55087eedcc83" kindref="member">QuantizerPrecomputedCodes</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437a6da735df4e3424ba16ed6877129cf52b" kindref="member">TemporaryMemoryBuffer</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437adeddb60bbeb3d0fd449dc5473bfbae74" kindref="member">TemporaryMemoryOverflow</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">///<sp/>Owns<sp/>Metal<sp/>device,<sp/>command<sp/>queue,<sp/>and<sp/>provides<sp/>buffer<sp/>allocation.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">///<sp/>Mirrors<sp/>the<sp/>roles<sp/>of<sp/>faiss::gpu::GpuResources<sp/>for<sp/>the<sp/>Metal<sp/>backend.</highlight></codeline>
+<codeline lineno="37" refid="classfaiss_1_1gpu__metal_1_1MetalResources" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">~MetalResources</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Returns<sp/>the<sp/>Metal<sp/>device<sp/>(nil<sp/>if<sp/>no<sp/>Metal-capable<sp/>device<sp/>is<sp/>available).</highlight></codeline>
+<codeline lineno="46" refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a75eb89a2ef641846ebed8e28c30cf948" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>id&lt;MTLDevice&gt;<sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a75eb89a2ef641846ebed8e28c30cf948" kindref="member">getDevice</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Returns<sp/>the<sp/>command<sp/>queue<sp/>for<sp/>the<sp/>device<sp/>(nil<sp/>if<sp/>device<sp/>is<sp/>nil).</highlight></codeline>
+<codeline lineno="51" refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a822d4e1af31734dd12305ccc3e5b0b48" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>id&lt;MTLCommandQueue&gt;<sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a822d4e1af31734dd12305ccc3e5b0b48" kindref="member">getCommandQueue</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>commandQueue_;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Allocates<sp/>a<sp/>buffer<sp/>of<sp/>the<sp/>given<sp/>size<sp/>(bytes).<sp/>Caller<sp/>owns<sp/>the<sp/>returned</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>buffer<sp/>and<sp/>must<sp/>call<sp/>deallocBuffer<sp/>when<sp/>done,<sp/>or<sp/>the<sp/>buffer<sp/>will<sp/>leak.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Returns<sp/>nil<sp/>on<sp/>failure<sp/>(e.g.<sp/>device<sp/>nil<sp/>or<sp/>allocation<sp/>failure).</highlight></codeline>
+<codeline lineno="58" refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a4f02ab12d97551060929ca61059cb99d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>id&lt;MTLBuffer&gt;<sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a4f02ab12d97551060929ca61059cb99d" kindref="member">allocBuffer</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/>MetalAllocType<sp/>type);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Releases<sp/>a<sp/>buffer<sp/>previously<sp/>returned<sp/>by<sp/>allocBuffer.<sp/>The<sp/>caller<sp/>must</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>not<sp/>use<sp/>the<sp/>buffer<sp/>after<sp/>this<sp/>call.</highlight></codeline>
+<codeline lineno="62" refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a2bd7929dc0020b6edd02f610df8bace0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a2bd7929dc0020b6edd02f610df8bace0" kindref="member">deallocBuffer</ref>(id&lt;MTLBuffer&gt;<sp/>buffer,<sp/>MetalAllocType<sp/>type);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Blocks<sp/>until<sp/>all<sp/>work<sp/>submitted<sp/>to<sp/>the<sp/>default<sp/>command<sp/>queue<sp/>has</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>completed.</highlight></codeline>
+<codeline lineno="66" refid="classfaiss_1_1gpu__metal_1_1MetalResources_1abe62b78ac41ae98a0df715ddd63dda75" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources_1abe62b78ac41ae98a0df715ddd63dda75" kindref="member">synchronize</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Returns<sp/>true<sp/>if<sp/>the<sp/>Metal<sp/>device<sp/>and<sp/>queue<sp/>are<sp/>available.</highlight></codeline>
+<codeline lineno="69" refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a8c94523b6521b5186721a8175d46aef3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a8c94523b6521b5186721a8175d46aef3" kindref="member">isAvailable</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_<sp/>!=<sp/>nil<sp/>&amp;&amp;<sp/>commandQueue_<sp/>!=<sp/>nil;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>id&lt;MTLDevice&gt;<sp/>device_;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>id&lt;MTLCommandQueue&gt;<sp/>commandQueue_;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gpu_metal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>faiss</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="faiss/gpu_metal/MetalResources.h"/>
+  </compounddef>
+</doxygen>

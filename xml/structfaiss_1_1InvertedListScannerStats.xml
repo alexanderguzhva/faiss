@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structfaiss_1_1InvertedListScannerStats" kind="struct" language="C++" prot="public">
+    <compoundname>faiss::InvertedListScannerStats</compoundname>
+    <includes refid="InvertedListScannerStats_8h" local="no">InvertedListScannerStats.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1InvertedListScannerStats_1a7e2659bd6f18bd674186b4f64c78ee24" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::InvertedListScannerStats::scan_cnt</definition>
+        <argsstring></argsstring>
+        <name>scan_cnt</name>
+        <qualifiedname>faiss::InvertedListScannerStats::scan_cnt</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of distances computed after <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> filtering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/InvertedListScannerStats.h" line="18" column="12" bodyfile="faiss/impl/InvertedListScannerStats.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1InvertedListScannerStats_1a4ff7a2e6ace5f1ce46e1b26d6b86632a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t faiss::InvertedListScannerStats::nheap_updates</definition>
+        <argsstring></argsstring>
+        <name>nheap_updates</name>
+        <qualifiedname>faiss::InvertedListScannerStats::nheap_updates</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of heap updates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/InvertedListScannerStats.h" line="21" column="12" bodyfile="faiss/impl/InvertedListScannerStats.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Per-list statistics returned by inverted-list scanners. </para>
+    </detaileddescription>
+    <location file="faiss/impl/InvertedListScannerStats.h" line="16" column="1" bodyfile="faiss/impl/InvertedListScannerStats.h" bodystart="16" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structfaiss_1_1InvertedListScannerStats_1a4ff7a2e6ace5f1ce46e1b26d6b86632a" prot="public" virt="non-virtual"><scope>faiss::InvertedListScannerStats</scope><name>nheap_updates</name></member>
+      <member refid="structfaiss_1_1InvertedListScannerStats_1a7e2659bd6f18bd674186b4f64c78ee24" prot="public" virt="non-virtual"><scope>faiss::InvertedListScannerStats</scope><name>scan_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

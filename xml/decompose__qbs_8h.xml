@@ -33,6 +33,8 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
         <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -78,6 +80,12 @@
         <childnode refid="32" relation="include">
         </childnode>
       </node>
+      <node id="37">
+        <label>faiss/impl/InvertedListScannerStats.h</label>
+        <link refid="InvertedListScannerStats_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
       <node id="33">
         <label>faiss/impl/ResultHandler.h</label>
         <link refid="ResultHandler_8h_source"/>
@@ -89,13 +97,15 @@
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -149,9 +159,9 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
       </node>
       <node id="9">
@@ -190,7 +200,7 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="42">
         <label>faiss/utils/AlignedTable.h</label>
         <link refid="AlignedTable_8h_source"/>
         <childnode refid="2" relation="include">
@@ -238,12 +248,12 @@
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="37">
+      <node id="39">
         <label>faiss/utils/partitioning.h</label>
         <link refid="partitioning_8h_source"/>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
@@ -277,6 +287,9 @@
       <node id="27">
         <label>cmath</label>
       </node>
+      <node id="38">
+        <label>cstddef</label>
+      </node>
       <node id="10">
         <label>cstdint</label>
       </node>
@@ -292,7 +305,7 @@
       <node id="5">
         <label>exception</label>
       </node>
-      <node id="39">
+      <node id="41">
         <label>iostream</label>
       </node>
       <node id="14">
@@ -307,7 +320,7 @@
       <node id="28">
         <label>stdint.h</label>
       </node>
-      <node id="38">
+      <node id="40">
         <label>stdio.h</label>
       </node>
       <node id="6">

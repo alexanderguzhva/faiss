@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="31" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="31" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="33" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1RangeSearchResult_1aef57f9db99ca470c01bcdce0366cb6ff" prot="public" static="no" mutable="no">
         <type>size_t *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="32" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="32" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="34" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1RangeSearchResult_1aa8ff848474a4cc16c5464cc4ec187824" prot="public" static="no" mutable="no">
         <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref> *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="34" column="11" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="34" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="36" column="11" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1RangeSearchResult_1a944a93aecc7b51d8f9f35444280aa919" prot="public" static="no" mutable="no">
         <type>float *</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="35" column="11" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="35" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="37" column="11" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1RangeSearchResult_1a39342ad2e9ad8b90f6e95dafd3287f49" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="37" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="37" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="39" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="39" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="40" column="14"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="42" column="14"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1RangeSearchResult_1aa0b1347c1aea967886201613d4eaf5cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="44" column="18"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="46" column="18"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1RangeSearchResult_1af0ef9dac0132325da1fb60ff2a7b8e6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="46" column="13"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="48" column="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -140,7 +140,7 @@
     <detaileddescription>
 <para>The objective is to have a simple result structure while minimizing the number of mem copies in the result. The method do_allocation can be overloaded to allocate the result tables in the matrix type of a scripting language like Lua or Python. </para>
     </detaileddescription>
-    <location file="faiss/impl/AuxIndexStructures.h" line="30" column="1" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="30" bodyend="47"/>
+    <location file="faiss/impl/AuxIndexStructures.h" line="32" column="1" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="32" bodyend="49"/>
     <listofallmembers>
       <member refid="structfaiss_1_1RangeSearchResult_1a39342ad2e9ad8b90f6e95dafd3287f49" prot="public" virt="non-virtual"><scope>faiss::RangeSearchResult</scope><name>buffer_size</name></member>
       <member refid="structfaiss_1_1RangeSearchResult_1a944a93aecc7b51d8f9f35444280aa919" prot="public" virt="non-virtual"><scope>faiss::RangeSearchResult</scope><name>distances</name></member>

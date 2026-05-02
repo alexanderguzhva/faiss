@@ -141,7 +141,7 @@
       </node>
       <node id="7">
         <label>faiss/gpu/GpuIndexFlat.h</label>
-        <link refid="GpuIndexFlat_8h_source"/>
+        <link refid="gpu_2GpuIndexFlat_8h_source"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>

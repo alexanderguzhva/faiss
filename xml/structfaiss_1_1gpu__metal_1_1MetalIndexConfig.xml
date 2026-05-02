@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structfaiss_1_1gpu__metal_1_1MetalIndexConfig" kind="struct" language="C++" prot="public">
+    <compoundname>faiss::gpu_metal::MetalIndexConfig</compoundname>
+    <includes refid="MetalIndex_8h" local="no">MetalIndex.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfaiss_1_1gpu__metal_1_1MetalIndexConfig_1ad4fc2493e916a6def403203f1a6047b9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int faiss::gpu_metal::MetalIndexConfig::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <qualifiedname>faiss::gpu_metal::MetalIndexConfig::device</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalIndex.h" line="22" column="9" bodyfile="faiss/gpu_metal/MetalIndex.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration for Metal index (mirrors GpuIndexConfig roles). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/gpu_metal/MetalIndex.h" line="21" column="1" bodyfile="faiss/gpu_metal/MetalIndex.h" bodystart="21" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structfaiss_1_1gpu__metal_1_1MetalIndexConfig_1ad4fc2493e916a6def403203f1a6047b9" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalIndexConfig</scope><name>device</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

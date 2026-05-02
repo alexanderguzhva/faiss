@@ -105,6 +105,8 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
@@ -162,6 +164,12 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="51">
+        <label>faiss/impl/InvertedListScannerStats.h</label>
+        <link refid="InvertedListScannerStats_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
       <node id="32">
         <label>faiss/impl/Quantizer.h</label>
         <link refid="Quantizer_8h_source"/>
@@ -217,13 +225,15 @@
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
       <node id="18">
@@ -271,7 +281,7 @@
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
       </node>
       <node id="30">
@@ -374,12 +384,12 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="51">
+      <node id="52">
         <label>faiss/utils/partitioning.h</label>
         <link refid="partitioning_8h_source"/>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="52" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
@@ -451,7 +461,7 @@
       <node id="12">
         <label>exception</label>
       </node>
-      <node id="53">
+      <node id="54">
         <label>iostream</label>
       </node>
       <node id="17">
@@ -466,7 +476,7 @@
       <node id="33">
         <label>stdint.h</label>
       </node>
-      <node id="52">
+      <node id="53">
         <label>stdio.h</label>
       </node>
       <node id="13">

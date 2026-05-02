@@ -10,7 +10,9 @@
     <innerdir refid="dir_49d07059965bd48f84542aba965b16d6">faiss/impl/scalar_quantizer</innerdir>
     <innerdir refid="dir_29a6be9a01482d44f8ef5f6528f77000">faiss/impl/simdlib</innerdir>
     <innerfile refid="AdditiveQuantizer_8h">AdditiveQuantizer.h</innerfile>
+    <innerfile refid="AdSampling_8h">AdSampling.h</innerfile>
     <innerfile refid="AuxIndexStructures_8h">AuxIndexStructures.h</innerfile>
+    <innerfile refid="ClusteringHelpers_8h">ClusteringHelpers.h</innerfile>
     <innerfile refid="ClusteringInitialization_8h">ClusteringInitialization.h</innerfile>
     <innerfile refid="CodePacker_8h">CodePacker.h</innerfile>
     <innerfile refid="CodePackerRaBitQ_8h">CodePackerRaBitQ.h</innerfile>
@@ -21,6 +23,7 @@
     <innerfile refid="HNSW_8h">HNSW.h</innerfile>
     <innerfile refid="IDSelector_8h">IDSelector.h</innerfile>
     <innerfile refid="index__read__utils_8h">index_read_utils.h</innerfile>
+    <innerfile refid="InvertedListScannerStats_8h">InvertedListScannerStats.h</innerfile>
     <innerfile refid="io_8h">io.h</innerfile>
     <innerfile refid="io__macros_8h">io_macros.h</innerfile>
     <innerfile refid="kmeans1d_8h">kmeans1d.h</innerfile>
@@ -32,6 +35,7 @@
     <innerfile refid="NSG_8h">NSG.h</innerfile>
     <innerfile refid="Panorama_8h">Panorama.h</innerfile>
     <innerfile refid="PanoramaStats_8h">PanoramaStats.h</innerfile>
+    <innerfile refid="PdxLayout_8h">PdxLayout.h</innerfile>
     <innerfile refid="platform__macros_8h">platform_macros.h</innerfile>
     <innerfile refid="PolysemousTraining_8h">PolysemousTraining.h</innerfile>
     <innerfile refid="ProductAdditiveQuantizer_8h">ProductAdditiveQuantizer.h</innerfile>

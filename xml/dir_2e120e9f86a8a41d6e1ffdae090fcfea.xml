@@ -8,6 +8,8 @@
     <innerfile refid="exhaustive__L2sqr__blas__cmax_8h">exhaustive_L2sqr_blas_cmax.h</innerfile>
     <innerfile refid="IVFFlatScanner-inl_8h">IVFFlatScanner-inl.h</innerfile>
     <innerfile refid="partitioning__simdlib256_8h">partitioning_simdlib256.h</innerfile>
+    <innerfile refid="super__kmeans__dispatch_8h">super_kmeans_dispatch.h</innerfile>
+    <innerfile refid="super__kmeans__kernels_8h">super_kmeans_kernels.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

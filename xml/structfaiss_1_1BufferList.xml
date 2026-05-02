@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="63" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="63" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="65" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1BufferList_1abf92e38d902aabae3c6267e36e55f932" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structfaiss_1_1BufferList_1_1Buffer" kindref="compound">Buffer</ref> &gt;</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="70" column="17" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="70" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="72" column="17" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1BufferList_1af4d7ddcd77f328a12a7da89d8febe5d9" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="71" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="71" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="73" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="73" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="73" column="14"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="75" column="14"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1BufferList_1acba91c9c50ac08d663bb6ed3223489c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="75" column="5"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="77" column="5"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1BufferList_1aa124ff3a7e6a98960e12a8b32bdaec42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="78" column="10"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="80" column="10"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1BufferList_1aa17f17a53b45bb39b0724d6493ab33c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="81" column="10"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="83" column="10"/>
       </memberdef>
       <memberdef kind="function" id="structfaiss_1_1BufferList_1a78b70417a9ba5b27553b3134f1190958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="85" column="10"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="87" column="10"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -170,7 +170,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="faiss/impl/AuxIndexStructures.h" line="61" column="1" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="61" bodyend="86"/>
+    <location file="faiss/impl/AuxIndexStructures.h" line="63" column="1" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="63" bodyend="88"/>
     <listofallmembers>
       <member refid="structfaiss_1_1BufferList_1aa17f17a53b45bb39b0724d6493ab33c9" prot="public" virt="non-virtual"><scope>faiss::BufferList</scope><name>add</name></member>
       <member refid="structfaiss_1_1BufferList_1aa124ff3a7e6a98960e12a8b32bdaec42" prot="public" virt="non-virtual"><scope>faiss::BufferList</scope><name>append_buffer</name></member>

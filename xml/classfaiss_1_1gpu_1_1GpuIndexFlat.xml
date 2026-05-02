@@ -5,7 +5,7 @@
     <basecompoundref refid="classfaiss_1_1gpu_1_1GpuIndex" prot="public" virt="non-virtual">faiss::gpu::GpuIndex</basecompoundref>
     <derivedcompoundref refid="classfaiss_1_1gpu_1_1GpuIndexFlatIP" prot="public" virt="non-virtual">faiss::gpu::GpuIndexFlatIP</derivedcompoundref>
     <derivedcompoundref refid="classfaiss_1_1gpu_1_1GpuIndexFlatL2" prot="public" virt="non-virtual">faiss::gpu::GpuIndexFlatL2</derivedcompoundref>
-    <includes refid="GpuIndexFlat_8h" local="no">GpuIndexFlat.h</includes>
+    <includes refid="gpu_2GpuIndexFlat_8h" local="no">GpuIndexFlat.h</includes>
     <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classfaiss_1_1gpu_1_1GpuIndexFlat_1a5e40e91c68ff4821f8e34bc0aec4357a" prot="protected" static="no" mutable="no">
         <type>const <ref refid="structfaiss_1_1gpu_1_1GpuIndexFlatConfig" kindref="compound">GpuIndexFlatConfig</ref></type>

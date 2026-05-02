@@ -3,7 +3,7 @@
   <compounddef id="classfaiss_1_1gpu_1_1GpuIndexFlatIP" kind="class" language="C++" prot="public">
     <compoundname>faiss::gpu::GpuIndexFlatIP</compoundname>
     <basecompoundref refid="classfaiss_1_1gpu_1_1GpuIndexFlat" prot="public" virt="non-virtual">faiss::gpu::GpuIndexFlat</basecompoundref>
-    <includes refid="GpuIndexFlat_8h" local="no">GpuIndexFlat.h</includes>
+    <includes refid="gpu_2GpuIndexFlat_8h" local="no">GpuIndexFlat.h</includes>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classfaiss_1_1gpu_1_1GpuIndexFlatIP_1ad7b2961b0df53aa9ad88ebd3eebaebc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>

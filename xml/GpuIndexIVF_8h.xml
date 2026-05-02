@@ -5,7 +5,7 @@
     <includes refid="Clustering_8h" local="no">faiss/Clustering.h</includes>
     <includes refid="IndexIVF_8h" local="no">faiss/IndexIVF.h</includes>
     <includes refid="GpuIndex_8h" local="no">faiss/gpu/GpuIndex.h</includes>
-    <includes refid="GpuIndexFlat_8h" local="no">faiss/gpu/GpuIndexFlat.h</includes>
+    <includes refid="gpu_2GpuIndexFlat_8h" local="no">faiss/gpu/GpuIndexFlat.h</includes>
     <includes refid="GpuIndicesOptions_8h" local="no">faiss/gpu/GpuIndicesOptions.h</includes>
     <includes local="no">memory</includes>
     <includedby refid="GpuIndexIVFFlat_8h" local="no">faiss/gpu/GpuIndexIVFFlat.h</includedby>
@@ -74,7 +74,7 @@
       </node>
       <node id="43">
         <label>faiss/gpu/GpuIndexFlat.h</label>
-        <link refid="GpuIndexFlat_8h_source"/>
+        <link refid="gpu_2GpuIndexFlat_8h_source"/>
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
@@ -418,7 +418,7 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacefaiss" kindref="compound">faiss</ref><sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gpu<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GpuIndexFlat;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="namespacefaiss_1a867d4baa0cd4e14a398a457892a034d8" kindref="member">GpuIndexFlat</ref>;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IVFBase;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23" refid="structfaiss_1_1gpu_1_1GpuIndexIVFConfig" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfaiss_1_1gpu_1_1GpuIndexIVFConfig" kindref="compound">GpuIndexIVFConfig</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1gpu_1_1GpuIndexConfig" kindref="compound">GpuIndexConfig</ref><sp/>{</highlight><highlight class="comment"></highlight></codeline>

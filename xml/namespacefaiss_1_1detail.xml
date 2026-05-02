@@ -4,6 +4,364 @@
     <compoundname>faiss::detail</compoundname>
     <innernamespace refid="namespacefaiss_1_1detail_1_1simdlib">faiss::detail::simdlib</innernamespace>
     <sectiondef kind="func">
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1a84acaa8966ac6161b02386b195120848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double faiss::detail::normal_quantile</definition>
+        <argsstring>(double p)</argsstring>
+        <name>normal_quantile</name>
+        <qualifiedname>faiss::detail::normal_quantile</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inverse standard normal CDF. Three-branch rational polynomial, absolute error &lt; 1.15e-9 over <computeroutput>p in (0, 1)</computeroutput>. Behavior at the boundaries (p &lt;= 0 or p &gt;= 1) is unspecified — returns NaN or +/-inf. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/AdSampling.h" line="18" column="8" declfile="faiss/impl/AdSampling.h" declline="18" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1ad15d952172108be3d0a450b2ea11240d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double faiss::detail::chi2_quantile_wh</definition>
+        <argsstring>(int p, double alpha)</argsstring>
+        <name>chi2_quantile_wh</name>
+        <qualifiedname>faiss::detail::chi2_quantile_wh</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Chi-squared quantile via cube-root approximation. Validated to within 2% of scipy for <computeroutput>p in [16, d]</computeroutput> and <computeroutput>alpha &lt;= 1 - 1e-6</computeroutput>. Accuracy degrades for smaller <computeroutput>p</computeroutput> or for <computeroutput>alpha</computeroutput> near 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/AdSampling.h" line="23" column="8" declfile="faiss/impl/AdSampling.h" declline="23" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1ac3611a8d1b22c809d8805a48efddff1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; faiss::detail::precompute_ad_thresholds</definition>
+        <argsstring>(int d, double epsilon)</argsstring>
+        <name>precompute_ad_thresholds</name>
+        <qualifiedname>faiss::detail::precompute_ad_thresholds</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build ADSampling threshold table of size <computeroutput>d + 1</computeroutput>: coeff[p] = chi2_quantile_wh(p, 1 - epsilon) / d.</para>
+<para>Indexing: coeff[0] is reserved (left at 0.0f). coeff[1..15] are computed but NOT accuracy-bounded — callers requiring the 2% scipy tolerance must consume only coeff[16..d]. SuperKMeans enforces this via its <computeroutput>d_prime_min = 16</computeroutput> parameter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/AdSampling.h" line="32" column="13" declfile="faiss/impl/AdSampling.h" declline="32" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1ab285156b20d9f45b8a9a2dfdc1727a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t faiss::detail::get_actual_rng_seed</definition>
+        <argsstring>(const int seed)</argsstring>
+        <name>get_actual_rng_seed</name>
+        <qualifiedname>faiss::detail::get_actual_rng_seed</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resolve the actual RNG seed for clustering helpers.</para>
+<para>If <computeroutput>seed &gt;= 0</computeroutput>, returns <computeroutput>seed</computeroutput>. Otherwise returns a high-resolution timestamp so that callers get a non-deterministic seed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user-provided seed; negative values request a time-based seed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the resolved seed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/ClusteringHelpers.h" line="27" column="10" declfile="faiss/impl/ClusteringHelpers.h" declline="27" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1aa596c6f97973243c643a260861c838de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+        <definition>idx_t faiss::detail::subsample_training_set</definition>
+        <argsstring>(const Clustering &amp;clus, idx_t nx, const uint8_t *x, size_t line_size, const float *weights, uint8_t **x_out, float **weights_out)</argsstring>
+        <name>subsample_training_set</name>
+        <qualifiedname>faiss::detail::subsample_training_set</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1Clustering" kindref="compound">Clustering</ref> &amp;</type>
+          <declname>clus</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
+          <declname>nx</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>line_size</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>x_out</declname>
+        </param>
+        <param>
+          <type>float **</type>
+          <declname>weights_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subsample a training set down to <computeroutput>clus.k * clus.max_points_per_centroid</computeroutput> rows.</para>
+<para>Allocates <computeroutput>*x_out</computeroutput> (and <computeroutput>*weights_out</computeroutput> when <computeroutput>weights</computeroutput> is non-null) with <computeroutput>new[]</computeroutput>; ownership is transferred to the caller.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>clustering parameters (reads <computeroutput>k</computeroutput>, <computeroutput>max_points_per_centroid</computeroutput>, <computeroutput>use_faster_subsampling</computeroutput>, <computeroutput>seed</computeroutput>, <computeroutput>verbose</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of input training rows </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input training data, row-major, <computeroutput>nx * line_size</computeroutput> bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bytes per training row </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional per-row weights (length <computeroutput>nx</computeroutput>), or null </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: newly allocated subsampled rows </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output: newly allocated subsampled weights, or null </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of rows in the subsampled set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/ClusteringHelpers.h" line="45" column="7" declfile="faiss/impl/ClusteringHelpers.h" declline="45" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1a7d308317647c530f45a96359cbc27fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::detail::compute_centroids</definition>
+        <argsstring>(size_t d, size_t k, size_t n, size_t k_frozen, const uint8_t *x, const Index *codec, const int64_t *assign, const float *weights, float *hassign, float *centroids)</argsstring>
+        <name>compute_centroids</name>
+        <qualifiedname>faiss::detail::compute_centroids</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k_frozen</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1Index" kindref="compound">Index</ref> *</type>
+          <declname>codec</declname>
+        </param>
+        <param>
+          <type>const int64_t *</type>
+          <declname>assign</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>weights</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>hassign</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>centroids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>compute centroids as (weighted) sum of training points</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>training vectors, size n * code_size (from codec) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>codec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>how to decode the vectors (if NULL then cast to float*) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weights</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>per-training vector weight, size n (or NULL) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nearest centroid for each training vector, size n </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k_frozen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>do not update the k_frozen first centroids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centroids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>centroid vectors (output only), size k * d </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hassign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>histogram of assignments per centroid (size k), should be 0 on input </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/ClusteringHelpers.h" line="66" column="6" declfile="faiss/impl/ClusteringHelpers.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1abafebf68b413f497c0fc8e44a180cfb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::detail::split_clusters</definition>
+        <argsstring>(size_t d, size_t k, size_t n, size_t k_frozen, float *hassign, float *centroids)</argsstring>
+        <name>split_clusters</name>
+        <qualifiedname>faiss::detail::split_clusters</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>k_frozen</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>hassign</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>centroids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle empty clusters by splitting larger ones.</para>
+<para>It works by slightly changing the centroids to make 2 clusters from a single one. Takes the same arguments as compute_centroids.</para>
+<para><simplesect kind="return"><para>nb of splitting operations (larger is worse) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/ClusteringHelpers.h" line="85" column="5" declfile="faiss/impl/ClusteringHelpers.h" declline="85" declcolumn="5"/>
+      </memberdef>
       <memberdef kind="function" id="namespacefaiss_1_1detail_1ace450562f499446f88cfc5596a421e9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -46,12 +404,176 @@
         </inbodydescription>
         <location file="faiss/impl/Panorama.h" line="175" column="13" bodyfile="faiss/impl/Panorama.h" bodystart="175" bodyend="185"/>
       </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1a7ac15bd4c2cdcd899265c3c2e3fb17c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::detail::pdxify</definition>
+        <argsstring>(const float *Y, int k, int d_trail, int pdx_block_size, float *Y_pdx)</argsstring>
+        <name>pdxify</name>
+        <qualifiedname>faiss::detail::pdxify</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d_trail</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pdx_block_size</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y_pdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reorder a row-major (k, d_trail) matrix into PDX block-column-major layout. Inside each block of <computeroutput>pdx_block_size</computeroutput> dims the layout is column-major across centroids, so all k centroids&apos; values for the same dim are contiguous — the access pattern that makes progressive pruning cache-friendly. Trailing block (size <computeroutput>d_trail % pdx_block_size</computeroutput>) uses the same convention. <computeroutput>Y_pdx</computeroutput> must already be sized to <computeroutput>k * d_trail</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/PdxLayout.h" line="19" column="6" declfile="faiss/impl/PdxLayout.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1a9c5d9a9deae725066456d7f760b67b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::detail::de_pdxify</definition>
+        <argsstring>(const float *Y_pdx, int k, int d_trail, int pdx_block_size, float *Y)</argsstring>
+        <name>de_pdxify</name>
+        <qualifiedname>faiss::detail::de_pdxify</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>Y_pdx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d_trail</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pdx_block_size</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inverse of pdxify (used in tests for the bit-identical round-trip check). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/PdxLayout.h" line="28" column="6" declfile="faiss/impl/PdxLayout.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1ac244b84c3439d065c674c7eacd5dc3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::detail::compute_partial_norms</definition>
+        <argsstring>(const float *X, int n, int d, int p, float *norms)</argsstring>
+        <name>compute_partial_norms</name>
+        <qualifiedname>faiss::detail::compute_partial_norms</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>norms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>norms[i] = sum_{m&lt;p} X[i, m]^2 for row-major X of shape (n, d). Parallel over rows. Used by SuperKMeans to keep partial-norm caches in sync with the current d_prime. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/PdxLayout.h" line="38" column="6" declfile="faiss/impl/PdxLayout.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1aa233c0a54aee4ea6ece0c73d8db01d67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float faiss::detail::block_l2_dispatch</definition>
+        <argsstring>(const float *x, const float *y, int n)</argsstring>
+        <name>block_l2_dispatch</name>
+        <qualifiedname>faiss::detail::block_l2_dispatch</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/simd_impl/super_kmeans_dispatch.h" line="26" column="14" bodyfile="faiss/utils/simd_impl/super_kmeans_dispatch.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1_1detail_1afcf5bb279cd6668c2e4e88ec8d7d4098" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>SIMDLevel</type>
+            <declname>Level</declname>
+            <defname>Level</defname>
+          </param>
+        </templateparamlist>
+        <type>float</type>
+        <definition>float faiss::detail::block_l2</definition>
+        <argsstring>(const float *x, const float *y, int n)</argsstring>
+        <name>block_l2</name>
+        <qualifiedname>faiss::detail::block_l2</qualifiedname>
+        <param>
+          <type>const float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/utils/simd_impl/super_kmeans_kernels.h" line="21" column="14" bodyfile="faiss/utils/simd_impl/super_kmeans_kernels.h" bodystart="21" bodyend="28"/>
+      </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Compile-time dispatch: converts a runtime <computeroutput>width</computeroutput> value into a template parameter by generating an if-else chain over [Lo, Hi] in steps of Step. Falls through to LevelWidth=0 (runtime path) if no specialization matches. Allows for specialization of common level widths. </para>
     </detaileddescription>
-    <location file="faiss/impl/Panorama.h" line="173" column="1"/>
+    <location file="faiss/impl/AdSampling.h" line="13" column="1"/>
   </compounddef>
 </doxygen>

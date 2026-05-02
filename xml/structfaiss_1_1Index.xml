@@ -19,6 +19,7 @@
     <derivedcompoundref refid="structfaiss_1_1IndexSplitVectors" prot="public" virt="non-virtual">faiss::IndexSplitVectors</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1MultiIndexQuantizer" prot="public" virt="non-virtual">faiss::MultiIndexQuantizer</derivedcompoundref>
     <derivedcompoundref refid="classfaiss_1_1gpu_1_1GpuIndex" prot="public" virt="non-virtual">faiss::gpu::GpuIndex</derivedcompoundref>
+    <derivedcompoundref refid="classfaiss_1_1gpu__metal_1_1MetalIndex" prot="public" virt="non-virtual">faiss::gpu_metal::MetalIndex</derivedcompoundref>
     <includes refid="Index_8h" local="no">Index.h</includes>
     <sectiondef kind="public-type">
       <memberdef kind="typedef" id="structfaiss_1_1Index_1af317cb1e2ad0bd145f716f2243b693eb" prot="public" static="no">
@@ -358,6 +359,7 @@
         <name>add</name>
         <qualifiedname>faiss::Index::add</qualifiedname>
         <reimplementedby refid="structfaiss_1_1gpu_1_1GpuIndexCagra_1ad8ef055ad09f4bce9ce52f396540e6fb">add</reimplementedby>
+        <reimplementedby refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat_1a1e68edeb43bed28a6403b4cad7c3912d">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1AdditiveCoarseQuantizer_1ab89eda0c3fedb121517337cef79c01a6">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexFastScan_1aaa9e2214ac167eb6136d37b51a3c1e2c">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexFlatPanorama_1a178f7ed70fb50dff8e98f0a5bde5df03">add</reimplementedby>
@@ -452,6 +454,7 @@
         <name>add_with_ids</name>
         <qualifiedname>faiss::Index::add_with_ids</qualifiedname>
         <reimplementedby refid="classfaiss_1_1gpu_1_1GpuIndex_1a0e7fa779ba9d47b0af36161de2a3b191">add_with_ids</reimplementedby>
+        <reimplementedby refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat_1a7685d5790aaf5c4468fa9aabcde200f3">add_with_ids</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexIVF_1a14e75169bddcd0251134821416b060a1">add_with_ids</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexIVFFastScan_1a8699e7d828750f02bfc86014269e4a6c">add_with_ids</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexIVFFlatDedup_1a4e27cfca56590371e0984d8f16b2b68d">add_with_ids</reimplementedby>
@@ -543,6 +546,7 @@
         <name>search</name>
         <qualifiedname>faiss::Index::search</qualifiedname>
         <reimplementedby refid="classfaiss_1_1gpu_1_1GpuIndex_1a7d7d3746b5f02be8317e142d966c7d4f">search</reimplementedby>
+        <reimplementedby refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat_1aa0cc45b873cbad5fc4e79acafb98f8f2">search</reimplementedby>
         <reimplementedby refid="structfaiss_1_1Index2Layer_1ac1d721d2bc0ec334b731ddab9e0f1160">search</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexAdditiveQuantizer_1a67f0c721609606b5addccdf51c4232ad">search</reimplementedby>
         <reimplementedby refid="structfaiss_1_1AdditiveCoarseQuantizer_1a1b86a90e7516af393d14255c71c8d804">search</reimplementedby>
@@ -891,6 +895,7 @@
         <reimplementedby refid="classfaiss_1_1gpu_1_1GpuIndexIVFFlat_1a88676a893e9b44041e7a52327d960b54">reset</reimplementedby>
         <reimplementedby refid="classfaiss_1_1gpu_1_1GpuIndexIVFPQ_1a3a43a70461e09ef87bdb7b48ec420dd2">reset</reimplementedby>
         <reimplementedby refid="classfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizer_1a6e25bd642bf3ae6fe84c9c315e0edf25">reset</reimplementedby>
+        <reimplementedby refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat_1a603f97a00cc2770dc2f6c2609dca0508">reset</reimplementedby>
         <reimplementedby refid="structfaiss_1_1AdditiveCoarseQuantizer_1a2ec358ccc474cc183f861f350ebbcb8f">reset</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexFastScan_1a6f2ae4a0a5dd9d1c2afca4bc7f9c038a">reset</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexFlatPanorama_1a35fdf82abfe078969b9a7a17fbaa6516">reset</reimplementedby>
@@ -2293,6 +2298,18 @@
         <label>faiss::gpu::GpuIndexIVFScalarQuantizer</label>
         <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizer"/>
         <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>faiss::gpu_metal::MetalIndex</label>
+        <link refid="classfaiss_1_1gpu__metal_1_1MetalIndex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>faiss::gpu_metal::MetalIndexFlat</label>
+        <link refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat"/>
+        <childnode refid="94" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

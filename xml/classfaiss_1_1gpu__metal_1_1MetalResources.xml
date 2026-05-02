@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classfaiss_1_1gpu__metal_1_1MetalResources" kind="class" language="C++" prot="public">
+    <compoundname>faiss::gpu_metal::MetalResources</compoundname>
+    <includes refid="MetalResources_8h" local="no">MetalResources.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a071820af28414effdfe90ffbe113974f" prot="private" static="no" mutable="no">
+        <type>id&lt; MTLDevice &gt;</type>
+        <definition>id&lt;MTLDevice&gt; faiss::gpu_metal::MetalResources::device_</definition>
+        <argsstring></argsstring>
+        <name>device_</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::device_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="74" column="8" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfaiss_1_1gpu__metal_1_1MetalResources_1ae68651d1a9d56691057f68521bd675ec" prot="private" static="no" mutable="no">
+        <type>id&lt; MTLCommandQueue &gt;</type>
+        <definition>id&lt;MTLCommandQueue&gt; faiss::gpu_metal::MetalResources::commandQueue_</definition>
+        <argsstring></argsstring>
+        <name>commandQueue_</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::commandQueue_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="75" column="8" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1adccb9e262b4a5418d870e7e014c6dfec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::gpu_metal::MetalResources::MetalResources</definition>
+        <argsstring>()</argsstring>
+        <name>MetalResources</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::MetalResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1ab72f686bbe707be386c90bca3c7bf868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::gpu_metal::MetalResources::~MetalResources</definition>
+        <argsstring>()</argsstring>
+        <name>~MetalResources</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::~MetalResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="40" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a0b79ec2ac04e960c01cb4e639ecb051b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::gpu_metal::MetalResources::MetalResources</definition>
+        <argsstring>(const MetalResources &amp;)=delete</argsstring>
+        <name>MetalResources</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::MetalResources</qualifiedname>
+        <param>
+          <type>const <ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1ac8791c801e04096db21ed909ffaceb66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref> &amp;</type>
+        <definition>MetalResources &amp; faiss::gpu_metal::MetalResources::operator=</definition>
+        <argsstring>(const MetalResources &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classfaiss_1_1gpu__metal_1_1MetalResources" kindref="compound">MetalResources</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="43" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a75eb89a2ef641846ebed8e28c30cf948" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>id&lt; MTLDevice &gt;</type>
+        <definition>id&lt; MTLDevice &gt; faiss::gpu_metal::MetalResources::getDevice</definition>
+        <argsstring>() const</argsstring>
+        <name>getDevice</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::getDevice</qualifiedname>
+        <briefdescription>
+<para>Returns the Metal device (nil if no Metal-capable device is available). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="46" column="8" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a822d4e1af31734dd12305ccc3e5b0b48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>id&lt; MTLCommandQueue &gt;</type>
+        <definition>id&lt; MTLCommandQueue &gt; faiss::gpu_metal::MetalResources::getCommandQueue</definition>
+        <argsstring>() const</argsstring>
+        <name>getCommandQueue</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::getCommandQueue</qualifiedname>
+        <briefdescription>
+<para>Returns the command queue for the device (nil if device is nil). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="51" column="8" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a4f02ab12d97551060929ca61059cb99d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id&lt; MTLBuffer &gt;</type>
+        <definition>id&lt; MTLBuffer &gt; faiss::gpu_metal::MetalResources::allocBuffer</definition>
+        <argsstring>(size_t size, MetalAllocType type)</argsstring>
+        <name>allocBuffer</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::allocBuffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>MetalAllocType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a buffer of the given size (bytes). Caller owns the returned buffer and must call deallocBuffer when done, or the buffer will leak. Returns nil on failure (e.g. device nil or allocation failure). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a2bd7929dc0020b6edd02f610df8bace0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::gpu_metal::MetalResources::deallocBuffer</definition>
+        <argsstring>(id&lt; MTLBuffer &gt; buffer, MetalAllocType type)</argsstring>
+        <name>deallocBuffer</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::deallocBuffer</qualifiedname>
+        <param>
+          <type>id&lt; MTLBuffer &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>MetalAllocType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Releases a buffer previously returned by allocBuffer. The caller must not use the buffer after this call. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1abe62b78ac41ae98a0df715ddd63dda75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void faiss::gpu_metal::MetalResources::synchronize</definition>
+        <argsstring>()</argsstring>
+        <name>synchronize</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::synchronize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until all work submitted to the default command queue has completed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classfaiss_1_1gpu__metal_1_1MetalResources_1a8c94523b6521b5186721a8175d46aef3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faiss::gpu_metal::MetalResources::isAvailable</definition>
+        <argsstring>() const</argsstring>
+        <name>isAvailable</name>
+        <qualifiedname>faiss::gpu_metal::MetalResources::isAvailable</qualifiedname>
+        <briefdescription>
+<para>Returns true if the Metal device and queue are available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="69" column="10" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Owns Metal device, command queue, and provides buffer allocation. Mirrors the roles of <ref refid="classfaiss_1_1gpu_1_1GpuResources" kindref="compound">faiss::gpu::GpuResources</ref> for the Metal backend. </para>
+    </detaileddescription>
+    <location file="faiss/gpu_metal/MetalResources.h" line="37" column="1" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="37" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a4f02ab12d97551060929ca61059cb99d" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>allocBuffer</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1ae68651d1a9d56691057f68521bd675ec" prot="private" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>commandQueue_</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a2bd7929dc0020b6edd02f610df8bace0" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>deallocBuffer</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a071820af28414effdfe90ffbe113974f" prot="private" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>device_</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a822d4e1af31734dd12305ccc3e5b0b48" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>getCommandQueue</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a75eb89a2ef641846ebed8e28c30cf948" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>getDevice</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a8c94523b6521b5186721a8175d46aef3" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>isAvailable</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1adccb9e262b4a5418d870e7e014c6dfec" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>MetalResources</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1a0b79ec2ac04e960c01cb4e639ecb051b" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>MetalResources</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1ac8791c801e04096db21ed909ffaceb66" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>operator=</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1abe62b78ac41ae98a0df715ddd63dda75" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>synchronize</name></member>
+      <member refid="classfaiss_1_1gpu__metal_1_1MetalResources_1ab72f686bbe707be386c90bca3c7bf868" prot="public" virt="non-virtual"><scope>faiss::gpu_metal::MetalResources</scope><name>~MetalResources</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

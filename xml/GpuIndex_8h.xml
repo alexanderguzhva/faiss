@@ -7,7 +7,7 @@
     <includedby refid="GpuCloner_8h" local="no">faiss/gpu/GpuCloner.h</includedby>
     <includedby refid="GpuIndexBinaryFlat_8h" local="no">faiss/gpu/GpuIndexBinaryFlat.h</includedby>
     <includedby refid="GpuIndexCagra_8h" local="no">faiss/gpu/GpuIndexCagra.h</includedby>
-    <includedby refid="GpuIndexFlat_8h" local="no">faiss/gpu/GpuIndexFlat.h</includedby>
+    <includedby refid="gpu_2GpuIndexFlat_8h" local="no">faiss/gpu/GpuIndexFlat.h</includedby>
     <includedby refid="GpuIndexIVF_8h" local="no">faiss/gpu/GpuIndexIVF.h</includedby>
     <incdepgraph>
       <node id="2">
@@ -166,7 +166,7 @@
       </node>
       <node id="6">
         <label>faiss/gpu/GpuIndexFlat.h</label>
-        <link refid="GpuIndexFlat_8h_source"/>
+        <link refid="gpu_2GpuIndexFlat_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>

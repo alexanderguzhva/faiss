@@ -42,6 +42,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
@@ -77,14 +79,20 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="25">
         <label>faiss/impl/IDSelector.h</label>
         <link refid="IDSelector_8h_source"/>
-        <childnode refid="24" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>faiss/impl/InvertedListScannerStats.h</label>
+        <link refid="InvertedListScannerStats_8h_source"/>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -108,17 +116,17 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
         <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -130,19 +138,22 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>algorithm</label>
       </node>
       <node id="14">
         <label>cinttypes</label>
       </node>
-      <node id="26">
+      <node id="28">
         <label>concepts</label>
+      </node>
+      <node id="24">
+        <label>cstddef</label>
       </node>
       <node id="4">
         <label>cstdint</label>
@@ -159,7 +170,7 @@
       <node id="9">
         <label>exception</label>
       </node>
-      <node id="30">
+      <node id="32">
         <label>iostream</label>
       </node>
       <node id="15">
@@ -171,7 +182,7 @@
       <node id="22">
         <label>mutex</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>span</label>
       </node>
       <node id="19">
@@ -183,13 +194,13 @@
       <node id="17">
         <label>svs/runtime/api_defs.h</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>svs/runtime/flat_index.h</label>
       </node>
-      <node id="28">
+      <node id="30">
         <label>type_traits</label>
       </node>
-      <node id="24">
+      <node id="26">
         <label>unordered_set</label>
       </node>
       <node id="11">

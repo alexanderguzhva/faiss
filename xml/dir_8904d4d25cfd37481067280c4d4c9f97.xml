@@ -16,7 +16,7 @@
     <innerfile refid="GpuIndexBinaryCagra_8h">GpuIndexBinaryCagra.h</innerfile>
     <innerfile refid="GpuIndexBinaryFlat_8h">GpuIndexBinaryFlat.h</innerfile>
     <innerfile refid="GpuIndexCagra_8h">GpuIndexCagra.h</innerfile>
-    <innerfile refid="GpuIndexFlat_8h">GpuIndexFlat.h</innerfile>
+    <innerfile refid="gpu_2GpuIndexFlat_8h">GpuIndexFlat.h</innerfile>
     <innerfile refid="GpuIndexIVF_8h">GpuIndexIVF.h</innerfile>
     <innerfile refid="GpuIndexIVFFlat_8h">GpuIndexIVFFlat.h</innerfile>
     <innerfile refid="GpuIndexIVFPQ_8h">GpuIndexIVFPQ.h</innerfile>

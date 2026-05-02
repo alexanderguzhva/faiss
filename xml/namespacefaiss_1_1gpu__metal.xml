@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacefaiss_1_1gpu__metal" kind="namespace" language="C++">
+    <compoundname>faiss::gpu_metal</compoundname>
+    <innerclass refid="classfaiss_1_1gpu__metal_1_1MetalIndex" prot="public">faiss::gpu_metal::MetalIndex</innerclass>
+    <innerclass refid="structfaiss_1_1gpu__metal_1_1MetalIndexConfig" prot="public">faiss::gpu_metal::MetalIndexConfig</innerclass>
+    <innerclass refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat" prot="public">faiss::gpu_metal::MetalIndexFlat</innerclass>
+    <innerclass refid="classfaiss_1_1gpu__metal_1_1MetalResources" prot="public">faiss::gpu_metal::MetalResources</innerclass>
+    <innerclass refid="classfaiss_1_1gpu__metal_1_1StandardMetalResources" prot="public">faiss::gpu_metal::StandardMetalResources</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6be" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MetalAllocType</name>
+        <qualifiedname>faiss::gpu_metal::MetalAllocType</qualifiedname>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6beaede4ae4052690519e8de7b3938921918" prot="public">
+          <name>Other</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6beae8150a28adf31fabf49cf94b1699e2f7" prot="public">
+          <name>FlatData</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6bea5c6caeafd9f481af1929ce2e317e35da" prot="public">
+          <name>IVFLists</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6beac30ea40a5f878e783201c7937ca5c1c0" prot="public">
+          <name>Quantizer</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6bea724b94e3ce6a336bf32d45e97cdf6d6c" prot="public">
+          <name>QuantizerPrecomputedCodes</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6beac6a80461f99a37be0f6069e8d903fdc1" prot="public">
+          <name>TemporaryMemoryBuffer</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="MetalResources_8h_1a6075f367dc10b639676e17d21eeda6bea8144dc77abc5b872a161e44987d4985d" prot="public">
+          <name>TemporaryMemoryOverflow</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Allocation type for Metal buffers (mirrors <ref refid="namespacefaiss_1_1gpu_1a7038aea27b7026c4b0b4a7afeb1ba437" kindref="member">faiss::gpu::AllocType</ref> roles). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalResources.h" line="25" column="1" bodyfile="faiss/gpu_metal/MetalResources.h" bodystart="25" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="MetalCloner_8h_1ab1a67a8ab126ac3db7c495b54b019097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::gpu_metal::get_num_gpus</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_gpus</name>
+        <qualifiedname>faiss::gpu_metal::get_num_gpus</qualifiedname>
+        <briefdescription>
+<para>Returns the number of Metal &quot;devices&quot; (1 if Metal is available, else 0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalCloner.h" line="21" column="5" declfile="faiss/gpu_metal/MetalCloner.h" declline="21" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="MetalCloner_8h_1a9e959820115fb7a0135d6de4d35e03e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfaiss_1_1Index" kindref="compound">faiss::Index</ref> *</type>
+        <definition>faiss::Index * faiss::gpu_metal::index_cpu_to_metal_gpu</definition>
+        <argsstring>(StandardMetalResources *res, int device, const faiss::Index *index)</argsstring>
+        <name>index_cpu_to_metal_gpu</name>
+        <qualifiedname>faiss::gpu_metal::index_cpu_to_metal_gpu</qualifiedname>
+        <param>
+          <type><ref refid="classfaiss_1_1gpu__metal_1_1StandardMetalResources" kindref="compound">StandardMetalResources</ref> *</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structfaiss_1_1Index" kindref="compound">faiss::Index</ref> *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clone a CPU index to Metal GPU. Supports <ref refid="structfaiss_1_1IndexFlat" kindref="compound">IndexFlat</ref>, <ref refid="structfaiss_1_1IndexFlatL2" kindref="compound">IndexFlatL2</ref>, <ref refid="structfaiss_1_1IndexFlatIP" kindref="compound">IndexFlatIP</ref>. device must be 0. Caller owns the returned index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalCloner.h" line="25" column="14" declfile="faiss/gpu_metal/MetalCloner.h" declline="25" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="MetalCloner_8h_1aa2ae418db7667b7884cd570acf3c1f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfaiss_1_1Index" kindref="compound">faiss::Index</ref> *</type>
+        <definition>faiss::Index * faiss::gpu_metal::index_metal_gpu_to_cpu</definition>
+        <argsstring>(const faiss::Index *index)</argsstring>
+        <name>index_metal_gpu_to_cpu</name>
+        <qualifiedname>faiss::gpu_metal::index_metal_gpu_to_cpu</qualifiedname>
+        <param>
+          <type>const <ref refid="structfaiss_1_1Index" kindref="compound">faiss::Index</ref> *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy a Metal index back to CPU. Supports <ref refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat" kindref="compound">MetalIndexFlat</ref> -&gt; <ref refid="structfaiss_1_1IndexFlat" kindref="compound">IndexFlat</ref>. Caller owns the returned index. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalCloner.h" line="32" column="14" declfile="faiss/gpu_metal/MetalCloner.h" declline="32" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="MetalFlatKernels_8h_1ac556d7942814f613e43348013ab3cf8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int faiss::gpu_metal::getMetalFlatSearchMaxK</definition>
+        <argsstring>()</argsstring>
+        <name>getMetalFlatSearchMaxK</name>
+        <qualifiedname>faiss::gpu_metal::getMetalFlatSearchMaxK</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs GPU search: distance matrix (L2 or IP) then top-k. Uses shared buffers (queries, vectors, outDistances, outIndices). outIndices are int32 (0..nb-1). Maximum k supported by the GPU top-k kernel (256). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalFlatKernels.h" line="23" column="5" declfile="faiss/gpu_metal/MetalFlatKernels.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="MetalFlatKernels_8h_1abb3e4f072ec9c764ed2a1fa807d44b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faiss::gpu_metal::runFlatSearchGPU</definition>
+        <argsstring>(id&lt; MTLDevice &gt; device, id&lt; MTLCommandQueue &gt; queue, id&lt; MTLBuffer &gt; queries, id&lt; MTLBuffer &gt; vectors, int nq, int nb, int d, int k, bool isL2, id&lt; MTLBuffer &gt; outDistances, id&lt; MTLBuffer &gt; outIndices)</argsstring>
+        <name>runFlatSearchGPU</name>
+        <qualifiedname>faiss::gpu_metal::runFlatSearchGPU</qualifiedname>
+        <param>
+          <type>id&lt; MTLDevice &gt;</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>id&lt; MTLCommandQueue &gt;</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>id&lt; MTLBuffer &gt;</type>
+          <declname>queries</declname>
+        </param>
+        <param>
+          <type>id&lt; MTLBuffer &gt;</type>
+          <declname>vectors</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isL2</declname>
+        </param>
+        <param>
+          <type>id&lt; MTLBuffer &gt;</type>
+          <declname>outDistances</declname>
+        </param>
+        <param>
+          <type>id&lt; MTLBuffer &gt;</type>
+          <declname>outIndices</declname>
+        </param>
+        <briefdescription>
+<para>Returns true on success; false if pipeline creation failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/MetalFlatKernels.h" line="26" column="6" declfile="faiss/gpu_metal/MetalFlatKernels.h" declline="26" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="faiss/gpu_metal/MetalCloner.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="92" column="11" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="92" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="94" column="11" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1RangeQueryResult_1a1907be4f1e8c0177255bf091bb44cf51" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="93" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="93" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="95" column="12" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structfaiss_1_1RangeQueryResult_1a72baecdcffad3903b336f0f9fb93fee2" prot="public" static="no" mutable="no">
         <type><ref refid="structfaiss_1_1RangeSearchPartialResult" kindref="compound">RangeSearchPartialResult</ref> *</type>
@@ -44,7 +44,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="94" column="30" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="94" bodyend="-1"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="96" column="30" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfaiss_1_1RangeQueryResult_1a32ff68a2f1052e8d59fc7f96a7724985" prot="public" static="no" mutable="no">
+        <type><ref refid="structfaiss_1_1InvertedListScannerStats" kindref="compound">InvertedListScannerStats</ref></type>
+        <definition>InvertedListScannerStats faiss::RangeQueryResult::stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <qualifiedname>faiss::RangeQueryResult::stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/impl/AuxIndexStructures.h" line="97" column="30" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="97" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -69,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/AuxIndexStructures.h" line="97" column="10"/>
+        <location file="faiss/impl/AuxIndexStructures.h" line="100" column="10"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -82,11 +96,18 @@
         <label>faiss::BufferList</label>
         <link refid="structfaiss_1_1BufferList"/>
       </node>
+      <node id="5">
+        <label>faiss::InvertedListScannerStats</label>
+        <link refid="structfaiss_1_1InvertedListScannerStats"/>
+      </node>
       <node id="1">
         <label>faiss::RangeQueryResult</label>
         <link refid="structfaiss_1_1RangeQueryResult"/>
         <childnode refid="2" relation="usage">
           <edgelabel>pres</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>stats</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -103,12 +124,13 @@
         <link refid="structfaiss_1_1RangeSearchResult"/>
       </node>
     </collaborationgraph>
-    <location file="faiss/impl/AuxIndexStructures.h" line="91" column="1" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="91" bodyend="98"/>
+    <location file="faiss/impl/AuxIndexStructures.h" line="93" column="1" bodyfile="faiss/impl/AuxIndexStructures.h" bodystart="93" bodyend="101"/>
     <listofallmembers>
       <member refid="structfaiss_1_1RangeQueryResult_1aed669959bc918d9a554f236d40789084" prot="public" virt="non-virtual"><scope>faiss::RangeQueryResult</scope><name>add</name></member>
       <member refid="structfaiss_1_1RangeQueryResult_1a1907be4f1e8c0177255bf091bb44cf51" prot="public" virt="non-virtual"><scope>faiss::RangeQueryResult</scope><name>nres</name></member>
       <member refid="structfaiss_1_1RangeQueryResult_1a72baecdcffad3903b336f0f9fb93fee2" prot="public" virt="non-virtual"><scope>faiss::RangeQueryResult</scope><name>pres</name></member>
       <member refid="structfaiss_1_1RangeQueryResult_1a8484aad57f5421a12c16099349e535a2" prot="public" virt="non-virtual"><scope>faiss::RangeQueryResult</scope><name>qno</name></member>
+      <member refid="structfaiss_1_1RangeQueryResult_1a32ff68a2f1052e8d59fc7f96a7724985" prot="public" virt="non-virtual"><scope>faiss::RangeQueryResult</scope><name>stats</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

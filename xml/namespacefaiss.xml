@@ -212,6 +212,7 @@
     <innerclass refid="structfaiss_1_1IntersectionCriterion" prot="public">faiss::IntersectionCriterion</innerclass>
     <innerclass refid="structfaiss_1_1InvertedLists" prot="public">faiss::InvertedLists</innerclass>
     <innerclass refid="structfaiss_1_1InvertedListScanner" prot="public">faiss::InvertedListScanner</innerclass>
+    <innerclass refid="structfaiss_1_1InvertedListScannerStats" prot="public">faiss::InvertedListScannerStats</innerclass>
     <innerclass refid="structfaiss_1_1InvertedListsIOHook" prot="public">faiss::InvertedListsIOHook</innerclass>
     <innerclass refid="structfaiss_1_1InvertedListsIterator" prot="public">faiss::InvertedListsIterator</innerclass>
     <innerclass refid="structfaiss_1_1IOReader" prot="public">faiss::IOReader</innerclass>
@@ -366,6 +367,7 @@
     <innernamespace refid="namespacefaiss_1_1cppcontrib">faiss::cppcontrib</innernamespace>
     <innernamespace refid="namespacefaiss_1_1detail">faiss::detail</innernamespace>
     <innernamespace refid="namespacefaiss_1_1gpu">faiss::gpu</innernamespace>
+    <innernamespace refid="namespacefaiss_1_1gpu__metal">faiss::gpu_metal</innernamespace>
     <innernamespace refid="namespacefaiss_1_1ivflib">faiss::ivflib</innernamespace>
     <innernamespace refid="namespacefaiss_1_1lsq">faiss::lsq</innernamespace>
     <innernamespace refid="namespacefaiss_1_1nn">faiss::nn</innernamespace>
@@ -1202,6 +1204,21 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacefaiss_1a867d4baa0cd4e14a398a457892a034d8" prot="public" static="no">
+        <type><ref refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat" kindref="compound">gpu_metal::MetalIndexFlat</ref></type>
+        <definition>using faiss::GpuIndexFlat = typedef gpu_metal::MetalIndexFlat</definition>
+        <argsstring></argsstring>
+        <name>GpuIndexFlat</name>
+        <qualifiedname>faiss::GpuIndexFlat</qualifiedname>
+        <briefdescription>
+<para>When FAISS is built with Metal backend, GpuIndexFlat is MetalIndexFlat. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/gpu_metal/GpuIndexFlat.h" line="20" column="1" bodyfile="faiss/gpu_metal/GpuIndexFlat.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="typedef" id="namespacefaiss_1aa720d0a3336270110940fce7e0f423b5" prot="public" static="no">
         <type><ref refid="structfaiss_1_1SearchParametersIVF" kindref="compound">SearchParametersIVF</ref></type>
         <definition>typedef SearchParametersIVF faiss::IVFSearchParameters</definition>
@@ -1271,7 +1288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="49" column="1" bodyfile="faiss/impl/ResultHandler.h" bodystart="49" bodyend="-1"/>
+        <location file="faiss/impl/ResultHandler.h" line="53" column="1" bodyfile="faiss/impl/ResultHandler.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacefaiss_1a73b36a88d6db5db6a15d165150e54348" prot="public" static="no">
         <type><ref refid="structfaiss_1_1IndexIDMapTemplate" kindref="compound">IndexIDMapTemplate</ref>&lt; <ref refid="structfaiss_1_1Index" kindref="compound">Index</ref> &gt;</type>
@@ -1539,7 +1556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="722" column="22" bodyfile="faiss/utils/distances.h" bodystart="381" bodyend="-1" declfile="faiss/impl/ResultHandler.h" declline="722" declcolumn="22"/>
+        <location file="faiss/impl/ResultHandler.h" line="726" column="22" bodyfile="faiss/utils/distances.h" bodystart="381" bodyend="-1" declfile="faiss/impl/ResultHandler.h" declline="726" declcolumn="22"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a12459a18353dd0cbfcc26e1090da53a5" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr int</type>
@@ -1854,7 +1871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVF.h" line="562" column="23" declfile="faiss/IndexIVF.h" declline="562" declcolumn="23"/>
+        <location file="faiss/IndexIVF.h" line="581" column="23" declfile="faiss/IndexIVF.h" declline="581" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a28374b20fb3fd40e3abc21c78135c3a7" prot="public" static="no" extern="yes" mutable="no">
         <type>FAISS_API <ref refid="structfaiss_1_1IndexIVFStats" kindref="compound">IndexIVFStats</ref></type>
@@ -1868,7 +1885,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVF.h" line="580" column="32" declfile="faiss/IndexIVF.h" declline="580" declcolumn="32"/>
+        <location file="faiss/IndexIVF.h" line="599" column="32" declfile="faiss/IndexIVF.h" declline="599" declcolumn="32"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a3aebb977a33e268e5eddf7ad361598f9" prot="public" static="no" extern="yes" mutable="no">
         <type>FAISS_API <ref refid="structfaiss_1_1IVFFastScanStats" kindref="compound">IVFFastScanStats</ref></type>
@@ -1882,7 +1899,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/IndexIVFFastScan.h" line="431" column="35" declfile="faiss/IndexIVFFastScan.h" declline="431" declcolumn="35"/>
+        <location file="faiss/IndexIVFFastScan.h" line="432" column="35" declfile="faiss/IndexIVFFastScan.h" declline="432" declcolumn="35"/>
       </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a4597bfef2dd25b76afe4a11f63aaf168" prot="public" static="no" extern="yes" mutable="no">
         <type>FAISS_API size_t</type>
@@ -3331,7 +3348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h" line="143" column="1" bodyfile="faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h" bodystart="143" bodyend="151"/>
+        <location file="faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h" line="149" column="1" bodyfile="faiss/impl/binary_hamming/IndexIVFSpectralHash_impl.h" bodystart="149" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a60aed20192940f1656ae26d0285e5b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -6722,7 +6739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="725" column="22" bodyfile="faiss/impl/ResultHandler.h" bodystart="725" bodyend="762"/>
+        <location file="faiss/impl/ResultHandler.h" line="729" column="22" bodyfile="faiss/impl/ResultHandler.h" bodystart="729" bodyend="766"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a61318d8d9c7759e9de47a97bfba9b318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -6770,7 +6787,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/impl/ResultHandler.h" line="765" column="22" bodyfile="faiss/impl/ResultHandler.h" bodystart="765" bodyend="792"/>
+        <location file="faiss/impl/ResultHandler.h" line="769" column="22" bodyfile="faiss/impl/ResultHandler.h" bodystart="769" bodyend="796"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1af531ac2f72724e9abcc311a12a71b1db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -19514,6 +19531,27 @@
 <para>Implementation of k-means clustering with many variants.</para>
 <para>Copyright (c) Facebook, Inc. and its affiliates.</para>
 <para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Unified name for flat GPU index when Metal backend is built. Include this when using the Metal backend for API parity with <ref refid="classfaiss_1_1gpu_1_1GpuIndexFlat" kindref="compound">faiss::gpu::GpuIndexFlat</ref>.</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Clone CPU &lt;-&gt; Metal GPU. Mirrors GpuCloner roles for Metal backend.</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Objective-C++ header. Runs L2/IP distance + top-k via Metal compute.</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Objective-C++ header (uses MetalResources).</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Objective-C++ header (uses Metal types).</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>This header uses Objective-C types (Metal framework: id, nil, MTLDevice, etc.). For correct IDE/linter behavior, associate this file with &quot;Objective-C++&quot;:</para>
+<para>Copyright (c) Meta Platforms, Inc. and its affiliates.</para>
+<para>This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.</para>
+<para>Mirrors the role of StandardGpuResources for the Metal backend.</para>
 <para>Safe arithmetic</para>
 <para>PQ4 SIMD packing and accumulation functions</para>
 <para>The basic kernel accumulates nq query vectors with bbs = nb * 2 * 16 vectors and produces an output matrix for that. It is interesting for nq * nb &lt;= 4, otherwise register spilling becomes too large.</para>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="PdxLayout_8h" kind="file" language="C++">
+    <compoundname>PdxLayout.h</compoundname>
+    <innernamespace refid="namespacefaiss">faiss</innernamespace>
+    <innernamespace refid="namespacefaiss_1_1detail">faiss::detail</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>Meta<sp/>Platforms,<sp/>Inc.<sp/>and<sp/>affiliates.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>found<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>LICENSE<sp/>file<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacefaiss" kindref="compound">faiss</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">detail<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">/**<sp/>Reorder<sp/>a<sp/>row-major<sp/>(k,<sp/>d_trail)<sp/>matrix<sp/>into<sp/>PDX<sp/>block-column-major</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>layout.<sp/>Inside<sp/>each<sp/>block<sp/>of<sp/>`pdx_block_size`<sp/>dims<sp/>the<sp/>layout<sp/>is</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>column-major<sp/>across<sp/>centroids,<sp/>so<sp/>all<sp/>k<sp/>centroids&apos;<sp/>values<sp/>for<sp/>the<sp/>same</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>dim<sp/>are<sp/>contiguous<sp/>—<sp/>the<sp/>access<sp/>pattern<sp/>that<sp/>makes<sp/>progressive<sp/>pruning</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>cache-friendly.<sp/>Trailing<sp/>block<sp/>(size<sp/>`d_trail<sp/>%<sp/>pdx_block_size`)<sp/>uses</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>the<sp/>same<sp/>convention.<sp/>`Y_pdx`<sp/>must<sp/>already<sp/>be<sp/>sized<sp/>to<sp/>`k<sp/>*<sp/>d_trail`.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacefaiss_1_1detail_1a7ac15bd4c2cdcd899265c3c2e3fb17c8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1_1detail_1a7ac15bd4c2cdcd899265c3c2e3fb17c8" kindref="member">pdxify</ref>(</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>Y,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_trail,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pdx_block_size,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>Y_pdx);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">/**<sp/>Inverse<sp/>of<sp/>pdxify<sp/>(used<sp/>in<sp/>tests<sp/>for<sp/>the<sp/>bit-identical<sp/>round-trip</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>check).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespacefaiss_1_1detail_1a9c5d9a9deae725066456d7f760b67b2c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1_1detail_1a9c5d9a9deae725066456d7f760b67b2c" kindref="member">de_pdxify</ref>(</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>Y_pdx,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_trail,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pdx_block_size,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>Y);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">/**<sp/>norms[i]<sp/>=<sp/>sum_{m&lt;p}<sp/>X[i,<sp/>m]^2<sp/><sp/>for<sp/>row-major<sp/>X<sp/>of<sp/>shape<sp/>(n,<sp/>d).</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>Parallel<sp/>over<sp/>rows.<sp/>Used<sp/>by<sp/>SuperKMeans<sp/>to<sp/>keep<sp/>partial-norm<sp/>caches</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>in<sp/>sync<sp/>with<sp/>the<sp/>current<sp/>d_prime.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="namespacefaiss_1_1detail_1ac244b84c3439d065c674c7eacd5dc3f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefaiss_1_1detail_1ac244b84c3439d065c674c7eacd5dc3f0" kindref="member">compute_partial_norms</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>X,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>norms);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>detail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>faiss</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="faiss/impl/PdxLayout.h"/>
+  </compounddef>
+</doxygen>
