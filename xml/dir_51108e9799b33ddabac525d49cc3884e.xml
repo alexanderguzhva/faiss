@@ -4,6 +4,9 @@
     <compoundname>faiss/svs</compoundname>
     <innerfile refid="IndexSVSFaissUtils_8h">IndexSVSFaissUtils.h</innerfile>
     <innerfile refid="IndexSVSFlat_8h">IndexSVSFlat.h</innerfile>
+    <innerfile refid="IndexSVSIVF_8h">IndexSVSIVF.h</innerfile>
+    <innerfile refid="IndexSVSIVFLeanVec_8h">IndexSVSIVFLeanVec.h</innerfile>
+    <innerfile refid="IndexSVSIVFLVQ_8h">IndexSVSIVFLVQ.h</innerfile>
     <innerfile refid="IndexSVSVamana_8h">IndexSVSVamana.h</innerfile>
     <innerfile refid="IndexSVSVamanaLeanVec_8h">IndexSVSVamanaLeanVec.h</innerfile>
     <innerfile refid="IndexSVSVamanaLVQ_8h">IndexSVSVamanaLVQ.h</innerfile>

@@ -15,6 +15,7 @@
     <includes local="no">type_traits</includes>
     <includes local="no">vector</includes>
     <includedby refid="IndexSVSFlat_8h" local="no">faiss/svs/IndexSVSFlat.h</includedby>
+    <includedby refid="IndexSVSIVF_8h" local="no">faiss/svs/IndexSVSIVF.h</includedby>
     <includedby refid="IndexSVSVamana_8h" local="no">faiss/svs/IndexSVSVamana.h</includedby>
     <incdepgraph>
       <node id="3">
@@ -210,24 +211,44 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>faiss/svs/IndexSVSFlat.h</label>
         <link refid="IndexSVSFlat_8h_source"/>
       </node>
       <node id="3">
-        <label>faiss/svs/IndexSVSVamana.h</label>
-        <link refid="IndexSVSVamana_8h_source"/>
+        <label>faiss/svs/IndexSVSIVF.h</label>
+        <link refid="IndexSVSIVF_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="4">
+        <label>faiss/svs/IndexSVSIVFLVQ.h</label>
+        <link refid="IndexSVSIVFLVQ_8h_source"/>
+      </node>
+      <node id="5">
+        <label>faiss/svs/IndexSVSIVFLeanVec.h</label>
+        <link refid="IndexSVSIVFLeanVec_8h_source"/>
+      </node>
+      <node id="6">
+        <label>faiss/svs/IndexSVSVamana.h</label>
+        <link refid="IndexSVSVamana_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>faiss/svs/IndexSVSVamanaLVQ.h</label>
         <link refid="IndexSVSVamanaLVQ_8h_source"/>
       </node>
-      <node id="5">
+      <node id="8">
         <label>faiss/svs/IndexSVSVamanaLeanVec.h</label>
         <link refid="IndexSVSVamanaLeanVec_8h_source"/>
       </node>

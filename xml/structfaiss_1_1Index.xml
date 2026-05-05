@@ -15,6 +15,7 @@
     <derivedcompoundref refid="structfaiss_1_1IndexRefine" prot="public" virt="non-virtual">faiss::IndexRefine</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1IndexRowwiseMinMaxBase" prot="public" virt="non-virtual">faiss::IndexRowwiseMinMaxBase</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1IndexSVSFlat" prot="public" virt="non-virtual">faiss::IndexSVSFlat</derivedcompoundref>
+    <derivedcompoundref refid="structfaiss_1_1IndexSVSIVF" prot="public" virt="non-virtual">faiss::IndexSVSIVF</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1IndexSVSVamana" prot="public" virt="non-virtual">faiss::IndexSVSVamana</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1IndexSplitVectors" prot="public" virt="non-virtual">faiss::IndexSplitVectors</derivedcompoundref>
     <derivedcompoundref refid="structfaiss_1_1MultiIndexQuantizer" prot="public" virt="non-virtual">faiss::MultiIndexQuantizer</derivedcompoundref>
@@ -223,6 +224,8 @@
         <reimplementedby refid="structfaiss_1_1IndexRowwiseMinMax_1a71ecee52a0e63061b9a96b2feb628bc9">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexScalarQuantizer_1a300647e9cdac9acd160f2c55c610056b">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSplitVectors_1aafa4c780e325855fe247052453967845">train</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVF_1aec1e3b8acaf1a4ef75d14bc12351c818">train</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVFLeanVec_1a5ddcba69e3d4d70cb37969696e02a1a1">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamanaLeanVec_1ae70030c46fe5bae48b84596069e670b0">train</reimplementedby>
         <param>
           <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
@@ -265,6 +268,7 @@
         <argsstring>(idx_t n, const float *x, idx_t n_train_q, const float *xq_train)</argsstring>
         <name>train_with_queries</name>
         <qualifiedname>faiss::Index::train_with_queries</qualifiedname>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVFLeanVec_1aa800aff1e06cf1cab95b20da1d0fbe6a">train_with_queries</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamanaLeanVec_1ae83c352204cc61df4adf2424e5bfe737">train_with_queries</reimplementedby>
         <param>
           <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
@@ -380,6 +384,7 @@
         <reimplementedby refid="structfaiss_1_1IndexSplitVectors_1af2ef88dc72b4a94f1190ecc8cb25881b">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexRandom_1ad4fb78337a4d1175ea17036de0ccd507">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSFlat_1a2e3e1ac712b1abac6ed05e80a614f1c3">add</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVF_1aa44ad009c1143b15aab9b6aa805ec546">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamana_1a47c20187774a20a2b280c5da652ca736">add</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamanaLeanVec_1a7844fc7562f4fc827a9fa1a0b04f2ad9">add</reimplementedby>
         <reimplementedby refid="classfaiss_1_1gpu_1_1GpuIndex_1a5fcf3e9af349e17c27ce82fc0ed94966">add</reimplementedby>
@@ -581,6 +586,7 @@
         <reimplementedby refid="structfaiss_1_1IndexSplitVectors_1a09aa261dce984fd45a2385a50cfa9a15">search</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexRandom_1a2e782ae6183d6c3e67777f2ea3c06d54">search</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSFlat_1a126d2241af23193d60badc4956d5b219">search</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVF_1a8c49ceef749d59c16c60992b7e1e202d">search</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamana_1a019544f0725293e7cfe4d675d53eeaa0">search</reimplementedby>
         <param>
           <type><ref refid="namespacefaiss_1ad95f6ecce1dcddede15df19a5b17adf6" kindref="member">idx_t</ref></type>
@@ -915,7 +921,10 @@
         <reimplementedby refid="structfaiss_1_1IndexSplitVectors_1a8047981cb8d10c54107664c4955df402">reset</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexRandom_1a7862a60c9480cf6cdf9086d4ad55d6e9">reset</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSFlat_1a663c3c60f3eb06a0af992af16010bb33">reset</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVF_1a8c7d17dc7084be4816ab6be37326da71">reset</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVFLeanVec_1a1df5da5fcaf7f97248dc2011bc0c1787">reset</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamana_1a9d65b591efa1bf7b7095300fb175cd50">reset</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSVamanaLeanVec_1a3d9b0af6fd46386a1b83aea806bdcb1d">reset</reimplementedby>
         <briefdescription>
 <para>removes all elements from the database. </para>
         </briefdescription>
@@ -939,6 +948,7 @@
         <reimplementedby refid="structfaiss_1_1IndexIVFPQR_1aabe4bb3b249f15af977c954f36e81147">remove_ids</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexPreTransform_1a5781db5439f1d0f06cb3bf4c71ac0563">remove_ids</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexRaBitQFastScan_1abf6ac66745cd4d525986b8f269b44483">remove_ids</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1IndexSVSIVF_1a6b18fee9bb3abf393497983af5d8daf4">remove_ids</reimplementedby>
         <reimplementedby refid="structfaiss_1_1IndexSVSVamana_1a4ae46d56b2782329c2c46a9553b3ce5a">remove_ids</reimplementedby>
         <param>
           <type>const <ref refid="structfaiss_1_1IDSelector" kindref="compound">IDSelector</ref> &amp;</type>
@@ -2193,21 +2203,39 @@
         </childnode>
       </node>
       <node id="79">
+        <label>faiss::IndexSVSIVF</label>
+        <link refid="structfaiss_1_1IndexSVSIVF"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>faiss::IndexSVSIVFLVQ</label>
+        <link refid="structfaiss_1_1IndexSVSIVFLVQ"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>faiss::IndexSVSIVFLeanVec</label>
+        <link refid="structfaiss_1_1IndexSVSIVFLeanVec"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
         <label>faiss::IndexSVSVamana</label>
         <link refid="structfaiss_1_1IndexSVSVamana"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="80">
+      <node id="83">
         <label>faiss::IndexSVSVamanaLVQ</label>
         <link refid="structfaiss_1_1IndexSVSVamanaLVQ"/>
-        <childnode refid="79" relation="public-inheritance">
+        <childnode refid="82" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="81">
+      <node id="84">
         <label>faiss::IndexSVSVamanaLeanVec</label>
         <link refid="structfaiss_1_1IndexSVSVamanaLeanVec"/>
-        <childnode refid="79" relation="public-inheritance">
+        <childnode refid="82" relation="public-inheritance">
         </childnode>
       </node>
       <node id="33">
@@ -2216,7 +2244,7 @@
         <childnode refid="13" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
+      <node id="85">
         <label>faiss::IndexSplitVectors</label>
         <link refid="structfaiss_1_1IndexSplitVectors"/>
         <childnode refid="1" relation="public-inheritance">
@@ -2228,16 +2256,16 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="83">
+      <node id="86">
         <label>faiss::MultiIndexQuantizer</label>
         <link refid="structfaiss_1_1MultiIndexQuantizer"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="84">
+      <node id="87">
         <label>faiss::MultiIndexQuantizer2</label>
         <link refid="structfaiss_1_1MultiIndexQuantizer2"/>
-        <childnode refid="83" relation="public-inheritance">
+        <childnode refid="86" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
@@ -2246,70 +2274,70 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="85">
+      <node id="88">
         <label>faiss::gpu::GpuIndex</label>
         <link refid="classfaiss_1_1gpu_1_1GpuIndex"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="86">
+      <node id="89">
         <label>faiss::gpu::GpuIndexCagra</label>
         <link refid="structfaiss_1_1gpu_1_1GpuIndexCagra"/>
-        <childnode refid="85" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="87">
-        <label>faiss::gpu::GpuIndexFlat</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexFlat"/>
-        <childnode refid="85" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="88">
-        <label>faiss::gpu::GpuIndexFlatIP</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexFlatIP"/>
-        <childnode refid="87" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="89">
-        <label>faiss::gpu::GpuIndexFlatL2</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexFlatL2"/>
-        <childnode refid="87" relation="public-inheritance">
+        <childnode refid="88" relation="public-inheritance">
         </childnode>
       </node>
       <node id="90">
-        <label>faiss::gpu::GpuIndexIVF</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVF"/>
-        <childnode refid="85" relation="public-inheritance">
+        <label>faiss::gpu::GpuIndexFlat</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexFlat"/>
+        <childnode refid="88" relation="public-inheritance">
         </childnode>
       </node>
       <node id="91">
-        <label>faiss::gpu::GpuIndexIVFFlat</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFFlat"/>
+        <label>faiss::gpu::GpuIndexFlatIP</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexFlatIP"/>
         <childnode refid="90" relation="public-inheritance">
         </childnode>
       </node>
       <node id="92">
-        <label>faiss::gpu::GpuIndexIVFPQ</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFPQ"/>
+        <label>faiss::gpu::GpuIndexFlatL2</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexFlatL2"/>
         <childnode refid="90" relation="public-inheritance">
         </childnode>
       </node>
       <node id="93">
-        <label>faiss::gpu::GpuIndexIVFScalarQuantizer</label>
-        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizer"/>
-        <childnode refid="90" relation="public-inheritance">
+        <label>faiss::gpu::GpuIndexIVF</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVF"/>
+        <childnode refid="88" relation="public-inheritance">
         </childnode>
       </node>
       <node id="94">
+        <label>faiss::gpu::GpuIndexIVFFlat</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFFlat"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>faiss::gpu::GpuIndexIVFPQ</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFPQ"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>faiss::gpu::GpuIndexIVFScalarQuantizer</label>
+        <link refid="classfaiss_1_1gpu_1_1GpuIndexIVFScalarQuantizer"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
         <label>faiss::gpu_metal::MetalIndex</label>
         <link refid="classfaiss_1_1gpu__metal_1_1MetalIndex"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="95">
+      <node id="98">
         <label>faiss::gpu_metal::MetalIndexFlat</label>
         <link refid="classfaiss_1_1gpu__metal_1_1MetalIndexFlat"/>
-        <childnode refid="94" relation="public-inheritance">
+        <childnode refid="97" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
